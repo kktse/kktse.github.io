@@ -70,25 +70,26 @@ Laps have been coloured by their respective outing.
 ![Lap Time]({{ site.url }}/assets/images/2017-07-24/laptime.svg)
 
 # Speed
-Vehicle speed is another good channel to look at since it is directly releated
+Vehicle speed is another good channel to look at since it is directly related
 to lap time. The vehicle speed in this scenario is provided by the GPS on the
-smartphone. Here we sumarize the data in a box plot.
+smartphone. Here we summarize the data in a box plot.
 
 ![Lateral Acceleration]({{ site.url }}/assets/images/2017-07-24/speed.svg)
 
 # Lateral Acceleration
 Lets dig a bit deeper and look at the accelerometer data. The 1 Hz data stream
-is too coarse to look at as a time series, so we again sumarize the data with a
+is too coarse to look at as a time series, so we again summarize the data with a
 box plot.
 
 ![Lateral Acceleration]({{ site.url }}/assets/images/2017-07-24/lateral_acceleration.svg)
 
-It can difficult to interpret just the raw lateral acceleration values. Taking
-the absolute value can help bring out any trends or patterns in the data.
+It be can difficult to interpret just the raw lateral acceleration values.
+Taking the absolute value can help bring out any trends or patterns in the
+data.
 ![Absolute Lateral Acceleration]({{ site.url }}/assets/images/2017-07-24/abs_lateral_acceleration.svg)
 
 # Longitudinal Acceleration
-The longitudinal acceleration data can also be summarized in the same was at
+The longitudinal acceleration data can also be summarized in the same way as
 the lateral acceleration data to reveal brake and drive performance.
 ![Longitudinal Acceleration]({{ site.url }}/assets/images/2017-07-24/longitudinal_acceleration.svg)
 
@@ -118,4 +119,4 @@ With some patience, additional analysis can help you make objective
 measurements of your driving.
 
 Special thanks to Ping Zhang for lending his driving skills and for providing
-all the data you see in this post
+all the data you see in this post.
