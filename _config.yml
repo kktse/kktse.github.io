@@ -40,4 +40,4 @@ plugins:
 #   - vendor/ruby/
 
 # Google Analytics
-ga_tracking_id: "UA-103417873-1"
+google_analytics: "UA-103417873-1"
