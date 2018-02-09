@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Analyzing the Live Timing - Champcar Road Atlanta Edition"
+title:  "Analyzing the Live Timing - ChampCar Road Atlanta Edition"
 date:   2018-02-08 15:15:00 -0400
 categories: jekyll update
 ---
