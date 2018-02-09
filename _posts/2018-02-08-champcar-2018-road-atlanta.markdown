@@ -55,7 +55,7 @@ consistently drive the car to its full potential.
 
 # Rising Lap Time
 The rising lap time shows each team's lap time in ascending order. Although we
-cannot pick out individual team in this particular graph, it is still
+cannot pick out individual teams in this particular graph, it is still
 interesting to see the consequence of each team's unique situation.
 
 ![Race Position]({{ site.url }}/assets/images/2018-02-08/rising_time_vs_lap_everyone.svg)
@@ -96,7 +96,7 @@ highlight the relative strengths and weaknesses of each team.
 Huggins (Pinkies Out) has the fastest car and outperformed the competition in
 terms of pit stop time. 23 Van Winden Racing and Team Jacky Ickx 935 have great
 consistency, but ultimately did not manage their slower laps and pit stops as
-well as Huggins (Pinkies Out).
+effectively as Huggins (Pinkies Out).
 
 # Box Plot
 Like the previous plot, the box plot describes the distribution of lap times
@@ -111,7 +111,7 @@ pace.
 
 # Accumulating Outing Average
 The accumulating outing average is the average of all the laps up the current
-lap. It helps show the outing progresses over time without highlighting
+lap. It helps show the outing progression over time without highlighting
 lap-to-lap variation.
 
 ![Accumulating Outing Average]({{ site.url }}/assets/images/2018-02-08/outing_growing_average.svg)
