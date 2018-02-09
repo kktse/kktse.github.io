@@ -12,7 +12,7 @@ stream](https://www.youtube.com/watch?v=dQDZv4hWIGQ), [on-board
 footage](https://www.youtube.com/watch?v=-roEm_l-D5E]), and even [pit lane
 commentary](https://www.youtube.com/watch?v=G90hBmHCG8Q)!
 
-Of particularly interest was the live timing stream which pulled the most
+Of particularly interest was the live timing which pulled the most
 up-to-date race data as a JSON file. By extracting the underlying data and
 running it through custom plotting routines, it becomes possible to perform
 advanced
@@ -21,7 +21,7 @@ advanced
 [analysis](http://theansweris27.com/race-charts-analysis-for-the-24-hours-of-le-mans-2015/)
 more commonly seen in higher levels of motorsport.
 
-Lets see what we can learn from the extracting this data from ChumpCar's 2018
+Lets see what we can learn from extracting this data from ChumpCar's 2018
 14-Hours of Road Atlanta.
 
 ## Overall
@@ -37,7 +37,7 @@ the number of laps.
 ![Race Position]({{ site.url }}/assets/images/2018-02-08/median_average_lap_time_everyone.svg)
 
 Best lap time does not appear to be an indicator of placing or average lap time.
-It is an early reminder how of important consistency, not raw performance, can be
+It is a reminder how of important consistency, not raw performance, can be
 in endurance racing.
 
 # Box Plot
@@ -145,7 +145,7 @@ stops.
 
 # Pit Times
 Pit-in laps are identified based on knowledge of the minimum pit time
-requirement. We can compare the pit-stop performance by observing the lap time
+requirement. We can compare pit-stop performance by observing the lap time
 containing a stop.
 
 ![Pit Times 1]({{ site.url }}/assets/images/2018-02-08/pitstop_duration_Huggins (Pinkies Out).svg)
