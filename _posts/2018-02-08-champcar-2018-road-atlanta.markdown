@@ -36,9 +36,9 @@ the number of laps.
 
 ![Race Position]({{ site.url }}/assets/images/2018-02-08/median_average_lap_time_everyone.svg)
 
-Best lap time does not appear to be an indicator of placing or or best lap
-time. It is an early reminder how important consistency, not raw performance,
-can be in endurance racing.
+Best lap time does not appear to be an indicator of placing or best lap time.
+It is an early reminder how of important consistency, not raw performance, can be
+in endurance racing.
 
 # Box Plot
 The box plot is another way of understanding how each team performed relative
@@ -55,7 +55,7 @@ consistently drive the car to its full potential.
 
 # Rising Lap Time
 The rising lap time shows each team's lap time in ascending order. Although we
-cannot pick out any individual team in this particular graph, it is still
+cannot pick out individual team in this particular graph, it is still
 interesting to see the consequence of each team's unique situation.
 
 ![Race Position]({{ site.url }}/assets/images/2018-02-08/rising_time_vs_lap_everyone.svg)
@@ -83,8 +83,8 @@ started.
 ![Race Position]({{ site.url }}/assets/images/2018-02-08/race_position_vs_time.svg)
 
 It is possible to recover from a poor start and still place within the top
-five. Team Jacky Ickx 935 made a fine recovery from the back of the grid and
-finishing in third place.
+five. Team Jacky Ickx 935 made a fine recovery from the back of the grid,
+ultimately placing third by the checkered flag.
 
 # Rising Lap Time
 The rising lap time is a way to describe the distribution of lap times over the
@@ -98,7 +98,7 @@ terms of pit stop time. 23 Van Winden Racing and Team Jacky Ickx 935 have great
 consistency, but ultimately did not manage their slower laps and pit stops as
 well as Huggins (Pinkies Out).
 
-# Lap Time Box Plot
+# Box Plot
 Like the previous plot, the box plot describes the distribution of lap times
 but as a more conventional visualization.
 
@@ -118,8 +118,8 @@ lap-to-lap variation.
 
 We already discussed the lap time performance of each of these teams, so there
 is no new information in that regard. Of greater interest is the profile of
-each curve. We can see different outing profiles within the teams, suggesting a
-driver change and a different driving style.
+each curve. We can see different profiles within teams, suggesting a change of
+driver with a different driving style.
 
 ## Top Two Teams
 We can focus our analysis to the individual team level to gain further insights
@@ -155,7 +155,7 @@ Huggins (Pinkies Out) has an advantage with one less pit stop than 23 Van
 Winden Racing. Huggins (Pinkies Out) show excellent consistency between pit
 stops, exemplifying their reliability and skilled pit crew. That is not to
 discount 23 Van Winden Racing's excellent showing at this race, though the
-extra pit stop and extra time in session #5 did not help them get closer to
+extra pit stop and extra time in outing #5 did not help them get closer to
 winning the event.
 
 ## Conclusion
