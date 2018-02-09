@@ -21,7 +21,7 @@ advanced
 [analysis](http://theansweris27.com/race-charts-analysis-for-the-24-hours-of-le-mans-2015/)
 more commonly seen in higher levels of motorsport.
 
-Lets see what we can learn from extracting this data from ChumpCar's 2018
+Lets see what we can learn from the lap time data of ChampCar's 2018
 14-Hours of Road Atlanta.
 
 ## Overall
@@ -37,7 +37,7 @@ the number of laps.
 ![Race Position]({{ site.url }}/assets/images/2018-02-08/median_average_lap_time_everyone.svg)
 
 Best lap time does not appear to be an indicator of placing or average lap time.
-It is a reminder how of important consistency, not raw performance, can be
+It is a reminder of how important consistency, not raw performance, can be
 in endurance racing.
 
 # Box Plot
@@ -48,14 +48,14 @@ the best and average times.
 ![Race Position]({{ site.url }}/assets/images/2018-02-08/box_plot_everyone.svg)
 
 The top third of the pack has good overall pace with good median times and
-tight control of their lap times. Further down the pack we see more of
+tight control of their lap times. Further down the pack we see more
 variation between the teams. Some teams have good pace but are likely losing
 time in the pits. Some teams lack the pace and/or the driver who can
 consistently drive the car to its full potential.
 
 # Rising Lap Time
 The rising lap time shows each team's lap times in ascending order. Although we
-cannot pick out individual teams in this particular graph, it is still
+cannot identify specific teams in this particular graph, it is still
 interesting to see the consequence of each team's unique situation.
 
 ![Race Position]({{ site.url }}/assets/images/2018-02-08/rising_time_vs_lap_everyone.svg)
@@ -109,8 +109,8 @@ distribution. Team Punisher has similar raw lap time performance to race winner
 Huggins (Pinkies Out), but ultimately lacked the consistency to maintain the
 pace.
 
-# Accumulating Outing Average
-The accumulating outing average is the average of all the laps up the current
+# Outing Accumulating Average
+The outing accumulating average is the average of all the laps up the current
 lap. It helps show the outing progression over time without highlighting
 lap-to-lap variation.
 
@@ -130,8 +130,8 @@ two race finishers:
 * Car #213 -  23 Van Winden Racing
 
 # Box Plot
-We have used the box plot before to visualize the distribution of the lap
-times, but this time we can observe the distribution for every outing.
+We have used the box plot to visualize the distribution of the lap
+times, but this time we can observe the distribution for each outing.
 
 ![Box Plot 1]({{ site.url }}/assets/images/2018-02-08/laptime_boxplot_Huggins (Pinkies Out).svg)
 ![Box Plot 2]({{ site.url }}/assets/images/2018-02-08/laptime_boxplot_23 Van Winden racing.svg)
@@ -144,9 +144,9 @@ race winner, the race was ultimately won by managing the slower laps and pit
 stops.
 
 # Pit Times
-Pit-in laps are identified based on knowledge of the minimum pit time
-requirement. We can compare pit-stop performance by observing the lap time
-containing a stop.
+Pit-in laps are identified based on the minimum pit time requirement. We 
+can compare pit-stop performance by observing the lap times containing a 
+stop.
 
 ![Pit Times 1]({{ site.url }}/assets/images/2018-02-08/pitstop_duration_Huggins (Pinkies Out).svg)
 ![Pit Times 2]({{ site.url }}/assets/images/2018-02-08/pitstop_duration_23 Van Winden racing.svg)
@@ -160,6 +160,6 @@ winning the event.
 
 ## Conclusion
 Advanced lap time analysis need not be reserved only for highest levels of
-motorsports. Even at the amateur level, useful insights about the competition
+motorsport. Even at the amateur level, useful insights about the competition
 can be drawn from the data. Congratulations to Car #146 Huggins (Pinkies Out)
 for a well deserved race victory!
