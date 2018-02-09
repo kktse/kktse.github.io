@@ -12,7 +12,7 @@ stream](https://www.youtube.com/watch?v=dQDZv4hWIGQ), [on-board
 footage](https://www.youtube.com/watch?v=-roEm_l-D5E]), and even [pit lane
 commentary](https://www.youtube.com/watch?v=G90hBmHCG8Q)!
 
-Particularly interest was the live timing stream which pulled the most
+Particularly of interest was the live timing stream which pulled the most
 up-to-date race data as a JSON file. By extracting the underlying data and
 running it through custom plotting routines, it becomes possible to perform
 advanced
