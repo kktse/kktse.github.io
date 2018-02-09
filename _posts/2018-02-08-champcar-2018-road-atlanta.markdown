@@ -5,14 +5,14 @@ date:   2018-02-08 15:15:00 -0400
 categories: jekyll update
 ---
 It is difficult not to be impressed by the live coverage put out by the
-ChampCar team considering it is an amateur racing series. So when I tuned into
+ChampCar team considering it is an amateur racing series. So when I tuned in to
 this year's race at Road Atlanta, I was pleasantly surprised to find [live
 timing](https://speedhive.mylaps.com/Sessions/4726548), [a live
 stream](https://www.youtube.com/watch?v=dQDZv4hWIGQ), [on-board
 footage](https://www.youtube.com/watch?v=-roEm_l-D5E]), and even [pit lane
 commentary](https://www.youtube.com/watch?v=G90hBmHCG8Q)!
 
-Particularly of interest was the live timing stream which pulled the most
+Of particularly interest was the live timing stream which pulled the most
 up-to-date race data as a JSON file. By extracting the underlying data and
 running it through custom plotting routines, it becomes possible to perform
 advanced
@@ -49,12 +49,12 @@ the best and average times.
 
 The top third of the pack has good overall pace with good median times and
 tight control of their lap times. Further down the pack we see more of
-variations between the teams. Some teams have good pace but are likely losing
+variation between the teams. Some teams have good pace but are likely losing
 time in the pits. Some teams lack the pace and/or the driver who can
 consistently drive the car to its full potential.
 
 # Rising Lap Time
-The rising lap time shows each team's lap time in ascending order. Although we
+The rising lap time shows each team's lap times in ascending order. Although we
 cannot pick out individual teams in this particular graph, it is still
 interesting to see the consequence of each team's unique situation.
 
