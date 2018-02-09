@@ -36,7 +36,7 @@ the number of laps.
 
 ![Race Position]({{ site.url }}/assets/images/2018-02-08/median_average_lap_time_everyone.svg)
 
-Best lap time does not appear to be an indicator of placing or best lap time.
+Best lap time does not appear to be an indicator of placing or average lap time.
 It is an early reminder how of important consistency, not raw performance, can be
 in endurance racing.
 
