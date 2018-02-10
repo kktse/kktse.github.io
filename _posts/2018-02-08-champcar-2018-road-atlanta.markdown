@@ -34,7 +34,7 @@ place finishing. In this plot, 'average' refers to the overall average of the
 event. In other words, the average is the total runtime of the event divided by
 the number of laps.
 
-![Race Position]({{ site.url }}/assets/images/2018-02-08/median_average_lap_time_everyone.svg)
+![Race Position]({{ site.url }}/assets/images/2018-02-08/best_and_average_lap_time_everyone.svg)
 
 Best lap time does not appear to be an indicator of placing or average lap time.
 It is a reminder of how important consistency, not raw performance, can be
