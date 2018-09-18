@@ -4,5 +4,4 @@ title: About
 permalink: /about/
 ---
 
-My internet home for publishing things to share.
-
+Exploring vehicle dynamics with an engineering perspective.
