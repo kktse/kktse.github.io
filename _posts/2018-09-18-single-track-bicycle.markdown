@@ -102,7 +102,7 @@ balance are governed by the following equations:
 
 $$ m(\dot{v} + u \cdot r) = F_{y,f} \cos{\left(\delta\right)} + F_{y,r} $$
 
-$$ I \dot{r} = a F_{y,f} \cos{\delta} - b F_{y,r} $$
+$$ I \dot{r} = a F_{y,f} \cos{\left(\delta\right)} - b F_{y,r} $$
 
 To simplify the derivation, we assume small angle variations in the steered
 angle, $$\delta$$. By this assumption, we linearize the $$\cos{\left(\delta\right)}$$ about
@@ -190,11 +190,11 @@ $$
 #### Transfer Function Form
 
 $$
-\frac{V(s)}{\delta(s)} = \frac{\frac{C_f}{m} s + \frac{C_f}{Imu} (C_r l_a l_b + C_r l_b^2 - l_a mu^2)}{s^2 + (\frac{C_f + C_r}{mu} + \frac{C_f l_a^2 + C_r l_b^2}{Iu}) s + \frac{C_f C_r (l_a + l_b)^2}{Imu^2} + \frac{-C_f l_a + C_r l_b}{I}}
+\frac{V(s)}{\delta(s)} = \frac{\frac{C_f}{m} s + \frac{C_f}{Imu} (C_r l_a l_b + C_r l_b^2 - l_a mu^2)}{s^2 + \left(\frac{C_f + C_r}{mu} + \frac{C_f l_a^2 + C_r l_b^2}{Iu}\right) s + \frac{C_f C_r (l_a + l_b)^2}{Imu^2} + \frac{-C_f l_a + C_r l_b}{I}}
 $$
 
 $$
-\frac{R(s)}{\delta(s)} = \frac{\frac{C_f l_a}{I} s + \frac{C_f C_r (l_a + l_b)}{Imu}}{s^2 + (\frac{C_f + C_r}{mu} + \frac{C_f l_a^2 + C_r l_b^2}{Iu}) s + \frac{C_f C_r (l_a + l_b)^2}{Imu^2} + \frac{-C_f l_a + C_r l_b}{I}}
+\frac{R(s)}{\delta(s)} = \frac{\frac{C_f l_a}{I} s + \frac{C_f C_r (l_a + l_b)}{Imu}}{s^2 + \left(\frac{C_f + C_r}{mu} + \frac{C_f l_a^2 + C_r l_b^2}{Iu}\right) s + \frac{C_f C_r (l_a + l_b)^2}{Imu^2} + \frac{-C_f l_a + C_r l_b}{I}}
 $$
 
 
@@ -257,11 +257,11 @@ $$
 #### Transfer Function Form
 
 $$
-\frac{\beta(s)}{\delta(s)} = \frac{\frac{C_f}{mu} s + \frac{C_f}{Imu^2} (C_r l_a l_b + C_r l_b^2 - l_a mu^2)}{s^2 + (\frac{C_f + C_r}{mu} + \frac{C_f l_a^2 + C_r l_b^2}{Iu}) s + \frac{C_f C_r (l_a + l_b)^2}{Imu^2} + \frac{-C_f l_a + C_r l_b}{I}}
+\frac{\beta(s)}{\delta(s)} = \frac{\frac{C_f}{mu} s + \frac{C_f}{Imu^2} (C_r l_a l_b + C_r l_b^2 - l_a mu^2)}{s^2 + \left(\frac{C_f + C_r}{mu} + \frac{C_f l_a^2 + C_r l_b^2}{Iu}\right) s + \frac{C_f C_r (l_a + l_b)^2}{Imu^2} + \frac{-C_f l_a + C_r l_b}{I}}
 $$
 
 $$
-\frac{R(s)}{\delta(s)} = \frac{\frac{C_f l_a}{I} s + \frac{C_f C_r (l_a + l_b)}{Imu}}{s^2 + (\frac{C_f + C_r}{mu} + \frac{C_f l_a^2 + C_r l_b^2}{Iu}) s + \frac{C_f C_r (l_a + l_b)^2}{Imu^2} + \frac{-C_f l_a + C_r l_b}{I}}
+\frac{R(s)}{\delta(s)} = \frac{\frac{C_f l_a}{I} s + \frac{C_f C_r (l_a + l_b)}{Imu}}{s^2 + \left(\frac{C_f + C_r}{mu} + \frac{C_f l_a^2 + C_r l_b^2}{Iu}\right) s + \frac{C_f C_r (l_a + l_b)^2}{Imu^2} + \frac{-C_f l_a + C_r l_b}{I}}
 $$
 
 ## Derivation using Cornering Compliances
