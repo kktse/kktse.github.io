@@ -78,8 +78,8 @@ For a derivation using work-energy methods, please refer to Chapter 1.3, _Tyre
 * $$C_r$$ represents the axle axle effective cornering stiffness [$$N/rad$$]
 
 #### Cornering Compliances
-* $$D_f$$ represents the front axle cornering compliance [$$\frac{rad}{m/s^2}$$]
-* $$D_r$$ represents the rear axle cornering compliance [$$\frac{rad}{m/s^2}$$]
+* $$D_f$$ represents the front axle cornering compliance [$$\frac{rad}{g}$$]
+* $$D_r$$ represents the rear axle cornering compliance [$$\frac{rad}{g}$$]
 
 #### Forces
 * $$F_{y,f}$$ represents the lateral force developed at the front axle [$$N$$]
