@@ -63,6 +63,9 @@ arousal level using cognitive-behavioural strategies provides a framework that
 can help drivers manage competitive anxiety, and therefore improve performance
 outcomes and lap times.
 
+_To learn more about the Lupus Grand Prix and their mission, visit their
+website at <http://lupusgp.ca/>_
+
 References
 ==========
 1. Craft, Lynette L., et al. "The relationship between the Competitive State Anxiety Inventory-2 and sport performance: A meta-analysis." Journal of sport and exercise psychology 25.1 (2003): 44-65.
