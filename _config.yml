@@ -28,12 +28,14 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-
-gems:
-  - jekyll-github-metadata
-  - jekyll-mentions
-  - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+whitelist:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
   - jemoji
 
 # Exclude from processing.
