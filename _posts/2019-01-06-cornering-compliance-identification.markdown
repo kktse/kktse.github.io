@@ -56,7 +56,7 @@ Combining both definitions of understeer yields the following relationship:
 $$K = \frac{1}{a_y} (\alpha_f - \alpha_r)$$
 
 We assume that the front and rear axles experience the same lateral
-acceleration, $$a_y$$. Equating the tire forces to the lateral force
+acceleration, $$a_y$$. Equating the tire force to lateral acceleration
 experienced by each axle yields the following relationship:
 
 $$m_f a_y = \alpha_f C_f$$
@@ -64,10 +64,12 @@ $$m_f a_y = \alpha_f C_f$$
 $$m_r a_y = \alpha_r C_r$$
 
 Where:
+* $$m_f$$ represents the equivalent mass of the front axle [$$kg$$]
+* $$m_r$$ represents the equivalent mass of the rear axle [$$kg$$]
 * $$C_f$$ represents the front axle effective cornering stiffness [$$N/rad$$]
 * $$C_r$$ represents the axle axle effective cornering stiffness [$$N/rad$$]
 
-Rearranging solving for the front and rear slip angles:
+Rearranging and solving for the front and rear slip angles:
 
 $$\alpha_f = \frac{m_f a_y}{C_f}$$
 
@@ -169,10 +171,13 @@ rear cornering compliances of the vehicle. Combined with the understeer
 gradient test, a simple transient vehicle model is developed.
 
 Simulation and modelling enables analytical insight into vehicle handling. The
-simulation is not without caveats; in the validation case where vehicle speeds
-are higher, the model under-predicts the vehicle yaw rate and lateral
-acceleration. However, the model sufficiently describes the transient response
-of the vehicle to merit usefulness in further study.
+simulation is not without caveats; the simulation does not perfectly capture 
+the transient response of the vehicle observed the experimental data. Despite
+these pitfalls in the accuracy of the simulation, the model has enough fidelity
+to provide useful information about the vehicle. The ability to generalize the
+vehicle response in a simulation is still an extremely powerful tool in analyzing
+and assessing handling performance.
+
 
 _A big thank you to OTA competitor Joseph Yang in the #551 2012 Honda Civic Si
 for performing the pulse steer test and for providing the data used the
