@@ -130,7 +130,7 @@ The following vehicle parameters are assumed for the vehicle-under-test:
 | $$a$$  | 0.996 | m    | Distance from CG to front axle |
 | $$b$$  | 1.624 | m    | Distance from CG to rear axle |
 | $$m$$  | 1450  | kg   | Vehicle mass |
-| $$I$$  | 2345  | kg m<sup>2</sup> | Vehicle yaw inertia (k=1) |
+| $$I$$  | 2345  | kg m<sup>2</sup> | Vehicle yaw inertia |
 | $$K$$  | 5.5   | deg/g | Understeer gradient (as measured) |
 
 # Results

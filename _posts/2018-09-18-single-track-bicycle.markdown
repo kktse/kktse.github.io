@@ -334,7 +334,7 @@ $$
 $$
 
 $$
-\frac{R(s)}{\delta(s)} = \frac{\frac{g l_{a} l_{b} m}{d_{f} I \left(l_{a} + l_{b}\right)} s + \frac{g^{2} l_{a} l_{b} m}{d_{f} d_{r} I u \left(l_{a} + l_{b}\right)}}{s^2 + \frac{\left(( D_f l_a + D_r l_b ) I + ( D_f l_b + D_r l_a ) m l_a l_b \right) g}{D_f D_r I u \left(l_{a} + l_{b}\right)}  s + \frac{\left((D_f - D_r) u^{2} + (l_{a} + l_{b}) g\right) g l_{a} l_{b} m }{D_f D_r I u^{2} \left(l_{a} + l_{b}\right)}}
+\frac{R(s)}{\delta(s)} = \frac{\frac{g l_{a} l_{b} m}{D_{f} I \left(l_{a} + l_{b}\right)} s + \frac{g^{2} l_{a} l_{b} m}{D_{f} D_{r} I u \left(l_{a} + l_{b}\right)}}{s^2 + \frac{\left(( D_f l_a + D_r l_b ) I + ( D_f l_b + D_r l_a ) m l_a l_b \right) g}{D_f D_r I u \left(l_{a} + l_{b}\right)}  s + \frac{\left((D_f - D_r) u^{2} + (l_{a} + l_{b}) g\right) g l_{a} l_{b} m }{D_f D_r I u^{2} \left(l_{a} + l_{b}\right)}}
 $$
 
 ## Conclusion
