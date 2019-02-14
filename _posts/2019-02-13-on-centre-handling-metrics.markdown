@@ -130,8 +130,8 @@ There are a few key observations that can be made:
 
 # Frequency Response
 Frequency domain analysis provides an alternative - if a bit abstract - view
-into the vehicle response. Studying the vehicle response in frequency domain
-allows application of the vast literature in control theory to analyze the car.
+into the vehicle response. Studying the vehicle response in the frequency
+domain allows application of literature in control theory to analyze the car.
 
 The Bode plot describes the magnitude and phase response of the system with
 respect to frequency of the input. The frequency response of the yaw rate,
