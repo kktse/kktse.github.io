@@ -240,11 +240,11 @@ simplifying assumptions puts limits on the type of conclusions we can draw from
 simulation.
 
 It can be argued that linear analysis is less relevant to motorsport
-applications because of non-linearities primarily introduced by tire
+applications because the non-linearities primarily introduced by tire
 force/moment generation will give rise to a performance envelope.
 
 Generally speaking, most road vehicles are four-wheeled. The single-track
-vehicle model does not consider track width and consequently, does not include
+vehicle model does not consider track width and consequently does not include
 a roll degree of freedom. Load transfer effects are not directly included in
 the analysis.
 
@@ -290,9 +290,8 @@ immense knowledge and value to be had studying these foundational works.
 # Acknowledgements
 The following individuals and organizations have helped contribute to the OTA
 Debrief series:
-* Joseph Yang and his #551 2012 Honda Civic Si - all the data and findings are
-  based on data derived competition data provided by Joseph. The analysis you
-  see here would not be possible without his collaboration;
+* Joseph Yang and his #551 2012 Honda Civic Si. This analysis would not be
+  possible without his collaboration;
 * Ping Zhang at [Apex Performance Engineering](https://www.facebook.com/APEXPerformanceEngineering) - follow us on Facebook!;
 * CASC-OR, Ontario Time Attack and the community for their support
 
