@@ -25,6 +25,9 @@ linkedin_username: ktse
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
 theme: minima
 plugins:
   - jekyll-feed
