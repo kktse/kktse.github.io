@@ -88,24 +88,24 @@ understand, deconstructing the phrase reveals multiple cognitive steps.
 At the guidance level, one must have an internal representation of the path
 such that one knows _what_ to look at. Path generation relies on long-term
 memory to recall the most effective route. Because driving occurs on a
-scene-by-scene basis, the line is generated based on key landmarks of the
-track. Preparation ahead of time and reflection of past trajectories can
-help encode this information into long-term memory.
+scene-by-scene basis, the line is generated using key landmarks of the track.
+Preparation and reflection of known trajectories can help encode this
+information into long-term memory.
 
 Increasing the visual preview horizon is the fundamental goal of looking ahead.
-The tangent point model show that drivers typically look at the apex point of
-the upcoming corner. In contrast, racing drivers adjust their gaze to the
-outside of the corner just as they begin to turn-in.  Visual preview is
+The tangent point model suggests that drivers typically look at the apex point
+of the upcoming corner. In contrast, racing drivers adjust their gaze to the
+outside just as they begin to turn into the corner. Visual preview is
 anticipatory based on knowing the trajectory _a-priori_ to entering the corner.
 Looking ahead allows you to take advantage of this information to maneuver the
 vehicle.
 
-Looking ahead also changes how your eyes and head physically move. In a
-comparison between racing drivers and non-racing drivers, it was shown that
-racing drivers rotate their heads into the turn in a way that maintains a zero
-head-to-eye angle. Using your eyes to look ahead can be considered undesirable
-due to saccadic suppression, and therefore switching to physically rotating
-your head may be a desirable strategy to keep you focused on the path ahead.
+Looking ahead also changes how your eyes and head move. In a comparison between
+racing drivers and non-racing drivers, it is shown that racing drivers rotate
+their heads in a way that maintains a zero head-to-eye angle. Using your eyes
+to look ahead can be considered undesirable due to saccadic suppression, and
+therefore switching to physically rotating your head may be a desirable
+strategy to keep you focused on the path ahead.
 
 ## Closing Remarks
 Driver development and the application of "driver science" is still in its
