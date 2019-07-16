@@ -79,6 +79,37 @@ Driving is inherently a visual task. Increasing the preview window of optical
 flow and developing visual strategies that reduces saccadic movements can be
 trained to improve driver performance.
 
+## "Looking Ahead" - A Use Case
+The pervasive use of the phrase "look ahead!" demonstrates an important aspect
+of high speed vehicle maneuvering; however, this innocuous phrase implicates
+many cognitive functions. The end objective is to increase the preview window
+of optical flow, but that is often easier said than done. Deconstructing the
+phrase reveals multiple cognitive steps.
+
+At the guidance level, one must have an internal representation of the path
+such that one knows _what_ to look at. Path generation relies on long-term
+memory to recall the most effective route. Because driving occurs on a
+scene-by-scene basis and not topographically, the line is generated based on
+key landmarks of the track. Track preparation ahead of time and reflection of
+past trajectories that have worked well can help encode this information into
+long-term memory for use in the guidance phase.
+
+Increasing the visual preview horizon is the fundamental goal of looking ahead.
+The tangent model hypothesized for non-racing drivers show that drivers look at
+the apex point of the upcoming corner. In contrast to racing drivers, their
+visual gaze looked at the corner exit _before_ they hit the apex of the current
+corner. Visual preview is anticipatory based on knowing the trajectory
+_a-priori_ to entering the corner, and looking ahead is one strategy to take
+advantage of this information.
+
+Looking ahead also changes how your eyes and head physically move relative to
+the race track. In a comparison between racing drivers and non-racing drivers,
+it was shown that racing drivers rotate their heads into the turn in a way that
+maintains a zero head-to-eye angle. Using your eyes to look ahead can be
+considered undesirable due to saccadic suppression, and using your head to look
+ahead may just be one strategy to assist in increasing the visual preview
+window.
+
 ## Closing Remarks
 Driver development and the application of "driver science" is still in its
 infancy. Vehicle development is comparatively simple given the complexity of
