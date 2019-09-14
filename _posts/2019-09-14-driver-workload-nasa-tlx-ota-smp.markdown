@@ -147,7 +147,7 @@ control under high g-loading. Aspects such as balance and coordination would
 aim to increase the driver's perceptual sensitivity to vehicle balance.
 
 # Closing Remarks
-Tweaking the performance of the driver is equally - if not _more_ - important
+Tweaking the performance of the driver is equally - if not _more_ important
 as improving the performance of the vehicle. The NASA TLX workload assessment
 provided insight into demand factors affecting the driver. Being able to
 communicate these concerns in a concise and quantifiable way allows us to
