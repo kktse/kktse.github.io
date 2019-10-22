@@ -21,6 +21,7 @@ categories: jekyll update
 
 ***
 
+
 ![civicsi_ddt_t1](/assets/images/2019-03-17/civicsi_ddt_t1.jpg)
 
 Welcome to the Ontario Time Attack debrief files, a series of articles where we
