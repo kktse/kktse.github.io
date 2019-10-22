@@ -9,6 +9,16 @@ categories: jekyll update
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
+> 2019/08/22 update: this article is part of a series on on-centre vehicle
+> handling using linear system analysis. For further reading, please feel free
+> to check out my other posts:
+> 1. [Lateral Dynamics of a Linear Single-Track Vehicle](/jekyll/update/2018/09/18/single-track-bicycle.html)
+> 1. **[OTA 2018 Debrief: Understeer Gradient Test](/jekyll/update/2018/12/01/understeer-gradient-identification.html)**
+> 1. [OTA 2018 Debrief: Cornering Compliances and Transients](/jekyll/update/2019/01/06/cornering-compliance-identification.html)
+> 1. [OTA 2018 Debrief: On-Centre Vehicle Handling](/jekyll/update/2019/02/13/on-centre-handling-metrics.html)
+> 1. [OTA 2018 Debrief: Parameter Analysis](/jekyll/update/2019/03/17/parameter-sensitivity-analysis.html)
+> 1. [Cornering Compliances of a Typical Road Vehicle](/jekyll/update/2019/06/01/typical-cornering-compliances.html)
+
 ![ddt_civicsi](/assets/images/2018-12-01/ddt_c551_civic_si_banner.jpg)
 
 Welcome to the Ontario Time Attack debrief files, a series of articles where we
