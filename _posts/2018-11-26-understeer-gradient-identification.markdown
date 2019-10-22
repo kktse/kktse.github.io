@@ -19,6 +19,8 @@ categories: jekyll update
 > 1. [OTA 2018 Debrief: Parameter Analysis](/jekyll/update/2019/03/17/parameter-sensitivity-analysis.html)
 > 1. [Cornering Compliances of a Typical Road Vehicle](/jekyll/update/2019/06/01/typical-cornering-compliances.html)
 
+***
+
 ![ddt_civicsi](/assets/images/2018-12-01/ddt_c551_civic_si_banner.jpg)
 
 Welcome to the Ontario Time Attack debrief files, a series of articles where we
