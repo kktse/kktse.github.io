@@ -19,7 +19,8 @@ categories: jekyll update
 > 1. [OTA 2018 Debrief: Parameter Analysis](/jekyll/update/2019/03/17/parameter-sensitivity-analysis.html)
 > 1. [Cornering Compliances of a Typical Road Vehicle](/jekyll/update/2019/06/01/typical-cornering-compliances.html)
 
-***  
+***
+\
 
 ![autox_civicsi](/assets/images/2019-01-06/JYANG_CIVIC_by_MLIN.jpg)
 > Photo Credit: Michael Lim
