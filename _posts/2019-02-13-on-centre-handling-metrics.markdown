@@ -9,9 +9,6 @@ categories: jekyll update
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-&nbsp;
-***
-
 > 2019/08/22 update: this article is part of a series on on-centre vehicle
 > handling using linear system analysis. For further reading, please feel free
 > to check out my other posts:
