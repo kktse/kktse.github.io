@@ -20,7 +20,7 @@ categories: jekyll update
 > 1. [Cornering Compliances of a Typical Road Vehicle](/jekyll/update/2019/06/01/typical-cornering-compliances.html)
 
 ***
-\
+&nbsp;
 
 ![autox_civicsi](/assets/images/2019-01-06/JYANG_CIVIC_by_MLIN.jpg)
 > Photo Credit: Michael Lim
