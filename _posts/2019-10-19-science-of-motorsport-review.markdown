@@ -31,7 +31,7 @@ following:
 These questions are motivated by the quantity of anecdotal findings.  The
 quality of these findings varies and corroboration with literature is necessary
 to verify their validity. While seat time is important, it is not sufficient;
-further development is required to achieve the success.
+further development is required to achieve success.
 
 The increased visibility of driver development programs at the professional
 level contributes to this line of questioning. Professional driver development
@@ -93,18 +93,62 @@ Interestingly, the same pervasiveness has not yet extended to the racing
 driver, both on and off the race track. Both subjective and objective
 measurements can provide insight into human performance. Off the race track,
 conventional metrics can be used to assess physical fitness. These metrics
-include VO2MAX, lactate threshold, strength tests results and physiological
+include VO2max, lactate threshold, strength tests results and physiological
 measures.
 
 ## Mental Skills
+High-speed vehicle maneuvering is a cognitively demanding task that requires a
+high degree of concentration. The racing driver must process information in
+real-time and make decisions based on these observations. Concentration is the
+underlying mechanism that enables the racing driver to perform, but requires
+training to focus on task-relevant information in the presence of distractions.
 
+Mental skills have been successfully applied to competitive sports. Goal
+setting and motivation are key strategies in long-term development and growth.
+Arousal regulation before a session can affect driver focus and can have
+negative physiological and therefore performance effects.
 
 # Future Research
 ## Driver Specific Development
+The driver-athlete is unique in that they are conditioned to cope with
+task-specific stressors. Because of the unique demands in motorsports, training
+needs to be task-specific in order to take advantage of the principle of
+specificity.
+
+Driving specific training involves developing a fitness routine that work the
+muscle groups involved in high-speed vehicle maneuvering under the same
+conditions as in the race car cockpit. Understanding the muscular and
+physiological demands that the driver experiences can be used to derive
+training requirements. Determining the task-specific exercises which are
+maximally transferable to high-speed vehicle maneuvering is the core to
+improving fitness variables and performance outcomes.
 
 ## Perceptual Training
+A differentiating factor between experts and non-experts is their ability to
+process sports specific information. Unlike an aircraft pilot who relies on
+flight instruments, the racing driver must integrate perceptual information to
+plan and control the racing vehicle.
+
+Improving the ability to perceive task-relevant information can be trained
+outside of the vehicle. Vestibular exercises are primarily used for concussion
+therapy, though can they be applied after periods of increased physiological
+demand to improve balance and coordination? Racing simulators can be used to
+emulate the visual stimuli of high-speed vehicle maneuvering, and can be
+integrated into a training routine to emulate conditions in the cockpit.
 
 ## Optimal Control
+With the rise of autonomous vehicles, can the same technology be used to bring
+insight into high-speed vehicle maneuvering?
+
+Optimal control problems would yield a solution to the high-speed vehicle
+maneuvering problem without consideration of human factors. Typical autonomous
+vehicle control stacks rely on a hierarchy similar to the perceptual-cognitive
+models presented for humans (ie. perception, localization, planning, control).
+These solutions benefit from an understood mathematical basis which could be
+transferred to human drivers to rapidly achieve maximum performance.
+
+# Conclusions
+
 
 
 ## References
