@@ -8,7 +8,7 @@ categories: jekyll update
 This year's racing season was marked by a shift in focus from the vehicle to
 the racing driver. Vehicle development was not sufficient to achieve the
 desired performance objectives. We had to look elsewhere for performance
-improvements; this is where driver development came into focus.
+improvements; this is when driver development came into focus.
 
 Vehicle engineering benefits from of a history of research. Notable discoveries
 in vehicle dynamics were studied as early as the 1930s with pioneers like
@@ -52,10 +52,10 @@ track safety. Each chapter is written by a subject expert contributor and is
 supported by numerous external citations.
 
 Each chapter is sufficiently structured to be read independently. They are
-however, ordered to intentionally to build on the topic of the acute stressors
-on the driver to the importance of teamwork on overall success. Human
-performance is not limited to just the racing driver, but to pit crews and
-safety teams working along side the racing driver.
+however, ordered to intentionally to build upon the idea of the driver-athlete
+to make the same case for team success and track safety. Human performance is
+not limited to just the racing driver, but to pit crews and safety teams
+working along side the racing driver.
 
 "The Science of Motorsport" is not without caveats; there is no _recipe_ for
 improving your driving skill and it lacks actionable tools described in many
@@ -82,9 +82,9 @@ forces.
 This puts the racing driver under extreme physiological stress. In studies
 involving endurance racing drivers, it is shown that heart rate values reach
 \>80% of age-estimated maximal heart rates. Physical strength is required to
-operate the vehicle controls under continuous g-loading cycles. Additionally,
-the driver must operate in these conditions for the duration of their stint,
-lasting up to 2 hours in some endurance series.
+operate the vehicle controls under continuous g-force loading cycles.
+Additionally, the driver must operate in these conditions for the duration of
+their stint which can last towards 2 hours in certain endurance series.
 
 # Measuring Driver Demand
 The pervasive use of data acquisition systems demonstrates its importance in
@@ -107,9 +107,9 @@ underlying mechanism that enables the racing driver to perform, but requires
 training to focus on task-relevant information in the presence of distractions.
 
 Mental skills have been successfully applied to competitive sports. Goal
-setting and motivation are key strategies in long-term development and growth.
-Arousal regulation before a session can affect driver focus and can have
-physiological and therefore performance effects.
+setting and motivation are critical in long-term development and growth.
+Arousal regulation before a session can affect the driver's focus and
+physiologic state, which in turn can affect performance.
 
 ## Future Research
 Determining how to apply the strategies in sports science is the kernel to
@@ -124,12 +124,12 @@ needs to be task-specific in order to take advantage of the principle of
 specificity.
 
 Driving specific training would involve developing a fitness routine that
-activates the muscle groups involved in high-speed vehicle maneuvering under
-the same conditions as in the race car cockpit. Understanding the muscular and
-physiological demands that the driver experiences can be used to derive
-training requirements. Determining the task-specific exercises which are
-maximally transferable to high-speed vehicle maneuvering is primary challenge
-in improving fitness variables and performance outcomes.
+exercises the body under the same conditions as in the race car cockpit.
+Understanding the muscular and physiological demands that the driver
+experiences can be used to derive training requirements. Determining the
+task-specific exercises which are maximally transferable to high-speed vehicle
+maneuvering is primary challenge in improving fitness variables and performance
+outcomes.
 
 # Perceptual Training
 A differentiating factor between experts and non-experts is their ability to
@@ -141,8 +141,8 @@ Improving the ability to perceive task-relevant information can be trained
 outside of the vehicle. Vestibular exercises are primarily used for concussion
 therapy. Can they be applied after periods of increased physiological demand to
 improve balance and coordination? Racing simulators can be used to emulate the
-visual stimuli of high-speed vehicle maneuvering, and can be integrated into a
-training routine to emulate conditions in the cockpit.
+visual and audible stimuli of high-speed vehicle maneuvering, and can be
+integrated into a training routine to emulate conditions in the race car.
 
 # Optimal Control
 With the rise of autonomous vehicles, can the same technology be used to bring
@@ -158,9 +158,9 @@ performance.
 
 ## Conclusion
 The complexities of high-speed vehicle maneuvering demands maximum performance
-from  both the racing driver and race car. Understanding the conditions
-necessary success is the basis of an integrated and comprehensive driver
-development program.
+from  both the race car and racing driver. Understanding the necessary
+conditions for success forms the basis of an integrated and comprehensive
+driver development program.
 
 There is no avoiding human factors in this sport regardless of if you are an
 amateur or a professional. Vehicle performance and track safety are dependent
@@ -170,9 +170,9 @@ enjoyable for everyone.
 
 "The Science of Motorsport" succeeds in bringing evidence-based research to the
 racing driver problem. Combined with existing literature in high-speed vehicle
-maneuvering, it presents enormous value by meaningful context into the sport; a
-must read for anyone who is serious about improving themselves as a racing
-driver.
+maneuvering, it presents enormous value by providing meaningful context into
+the sport; a must read for anyone who is serious about improving themselves as
+a racing driver.
 
 ## References
 1. Milliken, William F. “Maurice Olley.” Milliken Research Associates. SAE Automotive Dynamics and Stability Conference, Mar. 2019, Troy, Michigan, www.millikenresearch.com/MauriceOlleybyWFMilliken.pdf.
