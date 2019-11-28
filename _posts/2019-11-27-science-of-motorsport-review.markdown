@@ -92,12 +92,11 @@ performance engineering. With the rise of CAN and OBD-II enabled systems, the
 data acquisition system has become an indispensable tool for professionals and
 amateurs alike.
 
-Interestingly, the same pervasiveness has not yet extended to the racing
-driver, both on and off the race track. Both subjective and objective
-measurements can provide insight into human performance. Off the race track,
-conventional metrics can be used to assess physical fitness. These metrics
-include VO2max, lactate threshold, strength tests results and physiological
-measures.
+Interestingly, the same pervasiveness has not yet extended to the racing driver
+both on and off the race track. Both subjective and objective measurements can
+provide insight into human performance. Off the race track, conventional
+metrics can be used to assess physical fitness. These metrics include VO2max,
+lactate threshold, strength tests results and physiological measures.
 
 # Mental Skills
 High-speed vehicle maneuvering is a cognitively demanding task that requires a
@@ -133,16 +132,17 @@ outcomes.
 
 # Perceptual Training
 A differentiating factor between experts and non-experts is their ability to
-process sports specific information. Unlike an aircraft pilot who relies on
-flight instruments, the racing driver must integrate perceptual information to
-plan and control the racing vehicle.
+process sports specific information. Unlike an aircraft pilots who relies on
+flight instruments over their senses, the racing driver must integrate
+perceptual information to plan and control the racing vehicle.
 
 Improving the ability to perceive task-relevant information can be trained
 outside of the vehicle. Vestibular exercises are primarily used for concussion
 therapy. Can they be applied after periods of increased physiological demand to
 improve balance and coordination? Racing simulators can be used to emulate the
-visual and audio stimuli of high-speed vehicle maneuvering, and can be
-integrated into a training routine to emulate the conditions in a race car.
+visual and audio stimuli of high-speed vehicle maneuvering. The availability of
+high quality simulation programs means they can be integrated into a
+task-specific training program.
 
 # Optimal Control
 With the rise of autonomous vehicles, can the same technology be used to bring
