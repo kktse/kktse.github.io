@@ -132,7 +132,7 @@ outcomes.
 
 # Perceptual Training
 A differentiating factor between experts and non-experts is their ability to
-process sports specific information. Unlike an aircraft pilots who relies on
+process sports specific information. Unlike an aircraft pilot who relies on
 flight instruments over their senses, the racing driver must integrate
 perceptual information to plan and control the racing vehicle.
 
