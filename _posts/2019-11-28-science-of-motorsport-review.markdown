@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Book Retrospective - The Science of Motorsport
-date:   2019-10-19 13:15:00 -0400
+date:   2019-11-28 9:15:00 -0400
 categories: jekyll update
 ---
 
