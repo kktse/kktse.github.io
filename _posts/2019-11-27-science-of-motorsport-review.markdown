@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Book Retrospective - The Science of Motorsport
-date:   2019-11-28 9:15:00 -0400
+date:   2019-11-27 17:15:00 -0400
 categories: jekyll update
 ---
 
@@ -51,11 +51,11 @@ physiological demands, nutritional requirements, psychological considerations to
 track safety. Each chapter is written by a subject expert contributor and is
 supported by numerous external citations.
 
-Each chapter is sufficiently structured to be read independently. They are
-however, ordered to intentionally to build upon the idea of the driver-athlete
-to make the same case for team success and track safety. Human performance is
-not limited to just the racing driver, but to pit crews and safety teams
-working along side the racing driver.
+Each chapter is sufficiently structured to be read independently. However, they
+are ordered intentionally to build upon the idea of the driver-athlete to make
+the same case for team success and track safety. Human performance is not
+limited to just the racing driver, but to pit crews and safety teams working
+along side the racing driver.
 
 "The Science of Motorsport" is not without caveats; there is no _recipe_ for
 improving your driving skill and it lacks actionable tools described in many
@@ -141,8 +141,8 @@ Improving the ability to perceive task-relevant information can be trained
 outside of the vehicle. Vestibular exercises are primarily used for concussion
 therapy. Can they be applied after periods of increased physiological demand to
 improve balance and coordination? Racing simulators can be used to emulate the
-visual and audible stimuli of high-speed vehicle maneuvering, and can be
-integrated into a training routine to emulate conditions in the race car.
+visual and audio stimuli of high-speed vehicle maneuvering, and can be
+integrated into a training routine to emulate the conditions in a race car.
 
 # Optimal Control
 With the rise of autonomous vehicles, can the same technology be used to bring
@@ -157,7 +157,7 @@ basis which could be transferred to human drivers to rapidly achieve maximum
 performance.
 
 ## Conclusion
-The complexities of high-speed vehicle maneuvering demands maximum performance
+The complexity of high-speed vehicle maneuvering demands maximum performance
 from  both the race car and racing driver. Understanding the necessary
 conditions for success forms the basis of an integrated and comprehensive
 driver development program.
@@ -179,4 +179,4 @@ a racing driver.
 1. Potkanowicz, Edward S., and Ronald W. Mendel. “The Case for Driver Science in Motorsport: A Review and Recommendations.” Sports Medicine 43, no. 7 (July 2013): 565–74. https://doi.org/10.1007/s40279-013-0040-2.
 1. Leeuwen, Peter M. van, Stefan de Groot, Riender Happee, and Joost C. F. de Winter. “Differences between Racing and Non-Racing Drivers: A Simulator Study Using Eye-Tracking.” Edited by Jun Xu. PLOS ONE 12, no. 11 (November 9, 2017): e0186871. https://doi.org/10.1371/journal.pone.0186871.
 1. Ferguson, David P., ed. The Science of Motorsport. New York: Routledge, 2018.
-
+1. “Airman Education Programs.” FAA seal, November 18, 2010. https://www.faa.gov/pilots/training/airman_education/topics_of_interest/spatial_disorientation/.
