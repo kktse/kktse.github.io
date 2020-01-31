@@ -35,7 +35,7 @@ parameters from the suspension points. Below is a comparison between the actual
 suspension and our model. We are using our own custom analysis routines and
 using a CAD package to visualize the results.
 
-![actual_rsx_suspension](/assets/images/2020-01-30/rsx_front_suspension.JPG){:width="49%"} ![simulation_model_suspension](/assets/images/2020-01-30/rsx-quarter-iso-resize.png){:width="49%"}
+![actual rsx suspension](/assets/images/2020-01-30/rsx_front_suspension.JPG){:width="49%"} ![simulation model suspension](/assets/images/2020-01-30/rsx-quarter-iso-resize.png){:width="49%"}
 
 ## Kinematic Instant Axis
 The kinematic instant axis in a MacPherson strut is defined by two planes: an
@@ -50,7 +50,7 @@ instant centre. This point is important because it influences how the wheel
 forces are reacted and controls the wheel motion in bump. The front view
 instant center and the roll center height is shown in the figure below:
 
-![ic_front](/assets/images/2020-01-30/rsx-front-ic-markup.png)
+![ic front](/assets/images/2020-01-30/rsx-front-ic-markup.png)
 
 
 # Side View
@@ -61,7 +61,7 @@ centre is located above the wheel centre in height. This suggests some amount
 of anti-lift and anti-dive geometry. The side view instant center is shown in
 the figure below:
 
-![ic_side](/assets/images/2020-01-30/rsx-side-ic-markup.png)
+![ic side](/assets/images/2020-01-30/rsx-side-ic-markup.png)
 
 
 ## Steer Axis
@@ -74,8 +74,8 @@ loss the more the wheels are turned. Typical of front wheel drive vehicles is a
 small amount of negative scrub which we can observe in this example. These
 properties can be seen in the figures below:
 
-![steering](/assets/images/2020-01-30/rsx-front-view-steering-markup.png)
-![steering](/assets/images/2020-01-30/rsx-side-view-steering-markup.png)
+![steering front](/assets/images/2020-01-30/rsx-front-view-steering-markup.png)
+![steering side](/assets/images/2020-01-30/rsx-side-view-steering-markup.png)
 
 
 ## Motion Ratios
@@ -91,7 +91,7 @@ typical values quoted in the community. We are calculating the motion ratio in
 consideration of the full strut and lower control arm geometry resulting in a
 value that is less than a simplified calculation.
 
-![steering](/assets/images/2020-01-30/rsx-front-view-markup.png)
+![motion ratios](/assets/images/2020-01-30/rsx-front-view-markup.png)
 
 ## Conclusion
 Obtaining suspension points and analyzing its geometry is a tedious but
