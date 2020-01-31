@@ -9,8 +9,7 @@ categories: jekyll update
 # Introduction
 The suspension system plays an important role in vehicle handling.
 Manufacturers design their vehicles to achieve a balance of good ride, handling
-and feeling. This balance is delicate, and modifying your car can therefore
-have unintended consequences. When preparing your car for on-track use,
+and feeling. This balance is delicate, and modifying your car can therefore have unintended consequences. When preparing your car for on-track use,
 suspension analysis can help quantify these effects.
 
 With suspension analysis out of reach to the typical enthusiast, an analysis of
@@ -70,8 +69,8 @@ the lower ball joint. The steer axis is important to study because it controls
 the wheel motion in steering and will influence the steering feeling and
 feedback. The front suspension has a substantial amount of kingpin inclination
 angle and very little caster angle. This suggests there will be negative camber
-loss the more the wheels are turned. Typical of front wheel drive vehicles is a
-small amount of negative scrub which we can observe in this example. These
+loss as the wheels are turned. Typical of front wheel drive vehicles is a small
+amount of negative scrub which we can observe in this example. The steering
 properties can be seen in the figures below:
 
 ![steering front](/assets/images/2020-01-30/rsx-front-view-steering-markup.png)
@@ -86,8 +85,8 @@ bending loads in the strut. This is important to note because installing a coil
 over kit will reduce the motion ratio of the spring and increase the bending
 loads on the strut.
 
-You will notice that the motion ratios are presented here are lower than
-typical values quoted in the community. We are calculating the motion ratio in
+You will notice that the motion ratios presented here are lower than typical
+values quoted in the community. We are calculating the motion ratio in
 consideration of the full strut and lower control arm geometry resulting in a
 value that is less than a simplified calculation.
 
@@ -104,7 +103,7 @@ early Honda design.
 In this installment, we focused our efforts strictly on the suspension geometry
 but have not yet discussed another important topic: kinematics. In our next
 installment, we will discuss in more detail what happens when the suspension
-begins to move in heave and steer.
+begins to move in bump and steer.
 
 {:refdef: style="text-align: center;"}
 ![owt](/assets/images/2020-01-30/rsx-front-owt.gif)
