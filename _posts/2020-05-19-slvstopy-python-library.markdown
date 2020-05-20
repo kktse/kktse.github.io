@@ -32,7 +32,7 @@ Kinematic analysis of an automotive suspension consists of four parts:
 1. Post-process the results
 1. Automotive specific analysis
 
-The [`slvstopy`](https://github.com/kktse/slvstopy) library is used to solve
+The [`slvstopy`](https://github.com/kktse/slvstopy) library aids in solving
 the geometric constraint problem such that the solution can be post-processed
 outside of [SolveSpace](https://solvespace.com/index.pl).
 
