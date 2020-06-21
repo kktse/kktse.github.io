@@ -25,7 +25,7 @@ Kinematic simulation is an analysis tool that predicts the wheel motion by
 virtually displacing it in bump and steer. This is done by entering the
 suspension coordinates into a kinematics solver.
 
-Suspension coordinates are not readily available for most road vehicles and
+Suspension coordinates are typically not made available for road cars and
 require measurements from the car. The suspension coordinates used in this
 study are obtained by our own testing. The image below shows the front
 suspension geometry of the Acura RSX.
@@ -36,8 +36,8 @@ suspension geometry of the Acura RSX.
 
 In this study, we use the kinematic simulation to articulate a quarter car
 model. From the simulation output, we can study the wheel plane motion to
-bnvestigate how well the tire is being controlled. The motions are visualized
-kelow.
+investigate how well the tire is being controlled. The motions are visualized
+below.
 
 <video autoplay loop mute controls>
   <source src="/assets/images/2020-06-21/heave.webm" type="video/webm">
@@ -63,15 +63,15 @@ patch therefore causing tire slip.
 
 ![half track variation](/assets/images/2020-06-21/rsx-half-track.png)
 
-In both bump and steer, there are regions where the half track increases. In
-bump, that region is between +0mm and +83mm. In steer, that region is between
--4deg and +0deg. You can expect the half track to vary from anywhere from -20mm
-to +4mm as the suspension is articulated.
+In both bump and steer, there are regions where the half track increase is
+positive. In bump, that region is between +0mm and +83mm. In steer, that region
+is between -4deg and +0deg. You can expect the half track to vary from anywhere
+from -20mm to +4mm as the suspension is articulated.
 
 ## Camber variation
-Tires are sensitive to the inclination angle. In other words, the tire is
-sensitive to the lean angle relative to the road. The camber variation helps to
-control the tire inclination angle as the chassis is in roll.
+Tires are sensitive to inclination angle. In other words, the tire is sensitive
+to the lean angle relative to the road. The camber variation helps to control
+the tire inclination angle as the chassis is in roll.
 
 ![camber variation](/assets/images/2020-06-21/rsx-camber.png)
 
@@ -93,9 +93,9 @@ omitted because the steering directly changes the front toe angle.
 ![toe variation](/assets/images/2020-06-21/rsx-toe.png)
 
 The wheel plane tends to toe-in with bump for most of the suspension travel. At
-+122mm of bump, the wheel plane begins to toe-out; however, this is near the
-end of the suspension travel and the wheel plane already has substantial toe-in
-at -2.6deg.
++122mm of bump, maximum toe-in is achieved and the steered angle begins to
+increase. This happens near the end of the suspension travel where the wheel
+plane already has substantial toe-in at -2.6deg.
 
 ## Final comments
 Wheel plane control is a foundational part of suspension kinematic analysis.
