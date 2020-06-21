@@ -70,8 +70,8 @@ from -20mm to +4mm as the suspension is articulated.
 
 ## Camber variation
 Tires are sensitive to inclination angle. In other words, the tire is sensitive
-to the lean angle relative to the road. The camber variation helps to control
-the tire inclination angle as the chassis is in roll.
+to the lean angle relative to the road. The camber variation helps control the
+tire inclination angle as the chassis is in roll.
 
 ![camber variation](/assets/images/2020-06-21/rsx-camber.png)
 
@@ -84,7 +84,7 @@ inclination angle and small caster angle built into the RSX front suspension
 geometry.
 
 ## Toe variation
-The change in the toe angle with bump is the toe variation, also known as _bump
+The change in toe angle with bump is the toe variation, also known as _bump
 steer_. When looking at the axle as a whole, the combined toe variation of each
 wheel results in _roll steer_. Toe variation is depicted with _steered angle_
 to match the sign convention used in other graphs. The steering graph is
