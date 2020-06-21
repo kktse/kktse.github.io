@@ -98,14 +98,16 @@ increase. This happens near the end of the suspension travel where the wheel
 plane already has substantial toe-in at -2.6deg.
 
 ## Final comments
-Wheel plane control is a foundational part of suspension kinematic analysis.
-Kinematic simulation is a tool that can dramatically reduce the cost of
-understanding as it delivers insight into the suspension characteristics.
+There are many interesting properties of the McPherson strut design on the
+Acura RSX front suspension. The wheel plane control is intriguing near the end
+of its suspension travel. Because cars are commonly modified and lowered for
+track use, this represents a challenge for vehicle setup and tuning.
 
-With the Acura RSX, there are interesting properties of the McPherson strut
-design. The wheel plane control is intriguing near the end of its suspension
-travel. Because vehicles are commonly modified and lowered for track use, this
-represents a challenge for vehicle setup and tuning.
+Kinematic simulation is a powerful tool in understanding the effects of the
+suspension geometry. In this analysis, we looked at wheel plane control as the
+first building block of our understanding. While wheel plane control is a
+foundational part of kinematic analysis, there is much more that numerical
+simulation can do to aid in vehicle setup.
 
 ## Acknowledgements
 I would like to acknowledge **Ping Zhang** at <a
