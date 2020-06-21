@@ -117,5 +117,5 @@ suspension points for this study.
 
 ## References
 1. Milliken, William F., and Douglas L. Milliken. _Race car vehicle dynamics_. Vol. 400. Warrendale: Society of Automotive Engineers, 1995.
-1. Blundell, Michael, and Damian Harty. Multibody systems approach to vehicle dynamics. Elsevier, 2004.
+1. Blundell, Michael, and Damian Harty. _Multibody systems approach to vehicle dynamics_. Elsevier, 2004.
 
