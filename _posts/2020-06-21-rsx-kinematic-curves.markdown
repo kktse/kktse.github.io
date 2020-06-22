@@ -25,7 +25,7 @@ Kinematic simulation is an analysis tool that predicts the wheel motion by
 virtually displacing it in bump and steer. This is done by entering the
 suspension coordinates into a kinematics solver.
 
-Suspension coordinates are typically not made available for road cars and
+Suspension coordinates are not typically made available for road cars and
 require measurements from the car. The suspension coordinates used in this
 study are obtained by our own testing. The image below shows the front
 suspension geometry of the Acura RSX.
@@ -63,7 +63,7 @@ patch therefore causing tire slip.
 
 ![half track variation](/assets/images/2020-06-21/rsx-half-track.png)
 
-In both bump and steer, there are regions where the half track increase is
+In both bump and steer, there are regions where the half track displacement is
 positive. In bump, that region is between +0mm and +83mm. In steer, that region
 is between -4deg and +0deg. You can expect the half track to vary from anywhere
 from -20mm to +4mm as the suspension is articulated.
@@ -103,9 +103,9 @@ Acura RSX front suspension. The wheel plane control is intriguing near the end
 of its suspension travel. Because cars are commonly modified and lowered for
 track use, this represents a challenge for vehicle setup and tuning.
 
-Kinematic simulation is a powerful tool in understanding the effects of the
+Kinematic simulation is a powerful tool for understanding the effects of the
 suspension geometry. In this analysis, we looked at wheel plane control as the
-first building block of our understanding. While wheel plane control is a
+initial building block of our understanding. While wheel plane control is a
 foundational part of kinematic analysis, there is much more that numerical
 simulation can do to aid in vehicle setup.
 
