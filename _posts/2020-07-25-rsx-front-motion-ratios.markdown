@@ -65,9 +65,9 @@ The spring motion ratio is the ratio between the spring length and the wheel
 centre vertical displacement.
 
 The MacPherson strut front suspension on the Acura RSX uses a coil spring
-that is offset from the strut axis. OEMs do this to reduce the bending loads
-in the strut. We assume that the coil spring is collinear with the steering
-axis as an approximation of the line of action.
+that is offset from the strut axis. Manufacturers do this to reduce bending
+loads in the strut. We assume that the coil spring is collinear with the
+steering axis as an approximation of the line of action.
 
 <video autoplay loop mute controls>
   <source src="/assets/images/2020-07-25/motion-ratio-spring.webm" type="video/webm">
