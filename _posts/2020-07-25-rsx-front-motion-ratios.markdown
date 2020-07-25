@@ -7,7 +7,7 @@ categories: jekyll update
 {% include mathjax.html %}
 
 {:refdef: style="text-align: center;"}
-![rsx quarter car](/assets/images/2020-07-03/rsx-quarter-cover.jpg)
+![rsx quarter car](/assets/images/2020-07-25/rsx-quarter-cover.jpg)
 {:refdef}
 
 ## Introduction
@@ -70,7 +70,7 @@ in the strut. We assume that the coil spring is collinear with the steering
 axis as an approximation of the line of action.
 
 <video autoplay loop mute controls>
-  <source src="/assets/images/2020-07-03/motion-ratio-spring.webm" type="video/webm">
+  <source src="/assets/images/2020-07-25/motion-ratio-spring.webm" type="video/webm">
 </video>{:style="display: block; margin: 0 auto; max-width: 100%;"}
 
 ### Dampers
@@ -80,11 +80,11 @@ wheel centre vertical displacement.
 
 Because the damper is engaged on a different line of action than the spring,
 the damper needs to be studied separately. On the Acura RSX, the damper axis
-is slightly inset from the steering axis, likely for packaging reasons. This
+is slightly offset from the steering axis, likely for packaging reasons. This
 is the ratio of interest if you have a coil over kit installed on your car.
 
 <video autoplay loop mute controls>
-  <source src="/assets/images/2020-07-03/motion-ratio-damper.webm" type="video/webm">
+  <source src="/assets/images/2020-07-25/motion-ratio-damper.webm" type="video/webm">
 </video>{:style="display: block; margin: 0 auto; max-width: 100%;"}
 
 ### Anti-roll bar
@@ -101,7 +101,7 @@ provides resistance as it is twisted. There are several ways to define the
 anti-roll bar motion ratio. Use the correct definition for your calculations!
 
 <video autoplay loop mute controls>
-  <source src="/assets/images/2020-07-03/motion-ratio-arb.webm" type="video/webm">
+  <source src="/assets/images/2020-07-25/motion-ratio-arb.webm" type="video/webm">
 </video>{:style="display: block; margin: 0 auto; max-width: 100%;"}
 
 ### Steering
@@ -116,7 +116,7 @@ wheel angle and the steering rack displacement. This motion is visualized
 below:
 
 <video autoplay loop mute controls>
-  <source src="/assets/images/2020-07-03/motion-ratio-steering.webm" type="video/webm">
+  <source src="/assets/images/2020-07-25/motion-ratio-steering.webm" type="video/webm">
 </video>{:style="display: block; margin: 0 auto; max-width: 100%;"}
 
 ## Analysis
@@ -124,19 +124,19 @@ below:
 With the strut being the primary component reacting handling loads, we will
 start with the motion ratios of the spring and damper.
 
-![strut motion ratios](/assets/images/2020-07-03/rsx-mr-strut.svg)
+![strut motion ratios](/assets/images/2020-07-25/rsx-mr-strut.svg)
 
 A unique property of the MacPherson strut design is the near unity motion
 ratio. Because the strut is attached to the knuckle, it must displace a
 similar amount. The damper motion ratio is slightly lower than the spring
-motion ratio; however, this is expected because they act on different lines
+motion ratio; however, this is expected because they are on different lines
 of action.
 
 Moving to the next resistive element, we can study the anti-roll bar motion
 ratio. The motion ratio is no longer dimensionless because it is between an
 angular and linear quantity.
 
-![sway bar motion ratio](/assets/images/2020-07-03/rsx-mr-arb.svg)
+![sway bar motion ratio](/assets/images/2020-07-25/rsx-mr-arb.svg)
 
 The anti-roll bar motion ratio is varies slightly near nominal ride height.
 Beyond +25 mm of bump the motion ratio steadily decreases up to the end of
@@ -146,7 +146,7 @@ Lastly, we have the steering motion ratio represented by the rack to road
 wheel angle ratio. In this scenario, a positive rack displacement causes the
 tires to steer to right.
 
-![steering rack ratio](/assets/images/2020-07-03/rsx-mr-steer.svg)
+![steering rack ratio](/assets/images/2020-07-25/rsx-mr-steer.svg)
 
 It is apparent that the steering ratio is not constant left to right. Given
 that the steering ratio increases as the front left wheel steers to the left,
@@ -161,7 +161,7 @@ values can be be used in a roll stiffness worksheet to quantify the effects
 of spring rate on handling.
 
 The use of kinematic simulation allows the suspension to be analyzed in ways
-not possible in just a garage. Simulation allows you to analyze a design
+not possible in a typical garage. Simulation allows you to analyze a design
 without the cost and time investment of physically testing for all
 parameters. With some ingenuity and effort, these tools need not be out of
 reach.
