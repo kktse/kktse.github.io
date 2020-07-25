@@ -7,7 +7,7 @@ categories: jekyll update
 {% include mathjax.html %}
 
 {:refdef: style="text-align: center;"}
-![rsx quarter car](/assets/images/2020-07-03/rsx-quarter-cover.png)
+![rsx quarter car](/assets/images/2020-07-03/rsx-quarter-cover.jpg)
 {:refdef}
 
 ## Introduction
@@ -22,7 +22,7 @@ The motion ratio is the displacement ratio of one element to another. This
 ratio is important when considering resistive mechanical elements because it
 represents the mechanical advantage (or disadvantage) it has from a certain
 location. This means the spring rate you install on your car is not
-necessarily the effective spring rate experienced at the wheel.
+necessarily the effective spring rate at the wheel.
 
 To demonstrate this concept, we will analyze the Acura RSX front suspension
 and compute the motion ratios using kinematic simulation.
@@ -155,14 +155,14 @@ this would indicate pro-Ackermann steering.
 ## Final Comments
 
 Knowing the motion ratios of your car is critical for proper vehicle setup.
-We found that the Acura RSX front suspension has near unity spring and damper
+We found the Acura RSX front suspension has near unity spring and damper
 motion ratios. We also characterized the sway bar twist motion ratio. These
 values can be be used in a roll stiffness worksheet to quantify the effects
 of spring rate on handling.
 
 The use of kinematic simulation allows the suspension to be analyzed in ways
-not typically feasible in a home garage. Simulation allows you to analyze a
-design without the cost and time investment to physically test for all
+not possible in just a garage. Simulation allows you to analyze a design
+without the cost and time investment of physically testing for all
 parameters. With some ingenuity and effort, these tools need not be out of
 reach.
 
