@@ -138,9 +138,9 @@ angular and linear quantity.
 
 ![sway bar motion ratio](/assets/images/2020-07-25/rsx-mr-arb.svg)
 
-The anti-roll bar motion ratio is varies slightly near nominal ride height.
-Beyond +25 mm of bump the motion ratio steadily decreases up to the end of
-the suspension travel.
+The anti-roll bar motion ratio varies slightly near nominal ride height.
+Beyond +25 mm of bump the motion ratio steadily decreases up to the end of the
+suspension travel.
 
 Lastly, we have the steering motion ratio represented by the rack to road
 wheel angle ratio. In this scenario, a positive rack displacement causes the
