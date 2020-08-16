@@ -2,7 +2,7 @@
 layout: post
 title: Kinematic curves of the Acura RSX front suspension
 date: 2020-06-21 14:30:00 -0400
-categories: jekyll update
+categories: [suspension, kinematics, acura rsx]
 ---
 
 {% include mathjax.html %}

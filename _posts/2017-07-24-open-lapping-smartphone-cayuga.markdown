@@ -2,8 +2,9 @@
 layout: post
 title:  "Open Lapping with a Smartphone at Cayuga"
 date:   2017-07-24 23:15:00 -0400
-categories: jekyll update
+categories: [lapping, data visualization]
 ---
+
 There are several apps for your smartphone that can measure vehicle data and
 log outing information while you drive. Making the most of this information can
 be tricky; limited access to sensor data and low sampling rates obfuscates the

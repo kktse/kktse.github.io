@@ -2,8 +2,9 @@
 layout: post
 title:  "Super Lap Battle USA 2019 Timing Results"
 date:   2019-02-16 16:15:00 -0400
-categories: jekyll update
+categories: [super lap battle, data visualization]
 ---
+
 Time Attack is a form of motorsport to compete for the best time. With Super
 Lap Battle being this weekend, I wanted to know the end-of-day team rankings
 and lap times. The timing source does not aggregate lap times from all

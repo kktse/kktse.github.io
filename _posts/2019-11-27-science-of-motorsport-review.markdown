@@ -2,7 +2,7 @@
 layout: post
 title:  Book Retrospective - The Science of Motorsport
 date:   2019-11-27 17:15:00 -0400
-categories: jekyll update
+categories: [driver science, books]
 ---
 
 This year's racing season was marked by a shift in focus from the vehicle to

@@ -2,7 +2,7 @@
 layout: post
 title:  "OTA 2018 Debrief: Cornering Compliances and Transients"
 date:   2019-01-06 18:45:00 -0400
-categories: jekyll update
+categories: [vehicle dynamics, simulation, ontario time attack]
 ---
 
 <script type="text/javascript" async

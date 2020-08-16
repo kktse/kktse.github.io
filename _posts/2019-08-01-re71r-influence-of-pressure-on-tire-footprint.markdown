@@ -2,7 +2,7 @@
 layout: post
 title:  "Choosing Tire Pressure using Static Contact Patch Measurements"
 date:   2019-08-01 15:15:00 -0400
-categories: jekyll update
+categories: [tires]
 ---
 
 ![cover](/assets/images/2019-08-01/991-honda-civic.jpg)

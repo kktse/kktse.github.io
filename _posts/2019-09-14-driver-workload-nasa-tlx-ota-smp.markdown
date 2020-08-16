@@ -2,7 +2,7 @@
 layout: post
 title:  "Measuring Driving Workload using NASA TLX"
 date:   2019-09-14 17:15:00 -0400
-categories: jekyll update
+categories: [driver science]
 ---
 
 ![cover](/assets/images/2019-09-14/ping-civic-smp.jpg)

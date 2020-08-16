@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  Analysis of the Acura RSX front suspension geometry
-categories: jekyll update
+title: Analysis of the Acura RSX front suspension geometry
+modified_date: 2019-07-25
+categories: [suspension, acura rsx]
 ---
 
 ![rsx cover photo](/assets/images/2020-01-30/rsx_cover.jpg)
