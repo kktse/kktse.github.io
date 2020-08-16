@@ -2,7 +2,7 @@
 layout: post
 title:  "Lateral Dynamics of a Linear Single-Track Vehicle"
 date:   2018-09-18 19:15:00 -0400
-categories: jekyll update
+categories: [vehicle dynamics, simulation]
 ---
 
 <script type="text/javascript" async

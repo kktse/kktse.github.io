@@ -2,7 +2,7 @@
 layout: post
 title:  "'Driver Science' and its role in amateur motorsports"
 date:   2019-07-15 13:15:00 -0400
-categories: jekyll update
+categories: [driver science]
 ---
 
 Success in motorsport requires total system performance; car and driver must

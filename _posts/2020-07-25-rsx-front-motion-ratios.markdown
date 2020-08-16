@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Motion ratio curves of the Acura RSX front suspension
-categories: jekyll update
+categories: [suspension, kinematics, acura rsx]
 ---
 
 {% include mathjax.html %}
@@ -25,9 +25,7 @@ location. This means the spring rate you install on your car is not
 necessarily the effective spring rate at the wheel.
 
 To demonstrate this concept, we will analyze the Acura RSX front suspension
-and compute the motion ratios using kinematic simulation.
-
-## Motion ratios
+and compute the motion rat#GitHub Pagess
 
 Because there are different ways of defining the motion ratio, it is
 important to have the same understanding to prevent confusion. In this

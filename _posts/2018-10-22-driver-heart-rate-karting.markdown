@@ -2,7 +2,7 @@
 layout: post
 title:  "Driver Heart Rate Monitoring with a Smartwatch"
 date:   2018-10-25 22:00:00 -0400
-categories: jekyll update
+categories: [driver science, heart rate, wearables]
 ---
 
 ![Goodwood](/assets/images/2018-10-25/goodwoodlupusgp18.jpg)

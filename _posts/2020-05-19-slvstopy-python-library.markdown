@@ -2,7 +2,7 @@
 layout: post
 title: slvstopy - a Python library to read SolveSpace drawings
 date: 2020-05-19 22:15:00 -0400
-categories: jekyll update
+categories: [solvespace, python]
 ---
 
 [`slvstopy`](https://github.com/kktse/slvstopy) is a Python library for

@@ -2,7 +2,7 @@
 layout: post
 title:  "Cornering Compliances of a Typical Road Vehicle"
 date:   2019-06-01 15:00:00 -0400
-categories: jekyll update
+categories: [vehicle dynamics, simulation]
 ---
 
 <script type="text/javascript" async

@@ -2,8 +2,9 @@
 layout: post
 title:  "Analyzing the Live Timing - ChampCar Road Atlanta Edition"
 date:   2018-02-08 15:15:00 -0400
-categories: jekyll update
+categories: [champcar, data visualization]
 ---
+
 It is difficult not to be impressed by the live coverage put out by the
 ChampCar team considering it is an amateur racing series. So when I tuned in to
 this year's race at Road Atlanta, I was pleasantly surprised to find [live

@@ -2,7 +2,7 @@
 layout: post
 title:  "OTA 2018 Debrief: On-Centre Vehicle Handling"
 date:   2019-02-13 07:15:00 -0400
-categories: jekyll update
+categories: [vehicle dynamics, simulation, ontario time attack]
 ---
 
 <script type="text/javascript" async
