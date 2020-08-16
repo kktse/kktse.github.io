@@ -14,7 +14,7 @@ full-stack developer.
 
 In my spare time, I study _vehicle dynamics_; the study of road vehicles in
 motion. I combine numerical simulation with practical experimentation to
-examine concepts in vehicle dynamics. You'll often find me at your local race
+examine concepts in vehicle dynamics. You'll often find me at the local race
 track with <a href="https://www.facebook.com/FormulaDeltaConsult"><svg
 class="svg-icon"><use
 xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg><span
