@@ -19,6 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   vehicle dynamics from scratch
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kktse.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /jekyll/update/:year/:month/:day/:title:output_ext
 repository: kktse/kktse.github.io
 github_username: kktse
 linkedin_username: ktse
