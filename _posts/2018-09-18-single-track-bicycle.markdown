@@ -2,6 +2,7 @@
 layout: post
 title:  "Lateral Dynamics of a Linear Single-Track Vehicle"
 date:   2018-09-18 19:15:00 -0400
+modified_date: 2020-08-25
 categories: [vehicle dynamics, simulation]
 ---
 
@@ -154,8 +155,8 @@ non-zero longitudinal velocities.
 Given the base assumptions, we can develop a set of linear differential
 equations with lateral velocity and yaw velocity as state variables.
 
-As the model is presented as a linear set of differential equations,
-state-space and transfer function representations are provided.
+Differential, state-space and transfer function representations of the model
+are provided.
 
 #### Differential Form
 
