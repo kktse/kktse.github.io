@@ -141,12 +141,16 @@ centre flip sides near the end of its jounce travel. This is why we see such
 poor kinematic wheel plane control in this region.
 
 Installing a coil over kit can be a double-edged sword. These kits often
-lower the ride height and causes the kinematic roll centre to go into the
+lower the ride height and can cause the kinematic roll centre to go into the
 ground. Carefully selected spring rates can offset this, but will make the
-problem worse if tuned incorrectly. Extended lower ball joints can offset the
-loss of kinematic roll centre height by relocating the lower control arm
-plane. These 'geometry correction kits' must be scrutinized as not all kits
-properly correct this phenomenon.
+problem worse if tuned incorrectly. Modified lower ball joints raise the
+kinematic roll centre by relocating the lower control arm plane. However, not
+all geometry correction kits are created equal and must be placed under
+scrutiny; some do not provide meaningful correction. Ride height effectively
+locates the kinematic roll centre and can be used as another form of
+adjustment. The Acura RSX front suspension was clearly designed to operate
+within a fixed range of suspension travel. Staying within this range is just
+one way preserving the Acura RSX's performance as intended by Honda.
 
 ## Acknowledgements
 
