@@ -84,11 +84,11 @@ kinematic roll centre height in bump is consistent across the wheel travel
 range.
 
 The kinematic instant centre flipping near the end of the suspension travel
-is worthy of mention even if not directly related to the kinematic roll
-centre analysis. We already discussed [kinematic wheel plane
+is noteworthy even if not directly related to the kinematic roll centre
+analysis. We already discussed [kinematic wheel plane
 control](/jekyll/update/2020/06/21/rsx-kinematic-curves.html) and how the
 Acura RSX front suspension is designed from the factory. This is one
-explanation for its poor performance near the end of the suspension travel.
+explanation for its poor performance near the end of its jounce travel.
 Suspension parameters are inter-related and this example highlights how
 parameters can affect each other.
 
@@ -97,10 +97,8 @@ parameters can affect each other.
 Studying the axle in **opposite wheel travel** simulates the axle in roll.
 Both wheels are displaced the same amount but in opposite directions. This is
 considered a contrived motion because in reality the axle is free to move in
-both heave and roll. Symmetry along the vehicle centre plane is no longer
-preserved and causes several analytical side-effects. Regardless of these
-caveats, the kinematic analysis for this motion is presented in trust that
-the data will be used correctly.
+both heave and roll. Despite this, it is still worth investigating due to the
+asymmetry created by the motion.
 
 <video autoplay loop mute controls>
   <source src="/assets/images/2020-09-07/rsx-owt-rc.webm" type="video/webm">
@@ -136,21 +134,18 @@ half track.
 MacPherson strut suspensions are limited because they have no upper
 suspension link. The angle of the lower control arm plane defines the
 position of the kinematic instant centre which in turn controls the kinematic
-roll centre height. The Acura RSX has a kinematic roll centre that quickly
-lowers into the ground with just over an inch of heave travel. We also
-observed the kinematic instant centre flip sides near the end of the
-suspension travel. This is why we see such poor kinematic wheel plane control
-in this region.
+roll centre height. The Acura RSX has a kinematic roll centre that lowers
+into the ground with just over an inch of heave travel. The kinematic instant
+centre flip sides near the end of its jounce travel. This is why we see such
+poor kinematic wheel plane control in this region.
 
 Installing a coil over kit can be a double-edged sword. These kits often
 lower the ride height and causes the kinematic roll centre to go into the
-ground. The choice of spring rates can potentially offset this, but will make
-the problem worse if tuned incorrectly. The choice of ride height not only
-serves to lower the vehicle centre of gravity, but as a means to control how
-handling loads are reacted. Alternatively, extended lower ball joints can
-offset the loss of kinematic roll centre height by relocating the lower
-control arm plane. These 'geometry correction kits' must be looked at with
-great caution as not all legitimately correct the suspension geometry.
+ground. Carefully selected spring rates can offset this, but will make the
+problem worse if tuned incorrectly. Extended lower ball joints can offset the
+loss of kinematic roll centre height by relocating the lower control arm
+plane. These 'geometry correction kits' must be scrutinized as not all kits
+properly correct the suspension geometry.
 
 ## Acknowledgements
 
