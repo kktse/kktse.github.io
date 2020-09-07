@@ -109,8 +109,8 @@ of action from the tire contact patch to their respective kinematic instant
 centres. You can see how opposite wheel travel causes the kinematic roll
 centre to move laterally and vertically. In this scenario, the kinematic roll
 centre moves towards the contact patch of the wheel in rebound before going
-into the ground. The relationship between the roll centre height and the
-chassis roll angle is shown in the graph below:
+into the ground. The relationship between the kinematic roll centre height
+and the chassis roll angle is shown in the graph below:
 
 ![opposite wheel travel roll centre height](/assets/images/2020-09-07/rsx-owt-rch.svg)
 
