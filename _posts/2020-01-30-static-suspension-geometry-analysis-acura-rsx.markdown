@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Analysis of the Acura RSX front suspension geometry
-modified_date: 2019-07-25
+modified_date: 2019-08-07
 categories: [suspension, acura rsx]
 ---
 
@@ -126,7 +126,7 @@ begins to move in bump and steer.
 |-----------------------------------------|-------| ------|
 | Instant centre height - front view      | 340   | mm    |
 | Instant centre length - front view      | 2641  | mm    |
-| Kinematic roll centre height            | 93    | mm    |
+| Kinematic roll centre height            | 96    | mm    |
 | Virtual swing axle length - front view  | 2612  | mm    |
 | Instant centre height - side view       | 518   | mm    |
 | Instant centre length - side view       | 11000 | mm    |
