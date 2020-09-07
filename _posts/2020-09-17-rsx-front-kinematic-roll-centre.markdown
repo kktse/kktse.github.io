@@ -18,7 +18,7 @@ the chassis. The roll centre concept considers this when loads are reacted.
 This is especially important for lowered vehicles on aftermarket coil overs
 without a geometry correction kit.
 
-The kinematic roll centre, although a virtual point in space, can be computed
+The kinematic roll centre, although a virtual point in space, can be found
 via computer simulation. We use the suspension points from an Acura RSX to
 study how the kinematic roll centre responds to chassis movement.
 
@@ -58,7 +58,7 @@ wheels are displaced by the same amount in the same direction. This analysis
 preserves some convenient properties; there is symmetry along the XZ-plane
 and the roadway banking angle stays constant at zero.
 
-<video autoplay loop mute controls playsinline>
+<video autoplay loop mute controls>
   <source src="/assets/images/2020-09-07/rsx-pwt-rc.webm" type="video/webm">
   <source src="/assets/images/2020-09-07/rsx-pwt-rc.mp4" type="video/mp4">
 </video>{:style="display: block; margin: 0 auto; max-width: 100%;"}
@@ -74,7 +74,8 @@ inspection:
 
 We can examine the kinematic roll centre height in more detail by quantifying
 its movement relative to the heave displacement. The graph below shows the
-roll centre height with respect to the contact patch vertical displacement.
+kinematic roll centre height with respect to the contact patch vertical
+displacement.
 
 ![parallel wheel travel roll centre height](/assets/images/2020-09-07/rsx-pwt-rch.svg)
 
@@ -89,7 +90,7 @@ is noteworthy even if not directly related to the kinematic roll centre
 analysis. We already discussed [kinematic wheel plane
 control](/jekyll/update/2020/06/21/rsx-kinematic-curves.html) and how the
 Acura RSX front suspension is designed from the factory. This is one
-explanation for its poor performance near the end of its jounce travel.
+explanation for its poor performance near the end of its bump travel.
 Suspension parameters are inter-related and this example highlights how
 parameters can affect each other.
 
@@ -145,7 +146,7 @@ ground. Carefully selected spring rates can offset this, but will make the
 problem worse if tuned incorrectly. Extended lower ball joints can offset the
 loss of kinematic roll centre height by relocating the lower control arm
 plane. These 'geometry correction kits' must be scrutinized as not all kits
-properly correct the suspension geometry.
+properly correct this phenomenon.
 
 ## Acknowledgements
 
