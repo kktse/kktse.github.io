@@ -72,6 +72,7 @@ steering axis as an approximation of the line of action.
 
 <video autoplay loop mute controls>
   <source src="/assets/images/2020-07-25/motion-ratio-spring.webm" type="video/webm">
+  <source src="/assets/images/2020-07-25/motion-ratio-spring.mp4" type="video/mp4">
 </video>{:style="display: block; margin: 0 auto; max-width: 100%;"}
 
 ### Dampers
@@ -86,6 +87,7 @@ is the ratio of interest if you have a coil over kit installed on your car.
 
 <video autoplay loop mute controls>
   <source src="/assets/images/2020-07-25/motion-ratio-damper.webm" type="video/webm">
+  <source src="/assets/images/2020-07-25/motion-ratio-damper.mp4" type="video/mp4">
 </video>{:style="display: block; margin: 0 auto; max-width: 100%;"}
 
 ### Anti-roll bar
@@ -103,6 +105,7 @@ anti-roll bar motion ratio. Use the correct definition for your calculations!
 
 <video autoplay loop mute controls>
   <source src="/assets/images/2020-07-25/motion-ratio-arb.webm" type="video/webm">
+  <source src="/assets/images/2020-07-25/motion-ratio-arb.mp4" type="video/mp4">
 </video>{:style="display: block; margin: 0 auto; max-width: 100%;"}
 
 ### Steering
@@ -118,6 +121,7 @@ below:
 
 <video autoplay loop mute controls>
   <source src="/assets/images/2020-07-25/motion-ratio-steering.webm" type="video/webm">
+  <source src="/assets/images/2020-07-25/motion-ratio-steering.mp4" type="video/mp4">
 </video>{:style="display: block; margin: 0 auto; max-width: 100%;"}
 
 ## Analysis

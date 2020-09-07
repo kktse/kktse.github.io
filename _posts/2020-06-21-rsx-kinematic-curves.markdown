@@ -41,10 +41,12 @@ below.
 
 <video autoplay loop mute controls>
   <source src="/assets/images/2020-06-21/heave.webm" type="video/webm">
+  <source src="/assets/images/2020-06-21/heave.mp4" type="video/mp4">
 </video>{:width="49%"}
 
 <video autoplay loop mute controls>
   <source src="/assets/images/2020-06-21/steer.webm" type="video/webm">
+  <source src="/assets/images/2020-06-21/steer.mp4" type="video/mp4">
 </video>{:width="49%"}
 
 Coordinates are referenced using the ISO vehicle coordinate system. For
