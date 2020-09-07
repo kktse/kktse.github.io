@@ -58,8 +58,9 @@ wheels are displaced by the same amount in the same direction. This analysis
 preserves some convenient properties; there is symmetry along the XZ-plane
 and the roadway banking angle stays constant at zero.
 
-<video autoplay loop mute controls>
+<video autoplay loop mute controls playsinline>
   <source src="/assets/images/2020-09-07/rsx-pwt-rc.webm" type="video/webm">
+  <source src="/assets/images/2020-09-07/rsx-pwt-rc.mp4" type="video/mp4">
 </video>{:style="display: block; margin: 0 auto; max-width: 100%;"}
 
 The animation shows the front axle in heave with lines representing the line
@@ -102,15 +103,14 @@ asymmetry created by the motion.
 
 <video autoplay loop mute controls>
   <source src="/assets/images/2020-09-07/rsx-owt-rc.webm" type="video/webm">
+  <source src="/assets/images/2020-09-07/rsx-owt-rc.mp4" type="video/mp4">
 </video>{:style="display: block; margin: 0 auto; max-width: 100%;"}
 
 The animation shows the front axle in roll with lines representing the line
 of action from the tire contact patch to their respective kinematic instant
 centres. You can see how opposite wheel travel causes the kinematic roll
 centre to move laterally and vertically. In this scenario, the kinematic roll
-centre moves towards the contact patch of the wheel in rebound before going
-into the ground. The relationship between the kinematic roll centre height
-and the chassis roll angle is shown in the graph below:
+centre moves towards the contact patch of the wheel in rebound before going into the ground. The relationship between the kinematic roll centre height and the chassis roll angle is shown in the graph below:
 
 ![opposite wheel travel roll centre height](/assets/images/2020-09-07/rsx-owt-rch.svg)
 
