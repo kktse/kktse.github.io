@@ -2,13 +2,11 @@
 layout: post
 title:  "Lateral Dynamics of a Linear Single-Track Vehicle"
 date:   2018-09-18 19:15:00 -0400
-modified_date: 2020-08-25
+modified_date: 2020-10-15
 categories: [vehicle dynamics, simulation]
 ---
 
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
+{% include mathjax.html %}
 
 ## Introduction
 
@@ -64,7 +62,7 @@ For a derivation using work-energy methods, please refer to Chapter 1.3, _Tyre
 
 #### Vehicle Properties
 * $$m$$ represents the vehicle mass [$$kg$$]
-* $$I$$ represents the vehicle yaw inertia [$$kg/m^2$$]
+* $$I$$ represents the vehicle yaw inertia [$$kg \cdot m^2$$]
 * $$l_a$$ represents the length from the chassis centre-of-gravity to the front axle [$$m$$]
 * $$l_b$$ represents the length from the chassis centre-of-gravity to the rear axle [$$m$$]
 * $$W_f$$ represents the vertical load on the front axle [$$N$$]
