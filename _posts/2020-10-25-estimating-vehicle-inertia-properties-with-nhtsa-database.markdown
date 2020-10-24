@@ -12,7 +12,7 @@ _PREFACE: this page is best experienced on desktop_
 Vehicle dynamic simulation relies on having known information about the
 vehicle under study. Vehicle mass and inertial properties are required for
 any meaningful handling simulation. These values are non-trivial to obtain
-and uses of highly specialized equipment to measure. Without access to a
+and makes use of highly specialized equipment to measure. Without access to a
 kinematics and compliance (K&C) machine or an inertia measurement rig,
 vehicle dynamic simulation is out-of-reach to most individuals outside of the
 automotive industry.
@@ -69,21 +69,21 @@ us with four inertial parameters of interest.
 * The yaw inertia, $$I_{zz}$$ in [$$kg \cdot m^2$$]
 * The roll/yaw product of inertia, $$I_{xz}$$ in [$$kg \cdot m^2$$]
 
-All four of these inertial parameters are non-trivial to obtain and will be
-in the scope of our discussion.
+All four inertial parameters are non-trivial to obtain and will be in scope
+of our discussion.
 
 ## Data treatment
 
-The NHTSA light vehicle inertial parameter database contains measurements for
+The NHTSA Light Vehicle Inertial Parameter Database contains measurements for
 a variety of different passenger vehicles in different loading loading
-conditions. Measurements that have ballast in the vehicle are excluded. If
-duplicate entry is found for a vehicle, only the first measurement is kept.
+conditions. Measurements that have ballast are excluded. If duplicate entry
+is found for a vehicle, only the first measurement is kept.
 
 The database provides a vehicle type code to describe the chassis style.
 Unfortunately, no key is provided for type code in the database. The best
 guess legend key and sample vehicles are shown below.
 
-* **4S** - four door sedan - _1987 Ford Temp, 1991 Honda Accord LX_
+* **4S** - four door sedan - _1987 Ford Tempo, 1991 Honda Accord LX_
 * **2S** - two door sedan - _1998 Chevrolet Metro, 1986 BMW 325i_
 * **SW** - station wagon - _1979 Datsun 210, 1986 Buick Century Estate_
 * **PU** - pick up truck - _1986 Chevrolet S-10 Pickup, 1998 Toyota Tacoma_
@@ -96,8 +96,8 @@ guess legend key and sample vehicles are shown below.
 ## Trends
 
 With data from the NHTSA Inertial Parameter Database, we can observe trends
-with respect to vehicle mass. To begin, we will start by assessing trends in
-vehicle centre of gravity height.
+with respect to vehicle mass. To begin, we will assess trends in vehicle
+centre of gravity height.
 
 <div style="left: 50%; margin-left: -50vw; margin-right: -50vw; max-width: 100vw; position: relative; right: 50%; width: 100vw;">
 <div style="margin: 0 auto; padding: 0 20px 20px 20px; max-width: 1000px">
@@ -105,10 +105,10 @@ vehicle centre of gravity height.
 </div>
 </div>
 
-From this graph, we can see that the CG is likely to be higher with heavier
+From this graph, we can see that the CG is likely to be higher in heavier
 vehicles. Observe the clustering of cars and trucks; trucks and SUVs tend to
-have a higher CG and tends to increase more with vehicle mass. The table
-below summarizes the results of a linear regression.
+have a higher CG than cars and increases faster with vehicle mass than cars.
+The table below summarizes the results of the linear regression.
 
 <div style="overflow-x: auto" markdown="block">
 
@@ -123,7 +123,7 @@ below summarizes the results of a linear regression.
 Next, we will assess the vehicle inertial properties. All four inertial
 parameters ($$I_{xx}$$, $$I_{yy}$$, $$I_{zz}$$ and $$I_{xz}$$) are shown in
 the graph below. Note that the roll/yaw product contains fewer data points.
-This is because only a select number of vehicles had the roll/yaw product
+This is because only a select number of vehicles have the roll/yaw product
 measured.
 
 <div style="left: 50%; margin-left: -50vw; margin-right: -50vw; max-width: 100vw; position: relative; right: 50%; width: 100vw;">
@@ -132,12 +132,12 @@ measured.
 </div>
 </div>
 
-The moments of inertia have good correlation with vehicle mass across all
-vehicle types. The relationship scales relatively well with heavier vehicles
-though there divergence, particularly with minivans and SUVs. The roll/yaw
-product will likely be positive except for pickup trucks. There is some
-correlation for cars and SUVs but that relationship is weak. A summary of the
-results is shown in the table below.
+The moments of inertia have good correlation with vehicle mass in
+consideration of all vehicle types. The relationship starts to diverge with
+higher vehicle mass, especially between minivans and SUVs. The roll/yaw
+product will likely be positive for most vehicles with the exception of
+pickup trucks. There is some correlation for cars but that relationship is
+weak. The results are summarized in the table below.
 
 <div style="overflow-x: auto" markdown="block">
 
@@ -178,10 +178,10 @@ histogram shown below.
 </div>
 </div>
 
-When considering all types of vehicles, there is a weak negative correlation
-between SSF and vehicle mass. Upon further inspection, this is because of the
-clustering of cars and trucks. Trucks and SUVs tend to have a lower SSF
-whereas cars which have higher SSF.
+There is a weak negative correlation between SSF and vehicle mass when
+considering all vehicle types. Upon further inspection, this is because of
+the clustering of cars and trucks. Trucks and SUVs tend to have a lower SSF
+whereas cars tend to have a higher SSF.
 
 <div style="overflow-x: auto" markdown="block">
 
@@ -212,18 +212,18 @@ Where:
 * $$a$$ is the longitudinal distance from the CG to the front axle [$$m$$]
 * $$b$$ is the longitudinal distance from the CG to the rear axle [$$m$$]
 
-From the radius of gyration, the yaw inertia can be derived. The following
-equation shows the relationship between the yaw radius of gyration and the
-yaw inertia.
+The following equation shows the relationship between the yaw radius of
+gyration and the yaw inertia. Rearranging this relation for $$I_{zz}$$
+completes the relationship between DI and inertia.
 
-$$k_z^2 = \frac{I_z}{m}$$
+$$k_z^2 = \frac{I_{zz}}{m}$$
 
 Similar to above, the same concept can be applied to the pitch inertia to
 find the pitch dynamic index.
 
 $$DI_{pitch} = \frac{k_y^2}{ab}$$
 
-Applying such index is not common for roll. From experimentation, the
+Applying such index for roll is not common. From experimentation, the
 following equation normalizes the roll inertial measurements. Note that this
 equation is completely arbitrary and is not based on any literature.
 
@@ -240,8 +240,8 @@ shown in the graphs and histograms below.
 
 Notice how all of the dynamic indices are weakly correlated with vehicle
 mass. These values are better described in term of its average values since
-they appear to centre around some constant value. The results are summarized
-in the tables below.
+they appear to centre around some constant value. The summarized results are
+shown in the tables below.
 
 <div style="overflow-x: auto" markdown="block">
 
@@ -293,10 +293,10 @@ in the tables below.
 ## Discussion
 
 Based on the findings from the 1998 NHTSA Inertial Parameters Database,
-vehicles tend to centre around a constant dynamic index and static stability
-factor. These average values can be used to estimate the vehicle's centre of
-gravity height and inertial properties with data that is easily obtainable.
-For cars, the following average values can be used:
+vehicles centre around a constant dynamic index and static stability factor.
+The average values can be used to estimate the vehicle's centre of gravity
+height and inertial properties with data that is easily obtainable. For cars,
+the average values are:
 
 * **Static stability factor**: 1.341
 * **Roll dynamic index**: 0.409
@@ -312,20 +312,21 @@ data.
 
 Vehicle dynamic simulation is contingent on having data on your vehicle.
 Centre of gravity position and inertial properties are some of the most basic
-pieces of information required to describe a vehicle. With public databases,
-one can identify trends in the industry to make a reasonable guess of a
-vehicle's centre of gravity position and inertial properties.
+pieces of information needed to describe a vehicle. With public databases and
+journals, one can identify trends in the industry to make a reasonable guess
+of a vehicle's centre of gravity position and inertial properties.
 
 This analysis identified average values for the static stability factor and
 the dynamic indices. These values are non dimensionalized to the vehicle
 geometry like track width and weight distribution. Manufacturers typically
-publish vehicle geometry data, making the calculation simple to make. This
+publish vehicle geometry data, making the calculation simple to do. This
 enables anyone to obtain reasonable values for the centre of gravity height
 and inertia without the need for expensive measurement equipment.
 
 The Inertial Parameters Database is available from the NHTSA [here](https://www.nhtsa.gov/DOT/NHTSA/NRD/Multimedia/PDFs/VRTC/ca/nhtsa_inertia_database_metric.pdf).
 
 ## References
+
 1. Heydinger, Gary J., Ronald A. Bixel, W. Riley Garrott, Michael Pyne, J. Gavin Howe, and Dennis A. Guenther. "Measured vehicle inertial parameters-NHTSA's data through November 1998." SAE transactions (1999): 2462-2485.
 1. Walz, M. C. (2005). Trends in the static stability factor of passenger cars, light trucks, and vans (No. HS-809 868).
 1. Basso, G. L. (1974). Functional derivation of vehicle parameters for dynamic studies (No. LTR-ST. 747).
