@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Estimating vehicle inertia and centre-of-gravity height using the NHTSA light vehicle inertial parameter database
-date:   2020-10-21 15:15:00 -0400
 categories: [data visualization]
 ---
 
@@ -13,16 +12,16 @@ Vehicle dynamic simulation relies on having known information about the
 vehicle under study. Vehicle mass and inertial properties are required for
 any meaningful handling simulation. These values are non-trivial to obtain
 and makes use of highly specialized equipment to measure. Without access to a
-kinematics and compliance (K&C) machine or an inertia measurement rig,
-vehicle dynamic simulation is out-of-reach to most individuals outside of the
+kinematics and compliance machine or an inertia measurement rig, vehicle
+dynamic simulation is out-of-reach to most individuals outside of the
 automotive industry.
 
 From 1992 to 1998, the National Highway Traffic Safety Administration (NHTSA)
 published a series of papers with a database of measured mass and inertial
 properties for light passenger vehicles. Given that the underlying
-architecture of the modern light vehicle has not fundamentally changed since
-then, we can use this information to identify trends in the data to better
-inform an estimation of mass and inertial properties of a given vehicle.
+architecture of the modern light vehicle has not fundamentally changed, we
+can use this information to identify trends in the data to better inform an
+estimation of mass and inertial properties of a given vehicle.
 
 ## Vehicle properties
 
@@ -107,8 +106,8 @@ centre of gravity height.
 
 From this graph, we can see that the CG is likely to be higher in heavier
 vehicles. Observe the clustering of cars and trucks; trucks and SUVs tend to
-have a higher CG than cars and increases faster with vehicle mass than cars.
-The table below summarizes the results of the linear regression.
+have a higher CG where the CG height increases faster with vehicle mass than
+cars. The table below summarizes the results of the linear regression.
 
 <div style="overflow-x: auto" markdown="block">
 
@@ -239,7 +238,7 @@ shown in the graphs and histograms below.
 </div>
 
 Notice how all of the dynamic indices are weakly correlated with vehicle
-mass. These values are better described by its average since are centred
+mass. These values are better described by its average since they are centred
 around some value. The results are shown in the tables below.
 
 <div style="overflow-x: auto" markdown="block">
@@ -294,7 +293,7 @@ around some value. The results are shown in the tables below.
 Based on the findings from the 1998 NHTSA Light Vehicle Inertial Parameters
 Database, vehicles tend to have similar dynamic indices and static stability
 factors. The average values can be used to estimate the vehicle's centre of
-gravity height and inertial properties with data that is easily obtainable.
+gravity height and inertial properties using data that is easily obtainable.
 For cars, the average values are:
 
 * **Static stability factor**: 1.341
@@ -303,9 +302,9 @@ For cars, the average values are:
 * **Yaw dynamic index**: 1.091
 
 The roll/yaw product can be estimated using the transfer function with
-respect to vehicle mass. Note that this is subject to uncertainty because of
-the limited number of measurements and the weak correlation observed in the
-data.
+respect to vehicle mass. Note that this is subject to greater uncertainty
+because of the limited number of measurements and the weak correlation
+observed in the data.
 
 ## Final comments
 
