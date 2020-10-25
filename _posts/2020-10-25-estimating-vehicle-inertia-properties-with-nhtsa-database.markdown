@@ -29,7 +29,7 @@ inform an estimation of mass and inertial properties of a given vehicle.
 The mass properties of a four-wheeled vehicle typically refer to its mass and
 the position of its centre-of-gravity (CG). We will assume that the lateral
 position of the CG lies along the XZ-plane (ie. the vehicle centre plane).
-This yields four parameters of interest relating the vehicle mass properties.
+This yields four parameters of interest.
 
 * The vehicle mass, $$m$$ in [$$kg$$]
 * The longitudinal distance from the CG to the front axle, $$a$$ in [$$m$$]
@@ -218,8 +218,8 @@ completes the relationship between DI and inertia.
 
 $$k_z^2 = \frac{I_{zz}}{m}$$
 
-Similar to above, the same concept can be applied to the pitch inertia to
-find the pitch dynamic index.
+The same concept can be applied to the pitch inertia to find the pitch
+dynamic index.
 
 $$DI_{pitch} = \frac{k_y^2}{ab}$$
 
@@ -239,9 +239,8 @@ shown in the graphs and histograms below.
 </div>
 
 Notice how all of the dynamic indices are weakly correlated with vehicle
-mass. These values are better described in term of its average values since
-they appear to centre around some constant value. The summarized results are
-shown in the tables below.
+mass. These values are better described by its average since are centred
+around some value. The results are shown in the tables below.
 
 <div style="overflow-x: auto" markdown="block">
 
@@ -292,11 +291,11 @@ shown in the tables below.
 
 ## Discussion
 
-Based on the findings from the 1998 NHTSA Inertial Parameters Database,
-vehicles centre around a constant dynamic index and static stability factor.
-The average values can be used to estimate the vehicle's centre of gravity
-height and inertial properties with data that is easily obtainable. For cars,
-the average values are:
+Based on the findings from the 1998 NHTSA Light Vehicle Inertial Parameters
+Database, vehicles tend to have similar dynamic indices and static stability
+factors. The average values can be used to estimate the vehicle's centre of
+gravity height and inertial properties with data that is easily obtainable.
+For cars, the average values are:
 
 * **Static stability factor**: 1.341
 * **Roll dynamic index**: 0.409
@@ -312,7 +311,7 @@ data.
 
 Vehicle dynamic simulation is contingent on having data on your vehicle.
 Centre of gravity position and inertial properties are some of the most basic
-pieces of information needed to describe a vehicle. With public databases and
+pieces of information needed parameterize the car. With public databases and
 journals, one can identify trends in the industry to make a reasonable guess
 of a vehicle's centre of gravity position and inertial properties.
 
@@ -321,9 +320,9 @@ the dynamic indices. These values are non dimensionalized to the vehicle
 geometry like track width and weight distribution. Manufacturers typically
 publish vehicle geometry data, making the calculation simple to do. This
 enables anyone to obtain reasonable values for the centre of gravity height
-and inertia without the need for expensive measurement equipment.
+and inertia without needing expensive measurement equipment.
 
-The Inertial Parameters Database is available from the NHTSA [here](https://www.nhtsa.gov/DOT/NHTSA/NRD/Multimedia/PDFs/VRTC/ca/nhtsa_inertia_database_metric.pdf).
+The Light Vehicle Inertial Parameters Database is available from the NHTSA [here](https://www.nhtsa.gov/DOT/NHTSA/NRD/Multimedia/PDFs/VRTC/ca/nhtsa_inertia_database_metric.pdf).
 
 ## References
 
