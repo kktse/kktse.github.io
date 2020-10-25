@@ -107,7 +107,7 @@ centre of gravity height.
 From this graph, we can see that the CG is likely to be higher in heavier
 vehicles. Observe the clustering of cars and trucks; trucks and SUVs tend to
 have a higher CG where the CG height increases faster with vehicle mass than
-cars. The table below summarizes the results of the linear regression.
+in cars. The table below summarizes the results of the linear regression.
 
 <div style="overflow-x: auto" markdown="block">
 
@@ -293,7 +293,7 @@ around some value. The results are shown in the tables below.
 Based on the findings from the 1998 NHTSA Light Vehicle Inertial Parameters
 Database, vehicles tend to have similar dynamic indices and static stability
 factors. The average values can be used to estimate the vehicle's centre of
-gravity height and inertial properties using data that is easily obtainable.
+gravity height and inertial properties with data that is easily obtainable.
 For cars, the average values are:
 
 * **Static stability factor**: 1.341
