@@ -6,8 +6,8 @@ categories: [suspension, kinematics, acura rsx]
 
 ![rsx cover](/assets/images/2020-12-06/rsx-cover-3.jpg)
 
-Modern vehicle suspension designs are carefully designed to react handling
-loads while maintaining a good ride and comfort. Performance objectives are
+Modern vehicle suspension systems are carefully designed to react handling
+loads while maintaining good ride and comfort. Performance objectives are
 often at odds with chassis packaging where cabin space takes precedence over
 suspension packaging. This makes rear suspension design challenging for
 manufacturers. For performance enthusiasts hoping to operate the car at its
@@ -19,7 +19,7 @@ perspective, the tradeoffs made to achieve this are less clear. To answer
 this, we ran a series of kinematic studies.
 
 In this article, we will be analyzing the kinematic roll-centre of the Acura
-RSX rear suspension in pure heave and in pure roll.
+RSX rear suspension in pure heave and roll.
 
 ## Suspension Design
 
@@ -27,11 +27,10 @@ The rear suspension of the Acura RSX features an H-arm and camber link. The
 H-arm is formed by the lower control arm and is responsible for reacting
 braking and cornering forces. The camber link is the upper control arm and
 only reacts cornering forces. Both lower and upper control arms contribute to
-the location of the front-view kinematic roll centre. Because the upper
-control arm only reacts cornering forces, the side-view kinematic instant
-centre is controlled by the lower control arm. The rear suspension is
-pictured below with the real life and virtual representations shown on the
-left and right respectively.
+the location of the front-view kinematic roll centre. The side-view kinematic
+instant centre is controlled solely by the lower control arm. The rear
+suspension is pictured below with the real life and virtual representations
+shown on the left and right respectively.
 
 <div style="left: 50%; margin-left: -50vw; margin-right: -50vw; max-width: 100vw; position: relative; right: 50%; width: 100vw;">
   <div style="margin: 0 auto; padding: 0 20px 20px 20px; max-width: 1000px">
@@ -45,8 +44,8 @@ contribute to its cost effectiveness. Aftermarket adjustment to the geometry
 is limited since the lower control arm has the responsibility of four links.
 Practically any major change in the suspension geometry would require a
 completely new knuckle or lower control arm. Fortunately, we can analyze the
-design to determine its performance characteristics and understand how to
-make the most of it without resorting to modification.
+design to determine its performance characteristics and how to make the most
+of it without resorting to modification.
 
 ## Kinematic Roll Centre
 
@@ -76,8 +75,8 @@ reason, we explicitly call this point the _**kinematic**_ roll centre.
 Moving the suspension in **parallel wheel travel** helps us understand what
 happens to the kinematic roll centre when both wheels are displaced together.
 Since these cars are often lowered with the installation of aftermarket
-coilover kits, this gives us an idea of how much the geometry has deviated
-from factory trim.
+coilover kits, this gives us an idea of how much the geometry deviates from
+factory trim.
 
 <video autoplay loop mute controls>
   <source src="/assets/images/2020-12-06/rsx-rear-pwt.mp4" type="video/mp4">
@@ -85,59 +84,58 @@ from factory trim.
 
 A nice property you can already see from the animation is that the kinematic
 roll centre stays above the ground for the entire suspension travel. This is
-confirmed in our simulation results.
+confirmed in the simulation results.
 
 ![parallel wheel travel roll centre height](/assets/images/2020-12-06/rsx-rear-pwt-rcheight.svg)
 
 The kinematic roll centre is nominally 168 mm above the ground at factory
 ride height. You can expect the kinematic roll centre to change at a rate of
-1.07 mm per mm of heave.
+1.07 mm per mm of heave at factory ride height.
 
 ### Opposite Wheel Travel
 
 **Opposite wheel travel** is a motion where both wheels are displaced the same
 amount but in opposite directions. This is a considered a contrived motion
 because in reality the car is free to move in both heave and roll. The
-asymmetry created by this motion is interesting for advanced analysis. Note
-that ISO vehicle coordinates are used to refer to direction.
+asymmetry created by this motion is interesting for advanced analysis.
 
 <video autoplay loop mute controls>
   <source src="/assets/images/2020-12-06/rsx-rear-owt.mp4" type="video/mp4">
 </video>{:style="display: block; margin: 0 auto; max-width: 100%;"}
 
-From the animation, it is visibly apparent that the kinematic roll centre
-moves very little. This is a fascinating property and suggests a deliberate
-attempt to minimize the kinematic roll centre lateral migration. Lets take a
-closer look at the results from the analysis.
+From the animation, you can see very little movement in the kinematic roll
+centre. This is a fascinating property. It suggests a deliberate attempt to
+minimize the kinematic roll centre lateral migration. Lets take a closer look
+at the results from the analysis.
 
 ![opposite wheel travel roll centre height](/assets/images/2020-12-06/rsx-rear-owt-rcheight.svg)
 
-The kinematic roll centre height is extremely well controlled. We can see the
+The kinematic roll centre height is very well controlled. We can see the
 kinematic roll centre height increase just over 10 mm with 4 degrees of roll.
 
 ![opposite wheel travel roll centre lateral migration](/assets/images/2020-12-06/rsx-rear-owt-rcy.svg)
 
-The same can be said about the lateral roll centre migration. When measured
-from the vehicle centre plane, the lateral migration is only about 8mm. This
-is a very unique property since the kinematically induced asymmetry is kept
-to a minimum. The kinematic roll centre lateral position migrates at a rate
-of 1.44 mm per deg of roll when the roll angle is zero.
+The same can be said about the kinematic roll centre lateral migration. When
+measured from the vehicle centre plane, the lateral migration is only about
+8mm. This is a very unique property since the kinematically induced asymmetry
+is kept to a minimum. The lateral position of the kinematic roll centre
+migrates at a rate of 1.44 mm per deg of roll when the roll angle is zero.
 
 ## Final Comments
 
-Our analysis of the Acura RSX rear suspension suggests deliberate attempts
-from Honda to locate the kinematic roll centre. The kinematic roll centre
-stays above the ground throughout the range of travel meaning that geometry
+Our analysis of the Acura RSX rear suspension shows a deliberate attempt by
+Honda to locate the kinematic roll centre. The kinematic roll centre stays
+above the ground throughout the range of travel meaning that geometry
 correction for lowered vehicles is not necessary; you can make the chassis
-work with a lowered suspension kit. At nominal ride height, we see the
-kinematic roll centre lateral migration is extremely well controlled. This is
-an unusual aspect to for most builders, but a unique one nonetheless.
+work with a lowered suspension kit. At nominal ride height, the kinematic
+roll centre lateral migration is well controlled. This is an unusual aspect
+to consider for most builders, but a unique one nonetheless.
 
-By analyzing the suspension using kinematic simulation, we start to
+By analyzing the suspension using kinematic simulation, we can start to
 appreciate how loads might be reacted by the suspension system. By taking an
-analytical approach to the chassis setup problem, we can get a good guess of
-Honda's high level design objectives. For anyone serious about chassis setup,
-it is a huge performance advantage!
+analytical approach, we can make an educated guess of Honda's high level
+design objectives. For anyone serious about chassis setup, it is a huge
+information advantage!
 
 ## Acknowledgements
 

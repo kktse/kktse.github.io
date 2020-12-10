@@ -9,8 +9,8 @@ categories: [suspension, kinematics, acura rsx]
 
 ![rsx cover](/assets/images/2020-12-06/rsx-cover-2.jpg)
 
-Modern vehicle suspension designs are carefully designed to react handling
-loads while maintaining a good ride and comfort. Performance objectives are
+Modern vehicle suspension systems are carefully designed to react handling
+loads while maintaining good ride and comfort. Performance objectives are
 often at odds with chassis packaging where cabin space takes precedence over
 suspension packaging. This makes rear suspension design challenging for
 manufacturers. For performance enthusiasts hoping to operate the car at its
@@ -30,11 +30,10 @@ The rear suspension of the Acura RSX features an H-arm and camber link. The
 H-arm is formed by the lower control arm and is responsible for reacting
 braking and cornering forces. The camber link is the upper control arm and
 only reacts cornering forces. Both lower and upper control arms contribute to
-the location of the front-view kinematic roll centre. Because the upper
-control arm only reacts cornering forces, the side-view kinematic instant
-centre is controlled by the lower control arm. The rear suspension is
-pictured below with the real life and virtual representations shown on the
-left and right respectively.
+the location of the front-view kinematic roll centre. The side-view kinematic
+instant centre is controlled solely by the lower control arm. The rear
+suspension is pictured below with the real life and virtual representations
+shown on the left and right respectively.
 
 <div style="left: 50%; margin-left: -50vw; margin-right: -50vw; max-width: 100vw; position: relative; right: 50%; width: 100vw;">
   <div style="margin: 0 auto; padding: 0 20px 20px 20px; max-width: 1000px">
@@ -48,8 +47,8 @@ contribute to its cost effectiveness. Aftermarket adjustment to the geometry
 is limited since the lower control arm has the responsibility of four links.
 Practically any major change in the suspension geometry would require a
 completely new knuckle or lower control arm. Fortunately, we can analyze the
-design to determine its performance characteristics and understand how to
-make the most of it without resorting to modification.
+design to determine its performance characteristics and how to make the most
+of it without resorting to modification.
 
 ## Motion Ratios
 
@@ -83,14 +82,13 @@ bar are actuated via the lower control arm.
 
 The coilover assembly on the rear suspension contains both the spring and the
 damper. Because they act on the same line-of-action, they share the same
-motion ratio. The assembly is laterally offset from the wheel centre plane,
-so a reduced motion ratio is expected.
+motion ratio. The assembly is laterally offset from the wheel centre plane so
+a reduced motion ratio is expected.
 
 ![spring damper coilover motion ratio](/assets/images/2020-12-06/rsx-rear-left-mrcoil.svg)
 
 The motion ratio is 0.586 mm displacement per mm of wheel centre travel at
-factory ride height. You can expect the motion ratio to decrease in bump
-travel.
+factory ride height. You can expect the motion ratio to decrease in bump.
 
 ### Anti-roll Bar Motion Ratio
 
@@ -110,12 +108,12 @@ motion ratio to decrease.
 
 The packaging challenges faced by the manufacturer are apparent when
 analyzing the motion ratios of the Acura RSX rear suspension. Because the
-coilover assembly offset from the wheel centre, the motion ratio is reduced.
-In contrast with the front suspension, the rear anti-roll bar motion ratio is
-approximately double the front.
+coilover assembly is offset from the wheel centre, the motion ratio is
+reduced. To contrast with the front suspension, the rear anti-roll bar motion
+ratio is approximately double the front.
 
-The motion ratios are important when choosing custom spring or damping rates.
-Stiffness is doubly reduced due to the reduction in mechanical advantage and
+The motion ratios are important when choosing custom springs or dampers.
+Stiffness is doubly reduced due to mechanical advantage and the lessened
 displacement. Having these values are a huge help to chassis setup - an
 advantage for anyone developing a car!
 
