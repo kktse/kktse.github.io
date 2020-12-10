@@ -1,0 +1,130 @@
+---
+layout: post
+title: Kinematic curves of the Acura RSX rear suspension
+# date: 2020-06-21 14:30:00 -0400
+categories: [suspension, kinematics, acura rsx]
+---
+
+![rsx cover](/assets/images/2020-12-06/rsx-cover-1.jpg)
+
+Modern vehicle suspension designs are carefully designed to react handling
+loads while maintaining a good ride and comfort. Performance objectives are
+often at odds with chassis packaging where cabin space takes precedence over
+suspension packaging. This makes rear suspension design challenging for
+manufacturers. For performance enthusiasts hoping to operate the car at its
+limits, it means dealing with compromises from the factory.
+
+The Acura RSX is an example of a car with this challenge. As a daily driver,
+its compact rear suspension makes it a very practical car. From a performance
+perspective, the tradeoffs made to achieve this are less clear. To answer
+this, we ran a series of kinematic studies.
+
+In this article, we discuss the wheel plane control of the Acura RSX rear
+suspension. Metrics such as half track, camber and toe variation in bump are
+examined.
+
+## Suspension Design
+
+The rear suspension of the Acura RSX features an H-arm and camber link. The
+H-arm is formed by the lower control arm and is responsible for reacting
+braking and cornering forces. The camber link is the upper control arm and
+only reacts cornering forces. Both lower and upper control arms contribute to
+the location of the front-view kinematic roll centre. Because the upper
+control arm only reacts cornering forces, the side-view kinematic instant
+centre is controlled by the lower control arm. The rear suspension is
+pictured below with the real life and virtual representations shown on the
+left and right respectively.
+
+<div style="left: 50%; margin-left: -50vw; margin-right: -50vw; max-width: 100vw; position: relative; right: 50%; width: 100vw;">
+  <div style="margin: 0 auto; padding: 0 20px 20px 20px; max-width: 1000px">
+    <img src="/assets/images/2020-12-06/rsx-rear-suspension-actual.jpg" alt="actual rsx rear suspension" width="49%"> <img src="/assets/images/2020-12-06/rsx-rear-suspension-model.png" alt="model rsx rear suspension" width="49%">
+  </div>
+</div>
+
+This suspension topology is cost effective and makes few compromises on
+kinematic performance. Its compact size and reduced chassis attachment points
+contribute to its cost effectiveness. Aftermarket adjustment to the geometry
+is limited since the lower control arm has the responsibility of four links.
+Practically any major change in the suspension geometry would require a
+completely new knuckle or lower control arm. Fortunately, we can analyze the
+design to determine its performance characteristics and understand how to
+make the most of it without resorting to modification.
+
+## Kinematic Curves
+
+Tires force and moment properties are sensitive to inputs like slip and
+inclination angle. The chassis has some degree to control these inputs by
+carefully designing the suspension to move the wheel in a certain way through
+its travel. In this context, the kinematic curves describe the wheel plane
+motion without considering forces or compliances.
+
+<video autoplay loop mute controls>
+  <source src="/assets/images/2020-12-06/rsx-rear-iso-outer.mp4" type="video/mp4">
+</video>{:style="display: block; margin: 0 auto; max-width: 100%;"}
+
+### Half Track Variation
+
+The half track variation is the lateral displacement of the tire contact
+patch. This motion causes a lateral velocity to develop at the contact patch,
+thus generating a slip angle. It is also a first look at how the instant
+centre might develop. A positive value indicates an increasing half track.
+
+![half track variation](/assets/images/2020-12-06/rsx-rear-left-halftrack.svg)
+
+The half track nominally increases at a rate of 0.213 mm per mm of bump. The
+rate of change is always positive within this range of travel.
+
+### Camber Variation
+
+The camber angle is the lean angle of the wheel relative to the chassis
+centre plane. This is not the inclination angle experienced at the contact
+patch. A negative camber angle indicates the top of the wheel leaning inwards
+towards the chassis.
+
+![camber variation](/assets/images/2020-12-06/rsx-rear-left-camber.svg)
+
+At around -30 of droop travel, you can observe the sign of the camber gain
+invert. However, for most of the bump travel above the camber gain is
+positive and increasing. You can expect a gain of -0.014 deg per mm of bump
+near nominal ride height. This number will be more negative if the ride
+height is reduced.
+
+### Toe Variation
+
+The toe angle is the angle between the wheel direction and the vehicle centre
+plane. This is the rear axle contribution to bump and roll steer effects. A
+positive value indicates toe in.
+
+![tue variation](/assets/images/2020-12-06/rsx-rear-left-toe.svg)
+
+The toe angle nominally increases at a rate of 0.003 deg per mm of bump. At
+first glance, the semi-trailing-like design of the lower control arm would
+suggest high toe variation; however, this is largely offset by the angle of
+the lower knuckle attachment points.
+
+## Final Comments
+
+The rear suspension of the Acura RSX shows good control over the wheel plane
+motion. Half track variation is largely progressive throughout the suspension
+travel. Interestingly, very little kinematically induced toe variation was
+found. While the camber gain changes signs, it does so in droop and outside
+the region of interest.
+
+The kinematic performance of the Acura RSX rear suspension thus far is
+promising. It is much more predicable than the front suspension and displays
+fewer oddities in the range of travel. This makes it much simpler to
+understand and hopefully easier to set up.
+
+## Acknowledgements
+
+This work is made possible with help from Ping Zhang at [Formula
+Delta](https://formuladelta.ca) who shared the suspension points for the
+Acura RSX. You can learn more about Ping and his time attack project on his
+[website](https://formuladelta.ca),
+[Facebook](https://www.facebook.com/FormulaDeltaConsult) or
+[Instagram](https://www.instagram.com/formula.delta/).
+
+## References
+
+1. Milliken, William F., and Douglas L. Milliken. _Race car vehicle dynamics_. Vol. 400. Warrendale: Society of Automotive Engineers, 1995.
+1. Blundell, Michael, and Damian Harty. _Multibody systems approach to vehicle dynamics_. Elsevier, 2004.
