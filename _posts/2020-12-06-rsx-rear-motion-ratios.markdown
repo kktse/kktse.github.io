@@ -12,9 +12,8 @@ categories: [suspension, kinematics, acura rsx]
 Modern vehicle suspension systems are carefully designed to react handling
 loads while maintaining good ride and comfort. Performance objectives are
 often at odds with chassis packaging where cabin space takes precedence over
-suspension packaging. This makes rear suspension design challenging for
-manufacturers. For performance enthusiasts hoping to operate the car at its
-limits, it means dealing with compromises from the factory.
+suspension packaging. For performance enthusiasts hoping to operate the car
+at its limits, it means dealing with compromises from the factory.
 
 The Acura RSX is an example of a car with this challenge. As a daily driver,
 its compact rear suspension makes it a very practical car. From a performance
@@ -22,15 +21,15 @@ perspective, the tradeoffs made to achieve this are less clear. To answer
 this, we ran a series of kinematic studies.
 
 This is article, we measure the motion ratios of the rear coilover assembly
-and anti-roll bar through the use of our kinematic simulation.
+and anti-roll bar using kinematic simulation.
 
 ## Suspension Design
 
-The rear suspension of the Acura RSX features an H-arm and camber link. The
-H-arm is formed by the lower control arm and is responsible for reacting
-braking and cornering forces. The camber link is the upper control arm and
-only reacts cornering forces. Both lower and upper control arms contribute to
-the location of the front-view kinematic roll centre. The side-view kinematic
+The Acura RSX rear suspension features an H-arm and camber link. The H-arm is
+formed by the lower control arm and is responsible for reacting braking and
+cornering forces. The camber link is the upper control arm and only reacts
+cornering forces. Both lower and upper control arms contribute to the
+location of the front-view kinematic roll centre. The side-view kinematic
 instant centre is controlled solely by the lower control arm. The rear
 suspension is pictured below with the real life and virtual representations
 shown on the left and right respectively.
@@ -47,8 +46,8 @@ contribute to its cost effectiveness. Aftermarket adjustment to the geometry
 is limited since the lower control arm has the responsibility of four links.
 Practically any major change in the suspension geometry would require a
 completely new knuckle or lower control arm. Fortunately, we can analyze the
-design to determine its performance characteristics and how to make the most
-of it without resorting to modification.
+design to determine how to make the most of it without resorting to
+modification.
 
 ## Motion Ratios
 
@@ -106,16 +105,16 @@ motion ratio to decrease.
 
 ## Final Comments
 
-The packaging challenges faced by the manufacturer are apparent when
+The packaging constraints faced by the manufacturer are apparent when
 analyzing the motion ratios of the Acura RSX rear suspension. Because the
 coilover assembly is offset from the wheel centre, the motion ratio is
-reduced. To contrast with the front suspension, the rear anti-roll bar motion
-ratio is approximately double the front.
+reduced. In a contrasting difference with the front axle, the rear anti-roll
+bar motion ratio is approximately double the front.
 
-The motion ratios are important when choosing custom springs or dampers.
-Stiffness is doubly reduced due to mechanical advantage and the lessened
-displacement. Having these values are a huge help to chassis setup - an
-advantage for anyone developing a car!
+Motion ratios are important when choosing custom springs or dampers.
+Stiffness is doubly reduced due to the mechanical disadvantage and the
+lessened displacement. Knowing the motion ratio for your car are a huge help
+to chassis setup - an advantage for anyone developing a car!
 
 ## Acknowledgements
 

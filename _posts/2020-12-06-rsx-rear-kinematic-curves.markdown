@@ -10,9 +10,8 @@ categories: [suspension, kinematics, acura rsx]
 Modern vehicle suspension systems are carefully designed to react handling
 loads while maintaining good ride and comfort. Performance objectives are
 often at odds with chassis packaging where cabin space takes precedence over
-suspension packaging. This makes rear suspension design challenging for
-manufacturers. For performance enthusiasts hoping to operate the car at its
-limits, it means dealing with compromises from the factory.
+suspension packaging. For performance enthusiasts hoping to operate the car
+at its limits, it means dealing with compromises from the factory.
 
 The Acura RSX is an example of a car with this challenge. As a daily driver,
 its compact rear suspension makes it a very practical car. From a performance
@@ -25,11 +24,11 @@ examined.
 
 ## Suspension Design
 
-The rear suspension of the Acura RSX features an H-arm and camber link. The
-H-arm is formed by the lower control arm and is responsible for reacting
-braking and cornering forces. The camber link is the upper control arm and
-only reacts cornering forces. Both lower and upper control arms contribute to
-the location of the front-view kinematic roll centre. The side-view kinematic
+The Acura RSX rear suspension features an H-arm and camber link. The H-arm is
+formed by the lower control arm and is responsible for reacting braking and
+cornering forces. The camber link is the upper control arm and only reacts
+cornering forces. Both lower and upper control arms contribute to the
+location of the front-view kinematic roll centre. The side-view kinematic
 instant centre is controlled solely by the lower control arm. The rear
 suspension is pictured below with the real life and virtual representations
 shown on the left and right respectively.
@@ -46,14 +45,14 @@ contribute to its cost effectiveness. Aftermarket adjustment to the geometry
 is limited since the lower control arm has the responsibility of four links.
 Practically any major change in the suspension geometry would require a
 completely new knuckle or lower control arm. Fortunately, we can analyze the
-design to determine its performance characteristics and how to make the most
-of it without resorting to modification.
+design to determine how to make the most of it without resorting to
+modification.
 
 ## Kinematic Curves
 
-Tires force and moment properties are sensitive to inputs like slip and
-inclination angle. The chassis has some degree to control these inputs by
-carefully designing the suspension to move the wheel in a certain way. In
+Tire force and moment properties are sensitive to inputs like slip and
+inclination angle. The chassis has some degree of control over these inputs
+by carefully designing the suspension to move the wheel in a certain way. In
 this context, kinematic curves describe the wheel plane motion without
 considering forces or compliances.
 
@@ -77,16 +76,15 @@ rate of change is always positive within this range of travel.
 
 The camber angle is the lean angle of the wheel relative to the chassis
 centre plane. This is not the inclination angle experienced at the contact
-patch. A negative camber angle indicates the top of the wheel leaning inwards
-towards the chassis.
+patch. A negative camber angle indicates that the top of the wheel is leaning
+inwards towards the chassis.
 
 ![camber variation](/assets/images/2020-12-06/rsx-rear-left-camber.svg)
 
-At around -30 of droop travel, you can observe the sign of the camber gain
-invert. However, the camber gain is positive for most of the remaining bump
-travel especially in the more interesting regions. You can expect a gain of
--0.014 deg per mm of bump near nominal ride height. This number will be more
-negative if the ride height is reduced.
+At around -30 of droop travel, the sign of the camber gain inverts. However,
+for the remaining bump travel, the camber gain is positive. You can expect a
+gain of -0.014 deg per mm of bump near nominal ride height. This number will
+be more negative if the ride height is reduced.
 
 ### Toe Variation
 
@@ -97,21 +95,21 @@ positive value indicates toe in.
 ![tue variation](/assets/images/2020-12-06/rsx-rear-left-toe.svg)
 
 The toe angle nominally increases at a rate of 0.003 deg per mm of bump. At
-first glance, the semi-trailing-like lower control arm suggests large toe
-variation; however, it is offset by the knuckle lower attachment points.
+first glance, the semi-trailing-like lower control arm would suggests lots of
+toe variation; however, this effect is likely offset by the knuckle lower
+attachment points.
 
 ## Final Comments
 
 The rear suspension of the Acura RSX shows good control over the wheel plane
-motion. Half track variation is largely progressive throughout the suspension
-travel. Interestingly, there is very little kinematically induced toe
-variation. While the camber gain changes signs, it does so in droop and
-outside our region of interest.
+motion. Half track variation is predictable throughout the travel range.
+Interestingly, there is very little kinematically induced toe variation.
+While the camber gain changes signs, it does so in droop.
 
 The kinematic performance of the Acura RSX rear suspension thus far is
 promising. It is much more predicable than the front suspension and displays
-fewer oddities in the range of travel. This makes it much simpler to
-understand and hopefully easier to set up.
+fewer oddities. This makes it simpler to understand and hopefully easier to
+set up.
 
 ## Acknowledgements
 
