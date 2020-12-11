@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Motion ratio curves of the Acura RSX rear suspension
-# date: 2020-06-21 14:30:00 -0400
+date: 2020-12-10 17:30:00 -0500
 categories: [suspension, kinematics, acura rsx]
 ---
 

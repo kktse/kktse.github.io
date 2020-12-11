@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Kinematic roll centre analysis of the Acura RSX rear suspension
+date: 2020-12-10 17:30:00 -0500
 categories: [suspension, kinematics, acura rsx]
 ---
 
