@@ -4,13 +4,11 @@ title: About
 permalink: /about/
 ---
 
-The dynamics of the modern road car are the result of years of automotive
-engineering and advancement. I study vehicle dynamics to appreciate this
-evolution.
-
-I am a full-stack software developer based in the Toronto area. I use my
-background in engineering and technology bring clarity to your toughest
-problems. I currently work at [Wave Financial](https://www.waveapps.com/).
+I am a full-stack software developer based in the Toronto area. I help create
+clarity into your toughest engineering problems. I bring the best of what
+lean production and software engineering has to offer to focus on what is
+important. Past career in the automotive sector specializing in vehicle
+dynamics. I currently work at [Wave Financial](https://www.waveapps.com/).
 
 I am a collaborator at [Formula Delta](https://formuladelta.ca), a time
 attack project started by my colleagues. I apply vehicle dynamics theory to
