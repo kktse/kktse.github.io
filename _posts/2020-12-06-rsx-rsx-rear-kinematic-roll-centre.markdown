@@ -24,7 +24,7 @@ RSX rear suspension in pure heave and roll.
 
 The Acura RSX rear suspension features an H-arm and camber link. The H-arm is
 formed by the lower control arm and is responsible for reacting braking and
-cornering forces. The camber link is the upper control arm and reacts only
+cornering forces. The camber link forms the upper control arm and reacts only
 cornering forces. Both lower and upper control arms locate the front-view
 kinematic roll centre. The side-view kinematic instant centre is controlled
 solely by the lower control arm. The rear suspension is pictured below with

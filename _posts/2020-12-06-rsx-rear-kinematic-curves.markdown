@@ -26,7 +26,7 @@ examined.
 
 The Acura RSX rear suspension features an H-arm and camber link. The H-arm is
 formed by the lower control arm and is responsible for reacting braking and
-cornering forces. The camber link is the upper control arm and reacts only
+cornering forces. The camber link forms the upper control arm and reacts only
 cornering forces. Both lower and upper control arms locate the front-view
 kinematic roll centre. The side-view kinematic instant centre is controlled
 solely by the lower control arm. The rear suspension is pictured below with
@@ -51,8 +51,8 @@ modification.
 ## Kinematic Curves
 
 Tire force and moment properties are sensitive to inputs like slip and
-inclination angle. The chassis has some degree of control over these inputs
-by carefully designing the suspension to move the wheel in a certain way. In
+inclination angle. The chassis has some control over these inputs by
+carefully designing the suspension to move the wheel in a certain way. In
 this context, kinematic curves describe the wheel plane motion without
 considering forces or compliances.
 
@@ -95,8 +95,8 @@ positive value indicates toe in.
 ![tue variation](/assets/images/2020-12-06/rsx-rear-left-toe.svg)
 
 The toe angle nominally increases at a rate of 0.003 deg per mm of bump. At
-first glance, the semi-trailing-like lower control arm would suggests lots of
-toe variation; however, this effect is likely offset by the knuckle lower
+first glance, the semi-trailing-like lower control arm suggests lots of toe
+variation; however, this effect is likely offset by the knuckle lower
 attachment points.
 
 ## Final Comments
