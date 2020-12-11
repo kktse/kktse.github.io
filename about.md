@@ -4,24 +4,20 @@ title: About
 permalink: /about/
 ---
 
-Welcome! I'm Kelvin. I am a software developer in the Greater Toronto Area. I
-combine engineering with technology to solve your most difficult problems. I
-obtained my undergraduate degree in Mechatronics Engineering at the
-University of Waterloo, focusing on controls and dynamics. My career has
-taken me across the automotive sector in manufacturing, automation, and R&D
-roles. I currently work at [Wave Financial](https://www.waveapps.com/) as a
-full-stack developer.
+The dynamics of the modern road car are the result of years of automotive
+engineering and advancement. I study vehicle dynamics to appreciate this
+evolution.
 
-In my spare time, I study _vehicle dynamics_; the study of road vehicles in
-motion. I combine numerical simulation with practical experimentation to
-examine concepts in vehicle dynamics. You'll often find me at the local race
-track with <a href="https://www.facebook.com/FormulaDeltaConsult"><svg
-class="svg-icon"><use
-xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg><span
-class="username">Formula Delta</span></a> helping drivers be safe, go fast
-and have fun.
+I am a full-stack software developer based in the Toronto area. I use my
+background in engineering and technology bring clarity to your toughest
+problems. I currently work at [Wave Financial](https://www.waveapps.com/).
 
-Got a question? Let's get in touch!
-<a href="https://www.linkedin.com/in/ktse/"><svg class="svg-icon"><use
+I am a collaborator at [Formula Delta](https://formuladelta.ca), a time
+attack project started by my colleagues. I apply vehicle dynamics theory to
+help the community be safer, go faster and ultimately have more fun.
+
+Interested in working together? Lets connect!
+
+* <a href="https://www.linkedin.com/in/ktse/"><svg class="svg-icon"><use
 xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg><span
-class="username">Kelvin Tse</span>
+class="username">LinkedIn</span>
