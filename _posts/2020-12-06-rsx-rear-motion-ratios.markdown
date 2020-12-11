@@ -7,6 +7,22 @@ categories: [suspension, kinematics, acura rsx]
 
 {% include mathjax.html %}
 
+> This article is part of a series on the kinematic simulation and analysis of
+> the Acura RSX suspension. To learn more, feel free to check my other posts:
+>
+> Front Suspension
+>
+> * [Analysis of the Acura RSX front suspension geometry](/jekyll/update/2020/01/30/static-suspension-geometry-analysis-acura-rsx.html)
+> * [Kinematic curves of the Acura RSX front suspension](/jekyll/update/2020/06/21/rsx-kinematic-curves.html)
+> * [Motion ratio curves of the Acura RSX front suspension](/jekyll/update/2020/07/25/rsx-front-motion-ratios.html)
+> * [Kinematic roll centre analysis of the Acura RSX front suspension](/jekyll/update/2020/09/07/rsx-front-kinematic-roll-centre.html)
+>
+> Rear Suspension
+>
+> * [Kinematic curves of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rear-kinematic-curves.html)
+> * [**You are here!** - Motion ratio curves of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rear-motion-ratios.html)
+> * [Kinematic roll centre analysis of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rsx-rear-kinematic-roll-centre.html)
+
 ![rsx cover](/assets/images/2020-12-06/rsx-cover-2.jpg)
 
 Modern vehicle suspension systems are carefully designed to react handling
