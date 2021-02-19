@@ -264,9 +264,8 @@ required to confirm this statement.
 
 Longitudinal dynamics are an important consideration. Braking is a regular
 occurrence on any road course and is important because it precedes corner
-entry. Those with large aerodynamic packages must recognize that the
-effectiveness of the aerodynamic elements are contingent on the ability to
-control the platform.
+entry. Those with large aerodynamic packages must recognize that its
+effectiveness is contingent on the ability to control the platform.
 
 In this analysis, we looked at some of the fundamental suspension parameters
 influencing the longitudinal dynamics. We learned how _antis_ are designed on
