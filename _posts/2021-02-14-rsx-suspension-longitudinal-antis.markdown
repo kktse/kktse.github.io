@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Anti-lift, anti-dive and kinematic pitch centre analysis of the Acura RSX suspension 
+date: 2021-02-18 21:30:00 -0500
 categories: [suspension, kinematics, acura rsx]
 ---
 
@@ -24,7 +25,7 @@ categories: [suspension, kinematics, acura rsx]
 >
 > Full Vehicle
 >
-> * Anti-lift, anti-dive and kinematic pitch centre analysis of the Acura RSX suspension
+> * [**You are here!** - Anti-lift, anti-dive and kinematic pitch centre analysis of the Acura RSX suspension](/jekyll/update/2021/02/19/rsx-suspension-longitudinal-antis.html)
 
 ![rsx cover](/assets/images/2021-02-14/rsx-gp-cover.jpg)
 
