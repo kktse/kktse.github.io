@@ -31,12 +31,12 @@ categories: [suspension, kinematics, acura rsx]
 Vehicle chassis systems work together to react handling loads in a desirable
 way. The relationship between the front and rear axles is clear when
 analyzing the side-view geometry. Four wheel braking is a full vehicle event,
-meaning that load paths from both the front and rear axles must be considered
-to understand the longitudinal dynamics.
+meaning the load paths from both front and rear axles must be considered to
+understand the longitudinal dynamics.
 
-To gain an appreciation of these longitudinal interactions, we will analyze
-the side-view suspension geometry of the Acura RSX. The definition of 'anti'
-geometry and the existence of a pitch centre is discussed.
+To gain an appreciation of these interactions, we will analyze the side-view
+suspension geometry of the Acura RSX. The definition of 'anti' geometry and
+the existence of a pitch centre is discussed.
 
 ## Suspension design
 
@@ -82,28 +82,28 @@ suspension is found at the intersection of:
 
 * the lower control arm plane defined by the two inboard attachment points and the outer ball joint
 * the upper strut plane defined by the upper strut attachment point and a normal vector defined by the strut
-* the side plane defined by the front and rear contact patches
+* the side plane defined by the front and rear tire contact patches
 
 The side-view kinematic instant centre for the H-arm with camber link rear
 suspension is found at the intersection of:
 
 * the line defined by the two inboard attachment points of the lower control arm
-* the side plane defined by the front and rear contact patches
+* the side plane defined by the front and rear tire contact patches
 
 Under braking, the **side-view virtual swing axle** is formed by drawing a
-line from the **side-view kinematic instant centre** to the respective
-**tire contact patches** for the front and rear wheels. The intersection
-of the **side-view virtual swing axles** is the **kinematic pitch centre**.
+line from the **tire contact patch** to its respective **side-view kinematic
+instant centre**. The intersection of the front and rear side-view virtual
+swing axle is the **kinematic pitch centre**.
 
 The use of _antis_ in kinematic analysis is convenient because it handles
 asymmetries in the suspension geometry and in the forces applied at each
-wheel. Because there are many types of _antis_, we will discuss them as part
-of the analysis.
+wheel. Because there are many types of _antis_, we will discuss them in the
+analysis.
 
 ## Analysis
 
 The analysis will focus on what happens in _heave_. In this motion, all four
-wheels are displaced the same amount in the same direction. This is
+wheels are displaced the same amount and in the same direction. This is
 representative of what would happen when the vehicle is lowered.
 
 Based on published data for the Acura RSX from the National Highway Traffic
@@ -121,9 +121,9 @@ centre of gravity height are used:
 
 Front anti-lift refers to the ability of the front suspension to react the
 front longitudinal load transfer induced by the drive force. In a typical
-front wheel drive layout, the drive force acts at the wheel centre through
-the side-view kinematic instant centre. The percentage of front anti-lift is
-given by the following equation:
+front wheel drive layout, the drive force acts at the wheel centre and
+through the side-view kinematic instant centre. The percentage of front
+anti-lift is given by the following equation:
 
 $$ \%\:\text{anti-lift}_{front} = \frac{l}{h} \tan{\theta} \times 100 $$
 
@@ -142,9 +142,9 @@ travel.
 ![rsx front anti lift heave](/assets/images/2021-02-14/rsx-front-anti-lift-heave.svg)
 
 Our findings of _pro-lift_ at the end of the droop travel is confirmed in the
-data with the anti-lift angle and ratio crossing zero with just 37 mm of
-droop travel. At factory ride height, you can expect an anti-lift angle of
-around 1.0 deg which equates to 8.8% anti-lift.
+data with the anti-lift angle crossing zero with just 37 mm of droop travel.
+At factory ride height, you can expect an anti-lift angle of around 1.0 deg
+which equates to 8.8% front anti-lift.
 
 ### Front anti-dive
 
@@ -155,8 +155,8 @@ around 1.0 deg which equates to 8.8% anti-lift.
 Front anti-dive refers to the ability of the front suspension to react the
 front longitudinal load transfer induced by the front braking force. In a
 vehicle with outboard brakes, the braking force acts at the tire contact
-patch through the side-view kinematic instant centre. The percentage of front
-anti-dive is given by the following equation:
+patch and through the side-view kinematic instant centre. The percentage of
+front anti-dive is given by the following equation:
 
 $$ \%\:\text{anti-dive}_{front} = \%\:\text{braking}_{front} \frac{l}{h} \tan{\theta_{front}} $$
 
@@ -166,9 +166,9 @@ Where:
 * $$ \theta_{front} $$ is the angle of a line originating at the tire contact patch going through the side view kinematic instant centre relative to the road plane [rad]
 
 The inclusion of the of the percentage of front braking force is in
-consideration of the anti effect for that axle exclusively. You will notice
-that the _anti-lift_ calculation is just a special case of this equation
-where 100% of the drive force is allocated to the front axle.
+consideration of the anti effect for the front axle exclusively. As an aside,
+you will notice that the _anti-lift_ calculation is just a special case of
+this equation where 100% of the drive force is allocated to the front axle.
 
 Because we do not know the percentage of front braking force, we can not
 compute the percentage anti-dive. However, we can calculate the anti-dive
@@ -184,8 +184,10 @@ ratio as the wheels are displaced in heave.
 
 Due to the fixed upper strut plane on a MacPherson strut, the side view
 kinematic instant centre is mainly located by the lower control arm. Careful
-observers will notice that the lower control arm is slightly angled, so some
-anti effect is expected. At factory ride height, you can expect the front anti-dive angle to be approximately 2.7 deg with an front anti-dive ratio of 0.23.
+observers will notice that the inboard lower control arm points are slightly
+angled, so some anti effect is expected. At factory ride height, you can
+expect the front anti-dive angle to be approximately 2.7 deg with an front
+anti-dive ratio of 0.23.
 
 ### Rear anti-lift
 
@@ -195,7 +197,7 @@ anti effect is expected. At factory ride height, you can expect the front anti-d
 
 Rear anti-lift refers to the ability of the rear suspension to react the rear
 longitudinal load transfer induced by the rear braking force. In a vehicle
-with outboard brakes, the braking force acts at the tire contact patch
+with outboard brakes, the braking force acts at the tire contact patch and
 through the side-view kinematic instant centre. The percentage of rear
 anti-lift is given by the following equation:
 
@@ -218,12 +220,14 @@ anti-lift ratio through the heave travel.
 
 ![rsx rear anti lift heave](/assets/images/2021-02-14/rsx-rear-anti-lift-heave.svg)
 
-Because of the rear suspension topology, the side view kinematic instant
+Because of the rear suspension architecture, the side-view kinematic instant
 centre for does not move much relative to the suspended mass. The side view
-swing axle is also much shorter than the front suspension, resulting is large
-anti-lift angles and anti-lift ratio. Recall that percentage anti-lift takes
-into considers the percentage of rear braking force, so the effective
-percentage rear anti-lift is likely much less. At factory ride height, you can expect a rear anti-lift angle of 22 deg and rear anti-lift ratio of 1.96.
+swing axle is also much shorter as compared to the front suspension,
+resulting is large anti-lift angles and a large anti-lift ratio. Recall that
+percentage anti-lift takes into considers the percentage of rear braking
+force, so the effective percentage of rear anti-lift is likely much less. At
+factory ride height, you can expect a rear anti-lift angle of 22 deg and rear
+anti-lift ratio of 1.96.
 
 ### Kinematic pitch centre
 
@@ -233,42 +237,46 @@ percentage rear anti-lift is likely much less. At factory ride height, you can e
 
 The kinematic pitch centre is the longitudinal equivalent of the kinematic
 roll centre. It is a virtual point in which longitudinal forces can be
-resolved into the suspended mass. This is possible because the forces can be
-translated along the line of action per the Principle of Transmissibility.
+resolved into the suspended mass. This is possible because the braking forces
+can be translated along their respective line of action per the Principle of
+Transmissibility.
 
 For the Acura RSX, the side view geometry is not symmetrical. Additionally,
-it is unlikely that the magnitude of the forces acting at the front and rear
-wheels will be the same due to the brake bias. Consequently, _jacking forces_
-must be considered in a force analysis. A further distinction can be made
-since we are making an assumption about how **_forces_** are reacted into the
-suspended mass using **_kinematic_** constructs.
+it is unlikely that the magnitude of forces acting at the front and rear
+wheels will be the same because of the brake bias. Consequently, _jacking
+forces_ must be considered in a force analysis of the suspended mass. Further
+distinction can be made since we are making assumptions about how
+**_forces_** are reacted into the suspended mass using **_kinematic_**
+constructs.
 
-For this analysis, we will study the vertical and longitudinal distances from
-the pitch centre to the centre of gravity. This represents the moment arm of
-the resolved braking forces around the suspended mass centre of gravity.
+For this analysis, we will study the vertical and longitudinal moment arms
+around the vehicle centre of gravity from the pitch centre.
 
 ![rsx heave centre heave](/assets/images/2021-02-14/rsx-pitch-centre-heave.svg)
 
-The pitch centre starts off with a vertical distance of 425 mm and a
-longitudinal distance of 1306 mm away from the centre of gravity at factory
-ride height. As the vehicle is lowered, both the vertical and longitudinal
-distances decreases. This means that the platform will be less sensitive to
-longitudinal braking and jacking forces with reduced ride height.
+The pitch centre at factory ride hight creates a vertical moment arm 425 mm
+in length and a longitudinal moment arm of 1306 mm. As the vehicle is
+lowered, both the vertical and longitudinal moment arms decrease in length.
+This suggests that the platform will be less sensitive to longitudinal
+braking and jacking forces as the ride height is reduced. However, a force
+analysis is required to confirm this statement.
 
 ## Final comments
 
 Longitudinal dynamics are an important consideration in high-speed vehicle
-maneuvering. In high performance driving scenarios like on a road course,
-braking is a regular occurrence and precedes the cornering event. For those
-with large aerodynamic packages must recognize that the effectiveness of the
-package is dependent on the ability to control the platform.
+maneuvering. In high performance driving scenarios like on a controlled road
+course, braking is a regular occurrence and precedes the cornering event.
+Those with large aerodynamic packages must recognize that the effectiveness
+of the aerodynamic elements are dependent on the ability to control the
+platform.
 
 In this analysis, we looked at some of the fundamental suspension parameters
 influencing the longitudinal dynamics. We learned how _antis_ are designed on
-a road car and how the choice in front and rear suspension architecture will
-influence the side-view kinematic instant centre. This reinforces how complex
-chassis design is and emphasizes the need for a systematic approach to
-vehicle setup to achieve desired performance outcomes.
+a road car and how the choice of front and rear suspension architecture will
+influence the location of the side-view kinematic instant centre. This
+reinforces how complex chassis design is and emphasizes the need for a
+systematic approach to vehicle setup to achieve the desired performance
+outcomes.
 
 ## Acknowledgements
 
