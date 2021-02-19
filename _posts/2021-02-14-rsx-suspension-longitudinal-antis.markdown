@@ -74,7 +74,7 @@ the same concepts can be applied for the longitudinal dynamics. The
 longitudinal forces can be resolved into the suspended mass.
 
 The **side-view kinematic instant centre** is determined differently for the
-front and rear wheels because they have different suspension topologies.
+front and rear wheels because they have different suspension architectures.
 
 The side-view kinematic instant centre for the MacPherson strut front
 suspension is found at the intersection of:
@@ -105,7 +105,7 @@ The analysis will focus on what happens in _heave_. In this motion, all four
 wheels are displaced the same amount and in the same direction. This is
 representative of what would happen when the vehicle is lowered.
 
-Based on published data for the Acura RSX from the National Highway Traffic
+Based on published data for the Acura RSX by the National Highway Traffic
 Safety Administration, the following values are used for the weight
 distribution and the centre of gravity height:
 
@@ -241,8 +241,8 @@ Transmissibility.
 
 For the Acura RSX, the side-view geometry is not symmetrical. Additionally,
 it is unlikely that the magnitude of forces acting at the front and rear
-wheels will be the same because of the brake bias. Consequently, _jacking
-forces_ must be considered in a force analysis of the suspended mass. Further
+wheels are the same because of the brake bias. Consequently, _jacking forces_
+must be considered in a force analysis of the suspended mass. Further
 distinction can be made since we are making assumptions about how
 **_forces_** are reacted into the suspended mass using **_kinematic_**
 constructs.
@@ -262,11 +262,11 @@ analysis is required to confirm this statement.
 ## Final comments
 
 Longitudinal dynamics are an important consideration in high-speed vehicle
-maneuvering. In high performance driving scenarios like on a controlled road
-course, braking is a regular occurrence and precedes the cornering event.
-Those with large aerodynamic packages must recognize that the effectiveness
-of the aerodynamic elements are contingent on the ability to control the
-platform.
+maneuvering. During high performance driving scenarios like on a controlled
+road course, braking is a regular occurrence and precedes the cornering
+event. Those with large aerodynamic packages must recognize that the
+effectiveness of the aerodynamic elements are contingent on the ability to
+control the platform.
 
 In this analysis, we looked at some of the fundamental suspension parameters
 influencing the longitudinal dynamics. We learned how _antis_ are designed on
