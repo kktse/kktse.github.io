@@ -20,6 +20,10 @@ categories: [suspension, acura rsx]
 > * [Kinematic curves of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rear-kinematic-curves.html)
 > * [Motion ratio curves of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rear-motion-ratios.html)
 > * [Kinematic roll centre analysis of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rsx-rear-kinematic-roll-centre.html)
+>
+> Full Vehicle
+>
+> * [Anti-lift, anti-dive and kinematic pitch centre analysis of the Acura RSX suspension](/jekyll/update/2021/02/19/rsx-suspension-longitudinal-antis.html)
 
 ![rsx cover photo](/assets/images/2020-01-30/rsx_cover.jpg)
 
