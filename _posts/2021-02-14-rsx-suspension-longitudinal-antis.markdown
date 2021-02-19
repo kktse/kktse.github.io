@@ -35,8 +35,9 @@ meaning the load paths from both front and rear axles must be considered to
 understand the longitudinal dynamics.
 
 To gain an appreciation of these interactions, we will analyze the side-view
-suspension geometry of the Acura RSX. The definition of 'anti' geometry and
-the existence of a pitch centre is discussed.
+suspension geometry of the Acura RSX. The definition of anti-lift and
+anti-dive geometry is discussed, and the existence of a pitch centre is
+explored.
 
 ## Suspension design
 
@@ -223,7 +224,7 @@ Because of the rear suspension architecture, the side-view kinematic instant
 centre for does not move much relative to the suspended mass. The side-view
 swing axle is also much shorter as compared to the front suspension,
 resulting in large anti-lift angles. Recall that percentage anti-lift takes
-into considers the percentage of rear braking force, so the effective
+into consideration the percentage of rear braking force, so the effective
 percentage of rear anti-lift is likely much less. At factory ride height, you
 can expect a rear anti-lift angle of 22 deg and rear anti-lift ratio of 1.96.
 
@@ -255,16 +256,15 @@ around the vehicle centre of gravity from the pitch centre.
 The pitch centre at factory ride hight creates a vertical moment arm 425 mm
 in length and a longitudinal moment arm of 1306 mm. As the vehicle is
 lowered, both the vertical and longitudinal moment arms decrease in length.
-This suggests that the platform becomes less sensitive to longitudinal
-braking and jacking forces as the ride height is reduced. However, a force
-analysis is required to confirm this statement.
+This suggests the platform becomes less sensitive to longitudinal braking and
+jacking forces as the ride height is reduced. However, a force analysis is
+required to confirm this statement.
 
 ## Final comments
 
-Longitudinal dynamics are an important consideration in high-speed vehicle
-maneuvering. During high performance driving scenarios like on a controlled
-road course, braking is a regular occurrence and precedes the cornering
-event. Those with large aerodynamic packages must recognize that the
+Longitudinal dynamics are an important consideration. Braking is a regular
+occurrence on any road course and is important because it precedes corner
+entry. Those with large aerodynamic packages must recognize that the
 effectiveness of the aerodynamic elements are contingent on the ability to
 control the platform.
 
@@ -272,7 +272,7 @@ In this analysis, we looked at some of the fundamental suspension parameters
 influencing the longitudinal dynamics. We learned how _antis_ are designed on
 a road car and how the choice of front and rear suspension architecture will
 influence the location of the side-view kinematic instant centre. This
-reinforces how complex chassis design is and emphasizes the need for a
+reinforces how complex chassis design is and highlights the need for a
 systematic approach to vehicle setup.
 
 ## Acknowledgements
