@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 Welcome. I am a full-stack software developer with a passion for systems
-engineering. I create clarity into engineering problems to enable teams to
+engineering. I create clarity into engineering problems that enables teams to
 deliver value fast. My advocacy for _continuous improvement_ is the
 foundation of my ability to deliver simple and effective solutions in the
 face of complexity and ambiguity. I currently work at [Wave
