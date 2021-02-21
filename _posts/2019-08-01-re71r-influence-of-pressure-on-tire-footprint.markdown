@@ -142,9 +142,9 @@ of your road vehicle, tire pressure selection is a major consideration.
 The guiding principle at Apex Performance Engineering is to develop the
 car-driver system as a whole. Interested in how chassis setup can improve your
 driving?  Send us a message on
-<a href="https://www.facebook.com/APEXPerformanceEngineering"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg><span class="username">Facebook</span></a>
+<a href="https://www.facebook.com/FormulaDeltaConsult"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg><span class="username">Facebook</span></a>
 or
-<a href="https://www.instagram.com/apex.performance.engineering/"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#instagram"></use></svg><span class="username">Instagram</span></a>!
+<a href="https://www.instagram.com/formula.delta/"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#instagram"></use></svg><span class="username">Instagram</span></a>!
 
 # Acknowledgements
 I would like to acknowledge the following individuals for their contribution to this article:
@@ -156,7 +156,7 @@ I would like to acknowledge the following individuals for their contribution to 
 2. Woodward, David, Phillip Millar, Chris Tierney, and Campbell Waddell. “The Static Contact Patch of Some Friction Measuring Devices,” n.d., 13.
 3. "ASTM F870 - 94(2016)." ASTM International - Standards Worldwide. Accessed August 01, 2019. https://www.astm.org/Standards/F870.htm.
 
-[1]: https://www.facebook.com/APEXPerformanceEngineering
+[1]: https://formuladelta.ca/
 [2]: https://www.facebook.com/stagefourmotorsports/
 [3]: https://www.smithersrapra.com/testing-services/by-sector/automotive/tire-testing/footprint
 [4]: https://www.astm.org/Standards/F870.htm

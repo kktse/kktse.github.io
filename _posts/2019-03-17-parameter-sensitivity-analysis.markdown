@@ -306,7 +306,7 @@ The following individuals and organizations have helped contribute to the OTA
 Debrief series:
 * Joseph Yang and his #551 2012 Honda Civic Si. This analysis would not be
   possible without his collaboration;
-* Ping Zhang at [Apex Performance Engineering](https://www.facebook.com/APEXPerformanceEngineering) - follow us on Facebook!;
+* Ping Zhang at [Apex Performance Engineering](https://formuladelta.ca/) - follow us on Facebook!;
 * CASC-OR, Ontario Time Attack and the community for their support
 
 # References
