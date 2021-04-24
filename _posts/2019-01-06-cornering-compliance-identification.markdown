@@ -92,12 +92,7 @@ $$\alpha_r = \frac{m_r a_y}{C_r}$$
 Substituting the front and rear slip angles yields the following definition of
 the understeer gradient.
 
-$$K = \frac{m_f}{C_f} - \frac{m_r}{C_r}$$
-
-Normalizing the acceleration by $$g$$ yields the cornering compliance
-definition of the understeer gradient.
-
-$$K = \frac{m_f g}{C_f} - \frac{m_r g}{C_r} = D_f - D_r$$
+$$K = \frac{m_f}{C_f} - \frac{m_r}{C_r} = D_f - D_r$$
 
 Where:
 * $$D_f$$ represents the front axle cornering compliance [$$\frac{rad}{g}$$]
