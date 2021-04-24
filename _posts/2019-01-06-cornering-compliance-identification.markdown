@@ -51,11 +51,12 @@ acceleration is the understeer gradient.
 $$\delta = \frac{L}{R} + K a_y$$
 
 Where:
+
 * $$\delta$$ is the steering angle [$$rad$$]
 * $$L$$ is the wheelbase of the car [$$m$$]
 * $$R$$ is the radius of the turn [$$m$$]
 * $$a_y$$ is the lateral acceleration [$$m/s^2$$]
-* $$K$$ is the understeer gradient [$$rad/(m/s^2)$$]
+* $$K$$ is the understeer gradient [$$\frac{rad}{m/s^2}$$]
 
 Equivalently, the understeering tendency can be described as the difference in
 the front and rear slip angles.
@@ -63,6 +64,7 @@ the front and rear slip angles.
 $$\delta = \frac{L}{R} + (\alpha_f - \alpha_r)$$
 
 Where:
+
 * $$\alpha_f$$ represents the front axle effective slip angle [$$rad$$]
 * $$\alpha_r$$ represents the rear axle effective slip angle [$$rad$$]
 
@@ -79,6 +81,7 @@ $$m_f a_y = \alpha_f C_f$$
 $$m_r a_y = \alpha_r C_r$$
 
 Where:
+
 * $$m_f$$ represents the equivalent mass of the front axle [$$kg$$]
 * $$m_r$$ represents the equivalent mass of the rear axle [$$kg$$]
 * $$C_f$$ represents the front axle effective cornering stiffness [$$N/rad$$]
@@ -96,6 +99,7 @@ the understeer gradient.
 $$K = \frac{m_f}{C_f} - \frac{m_r}{C_r}$$
 
 Where:
+
 * $$D_f$$ represents the front axle cornering compliance [$$\frac{rad}{m/s^2}$$]
 * $$D_r$$ represents the rear axle cornering compliance [$$\frac{rad}{m/s^2}$$]
 
@@ -104,30 +108,6 @@ the front and rear cornering compliances. This definition is mathematically
 consistent with the earlier definition of the understeer gradient. Noteworthy
 of mention is the exclusion of the steer angle term in the cornering compliance
 definition of the  understeer gradient.
-
-As an aside, you will commonly find the following definition for cornering
-compliance in literature. The unit conversion is to $$rad/g$$ is implied
-through the use of $$slugs$$ and $$lbs$$.
-
-$$D = \frac{W}{C} = \frac{mg}{C}$$
-
-Where:
-* $$D$$ represents the axle cornering compliance [$$rad/g$$]
-* $$W$$ represents the vehicle weight [$$slugs$$]
-* $$C$$ represents the axle effective cornering stiffness [$$lbs/rad$$]
-
-Equivalently using SI units, this expands and simplifies to the following
-equation.
-
-$$D = \frac{mg}{Cg} = \frac{m}{C}$$
-
-Where:
-* $$D$$ represents the axle cornering compliance [$$rad/m/s^2$$]
-* $$m$$ is the axle mass [$$kg$$]
-* $$g$$ is the earth gravitational constant [$$m/s^2$$]
-* $$C$$ is the axle effective cornering stiffness [$$N/rad$$]
-* $$W$$ represents the vehicle weight [$$slugs$$]
-* $$C$$ represents the axle effective cornering stiffness [$$lbs/rad$$]
 
 # Experimental Setup
 ![ddt_civicsi](/assets/images/2019-01-06/civicsi_ddt_pits.jpg)
@@ -159,13 +139,13 @@ an unsafe manner. Do not perform this test in an uncontrolled area._
 # Vehicle Parameters
 The following vehicle parameters are assumed for the vehicle-under-test:
 
-| Symbol | Value | Unit | Description |
-| ------ | ----- | ---- | ----------- |
-| $$a$$  | 0.996 | m    | Distance from CG to front axle |
-| $$b$$  | 1.624 | m    | Distance from CG to rear axle |
-| $$m$$  | 1450  | kg   | Vehicle mass |
-| $$I$$  | 2345  | kg m<sup>2</sup> | Vehicle yaw inertia |
-| $$K$$  | 5.5   | deg/g | Understeer gradient (as measured) |
+| Symbol | Value | Unit             | Description                       |
+| ------ | ----- | ---------------- | --------------------------------- |
+| $$a$$  | 0.996 | m                | Distance from CG to front axle    |
+| $$b$$  | 1.624 | m                | Distance from CG to rear axle     |
+| $$m$$  | 1450  | kg               | Vehicle mass                      |
+| $$I$$  | 2345  | kg m<sup>2</sup> | Vehicle yaw inertia               |
+| $$K$$  | 5.5   | deg/g            | Understeer gradient (as measured) |
 
 # Results
 The system identification yields the following cornering compliances:
@@ -212,13 +192,13 @@ to provide useful information about the vehicle. The ability to generalize the
 vehicle response in a simulation is still an extremely powerful tool in analyzing
 and assessing handling performance.
 
-
 _A big thank you to OTA competitor Joseph Yang in the #551 2012 Honda Civic Si
 for performing the pulse steer test and for providing the data used the
 analysis. This article would not be possible without the support of Joseph Yang
 and his sponsors._
 
 # References
+
 1. Milliken, William F., and Douglas L. Milliken. _Race car vehicle dynamics_. Vol. 400. Warrendale: Society of Automotive Engineers, 1995.
 2. Dixon, John. Tires, suspension and handling. SAE, 1996.
 3. Bundorf, R. Thomas, and Ronald L. Leffert. The cornering compliance concept for description of vehicle directional control properties. No. 760713. SAE Technical Paper, 1976.
