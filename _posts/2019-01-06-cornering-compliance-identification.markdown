@@ -2,6 +2,7 @@
 layout: post
 title:  "OTA 2018 Debrief: Cornering Compliances and Transients"
 date:   2019-01-06 18:45:00 -0400
+modified_date: 2021-04-24
 categories: [vehicle dynamics, simulation, ontario time attack]
 ---
 
@@ -54,7 +55,7 @@ Where:
 * $$L$$ is the wheelbase of the car [$$m$$]
 * $$R$$ is the radius of the turn [$$m$$]
 * $$a_y$$ is the lateral acceleration [$$m/s^2$$]
-* $$K$$ is the understeer gradient [$$rad/g$$]
+* $$K$$ is the understeer gradient [$$rad/(m/s^2)$$]
 
 Equivalently, the understeering tendency can be described as the difference in
 the front and rear slip angles.
@@ -92,17 +93,41 @@ $$\alpha_r = \frac{m_r a_y}{C_r}$$
 Substituting the front and rear slip angles yields the following definition of
 the understeer gradient.
 
-$$K = \frac{m_f}{C_f} - \frac{m_r}{C_r} = D_f - D_r$$
+$$K = \frac{m_f}{C_f} - \frac{m_r}{C_r}$$
 
 Where:
-* $$D_f$$ represents the front axle cornering compliance [$$\frac{rad}{g}$$]
-* $$D_r$$ represents the rear axle cornering compliance [$$\frac{rad}{g}$$]
+* $$D_f$$ represents the front axle cornering compliance [$$\frac{rad}{m/s^2}$$]
+* $$D_r$$ represents the rear axle cornering compliance [$$\frac{rad}{m/s^2}$$]
 
 The understeer gradient can therefore be understood as the difference between
 the front and rear cornering compliances. This definition is mathematically
 consistent with the earlier definition of the understeer gradient. Noteworthy
 of mention is the exclusion of the steer angle term in the cornering compliance
 definition of the  understeer gradient.
+
+As an aside, you will commonly find the following definition for cornering
+compliance in literature. The unit conversion is to $$rad/g$$ is implied
+through the use of $$slugs$$ and $$lbs$$.
+
+$$D = \frac{W}{C} = \frac{mg}{C}$$
+
+Where:
+* $$D$$ represents the axle cornering compliance [$$rad/g$$]
+* $$W$$ represents the vehicle weight [$$slugs$$]
+* $$C$$ represents the axle effective cornering stiffness [$$lbs/rad$$]
+
+Equivalently using SI units, this expands and simplifies to the following
+equation.
+
+$$D = \frac{mg}{Cg} = \frac{m}{C}$$
+
+Where:
+* $$D$$ represents the axle cornering compliance [$$rad/m/s^2$$]
+* $$m$$ is the axle mass [$$kg$$]
+* $$g$$ is the earth gravitational constant [$$m/s^2$$]
+* $$C$$ is the axle effective cornering stiffness [$$N/rad$$]
+* $$W$$ represents the vehicle weight [$$slugs$$]
+* $$C$$ represents the axle effective cornering stiffness [$$lbs/rad$$]
 
 # Experimental Setup
 ![ddt_civicsi](/assets/images/2019-01-06/civicsi_ddt_pits.jpg)

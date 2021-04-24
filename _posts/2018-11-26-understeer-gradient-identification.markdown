@@ -41,8 +41,8 @@ Where:
 * $$\delta$$ is the steering angle [rad]
 * $$L$$ is the wheelbase of the car [m]
 * $$R$$ is the radius of the turn [m]
-* $$a_y$$ is the lateral acceleration [g]
-* $$K$$ is the understeer gradient [rad/g]
+* $$a_y$$ is the lateral acceleration [m/s<sup>2</sup>]
+* $$K$$ is the understeer gradient [rad/m/s<sup>2</sup>]
 
 Understeer can be measured by means of an understeer gradient test. For our
 purposes, we perform a constant speed test whereby the vehicle is kept at a
