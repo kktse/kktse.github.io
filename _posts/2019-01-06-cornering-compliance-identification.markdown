@@ -2,7 +2,7 @@
 layout: post
 title:  "OTA 2018 Debrief: Cornering Compliances and Transients"
 date:   2019-01-06 18:45:00 -0400
-modified_date: 2021-04-24
+modified_date: 2021-04-28
 categories: [vehicle dynamics, simulation, ontario time attack]
 ---
 
@@ -33,6 +33,7 @@ during the racing season. In this instalment, we perform a pulse steer test to
 identify vehicle handling properties.
 
 # Transient Handling
+
 The understeer gradient is a measure of steady-state vehicle handling. However,
 in order to wholistically evaluate handling performance, it is necessary to
 analyze both steady-state and transient vehicle responses.
@@ -43,6 +44,7 @@ allows analytical examination of handling properties in both steady-state and
 transient maneuvers.
 
 # Understeer, Defined
+
 In our [last article](/jekyll/update/2018/12/01/understeer-gradient-identification.html),
 we defined understeer as the tendency for a vehicle to require more (or less)
 steering input relative to the Ackermann steer angle.  The gain due to lateral
@@ -96,7 +98,7 @@ $$\alpha_r = \frac{m_r a_y}{C_r}$$
 Substituting the front and rear slip angles yields the following definition of
 the understeer gradient.
 
-$$K = \frac{m_f}{C_f} - \frac{m_r}{C_r}$$
+$$K = \frac{m_f}{C_f} - \frac{m_r}{C_r} = D_f - D_r$$
 
 Where:
 
@@ -110,6 +112,7 @@ of mention is the exclusion of the steer angle term in the cornering compliance
 definition of the  understeer gradient.
 
 # Experimental Setup
+
 ![ddt_civicsi](/assets/images/2019-01-06/civicsi_ddt_pits.jpg)
 
 The target vehicle is a 2012 Honda Civic Si Coupe equipped with adjustable
@@ -137,6 +140,7 @@ scope of driver control, and at no time  did the driver operate the vehicle in
 an unsafe manner. Do not perform this test in an uncontrolled area._
 
 # Vehicle Parameters
+
 The following vehicle parameters are assumed for the vehicle-under-test:
 
 | Symbol | Value | Unit             | Description                       |
@@ -148,6 +152,7 @@ The following vehicle parameters are assumed for the vehicle-under-test:
 | $$K$$  | 5.5   | deg/g            | Understeer gradient (as measured) |
 
 # Results
+
 The system identification yields the following cornering compliances:
 
 * $$D_f = 9.6$$ [deg/g]
@@ -156,7 +161,7 @@ The system identification yields the following cornering compliances:
 The difference between the front and rear cornering compliances yields the
 understeer gradient:
 
-$$K = D_f - D_r = 5.5 [deg/g]$$
+$$K = D_f - D_r = 5.5\ [deg/g]$$
 
 The following graph shows the simulated response plotted against the
 experimental data acquired from in-vehicle testing.
@@ -180,6 +185,7 @@ The simulation under-predicts the peak lateral acceleration by approximately
 under-predicted in the positive case.
 
 # Summary
+
 The purpose of performing the pulse steer test is to identify the front and
 rear cornering compliances of the vehicle. Combined with the understeer
 gradient test, a simple transient vehicle model is developed.
