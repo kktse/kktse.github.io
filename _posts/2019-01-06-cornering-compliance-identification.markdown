@@ -2,6 +2,7 @@
 layout: post
 title:  "OTA 2018 Debrief: Cornering Compliances and Transients"
 date:   2019-01-06 18:45:00 -0400
+modified_date: 2021-04-28
 categories: [vehicle dynamics, simulation, ontario time attack]
 ---
 
@@ -32,6 +33,7 @@ during the racing season. In this instalment, we perform a pulse steer test to
 identify vehicle handling properties.
 
 # Transient Handling
+
 The understeer gradient is a measure of steady-state vehicle handling. However,
 in order to wholistically evaluate handling performance, it is necessary to
 analyze both steady-state and transient vehicle responses.
@@ -42,6 +44,7 @@ allows analytical examination of handling properties in both steady-state and
 transient maneuvers.
 
 # Understeer, Defined
+
 In our [last article](/jekyll/update/2018/12/01/understeer-gradient-identification.html),
 we defined understeer as the tendency for a vehicle to require more (or less)
 steering input relative to the Ackermann steer angle.  The gain due to lateral
@@ -50,11 +53,12 @@ acceleration is the understeer gradient.
 $$\delta = \frac{L}{R} + K a_y$$
 
 Where:
+
 * $$\delta$$ is the steering angle [$$rad$$]
 * $$L$$ is the wheelbase of the car [$$m$$]
 * $$R$$ is the radius of the turn [$$m$$]
 * $$a_y$$ is the lateral acceleration [$$m/s^2$$]
-* $$K$$ is the understeer gradient [$$rad/g$$]
+* $$K$$ is the understeer gradient [$$\frac{rad}{m/s^2}$$]
 
 Equivalently, the understeering tendency can be described as the difference in
 the front and rear slip angles.
@@ -62,6 +66,7 @@ the front and rear slip angles.
 $$\delta = \frac{L}{R} + (\alpha_f - \alpha_r)$$
 
 Where:
+
 * $$\alpha_f$$ represents the front axle effective slip angle [$$rad$$]
 * $$\alpha_r$$ represents the rear axle effective slip angle [$$rad$$]
 
@@ -78,6 +83,7 @@ $$m_f a_y = \alpha_f C_f$$
 $$m_r a_y = \alpha_r C_r$$
 
 Where:
+
 * $$m_f$$ represents the equivalent mass of the front axle [$$kg$$]
 * $$m_r$$ represents the equivalent mass of the rear axle [$$kg$$]
 * $$C_f$$ represents the front axle effective cornering stiffness [$$N/rad$$]
@@ -92,16 +98,12 @@ $$\alpha_r = \frac{m_r a_y}{C_r}$$
 Substituting the front and rear slip angles yields the following definition of
 the understeer gradient.
 
-$$K = \frac{m_f}{C_f} - \frac{m_r}{C_r}$$
-
-Normalizing the acceleration by $$g$$ yields the cornering compliance
-definition of the understeer gradient.
-
-$$K = \frac{m_f g}{C_f} - \frac{m_r g}{C_r} = D_f - D_r$$
+$$K = \frac{m_f}{C_f} - \frac{m_r}{C_r} = D_f - D_r$$
 
 Where:
-* $$D_f$$ represents the front axle cornering compliance [$$\frac{rad}{g}$$]
-* $$D_r$$ represents the rear axle cornering compliance [$$\frac{rad}{g}$$]
+
+* $$D_f$$ represents the front axle cornering compliance [$$\frac{rad}{m/s^2}$$]
+* $$D_r$$ represents the rear axle cornering compliance [$$\frac{rad}{m/s^2}$$]
 
 The understeer gradient can therefore be understood as the difference between
 the front and rear cornering compliances. This definition is mathematically
@@ -110,6 +112,7 @@ of mention is the exclusion of the steer angle term in the cornering compliance
 definition of the  understeer gradient.
 
 # Experimental Setup
+
 ![ddt_civicsi](/assets/images/2019-01-06/civicsi_ddt_pits.jpg)
 
 The target vehicle is a 2012 Honda Civic Si Coupe equipped with adjustable
@@ -137,17 +140,19 @@ scope of driver control, and at no time  did the driver operate the vehicle in
 an unsafe manner. Do not perform this test in an uncontrolled area._
 
 # Vehicle Parameters
+
 The following vehicle parameters are assumed for the vehicle-under-test:
 
-| Symbol | Value | Unit | Description |
-| ------ | ----- | ---- | ----------- |
-| $$a$$  | 0.996 | m    | Distance from CG to front axle |
-| $$b$$  | 1.624 | m    | Distance from CG to rear axle |
-| $$m$$  | 1450  | kg   | Vehicle mass |
-| $$I$$  | 2345  | kg m<sup>2</sup> | Vehicle yaw inertia |
-| $$K$$  | 5.5   | deg/g | Understeer gradient (as measured) |
+| Symbol | Value | Unit             | Description                       |
+| ------ | ----- | ---------------- | --------------------------------- |
+| $$a$$  | 0.996 | m                | Distance from CG to front axle    |
+| $$b$$  | 1.624 | m                | Distance from CG to rear axle     |
+| $$m$$  | 1450  | kg               | Vehicle mass                      |
+| $$I$$  | 2345  | kg m<sup>2</sup> | Vehicle yaw inertia               |
+| $$K$$  | 5.5   | deg/g            | Understeer gradient (as measured) |
 
 # Results
+
 The system identification yields the following cornering compliances:
 
 * $$D_f = 9.6$$ [deg/g]
@@ -156,7 +161,7 @@ The system identification yields the following cornering compliances:
 The difference between the front and rear cornering compliances yields the
 understeer gradient:
 
-$$K = D_f - D_r = 5.5 [deg/g]$$
+$$K = D_f - D_r = 5.5\ [deg/g]$$
 
 The following graph shows the simulated response plotted against the
 experimental data acquired from in-vehicle testing.
@@ -180,6 +185,7 @@ The simulation under-predicts the peak lateral acceleration by approximately
 under-predicted in the positive case.
 
 # Summary
+
 The purpose of performing the pulse steer test is to identify the front and
 rear cornering compliances of the vehicle. Combined with the understeer
 gradient test, a simple transient vehicle model is developed.
@@ -192,13 +198,13 @@ to provide useful information about the vehicle. The ability to generalize the
 vehicle response in a simulation is still an extremely powerful tool in analyzing
 and assessing handling performance.
 
-
 _A big thank you to OTA competitor Joseph Yang in the #551 2012 Honda Civic Si
 for performing the pulse steer test and for providing the data used the
 analysis. This article would not be possible without the support of Joseph Yang
 and his sponsors._
 
 # References
+
 1. Milliken, William F., and Douglas L. Milliken. _Race car vehicle dynamics_. Vol. 400. Warrendale: Society of Automotive Engineers, 1995.
 2. Dixon, John. Tires, suspension and handling. SAE, 1996.
 3. Bundorf, R. Thomas, and Ronald L. Leffert. The cornering compliance concept for description of vehicle directional control properties. No. 760713. SAE Technical Paper, 1976.
