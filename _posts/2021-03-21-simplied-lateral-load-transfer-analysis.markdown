@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Simplified steady-state lateral load transfer analysis for spring rate and anti-roll bar selection
+date: 2021-05-10 19:10:00 -0400
 categories: [suspension, vehicle dynamics, acura rsx]
 ---
 
@@ -201,8 +202,8 @@ $$ \frac{d|\Delta F_{z,r}|}{da_y} = \frac{m_fh_{RC,r}}{t_r} + \frac{k_{\phi,r}}{
 ### Lateral load transfer distribution
 
 The lateral load transfer distribution is the ratio between the lateral load
-transfer sensitivity experienced by an axle and the total vehicle lateral load
-transfer sensitivity.
+transfer sensitivity of an axle and the total vehicle lateral load transfer
+sensitivity.
 
 $$ LLTD_f = \frac{\frac{d|\Delta F_{z,f}|}{da_y}}{\frac{d|\Delta F_{z,f}|}{da_y}+\frac{d|\Delta F_{z,r}|}{da_y}} $$
 
@@ -330,7 +331,7 @@ The following values for roll stiffness are computed for vehicle under study.
 With the input quantities known, they can be substituted into the load transfer
 equations. The lateral load transfer distribution and other metrics are
 summarized in the table below. Additional metrics have been included to
-highlight how the fidelity of the model may change the results.
+highlight how the fidelity of the model will change the results.
 
 | Metric                                           | Stock | Modified | Delta (±/%)  |
 | ------------------------------------------------ | ----- | -------- | ------------ |
@@ -385,9 +386,10 @@ just one of the many tools we use to achieve this.
 1. Jazar, Reza N. _Vehicle Dynamics: Theory and Application_. 2008.
 1. Pacejka, Hans. _Tire and Vehicle Dynamics_. Elsevier, 2012.
 1. Shigley, Joseph E. _Mechanical Engineering Design_. McGraw-Hill Book Company, 1963.
+1. Walz, Marie C. _Trends in the static stability factor of passenger cars, light trucks, and vans_. No. HS-809 868. 2005.
+1. “2003 Acura RSX Specifications.” Honda Newsroom, September 8, 2011. https://hondanews.com/en-US/releases/release-213ecdccccb00457c01e65004c34c6a5-2003-acura-rsx-specifications. 
 
 [1]: /jekyll/update/2019/02/13/on-centre-handling-metrics.html
-[2]: https://hondanews.com/en-US/releases/release-213ecdccccb00457c01e65004c34c6a5-2003-acura-rsx-specifications
 [3]: https://formuladelta.ca/
 [4]: /jekyll/update/2020/01/30/static-suspension-geometry-analysis-acura-rsx.html
  
