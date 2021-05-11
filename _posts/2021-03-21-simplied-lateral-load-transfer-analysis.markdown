@@ -200,8 +200,8 @@ $$ \frac{d|\Delta F_{z,r}|}{da_y} = \frac{m_fh_{RC,r}}{t_r} + \frac{k_{\phi,r}}{
 
 ### Lateral load transfer distribution
 
-The lateral load transfer distribution is the ratio between the lateral load
-transfer sensitivity of an axle and the total vehicle lateral load transfer
+The lateral load transfer distribution is the ratio between the axle lateral
+load transfer sensitivity and the total vehicle lateral load transfer
 sensitivity.
 
 $$ LLTD_f = \frac{\frac{d|\Delta F_{z,f}|}{da_y}}{\frac{d|\Delta F_{z,f}|}{da_y}+\frac{d|\Delta F_{z,r}|}{da_y}} $$
@@ -249,8 +249,8 @@ parameters for each configuration are shown below.
 | **Spring rate, rear** [N/mm]              | 80.2  | 113.8    |
 | **Spring motion ratio, front** [mm/mm]    | 0.92  | 0.96     |
 | **Spring motion ratio, rear** [mm/mm]     | 0.59  | 0.56     |
-| **Sway bar effective length, front** [mm] | 725   | 725      |
-| **Sway bar effective length, rear** [mm]  | 750   | 750      |
+| **Sway bar effective length, front** [mm] | 1008  | 1008     |
+| **Sway bar effective length, rear** [mm]  | 1026  | 1026     |
 | **Sway bar diameter, front** [mm]         | 23    | 23       |
 | **Sway bar diameter, rear** [mm]          | 19    | 24       |
 | **Sway bar wall thickness, front** [mm]   | N/A   | N/A      |
@@ -321,9 +321,9 @@ study.
 
 | Parameter                          | Stock | Modified |
 | ---------------------------------- | ----- | -------- |
-| **Roll stiffness, front** [Nm/deg] | 1119  | 1486     |
-| **Roll stiffness, rear** [Nm/deg]  | 1133  | 2081     |
-| **Roll stiffness** [Nm/deg]        | 2252  | 3567     |
+| **Roll stiffness, front** [Nm/deg] | 1027  | 1395     |
+| **Roll stiffness, rear** [Nm/deg]  | 973   | 1706     |
+| **Roll stiffness** [Nm/deg]        | 2000  | 3101     |
 
 ### Results
 
@@ -335,14 +335,13 @@ highlight how the fidelity of the model will change the results.
 | Metric                                           | Stock | Modified | Delta (±/%)  |
 | ------------------------------------------------ | ----- | -------- | ------------ |
 | **Weight distribution** [%]                      | 61    | 61       | -            |
-| **Roll gradient** [deg/g]                        | 2.29  | 1.67     | -0.62/-27.1% |
 | **Spring rate distribution, rear** [%]           | 62.1  | 63.4     | +1.3/+2.1%   |
 | **Wheel rate distribution, rear** [%]            | 40.3  | 37.1     | -3.2/-7.9%   |
-| **Roll stiffness distribution, rear** [%]        | 50.3  | 58.3     | +8.0+/+15.9% |
-| **Lateral load transfer distribution, rear** [%] | 50.1  | 67.1     | +17.0/+33.9% |
+| **Roll stiffness distribution, rear** [%]        | 48.6  | 55.0     | +6.4/+13.2%  |
+| **Lateral load transfer distribution, rear** [%] | 49.6  | 63.8     | +14.2/+28.6% |
 
 In the modified configuration, the lateral load transfer distribution moves
-rearward +17.0%. This is a 33.9% relative increase compared to the stock
+rearward +14.2%. This is a 28.6% relative increase compared to the stock
 configuration. Our subjective evaluation suggests the modified configuration has
 a very aggressive handling balance. This observation is correlated with change
 in the lateral load transfer distribution.
