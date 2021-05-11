@@ -365,17 +365,12 @@ roll stiffness distribution. These metrics are highly correlated with vehicle
 balance and can be used to ascertain the effect of new springs and anti-roll
 bars on vehicle handling.
 
-Vehicle dynamic analysis is not exclusive to automotive manufacturers or motorsport teams who have access to advanced testing facilities and simulation
-software. Simple linear techniques continue to be useful in an age of non-linear
-computer simulation. This exercise proves how powerful insights can be obtained
-using data and analysis techniques that are accessible.
-
 Vehicle understanding is an important aspect to success. By understanding the
 underlying mechanisms of vehicle performance, we can have confidence in our
 setup decisions. Performance and cost are not mutually exclusive. Using a
 systems approach, we can determine the most efficient pathway to success and
 maximize the "bang-for-your-buck" of your project build. This is just one of the
-many tools we use at [Formula Delta][3] to achieve this.
+tools we use at [Formula Delta][3] to achieve this.
 
 ## References
 
