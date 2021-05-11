@@ -16,10 +16,9 @@ accommodate your desired response but requires _tuning_ to achieve the intended
 effect.
 
 While many factors contribute to the vehicle directional control, the choice of
-spring rate and anti-roll bar size will have a big effect on the handling
-characteristics of the vehicle. The lateral load transfer distribution affects
-how the change in tire vertical load is distributed between the four corners of
-the car.
+spring rate and anti-roll bar size will have a big effect on the vehicle
+handling characteristics. The lateral load transfer distribution affects how the
+change in tire vertical load is distributed between the four corners of the car.
 
 Lateral load transfer analysis is useful because it provides an
 order-of-magnitude indication of how the vehicle balance might change.  We
@@ -38,7 +37,7 @@ yawing and lateral dynamics directly. Several techniques exist, including the
 Tire force and moment data is often required for such analysis and is unlikely
 to be available to individual analysts.
 
-In the absence of a complete vehicle model, we must look at alternative
+In the absence of a complete vehicle model, we must consider alternative
 mechanisms that are known to be correlated with vehicle handling. The lateral
 load transfer distribution is often used as a metric for vehicle balance.
 Closely related is the roll stiffness distribution which can also be used as a
@@ -84,7 +83,7 @@ To reduce the amount of data needed with respect to the vehicle mass properties,
 we assume that the total vehicle mass can be substituted for the chassis mass.
 This means that:
 
-* The suspended mass centre of gravity is in the same position to the vehicle centre of gravity
+* The suspended mass centre of gravity is in the same position as the vehicle centre of gravity
 * The unsprung mass is negligible in comparison to the suspended mass
 * The tire vertical stiffness is negligible
 
@@ -93,7 +92,7 @@ With regards to the model, the following simplifying assumptions are made:
 * The load transfer can be analyzed at each axle independently
 * The lateral acceleration experienced at each axle is the same
 
-These assumptions allow the model to reduce down into a pair of two-dimensional
+These assumptions allow the model simplify into a pair of two-dimensional
 statics problems that are trivial to solve.
 
 ### In a rigid body
@@ -104,7 +103,7 @@ The simplest case for studying lateral load transfer is a rigid body.  In
 steady-state, the sum of the roll moments must equal to zero. Tire vertical
 forces are developed at the tire contact patches when a lateral force is applied
 at the vehicle centre of gravity. The magnitude of the change in tire vertical
-force is given by the following:
+load is given by the following:
 
 $$ |\Delta F_z| = \frac{mh_{CG}}{t} a_y $$
 
@@ -125,14 +124,14 @@ through the suspension elements.
 
 ![load transfer, link loads](/assets/images/2021-03-21/load-transfer-link-loads.png)
 
-The roll centre is a point on the axle plane in which tire forces can be
-resolved into the suspended mass.  In the symmetrical case, forces resolve into
-the roll centre without creating a roll moment on the suspended mass.  Thus, an
+The roll centre is a point on the axle plane in which forces can be resolved
+into the suspended mass.  In the symmetrical case, forces resolve into the roll
+centre without creating a roll moment on the suspended mass.  Thus, an
 equivalent lateral force originating the tire contact patches could be a lateral
 force of equivalent magnitude applied at the roll centre plus a roll moment that
-is reacted through the suspension links. We call this component of load transfer
-the _link load transfer_. This is also commonly called the _inelastic_ load
-transfer, or the _geometric_ load transfer.
+is reacted through the suspension links. We call this  the _link load transfer_.
+It is also commonly called the _inelastic_ load transfer, or the _geometric_
+load transfer.
 
 $$ |\Delta F_{z,g,f}| = \frac{m_fh_{RC,f}}{t_f} a_y $$
 
@@ -175,7 +174,7 @@ $$ |\Delta F_{z,e,r}| = \frac{k_{\phi,r}}{k_{\phi,f} + k_{\phi,r}}\Bigg[\frac{m_
 
 Where:
 
-* $$ \Delta F_{z,e,i} $$ is the change in tire vertical load for axle $$i$$ due to the roll stiffness load transfer effects [$$N$$]
+* $$ \Delta F_{z,e,i} $$ is the change in tire vertical load due to the roll stiffness load transfer for axle $$i$$ [$$N$$]
 
 This component of tire vertical load transfer is called the _roll stiffness load
 transfer_.  It is also commonly called the _elastic_ load transfer.
@@ -234,7 +233,7 @@ and after a setup change to ascertain its effect.
 ### Target vehicle
 
 We will analyze the Acura RSX in two configurations: stock and modified. The
-stock configuration provides a baseline that represents the design intent of the
+stock configuration is a baseline that represents the design intent of the
 manufacturer. The modified configuration represents a vehicle with some mild
 bolt-on performance parts.  These changes do not alter the underlying suspension
 geometry and do not interfere with the roadworthiness of the vehicle.  The
@@ -303,12 +302,11 @@ Where:
 * $$ k_{\phi,arb,i} $$ is the roll stiffness contribution from the anti-roll bar on axle $$i$$ [$$Nm/rad$$]
 * $$ D_i $$ is the anti-roll bar diameter on axle $$i$$ [$$m$$]
 * $$ l_i $$ is the effective anti-roll bar length on axle $$i$$ [$$m$$]
-* $$ G $$ is the shear modulus of bar material, in which this analysis uses the typical values for steel [$$Pa$$]
+* $$ G $$ is the shear modulus of bar material [$$Pa$$]
 * $$ \textrm{MR}_{arb,i} $$ is the anti-roll bar motion ratio between the twist angle of the anti-roll bar and the wheel centre displacement on axle $$i$$ [$$rad/m$$]
 
-The elastic elements of the corner springs and the anti-roll bar are configured
-in parallel, meaning that the roll stiffness per axle is simply the summation of
-the two stiffnesses.
+The corner springs and the anti-roll bar are configured in parallel, meaning
+that the roll stiffness per axle is simply the summation of the two stiffnesses.
 
 $$ k_{\phi,f} = k_{\phi,cs,f} + k_{\phi,arb,f} $$
 
@@ -318,7 +316,8 @@ Where:
 
 * $$ k_{\phi,i} $$ is the roll stiffness of axle $$i$$ [$$Nm/rad$$]
 
-The following values for roll stiffness are computed for vehicle under study.
+The following values for the roll stiffness are computed for the vehicle under
+study.
 
 | Parameter                          | Stock | Modified |
 | ---------------------------------- | ----- | -------- |
@@ -349,14 +348,14 @@ a very aggressive handling balance. This observation is correlated with change
 in the lateral load transfer distribution.
 
 The roll stiffness distribution does not capture the effect of the roll centre.
-While the directionality is correct, it indicates a change nearly half the
-magnitude as compared to the change in lateral load transfer distribution.
+While the directionality is correct, it suggests a change that is about half the
+magnitude suggested by the lateral load transfer distribution.
 
 The spring rate and wheel rate distributions are limited to vertical dynamics
 only, so the effect of the increased rear anti-roll bar diameter is not
-captured. Interestingly in the modified configuration, it seems as if the corner
-spring rates were deliberately chosen to minimize change in spring rate
-distribution.
+captured. Interestingly, it seems as if the corner spring rates were
+deliberately chosen in the modified configuration to maintain the vertical
+stiffness distribution.
 
 ## Final comments
 
@@ -366,18 +365,17 @@ roll stiffness distribution. These metrics are highly correlated with vehicle
 balance and can be used to ascertain the effect of new springs and anti-roll
 bars on vehicle handling.
 
-Vehicle dynamic analysis is not exclusive to automotive manufacturers or
-motorsport teams who have access to advanced testing facilities and simulation
+Vehicle dynamic analysis is not exclusive to automotive manufacturers or motorsport teams who have access to advanced testing facilities and simulation
 software. Simple linear techniques continue to be useful in an age of non-linear
 computer simulation. This exercise proves how powerful insights can be obtained
 using data and analysis techniques that are accessible.
 
-Vehicle understanding is the key to our success at [Formula Delta][3]. By
-understanding the underlying mechanisms of vehicle performance, we can have
-confidence in our setup decisions. Performance and cost are not mutually
-exclusive. Using a systems approach, we can determine the most efficient pathway
-to success and maximize the "bang-for-your-buck" of your project build. This is
-just one of the many tools we use to achieve this.
+Vehicle understanding is an important aspect to success. By understanding the
+underlying mechanisms of vehicle performance, we can have confidence in our
+setup decisions. Performance and cost are not mutually exclusive. Using a
+systems approach, we can determine the most efficient pathway to success and
+maximize the "bang-for-your-buck" of your project build. This is just one of the
+many tools we use at [Formula Delta][3] to achieve this.
 
 ## References
 
