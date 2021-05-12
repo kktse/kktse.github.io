@@ -13,7 +13,7 @@ Handling modifications are synonymous with upgraded coilovers and anti-roll
 bars.  Replacing them with aftermarket versions do not guarantee the vehicle
 will be improved.  Depending the objectives, the vehicle can be adjusted to
 accommodate the needs of the driver. This requires _tuning_ to achieve the
-desired response.
+desired outcome.
 
 While many factors contribute to the vehicle directional control, the choice of
 spring rate and anti-roll bar size will have a big effect on the vehicle
@@ -225,19 +225,19 @@ of elastic elements and their motion ratios, and the track width.
 ![rsx](/assets/images/2021-03-21/rsx-tmp.jpg)
 
 To demonstrate the applicability of load transfer modelling, we will compute the
-lateral load transfer distribution of the 2002 Acura RSX. This is a vehicle we
-have lots of experience with. Using kinematic data generated from our [analysis
-of the Acura RSX suspension][4], we can compute the lateral load transfer
-distribution before and after a setup change to ascertain its effect.
+lateral load transfer distribution for the 2002 Acura RSX. Using kinematic data
+generated from our [analysis of the Acura RSX suspension][4], we can compute the
+lateral load transfer distribution before and after a setup change to ascertain
+its effect.
 
 ### Target vehicle
 
 We will analyze the Acura RSX in two configurations: stock and modified. The
 stock configuration is a baseline that represents the design intent of the
-manufacturer. The modified configuration represents a vehicle with some mild
-bolt-on performance parts.  These parts do not change the underlying suspension
-geometry and do not interfere with the roadworthiness of the vehicle.  The
-parameters for each configuration are shown below.
+manufacturer. The modified configuration represents a vehicle with mild bolt-on
+performance parts.  These parts do not change the underlying suspension geometry
+and do not interfere with the roadworthiness of the vehicle.  The parameters for
+each configuration are shown below.
 
 | Parameter                                 | Stock | Modified |
 | ----------------------------------------- | ----- | -------- |
@@ -267,10 +267,9 @@ parameters for each configuration are shown below.
 ### Compute the roll stiffness
 
 For suspension of the Acura RSX, there are two elastic elements that contribute
-to the roll stiffness: the corner springs and the anti-roll bar.
-
-Assuming that the vehicle acts in pure roll, the roll stiffness contribution by
-the corner springs can be computed using the following.
+to the roll stiffness: the corner springs and the anti-roll bar. Assuming that
+the vehicle acts in pure roll, the roll stiffness contribution by the corner
+springs can be computed using the following.
 
 $$ k_{\phi,cs,f} = \frac{1}{2} k_{cs,f} \textrm{MR}_{cs,f}^2 t_f^2 $$
 
@@ -327,10 +326,10 @@ study.
 
 ### Results
 
-With the input quantities known, they can be substituted into the load transfer
+With all input quantities known, they can be substituted into the load transfer
 equations. The lateral load transfer distribution and other metrics are
 summarized in the table below. Additional metrics have been included to
-highlight how the fidelity of the model will change the results.
+highlight how the fidelity of the model will affect the results.
 
 | Metric                                           | Stock | Modified | Delta (±/%)  |
 | ------------------------------------------------ | ----- | -------- | ------------ |
@@ -342,13 +341,13 @@ highlight how the fidelity of the model will change the results.
 
 In the modified configuration, the lateral load transfer distribution moves
 rearward +14.3%. This is a 28.9% relative increase compared to the stock
-configuration. Our subjective evaluation suggests the modified configuration has
-a very aggressive handling balance. This observation is correlated with change
-in the lateral load transfer distribution.
+configuration. Our subjective on-track evaluation suggests the modified
+configuration has a very aggressive handling balance. This observation is
+correlated with change in the lateral load transfer distribution.
 
 The roll stiffness distribution does not capture the effect of the roll centre.
-While the directionality is correct, it suggests a change that is about half the
-magnitude suggested by the lateral load transfer distribution.
+While the directionality of the metric is correct, it suggests a change that is
+about half the magnitude suggested by the lateral load transfer distribution.
 
 The spring rate and wheel rate distributions are limited to vertical dynamics
 only, so the effect of the increased rear anti-roll bar diameter is not
