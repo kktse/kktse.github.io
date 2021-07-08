@@ -2,6 +2,7 @@
 layout: post
 title: Simplified steady-state lateral load transfer analysis for spring rate and anti-roll bar selection
 date: 2021-05-11 20:50:00 -0400
+modified_date: 2021-07-07
 categories: [suspension, vehicle dynamics, acura rsx]
 ---
 
@@ -266,10 +267,10 @@ each configuration are shown below.
 
 ### Compute the roll stiffness
 
-For suspension of the Acura RSX, there are two elastic elements that contribute
-to the roll stiffness: the corner springs and the anti-roll bar. Assuming that
-the vehicle acts in pure roll, the roll stiffness contribution by the corner
-springs can be computed using the following.
+For Acura RSX suspension, there are two elastic elements that contribute to the
+roll stiffness: the corner springs and the anti-roll bar. Assuming that the
+vehicle acts in pure roll, the roll stiffness contribution by the corner springs
+can be computed using the following.
 
 $$ k_{\phi,cs,f} = \frac{1}{2} k_{cs,f} \textrm{MR}_{cs,f}^2 t_f^2 $$
 
