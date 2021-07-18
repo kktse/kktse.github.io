@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Measuring tire vertical stiffness of a 255/40R17 ultra-high performance 200TW tire - Bridgestone Potenza RE-71R"
+title:  "Measuring the tire vertical stiffness of a 255/40R17 ultra-high performance 200TW tire - Bridgestone Potenza RE-71R"
 date: 2021-07-18 4:30:00 -0400
 categories: [tires]
 ---
@@ -15,7 +15,8 @@ categories: [tires]
     <div>
     This article was prepared for <i>Formula Delta</i> to demonstrate new tire
     vertical stiffness testing capabilities. The original version of this
-    article can be found here.
+    article can be found <a
+    href="https://formuladelta.ca/blog/2021/07/18/measuring-the-tire-vertical-stiffness-of-a-255-40r17-bridgestone-potenza-re-71r/">here</a>.
     </div>
 </div>
 
@@ -137,7 +138,7 @@ angle from 2 deg to 4 deg did not have the same effect.
 The tire is an elastic springing element in the suspension system that cannot be
 ignored. Understanding the relationship between the tires and the chassis
 affords you better tuning control over the ride and the lateral load transfer
-distribution. With manufacturers being opaque with the technical data on their
+distribution. With manufacturers being opaque with the technical data of their
 products, laboratory tire tests represent one way to gain insight into tire
 performance. The vertical stiffness test can be repeated with several tires to
 provide insight into how tire manufacturers are differentiating their products,
@@ -145,7 +146,7 @@ especially in today's competitive enthusiast tire market.
 
 ## Acknowledgements
 
-This analysis is possible in thanks to **Ping Zhang** at [_Formula Delta_][1].
+This analysis is possible thanks to **Ping Zhang** at [_Formula Delta_][1].
 This analysis required considerable amount of design, manufacturing and testing
 support. You can learn more about [_Formula Delta_][1] on [Facebook][2] and
 [Instagram][3]!
