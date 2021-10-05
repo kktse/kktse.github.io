@@ -33,23 +33,23 @@ inclination angle and vertical load is explored.
 
 ## Tire footprints
 
-Contact patch visualization techniques allows for its length, width and contact
-area to be analyzed. A simple technique to perform this visualization is to
-take an block print. This involves taking an impression of the tire over a flat
-surface with a ink. This is similar to pressing a rubber stamp against a medium
-to create an impression. The industry standard [ASTM F870][1] outlines the
-steps to perform this visualization using ink. Although ink block prints are
-primarily used for tire research, we can apply the same concepts from
-literature to observe trends in the ultra-high performance tire segment.
+Contact patch visualization allows for its length, width and contact area to be
+analyzed. A simple technique to perform is to take an block print. This
+involves making an impression of the tire over a flat surface with a ink. This
+is similar to pressing a rubber stamp against a medium to create an impression.
+The industry standard [ASTM F870][1] outlines the steps to perform this
+visualization using ink. Although ink block prints are primarily used for tire
+research, we can apply the same concepts from literature to observe trends in
+the ultra-high performance tire segment.
 
 {:refdef: style="text-align: center;"}
 ![ink block print](/assets/images/2021-09-25/bridgstone-re71r-255-40-R17-ink-block-print.png)
 {: refdef}
 
 The ink block prints are obtained using a static tire testing fixture. Designed
-and built by [_Formula Delta_][2], the testing fixture allows ink prints to be
-taken under controlled inflation pressure, inclination angle and vertical load.
-The capabilities of the test fixture is shown in the table below.
+and built by [_Formula Delta_][2], the testing fixture allows ink block prints
+to be taken under controlled inflation pressure, inclination angle and vertical
+load. The capabilities of the test fixture is shown in the table below.
 
 | Parameter                   | Value   |
 | --------------------------- | ------- |
@@ -72,7 +72,7 @@ Ambient temperature is measured at 17 °C. The tire is mounted on a 9 inch wide
 rim.
 
 The test matrix consists of five inflation pressures, three inclination angles
-and five vertical loads. The conditions are summarized in the table below.
+and five vertical loads. The test conditions are summarized in the table below.
 
 | Parameter                    | Value                           |
 | ---------------------------- | ------------------------------- |
@@ -81,27 +81,27 @@ and five vertical loads. The conditions are summarized in the table below.
 | **Vertical load** [lbs]      | -500, -800, -1000, -1200, -1400 |
 
 A wide range of inflation pressures are selected to reflect the needs of
-various cars based on our observations at local autocross and lapping events. A
-set of footprints are presented to demonstrate the influence of inflation
+different cars based on our observations at local autocross and lapping events.
+A set of footprints are presented to demonstrate the influence of inflation
 pressure.
 
 ![inflation pressure sweep](/assets/images/2021-09-25/bridgstone-re71r-255-40-R17-pressure-sweep.png)
 
 The choice of inclination angles is fixed based on the capabilities of the test
 fixture. You can see how the inclination angle affects the tire footprint in
-the inclination angle sweep shown below.
+the sweep shown below.
 
 ![inclination angle sweep](/assets/images/2021-09-25/bridgstone-re71r-255-40-R17-inclination-angle-sweep.png)
 
-To focus the study in the most interesting operation regions of the tire, we
-chose a series of vertical loads close to the maximum testing limit. Vertical
-loads from -1400 lbs to -800 lbs are tested in 200 lb increments. An additional
+To focus the study in the most interesting operating regions of the tire, we
+chose a set of vertical loads near the maximum testing limit. Vertical loads
+from -1400 lbs to -800 lbs are tested in 200 lb increments. An additional
 condition of -500 lbs is added to capture the contact patch phenomenon when the
 tire is unloaded.
 
 ![vertical load sweep](/assets/images/2021-09-25/bridgstone-re71r-255-40-R17-vertical-load-sweep.png)
 
-In total, 75 unique ink block prints were obtained as part of this study.
+In total, 75 unique ink block prints were obtained for this study.
 
 ## Analysis
 
@@ -122,7 +122,7 @@ An interesting trend that emerges is the effect of inclination angle. At high
 loads, the contact patch width decreases with inclination angle. At an
 inclination angle for 4 deg and a vertical load of -500 lbs, the contact patch
 lengthened but the width is shortened. This is because the full width of the
-tire is not engaged with the road surface.
+tire no longer engaged with the road surface.
 
 ### Contact area
 
@@ -148,15 +148,14 @@ conditions.
 In this analysis, the contact patch aspect ratio is defined as the ratio
 between the contact patch length and width. This characterizes the shape of the
 contact patch. A 1:1 aspect ratio indicates a _square_ contact patch shape in
-the sense that the width is equal to its length, assuming that the contact
-patch is bounded by a rectangle.
+the sense that the width is equal to its length.
 
 ![aspect ratio analysis](/assets/images/2021-09-25/bridgstone-re71r-255-40-R17-aspect-ratio-analysis.png)
 
 The most interesting finding is how the aspect ratio is changing at 4 degrees
-of inclination angle. The effect of the contact patch width lifting off the
+of inclination angle. The effect of the width of the tire lifting off the
 ground can be observed at 4 deg inclination angle and -500 lbs of vertical
-load, just as we observed in the contact patch width.
+load, just as we observed in the footprint geometry.
 
 ## Load sensitivity
 
@@ -168,7 +167,7 @@ inflation pressure.
 ![load sensitivity analysis](/assets/images/2021-09-25/bridgstone-re71r-255-40-R17-load-sensitivity-analysis.png)
 
 Of the three sensitivities presented, the contact patch width has the clearest
-trend where the change per 100 lbs vertical load reduces as the load is
+trend where the change per 100 lbs vertical load is reduced as the load is
 increased. This effect is even more pronounced as inclination angle is
 increased. Load sensitivity is less clear in contact patch length and gross
 area due to measurement noise, though it can be argued that some distinction
@@ -177,12 +176,12 @@ can be made between high loads and low loads.
 ## Final comments
 
 The relationship between the tire contact patch and inflation pressure,
-inclination angle and vertical load for a used Bridgestone Potenza RE-71R
-255/40R17 98W is complex. The contact patch becomes distorted at high
+inclination angle and vertical load is complex. In the case of the Bridgestone
+Potenza RE-71R 255/40R17 98W, the contact patch becomes distorted at high
 inclination angles as the full width of the tire no longer makes contact with
-the ground. Inflation pressure tends to decrease the gross contact area of the
-contact patch. This effect is more pronounced at high vertical loads. A load
-sensitivity effect is observed in the contact patch shape.
+the ground. Inflation pressure tends to decrease the gross contact area. This
+effect is more pronounced at high vertical loads. A load sensitivity effect is
+observed in the contact patch shape.
 
 Tires are sophisticated engineered products designed to handle extreme
 conditions demanded by modern road vehicles. The tire contact patch is the
@@ -201,10 +200,10 @@ learn more about [_Formula Delta_][2] on [Facebook][4] and [Instagram][5]!
 
 ## References
 
-1. Gent, A. N., & Walter, J. D. (2006). Pneumatic tire.
-1. "ASTM F870 - 94(2016)." ASTM International - Standards Worldwide. https://www.astm.org/Standards/F870.htm.
+1. Gent, A. N., & Walter, J. D. (2006). Pneumatic tire. National highway traffic safety administration.
 1. Gillespie, T. D. (1992). Fundamentals of vehicle dynamics (Vol. 400). Warrendale, PA: Society of automotive engineers.
 1. Wong, J. Y. (2001). Theory of Ground Vehicles. John Wiley & Sons.
+1. "ASTM F870 - 94(2016)." ASTM International - Standards Worldwide. https://www.astm.org/Standards/F870.htm.
 
 [1]: https://www.astm.org/Standards/F870.htm
 [2]: https://formuladelta.ca/
