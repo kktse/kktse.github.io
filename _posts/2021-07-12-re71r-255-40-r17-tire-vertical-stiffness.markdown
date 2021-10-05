@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Measuring the tire vertical stiffness of a 255/40R17 ultra-high performance 200TW tire - Bridgestone Potenza RE-71R"
+title: "Measuring the tire vertical stiffness of a 255/40R17 ultra-high performance 200TW tire - Bridgestone Potenza RE-71R"
 date: 2021-07-18 4:30:00 -0400
 categories: [tires]
 ---
@@ -9,16 +9,6 @@ categories: [tires]
 {% include material_icons.html %}
 
 ![re71r](/assets/images/2021-07-12/bridgestone-re71r-cover-photo.jpg)
-
-<div class="info">
-    <span class="material-icons" style="margin-right:0.25em">info</span>
-    <div>
-    This article was prepared for <i>Formula Delta</i> to demonstrate new tire
-    vertical stiffness testing capabilities. The original version of this
-    article can be found <a
-    href="https://formuladelta.ca/blog/2021/07/18/measuring-the-tire-vertical-stiffness-of-a-255-40r17-bridgestone-potenza-re-71r/">here</a>.
-    </div>
-</div>
 
 Managing the relationship between the tire and the vehicle is an important
 element of vehicle handling. The tire is the vehicle's interface with the road
@@ -31,6 +21,16 @@ this property, we take a popular 200TW ultra-high performance tire and measure
 its vertical stiffness. This tire is the Bridgestone Potenza RE-71R 255/40R17
 98W.
 
+<div class="info">
+    <span class="material-icons" style="margin-right:0.25em">info</span>
+    <div>
+    This article was prepared for <i>Formula Delta</i> to demonstrate new tire
+    vertical stiffness testing capabilities. The original version of this
+    article can be found <a
+    href="https://formuladelta.ca/blog/2021/07/18/measuring-the-tire-vertical-stiffness-of-a-255-40r17-bridgestone-potenza-re-71r/">here</a>.
+    </div>
+</div>
+
 ## Tire load-deflection
 
 The tire is an elastic element that acts in series with the springs to modify
@@ -42,26 +42,26 @@ of vertical loads. The tire is compressed into a flat plate where the tire
 vertical load and radial deflection are measured. The tangent of the
 load-deflection curve at a specific point is the tire vertical stiffness.
 
-$$ K_{Z} = \frac{dF_Z(R_l)}{dR_l} \Bigg|_{F_{Z}=x} $$
+$$ K*{Z} = \frac{dF_Z(R_l)}{dR_l} \Bigg|*{F\_{Z}=x} $$
 
 Where:
 
-* $$ K_Z $$ is the tire vertical stiffness [N/mm]
-* $$ F_Z $$ is the tire vertical load [N]
-* $$ R_l $$ is the tire loaded radius [mm]
-* $$ x $$ is the tire vertical load where the vertical stiffness is evaluated [N]
+- $$ K_Z $$ is the tire vertical stiffness [N/mm]
+- $$ F_Z $$ is the tire vertical load [N]
+- $$ R_l $$ is the tire loaded radius [mm]
+- $$ x $$ is the tire vertical load where the vertical stiffness is evaluated [N]
 
 Testing was performed by [_Formula Delta_][1] using their tire vertical
 stiffness testing fixture. The tire vertical stiffness testing capabilities of
 the [_Formula Delta_][1] tester are shown in the table below.
 
-| Parameter | Value |
-| --------- | ----- |
-| **Vertical load, max** [N] | 6675 |
-| **Loaded radius, max** [mm] | 375 |
-| **Tire width, max** [mm] | 400 |
+| Parameter                   | Value   |
+| --------------------------- | ------- |
+| **Vertical load, max** [N]  | 6675    |
+| **Loaded radius, max** [mm] | 375     |
+| **Tire width, max** [mm]    | 400     |
 | **Inclination angle** [deg] | 0, 2, 4 |
-| **Bolt pattern** | 5x114 | 
+| **Bolt pattern**            | 5x114   |
 
 ## Test schedule
 
@@ -75,17 +75,17 @@ a good representation of a typical 200TW tire.
 Testing is performed in a temperature controlled environment. The test
 conditions are summarized in the table below.
 
-| Parameter | Conditions |
-| --------- | ---------- |
-| **Ambient temperature** [degC] | 17 |
-| **Tread depth** [mm] | 4.5 |
-| **Vertical load, max** [N] | 6230 |
-| **Inflation pressure** [PSI] | 24, 27, 30, 33, 36 |
-| **Inclination angle** [deg] | 0, 2, 4 |
+| Parameter                      | Conditions         |
+| ------------------------------ | ------------------ |
+| **Ambient temperature** [degC] | 17                 |
+| **Tread depth** [mm]           | 4.5                |
+| **Vertical load, max** [N]     | 6230               |
+| **Inflation pressure** [PSI]   | 24, 27, 30, 33, 36 |
+| **Inclination angle** [deg]    | 0, 2, 4            |
 
 Measurements are taken during both loading and unloading conditions. The data is
 fit to a second degree polynomial using least-squares regression. Values are
-referenced using the SAE tire coordinate system. 
+referenced using the SAE tire coordinate system.
 
 ## Analysis
 
@@ -100,7 +100,7 @@ conditions and includes a _composite_ curve showing the _average_ response.
 We can already observe the influence of inflation pressure and inclination angle
 just by inspecting the load-displacement curves. The change in unloaded radius
 due to the inclination angle is primarily an artifact of the SAE tire coordinate
-system.  However, between inclination angles you can see how the unloaded radius
+system. However, between inclination angles you can see how the unloaded radius
 grows with inflation pressure. With vertical load, there is even more variation
 between the conditions.
 
@@ -118,7 +118,7 @@ The influence of inflation pressure and inclination angle on vertical stiffness
 is more apparent in this analysis. As the inflation pressure increases, the tire
 vertical stiffness increases. This relationship is observed across all
 inclination angles. Increasing the inclination angle from 0 deg to 2 deg
-decreases the vertical stiffness by 5.5% on average.  However, increasing the
+decreases the vertical stiffness by 5.5% on average. However, increasing the
 inclination angle from 2 deg to 4 deg does not have the same effect. On average,
 the vertical stiffness is reduced by 1%, with only the 33 PSI condition showing
 an increase in vertical stiffness.
@@ -155,7 +155,6 @@ support. You can learn more about [_Formula Delta_][1] on [Facebook][2] and
 
 1. Gent, A. N., & Walter, J. D. (2006). Pneumatic tire.
 1. Milliken, William F., and Douglas L. Milliken. _Race car vehicle dynamics_. Vol. 400. Warrendale: Society of Automotive Engineers, 1995.
-
 
 [1]: https://formuladelta.ca/
 [2]: https://www.facebook.com/FormulaDeltaConsult
