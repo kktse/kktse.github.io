@@ -38,9 +38,9 @@ analyzed. A simple visualization technique is to take an block print. This
 involves making an impression of the tire over a flat surface. This is similar
 to pressing a rubber stamp against a medium to create an impression. The
 industry standard [ASTM F870][1] outlines the steps to perform this
-visualization using ink. Although ink block prints are primarily used for tire
-research, we can apply the same concepts from literature to observe trends in
-the ultra-high performance tire segment.
+visualization using ink. Although contact patch visualization is primarily used
+for tire research, we can apply the same concepts from literature to observe
+trends in the ultra-high performance tire segment.
 
 {:refdef: style="text-align: center;"}
 ![ink block print](/assets/images/2021-09-25/bridgstone-re71r-255-40-R17-ink-block-print.png)
@@ -153,9 +153,9 @@ the sense that the width is equal to its length.
 ![aspect ratio analysis](/assets/images/2021-09-25/bridgstone-re71r-255-40-R17-aspect-ratio-analysis.png)
 
 The most interesting finding is how the aspect ratio is changing at 4 degrees
-of inclination angle. The effect of the width of the tire lifting off the
-ground can be observed at 4 deg inclination angle and -500 lbs of vertical
-load, just as we observed in the footprint geometry.
+of inclination angle. The effect of the tire lifting off the ground can be
+observed at 4 deg inclination angle and -500 lbs of vertical load, just as we
+observed in the footprint geometry.
 
 ## Load sensitivity
 
@@ -186,11 +186,11 @@ observed in the contact patch shape.
 Tires are sophisticated engineered products designed to handle the extreme
 conditions demanded by modern road vehicles. The tire contact patch is the
 vehicle's interface with the ground and is responsible for generating forces
-that affect vehicle handling and control. Gaining insight into this complex
-phenomenon represents an advantage in chassis design and setup. Static
-laboratory tests provide unique insight that subjective on-track testing alone
-cannot. As lab tests are controlled and repeatable, it is a unique way to
-compare tires before the rubber meets the road.
+that affect handling and control. Gaining insight into this complex phenomenon
+represents an advantage in chassis design and setup. Static laboratory tests
+provide unique insight that subjective on-track testing alone cannot. As lab
+tests are controlled and repeatable, it is a unique way to compare tires before
+the rubber meets the road.
 
 ## Acknowledgements
 
