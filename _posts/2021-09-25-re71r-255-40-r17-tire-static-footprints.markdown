@@ -177,10 +177,10 @@ loads.
 The relationship between the tire contact patch shape versus inflation
 pressure, inclination angle and vertical load is complex. In the case of the
 Bridgestone Potenza RE-71R 255/40R17 98W, the contact patch becomes distorted
-at high inclination angles as the width of the tire is no longer in contact
-with the ground. Inflation pressure tends to decrease the gross contact area
-and is more pronounced at high vertical loads. A load sensitivity effect is
-observed in the contact patch shape.
+at high inclination angles as the full width of the tire is no longer in
+contact with the ground. Inflation pressure tends to decrease the gross contact
+area and is more pronounced at high vertical loads. A load sensitivity effect
+is observed in the contact patch shape.
 
 Tires are sophisticated engineered products designed to handle the extreme
 conditions demanded by modern road vehicles. The tire contact patch is the
