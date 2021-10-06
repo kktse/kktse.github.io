@@ -12,8 +12,8 @@ categories: [tires]
     <span class="material-icons" style="margin-right:0.25em">info</span>
     <div>
     This article was prepared for <i>Formula Delta</i> to demonstrate new tire
-    footprint and vertical stiffness capabilities. The original version of this
-    article can be found <a href="">here</a>.
+    footprint and vertical stiffness testing capabilities. The original version
+    of this article can be found <a href="">here</a>.
     </div>
 </div>
 
@@ -24,7 +24,7 @@ vehicle dynamics.
 
 The tire contact patch can be visualized using empirical measurement
 techniques. The simplest method is to take an ink block print where the
-resulting footprint can analyzed.
+resultant tire footprint can then be analyzed.
 
 In this study, we will look at the static contact patch shape of a used
 Bridgestone Potenza RE-71R 255/40R17 98W tire using ink blocking techniques.
@@ -35,12 +35,12 @@ inclination angle and vertical load is explored.
 
 Contact patch visualization allows for its length, width and contact area to be
 analyzed. A simple visualization technique is to take an block print. This
-involves making an impression of the tire over a flat surface. This is similar
-to pressing a rubber stamp against a medium to create an impression. The
-industry standard [ASTM F870][1] outlines the steps to perform this
-visualization using ink. Although contact patch visualization is primarily used
-for tire research, we can apply the same concepts from literature to observe
-trends in the ultra-high performance tire segment.
+involves making an impression of the tire over a flat surface, much like
+pressing a rubber stamp against a medium to create an impression. The industry
+standard [ASTM F870][1] defines the steps to perform this visualization using
+ink. Although contact patch visualization is primarily used for tire research,
+we can apply the same concepts from literature to observe trends in the
+ultra-high performance tire segment.
 
 {:refdef: style="text-align: center;"}
 ![ink block print](/assets/images/2021-09-25/bridgstone-re71r-255-40-R17-ink-block-print.png)
@@ -87,14 +87,14 @@ of inflation pressure.
 
 ![inflation pressure sweep](/assets/images/2021-09-25/bridgstone-re71r-255-40-R17-pressure-sweep.png)
 
-The choice of inclination angles is fixed based on the capabilities of the test
-fixture. You can see how the inclination angle affects the tire footprint in
-the sweep shown below.
+The choice of inclination angle is fixed given the capabilities of the test
+fixture. You can see the effect of inclination angle in the footprints shown
+below.
 
 ![inclination angle sweep](/assets/images/2021-09-25/bridgstone-re71r-255-40-R17-inclination-angle-sweep.png)
 
 To focus the study in the most interesting operating regions of the tire, we
-chose a set of vertical loads near the maximum testing limit. Vertical loads
+choose a set of vertical loads near the maximum testing limit. Vertical loads
 from -1400 lbs to -800 lbs are tested in 200 lb increments. An additional
 condition of -500 lbs is added to capture the contact patch phenomenon when the
 tire is unloaded.
@@ -139,9 +139,8 @@ effect is subtle in these graphs. This is most pronounced at 4 deg of
 inclination angle.
 
 The void ratio charts are a mess, though it does suggest that the tire tread
-pattern is purposely designed to achieve a desired range of void ratios. The
-void ratio can vary from 0.26 to 0.37 with a mean of 0.31 across all
-conditions.
+pattern is designed to achieve a desired range of void ratios. The void ratio
+can vary from 0.26 to 0.37 with a mean of 0.31 across all conditions.
 
 ### Aspect ratio
 
@@ -167,11 +166,11 @@ inflation pressure.
 ![load sensitivity analysis](/assets/images/2021-09-25/bridgstone-re71r-255-40-R17-load-sensitivity-analysis.png)
 
 Of the three sensitivities presented, the contact patch width has the clearest
-trend where the change per 100 lbs vertical load is reduced as the load is
-increased. This effect is more pronounced as inclination angle is increased.
-Load sensitivity is less clear in contact patch length and gross area due to
-measurement noise, though it can be argued that some distinction can be made
-between high loads and low loads.
+trend where the change per 100 lbs of vertical load is reduced as the load is
+increased. This is more pronounced as inclination angle is increased. Load
+sensitivity is less clear in the contact patch length and gross area, though it
+can be argued that some distinction can be made between high loads and low
+loads.
 
 ## Final comments
 
@@ -186,7 +185,7 @@ observed in the contact patch shape.
 Tires are sophisticated engineered products designed to handle the extreme
 conditions demanded by modern road vehicles. The tire contact patch is the
 vehicle's interface with the ground and is responsible for generating forces
-that affect handling and control. Gaining insight into this complex phenomenon
+that affect handling and control. Gaining insight into this phenomenon
 represents an advantage in chassis design and setup. Static laboratory tests
 provide unique insight that subjective on-track testing alone cannot. As lab
 tests are controlled and repeatable, it is a unique way to compare tires before
@@ -194,9 +193,8 @@ the rubber meets the road.
 
 ## Acknowledgements
 
-This analysis is possible thanks to **Ping Zhang** at [_Formula Delta_][2] as
-it required considerable design, manufacturing and testing support. You can
-learn more about [_Formula Delta_][2] on [Facebook][4] and [Instagram][5]!
+This analysis is possible thanks to **Ping Zhang** at [_Formula Delta_][2]. You
+can learn more about [_Formula Delta_][2] on [Facebook][4] and [Instagram][5]!
 
 ## References
 
