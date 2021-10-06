@@ -42,7 +42,7 @@ of vertical loads. The tire is compressed into a flat plate where the tire
 vertical load and radial deflection are measured. The tangent of the
 load-deflection curve at a specific point is the tire vertical stiffness.
 
-$$ K*{Z} = \frac{dF_Z(R_l)}{dR_l} \Bigg|{F_{Z}=x} $$
+$$ K_{Z} = \frac{dF_Z(R_l)}{dR_l} \Bigg|_{F_{Z}=x} $$
 
 Where:
 
