@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Measuring the effect of inflation pressure, inclination angle and vertical load on static contact patch size of a 255/40R17 ultra-high performance 200TW tire - Bridgestone Potenza RE-71R"
+title: "Measuring the effect of inflation pressure, inclination angle and vertical load on static contact patch shape of a 255/40R17 ultra-high performance 200TW tire - Bridgestone Potenza RE-71R"
+date: 2021-10-06 7:15:00 -0400
 categories: [tires]
 ---
 
@@ -13,7 +14,8 @@ categories: [tires]
     <div>
     This article was prepared for <i>Formula Delta</i> to demonstrate new tire
     footprint and vertical stiffness testing capabilities. The original version
-    of this article can be found <a href="">here</a>.
+    of this article can be found <a
+    href="https://formuladelta.ca/blog/2021/10/06/measuring-the-effect-of-inflation-pressure-inclination-angle-and-vertical-load-on-static-contact-patch-shape-of-a-255-40r17-bridgestone-potenza-re-71r/">here</a>.
     </div>
 </div>
 
@@ -194,7 +196,7 @@ the rubber meets the road.
 ## Acknowledgements
 
 This analysis is possible thanks to **Ping Zhang** at [_Formula Delta_][2]. You
-can learn more about [_Formula Delta_][2] on [Facebook][4] and [Instagram][5]!
+can learn more about [_Formula Delta_][2] on [Facebook][4] and [Instagram][5].
 
 ## References
 
