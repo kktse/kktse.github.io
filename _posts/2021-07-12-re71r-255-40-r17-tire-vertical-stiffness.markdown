@@ -10,6 +10,16 @@ categories: [tires]
 
 ![re71r](/assets/images/2021-07-12/bridgestone-re71r-cover-photo.jpg)
 
+<div class="info">
+    <span class="material-icons" style="margin-right:0.25em">info</span>
+    <div>
+    This article was prepared for <i>Formula Delta</i> to demonstrate new tire
+    footprint and vertical stiffness testing capabilities. The original version
+    of this article can be found <a
+    href="https://formuladelta.ca/blog/2021/07/18/measuring-the-tire-vertical-stiffness-of-a-255-40r17-bridgestone-potenza-re-71r/">here</a>.
+    </div>
+</div>
+
 Managing the relationship between the tire and the vehicle is an important
 element of vehicle handling. The tire is the vehicle's interface with the road
 and must work with the suspension system to support the vehicle weight.
@@ -20,16 +30,6 @@ affect the vertical dynamics of the vehicle. To demonstrate the applicability of
 this property, we take a popular 200TW ultra-high performance tire and measure
 its vertical stiffness. This tire is the Bridgestone Potenza RE-71R 255/40R17
 98W.
-
-<div class="info">
-    <span class="material-icons" style="margin-right:0.25em">info</span>
-    <div>
-    This article was prepared for <i>Formula Delta</i> to demonstrate new tire
-    vertical stiffness testing capabilities. The original version of this
-    article can be found <a
-    href="https://formuladelta.ca/blog/2021/07/18/measuring-the-tire-vertical-stiffness-of-a-255-40r17-bridgestone-potenza-re-71r/">here</a>.
-    </div>
-</div>
 
 ## Tire load-deflection
 
@@ -42,7 +42,7 @@ of vertical loads. The tire is compressed into a flat plate where the tire
 vertical load and radial deflection are measured. The tangent of the
 load-deflection curve at a specific point is the tire vertical stiffness.
 
-$$ K*{Z} = \frac{dF_Z(R_l)}{dR_l} \Bigg|*{F\_{Z}=x} $$
+$$ K*{Z} = \frac{dF_Z(R_l)}{dR_l} \Bigg|{F_{Z}=x} $$
 
 Where:
 
