@@ -15,8 +15,8 @@ categories: [tires]
         <a href="/jekyll/update/2021/10/06/re71r-255-40-r17-tire-static-footprints.html">
             follow-up article
         </a>
-        where we include inclination angle and vertical load into the study
-        using our new static tire testing fixture!
+        where we include inclination angle and vertical load to the study using
+        our new static tire testing fixture!
     </div>
 </div>
 
