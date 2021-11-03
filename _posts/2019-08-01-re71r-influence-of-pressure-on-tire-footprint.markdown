@@ -8,6 +8,18 @@ categories: [tires]
 
 {% include material_icons.html %}
 
+<div class="info">
+    <span class="material-icons" style="margin-right:0.25em">new_releases</span>
+    <div>
+        Check out our
+        <a href="/jekyll/update/2021/10/06/re71r-255-40-r17-tire-static-footprints.html">
+            follow-up article
+        </a>
+        where we include inclination angle and vertical load into the study
+        using our new static tire testing fixture!
+    </div>
+</div>
+
 ![cover](/assets/images/2019-08-01/991-honda-civic.jpg)
 
 Setting tire pressures is one of the simplest modifications used to tune
