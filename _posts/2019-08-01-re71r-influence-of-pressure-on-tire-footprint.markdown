@@ -11,12 +11,10 @@ categories: [tires]
 <div class="info">
     <span class="material-icons" style="margin-right:0.25em">new_releases</span>
     <div>
-        Check out our
+        This topic has been revisited in the follow up post
         <a href="/jekyll/update/2021/10/06/re71r-255-40-r17-tire-static-footprints.html">
-            follow-up article
-        </a>
-        where we include inclination angle and vertical load in the study using
-        our new static tire testing fixture!
+            Measuring the effect of inflation pressure, inclination angle and vertical load on static contact patch shape of a 255/40R17 ultra-high performance 200TW tire - Bridgestone Potenza RE-71R
+        </a>.
     </div>
 </div>
 
@@ -176,12 +174,11 @@ I would like to acknowledge the following individuals for their contribution to 
 <div class="info">
     <span class="material-icons" style="margin-right:0.25em">new_releases</span>
     <div>
-        Still interested in static tire contact patch phenomena? Check out our
-        <a href="/jekyll/update/2021/10/06/re71r-255-40-r17-tire-static-footprints.html">
-            follow-up article
-        </a>
-        where we investigate the effect of inflation pressure, inclination
-        angle and vertical load on static tire contact patch shape.
+        Still interested in static tire contact patch phenomena? See our <a
+        href="/jekyll/update/2021/10/06/re71r-255-40-r17-tire-static-footprints.html">
+        follow-up article </a>
+        where the effect of inflation pressure, inclination angle and vertical
+        load on static tire contact patch shape are investigated.
     </div>
 </div>
 
