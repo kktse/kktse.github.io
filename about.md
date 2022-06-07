@@ -4,19 +4,22 @@ title: About
 permalink: /about/
 ---
 
-Welcome. I am a full-stack software developer. I currently work as an
-_Engineering Lead_ at [Wave Financial](https://www.waveapps.com/).
+Welcome. I am a professional software developer. I currently work as a _Senior
+Software Developer_ at Properly.
 
-I continue to practice vehicle dynamics as an amateur. Grassroots motorsports is
-a platform for me to test my abilities in systems engineering and vehicle
-dynamics. My goal is to apply vehicle dynamics theory in the simplest way
-possible to demonstrate its applicability to modern road vehicles.
+This site is focused on my non-professional vehicle dynamics practice and
+study. I am interested in how vehicle dynamics theory can improve performance
+outcomes at the club level. My mission is to apply vehicle dynamics concepts in
+the simplest way possible to help drivers be safe, realize their potential and
+to improve their enjoyment of the sport. My vision is to make a more
+accessible, competitive and inclusive sport by raising the knowledge floor of
+the community.
 
-I am a collaborator at [Formula Delta](https://formuladelta.ca), a time attack
-project based in the Greater Toronto Area.
+I am collaborator with the [Formula Delta](https://formuladelta.ca) time attack
+project.
 
-Got questions? Lets connect!
+Interested in working together?
 
-* <a href="https://www.linkedin.com/in/ktse/"><svg class="svg-icon"><use
-xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg><span
-class="username">LinkedIn</span>
+- For professional inquires, please share details of the opportunity on [LinkedIn](https://www.linkedin.com/in/ktse/)
+- For vehicle dynamics questions and feedback, please reach out through the
+  Formula Delta [contact page](https://formuladelta.ca/contact-us/)
