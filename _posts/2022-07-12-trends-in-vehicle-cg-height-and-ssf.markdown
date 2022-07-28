@@ -10,7 +10,7 @@ categories: [data visualization]
 Locating the vehicle centre of gravity is fundamental to vehicle dynamics. It
 is a point that can be used to describe the motion of a rigid body when it
 subjected to a resultant force. Its intrinsic effect on vehicle dynamic
-performance makes it an primary consideration in chassis setup and design.
+performance makes it an primary consideration in chassis design and setup.
 
 Obtaining vehicle centre of gravity data is difficult. Measuring the location
 of the vehicle centre of gravity requires specialized equipment like a K&C
@@ -21,7 +21,7 @@ data driven approach may provide a viable approximation assuming that the
 underlying architecture of passenger vehicles of today has not changed in the
 past decades.
 
-In this article, we will explore the National Highway and Traffic Safety
+In this study, we will explore the National Highway and Traffic Safety
 Administration's (NHTSA) Light Vehicle Inertia Parameter Database and the NCAP
 Rollover Stability datasets to identify trends in vehicle centre of gravity
 (CG) and static stability factor (SSF).
@@ -38,26 +38,24 @@ vertical components. These components are defined as relative distances from an
 axle, the vehicle centre plane and the ground respectively. The following
 variables are used to describe these distances.
 
-- Let $$a$$ represent the longitudinal distance of the vehicle CG from the front axle [m]
-- Let $$b$$ represent the longitudinal distance of the vehicle CG from the rear axle [m]
 - Let $$h$$ represent the vertical distance between the vehicle CG and the ground [m]
 
 These values can also be presented in their non-dimensionalized form: weight
 distribution, cross weight and static stability factor. The following variables
 are used to describe these values.
 
-- Let $$T_{avg}$$ represent the average track width of the front and rear axles [m]
 - Let $$\textrm{SSF}$$ represent the static stability of the vehicle [-]
   - Where $$\textrm{SSF} = \frac{T_{avg}}{2h}$$
 
-We will also make reference to the physical geometry to the vehicle,
-specifically the roof height.
+We will also make reference to the physical geometry of the vehicle,
+specifically its track width and roof height.
 
+- Let $$T_{avg}$$ represent the average track width of the front and rear axles [m]
 - Let $$H$$ represent the maximum vertical distance between the roof and the ground [m]
 
-This analysis will focus on the factors influencing CG height and SSF. These
-parameters are highly influential on vehicle dynamic performance and rollover
-stability.
+This analysis will focus on the factors influencing the CG height and SSF.
+These parameters are highly influential on vehicle dynamic performance and
+rollover stability.
 
 ## Dataset
 
@@ -68,7 +66,7 @@ combined sanitized dataset consists of 1270 data points and includes model
 years ranging from 1971 to 2021.
 
 Within this analysis, we will refer to two segments of vehicles: cars and
-trucks. The vehicle body styles in these segments are listed below.
+trucks. The vehicle body styles in each segment are listed below.
 
 - **Cars**: sedans, convertibles, coupes, hatchbacks and wagons
 - **Trucks**: SUVs, pickup trucks, minivans and commercial vans
@@ -158,13 +156,13 @@ the centre of gravity height and the vehicle mass.
 Two clusters are immediately apparent in this graph - cars and trucks. The
 cluster for cars have a lower mean centre of gravity height than the cluster
 for trucks. Centre of gravity height has a weak positive correlation with
-vehicle mass for cars and a moderate positive correlation for trucks.
+vehicle mass for cars and a slight positive correlation for trucks.
 
 ### Static stability factor vs. vehicle mass
 
-In this chart, we get the first like-for-like comparison of the vehicle's
-static rollover resistance. Static stability factor can be interpreted as the
-lateral G a vehicle can sustain without tipping over.
+In this chart, we get the first like-for-like comparison of vehicle static
+rollover resistance. Static stability factor can be interpreted as the lateral
+G a vehicle can sustain without tipping over.
 
 <div style="margin-bottom: 1em">
 {% include 2022/07/12/ssf-vs-weight-min.html %}
@@ -181,9 +179,9 @@ height and its average track width is interesting because of vehicle
 eligibility rules for SCCA Solo events per section 3.1.A in the rule book. To
 minimize the likelihood of a vehicle rollover, the SCCA stipulates that
 competing vehicles must have a roof height to average track width ratio of less
-than one. However, the Solo Events Board (SEB) may also use static stability
-factor as an alternative to determine vehicle eligibility by requiring a SSF of
-greater than 1.3.
+than one. However, the Solo Events Board (SEB) may alternatively use static
+stability factor to determine vehicle eligibility. When applying this rule, the
+SEB requires a SSF of 1.3 or greater.
 
 <div style="margin-bottom: 1em">
 {% include 2022/07/12/ssf-vs-roof-height-to-track-width-ratio-min.html %}
@@ -198,7 +196,7 @@ threshold of 1.3 as outlined in the SCCA Solo rule book. Consequently, this
 means that vehicles that meet the roof height to average track width ratio
 criteria are not guaranteed eligibility for these events.
 
-### Centre of gravity of height vs. model year
+### Centre of gravity height vs. model year
 
 In this chart, we shift our attention to see if there are any trends over time.
 The jitter chart shows how the distribution of centre of gravity heights evolve
@@ -223,7 +221,7 @@ vehicle centre of gravity height with respect to time.
 The NHTSA Light Vehicle Inertial Parameter Database covers model years from
 1971 through 1998, but is missing data for much of the 1990s. It is not until
 2001 do we see regular CG height measurements published as part of the NCAP
-lrogram.
+program.
 
 ### Static stability factor vs. model year
 
@@ -236,10 +234,10 @@ indicate if this is the case.
 </div>
 
 Industry appears to be taking an incremental approach to improving rollover
-stability over time. This is markedly clear in the SUV segment. In the 1970s a
-typical SUV would have an SSF of approximately 1.1. Today, the expectation
-would be around 1.2 or greater. A similar observation could be made for cars.
-This is great news for road safety and rollover prevention.
+stability over time. This is most clearly visible in the SUV segment. In the
+1970s a typical SUV would have an SSF of approximately 1.1. In the 2010s, the
+expectation is 1.2 or greater. A similar observation can be made for cars. This
+is great news for road safety and rollover prevention.
 
 | Decade | Avg. SSF, Cars [-] | Avg. SSF, Trucks [-] |
 | ------ | ------------------ | -------------------- |
@@ -260,9 +258,8 @@ confirm this insight by looking for trends in average track width over time.
 </div>
 
 This chart shows that vehicle average track width is indeed increasing over
-time, meaning that gains in SSF are primarily driven by making vehicles
-physically larger as opposed to manufacturers designing for lower centre of
-gravity heights.
+time. This means that gains in SSF are primarily driven by increases vehicle
+size rather than manufacturers designing for lower centre of gravity heights.
 
 | Decade | Avg. Track, Cars [m] | Avg. Track, Trucks [m] |
 | ------ | -------------------- | ---------------------- |
@@ -274,12 +271,12 @@ gravity heights.
 
 ## Final comments
 
-In this article, we identified trends in vehicle centre of gravity height and
+In this study, we identified trends in vehicle centre of gravity height and
 static stability factor using a data set that spans over five decades. We
-discovered clear clustering of the data based on vehicle classification,
-specifically whether the vehicle was a car or a truck. An increasing trend in
-static stability factor with respect to time is primarily driven by an increase
-in vehicle track width.
+discovered clustering of the data based on vehicle classification, specifically
+whether the vehicle was a car or a truck. An increasing trend in static
+stability factor with respect to time is driven by an increase in vehicle track
+width.
 
 For performance enthusiasts, choosing a vehicle with the highest possible
 static stability factor is desirable to minimize the traction loss due to load
