@@ -259,8 +259,8 @@ over time.
 </div>
 
 This chart shows that vehicle average track width is indeed increasing over
-time. This means that gains in SSF are primarily driven by increases vehicle
-size, rather than vehicle manufacturers designing for lower centre of gravity
+time. This means that gains in SSF are a result of increasing vehicle size,
+rather than vehicle manufacturers designing for lower centre of gravity
 heights.
 
 | Decade | Avg. Track, Cars [m] | Avg. Track, Trucks [m] |
