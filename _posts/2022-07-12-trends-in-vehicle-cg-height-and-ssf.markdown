@@ -294,7 +294,6 @@ the trend is promising for the future of passenger vehicles.
 ## References
 
 - Ginsberg, J. H. (1998). _Advanced engineering dynamics_. Cambridge University Press.
-  Ginsburg
 - _SCCA® National Solo® Rules_ (2022 Edition). (2022). Sports Car Club of America, Inc.
 - Walz, M. C. (2005). _Trends in the static stability factor of passenger cars, light trucks, and vans_ (No. HS-809 868).
 - Heydinger, G. J., Bixel, R. A., Garrott, W. R., Pyne, M., Howe, J. G., & Guenther, D. A. (1999). Measured vehicle inertial parameters-NHTSA's data through November 1998. _SAE transactions_, 2462-2485.
