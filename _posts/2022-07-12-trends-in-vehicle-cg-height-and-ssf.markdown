@@ -39,9 +39,9 @@ variables are used to describe these distances.
 
 - Let $$h$$ represent the vertical distance between the vehicle CG and the ground [m]
 
-These values can be presented in their non-dimensionalized form: weight
-distribution, cross weight and static stability factor. The following variables
-are used to describe these values.
+These values can be presented in their non-dimensionalized form: longitudinal
+weight distribution, lateral weight distribution and static stability factor.
+The following variables are used to describe these values.
 
 - Let $$\textrm{SSF}$$ represent the static stability of the vehicle [-]
   - Where $$\textrm{SSF} = \frac{T_{avg}}{2h}$$
@@ -88,7 +88,7 @@ The vehicle body styles in each segment are listed below.
             </div>
           </div>
           <div style="display: table-cell">
-            <b>Box zoom</b> - click and drag to zoom into a rectangular region
+            <b>Box zoom</b> - click and drag to zoom in to a rectangular region
           </div>
         </div>
       </li>
@@ -145,14 +145,14 @@ The vehicle body styles in each segment are listed below.
 
 ### Centre of gravity height vs. vehicle mass
 
-To begin our analysis, we determine whether there is a correlation between the
-centre of gravity height and the vehicle mass.
+To begin our analysis, we determine whether there is a correlation between
+centre of gravity height and vehicle mass.
 
 <div style="margin-bottom: 1em">
 {% include 2022/07/12/centre-of-gravity-vs-weight-min.html %}
 </div>
 
-Two clusters are apparent in this graph, representing the difference between
+Two clusters are apparent in this graph representing the difference between
 cars and trucks. The cluster for cars have a lower mean centre of gravity
 height than the cluster for trucks. Centre of gravity height has a weak
 positive correlation with vehicle mass for cars and a slight positive
@@ -168,14 +168,14 @@ G a vehicle can sustain without tipping over.
 {% include 2022/07/12/ssf-vs-weight-min.html %}
 </div>
 
-We see again clustering of cars and trucks, with cars typically having a higher
-SSF than trucks. SSF has a slight positive correlation with vehicle mass for
-cars, and has no correlation for trucks.
+We see again the clustering of cars and trucks, with cars typically having a
+higher SSF than trucks. SSF has a slight positive correlation with vehicle mass
+for cars, and has no correlation for trucks.
 
 ### Static stability factor vs. vehicle roof height to average track width ratio
 
 Comparing static stability factor against the ratio between the vehicle roof
-height and its average track width is interesting because of vehicle
+height and its average track width is interesting because of the vehicle
 eligibility rules for SCCA Solo events. To minimize the likelihood of a vehicle
 rollover, section 3.1.A in the rule book stipulates that competing vehicles
 must have a roof height to average track width ratio of less than one. However,
@@ -187,10 +187,10 @@ of 1.3 or greater.
 {% include 2022/07/12/ssf-vs-roof-height-to-track-width-ratio-min.html %}
 </div>
 
-Roof height to average track width appears to be a valid proxy for rollover
-stability. Static stability factor is negatively correlated with the roof
-height to average track width ratio. All vehicles within the dataset that meet
-the roof height to average track width ratio requirement have a static
+The ratio of roof height to average track width appears to be a valid proxy for
+rollover stability. Static stability factor is negatively correlated with the
+roof height to average track width ratio. All vehicles within the dataset that
+meet the roof height to average track width ratio requirement have a static
 stability factor of at least 1.2. This is short of the discretionary SSF
 threshold of 1.3 outlined in the SCCA Solo rule book. Consequently, this means
 that vehicles that meet the roof height to average track width ratio criteria
