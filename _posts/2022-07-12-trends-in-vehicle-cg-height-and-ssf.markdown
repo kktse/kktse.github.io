@@ -18,8 +18,7 @@ machine or a tilt table.
 
 To overcome this challenge, we turn to historical data to inform an estimate. A
 data driven approach may provide a viable approximation assuming that the
-underlying architecture of passenger vehicles of today has not changed in the
-past decades.
+architecture of modern passenger vehicles has not changed in the past decades.
 
 In this study, we will explore the National Highway and Traffic Safety
 Administration's (NHTSA) Light Vehicle Inertia Parameter Database and the NCAP
@@ -40,15 +39,15 @@ variables are used to describe these distances.
 
 - Let $$h$$ represent the vertical distance between the vehicle CG and the ground [m]
 
-These values can also be presented in their non-dimensionalized form: weight
+These values can be presented in their non-dimensionalized form: weight
 distribution, cross weight and static stability factor. The following variables
 are used to describe these values.
 
 - Let $$\textrm{SSF}$$ represent the static stability of the vehicle [-]
   - Where $$\textrm{SSF} = \frac{T_{avg}}{2h}$$
 
-We will also make reference to the physical geometry of the vehicle,
-specifically its track width and roof height.
+We also make reference to the physical geometry of the vehicle, specifically
+its track width and roof height.
 
 - Let $$T_{avg}$$ represent the average track width of the front and rear axles [m]
 - Let $$H$$ represent the maximum vertical distance between the roof and the ground [m]
@@ -65,8 +64,8 @@ datasets are publicly available from their respective organizations. The
 combined sanitized dataset consists of 1270 data points and includes model
 years ranging from 1971 to 2021.
 
-Within this analysis, we will refer to two segments of vehicles: cars and
-trucks. The vehicle body styles in each segment are listed below.
+Within this analysis, we refer to two segments of vehicles: cars and trucks.
+The vehicle body styles in each segment are listed below.
 
 - **Cars**: sedans, convertibles, coupes, hatchbacks and wagons
 - **Trucks**: SUVs, pickup trucks, minivans and commercial vans
@@ -146,17 +145,18 @@ trucks. The vehicle body styles in each segment are listed below.
 
 ### Centre of gravity height vs. vehicle mass
 
-To begin our analysis, we will determine whether there is a correlation between
-the centre of gravity height and the vehicle mass.
+To begin our analysis, we determine whether there is a correlation between the
+centre of gravity height and the vehicle mass.
 
 <div style="margin-bottom: 1em">
 {% include 2022/07/12/centre-of-gravity-vs-weight-min.html %}
 </div>
 
-Two clusters are immediately apparent in this graph - cars and trucks. The
-cluster for cars have a lower mean centre of gravity height than the cluster
-for trucks. Centre of gravity height has a weak positive correlation with
-vehicle mass for cars and a slight positive correlation for trucks.
+Two clusters are apparent in this graph, representing the difference between
+cars and trucks. The cluster for cars have a lower mean centre of gravity
+height than the cluster for trucks. Centre of gravity height has a weak
+positive correlation with vehicle mass for cars and a slight positive
+correlation for trucks.
 
 ### Static stability factor vs. vehicle mass
 
@@ -168,20 +168,20 @@ G a vehicle can sustain without tipping over.
 {% include 2022/07/12/ssf-vs-weight-min.html %}
 </div>
 
-We can again see the clear clustering of cars and trucks, with cars typically
-having a higher SSF than trucks. SSF has a slight positive correlation with
-vehicle mass for cars, and has no correlation for trucks.
+We see again clustering of cars and trucks, with cars typically having a higher
+SSF than trucks. SSF has a slight positive correlation with vehicle mass for
+cars, and has no correlation for trucks.
 
 ### Static stability factor vs. vehicle roof height to average track width ratio
 
 Comparing static stability factor against the ratio between the vehicle roof
 height and its average track width is interesting because of vehicle
-eligibility rules for SCCA Solo events per section 3.1.A in the rule book. To
-minimize the likelihood of a vehicle rollover, the SCCA stipulates that
-competing vehicles must have a roof height to average track width ratio of less
-than one. However, the Solo Events Board (SEB) may alternatively use static
-stability factor to determine vehicle eligibility. When applying this rule, the
-SEB requires a SSF of 1.3 or greater.
+eligibility rules for SCCA Solo events. To minimize the likelihood of a vehicle
+rollover, section 3.1.A in the rule book stipulates that competing vehicles
+must have a roof height to average track width ratio of less than one. However,
+the Solo Events Board (SEB) can alternatively use static stability factor to
+determine vehicle eligibility. When applying this rule, the SEB requires a SSF
+of 1.3 or greater.
 
 <div style="margin-bottom: 1em">
 {% include 2022/07/12/ssf-vs-roof-height-to-track-width-ratio-min.html %}
@@ -192,23 +192,23 @@ stability. Static stability factor is negatively correlated with the roof
 height to average track width ratio. All vehicles within the dataset that meet
 the roof height to average track width ratio requirement have a static
 stability factor of at least 1.2. This is short of the discretionary SSF
-threshold of 1.3 as outlined in the SCCA Solo rule book. Consequently, this
-means that vehicles that meet the roof height to average track width ratio
-criteria are not guaranteed eligibility for these events.
+threshold of 1.3 outlined in the SCCA Solo rule book. Consequently, this means
+that vehicles that meet the roof height to average track width ratio criteria
+are not guaranteed eligibility for these events.
 
 ### Centre of gravity height vs. model year
 
-In this chart, we shift our attention to see if there are any trends over time.
-The jitter chart shows how the distribution of centre of gravity heights evolve
-over time. It is also gives us some insight into the dataset itself.
+In this chart, we shift our attention to identify trends over time. The jitter
+chart shows the distribution of centre of gravity heights for each model year.
+It also provides insight into the dataset itself.
 
 <div style="margin-bottom: 1em">
 {% include 2022/07/12/centre-of-gravity-vs-my-min.html %}
 </div>
 
 Much like the charts before, there is a clear difference in centre of gravity
-height between cars and trucks. It is difficult to see any clear trends in
-vehicle centre of gravity height with respect to time.
+height between cars and trucks. There is no clear trend in vehicle centre of
+gravity height with respect to time.
 
 | Decade | Avg. CG Height, Cars [m] | Avg. CG Height, Trucks [m] |
 | ------ | ------------------------ | -------------------------- |
@@ -237,7 +237,7 @@ Industry appears to be taking an incremental approach to improving rollover
 stability over time. This is most clearly visible in the SUV segment. In the
 1970s a typical SUV would have an SSF of approximately 1.1. In the 2010s, the
 expectation is 1.2 or greater. A similar observation can be made for cars. This
-is great news for road safety and rollover prevention.
+is great for road safety and rollover prevention.
 
 | Decade | Avg. SSF, Cars [-] | Avg. SSF, Trucks [-] |
 | ------ | ------------------ | -------------------- |
@@ -250,8 +250,9 @@ is great news for road safety and rollover prevention.
 ### Average track width vs. model year
 
 Static stability is increasing over time but centre of gravity height remains
-stationary. This implies that vehicles are increasing in track width. We can
-confirm this insight by looking for trends in average track width over time.
+stationary. This implies that over time, vehicles have been increasing in track
+width. We can confirm this insight by looking for trends in average track width
+over time.
 
 <div style="margin-bottom: 1em">
 {% include 2022/07/12/track-width-vs-my-min.html %}
@@ -259,7 +260,8 @@ confirm this insight by looking for trends in average track width over time.
 
 This chart shows that vehicle average track width is indeed increasing over
 time. This means that gains in SSF are primarily driven by increases vehicle
-size rather than manufacturers designing for lower centre of gravity heights.
+size, rather than vehicle manufacturers designing for lower centre of gravity
+heights.
 
 | Decade | Avg. Track, Cars [m] | Avg. Track, Trucks [m] |
 | ------ | -------------------- | ---------------------- |
@@ -279,7 +281,7 @@ stability factor with respect to time is driven by an increase in vehicle track
 width.
 
 For performance enthusiasts, choosing a vehicle with the highest possible
-static stability factor is desirable to minimize the traction loss due to load
+static stability factor is desirable to minimize the negative effects of load
 transfer and tire load sensitivity. For HPDE organizers, this dataset can be
 used to validate the effectiveness of vehicle eligibility rules based on track
 width and roof height.
