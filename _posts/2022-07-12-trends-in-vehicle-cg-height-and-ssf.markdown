@@ -2,6 +2,7 @@
 layout: post
 title: Trends in vehicle centre of gravity height and static stability factor from 1971 to 2020 using the NHTSA LVIPD and NCAP rollover stability measurements
 date: 2022-07-28 10:00:00 -0400
+modified_date: 2022-08-07
 categories: [data visualization]
 ---
 
@@ -10,7 +11,7 @@ categories: [data visualization]
 Locating the vehicle centre of gravity is fundamental to vehicle dynamics. It
 is a point that can be used to describe the motion of a rigid body when it
 subjected to a resultant force. Its intrinsic effect on vehicle dynamic
-performance makes it an primary consideration in chassis design and setup.
+performance makes it a primary consideration in chassis design and setup.
 
 Obtaining vehicle centre of gravity data is difficult. Measuring the location
 of the vehicle centre of gravity requires specialized equipment like a K&C
@@ -34,14 +35,16 @@ equations of motion.
 
 The vehicle centre of gravity is comprised of longitudinal, lateral and
 vertical components. These components are defined as relative distances from an
-axle, the vehicle centre plane and the ground respectively. The following
-variables are used to describe these distances.
+axle, the vehicle centre plane and the ground respectively. Of particular
+interest is the height of the centre of gravity, represented by the following
+variable.
 
 - Let $$h$$ represent the vertical distance between the vehicle CG and the ground [m]
 
 These values can be presented in their non-dimensionalized form: longitudinal
 weight distribution, lateral weight distribution and static stability factor.
-The following variables are used to describe these values.
+We are specifically interested static stability factor, which will be
+represented by the following variable.
 
 - Let $$\textrm{SSF}$$ represent the static stability of the vehicle [-]
   - Where $$\textrm{SSF} = \frac{T_{avg}}{2h}$$
@@ -52,9 +55,9 @@ its track width and roof height.
 - Let $$T_{avg}$$ represent the average track width of the front and rear axles [m]
 - Let $$H$$ represent the maximum vertical distance between the roof and the ground [m]
 
-This analysis will focus on the factors influencing the CG height and SSF.
-These parameters are highly influential on vehicle dynamic performance and
-rollover stability.
+This analysis focuses on the factors influencing the CG height and SSF. These
+parameters are highly influential on vehicle dynamic performance and rollover
+stability.
 
 ## Dataset
 
