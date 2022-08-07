@@ -2,6 +2,7 @@
 layout: post
 title: Estimating vehicle inertia and centre-of-gravity height using the NHTSA light vehicle inertial parameter database
 categories: [data visualization]
+modified_date: 2022-08-07
 ---
 
 {% include mathjax.html %}
@@ -23,6 +24,30 @@ architecture of the modern light vehicle has not fundamentally changed, we
 can use this information to identify trends in the data to better inform an
 estimation of mass and inertial properties of a given vehicle.
 
+<div class="info">
+    <span class="material-icons" style="margin-right:0.25em">info</span>
+    <div>
+    <p>
+        <b>Update 2022/08/07</b> A new study using NHTSA Light Vehicle Inertial
+        Parameter Database and NCAP Rollover Stability measurements is now
+        available at the link below.
+    </p>
+    <p>
+        <a
+        href="/jekyll/update/2022/07/28/trends-in-vehicle-cg-height-and-ssf.html"><b>Trends
+        in vehicle centre of gravity height and static stability factor from
+        1971 to 2020 using the NHTSA LVIPD and NCAP rollover stability
+        measurements</b></a>
+    </p>
+    <p>
+        This new study uses a much larger dataset and includes CG height
+        measurements for up to year 2020. It is recommended to view this
+        article if your primary interest is in identifying trends in vehicle
+        centre of gravity height.
+    </p>
+    </div>
+</div>
+
 ## Vehicle properties
 
 The mass properties of a four-wheeled vehicle typically refer to its mass and
@@ -30,10 +55,10 @@ the position of its centre-of-gravity (CG). We will assume that the lateral
 position of the CG lies along the XZ-plane (ie. the vehicle centre plane).
 This yields four parameters of interest.
 
-* The vehicle mass, $$m$$ in [$$kg$$]
-* The longitudinal distance from the CG to the front axle, $$a$$ in [$$m$$]
-* The longitudinal distance from the CG to the rear axle, $$b$$ in [$$m$$]
-* The vertical distance from the CG to the ground, $$h$$ in [$$m$$]
+- The vehicle mass, $$m$$ in [$$kg$$]
+- The longitudinal distance from the CG to the front axle, $$a$$ in [$$m$$]
+- The longitudinal distance from the CG to the rear axle, $$b$$ in [$$m$$]
+- The vertical distance from the CG to the ground, $$h$$ in [$$m$$]
 
 Of the four parameters, only the vertical distance from the CG height to the
 ground (simply known as the CG height) is difficult to obtain. The remaining
@@ -63,10 +88,10 @@ represent the products of inertia. Because we assume the vehicle is symmetric
 along the XZ-plane, we can set $$I_{xy} = 0$$ and $$I_{yz} = 0$$. This leaves
 us with four inertial parameters of interest.
 
-* The roll inertia, $$I_{xx}$$ in [$$kg \cdot m^2$$]
-* The pitch inertia, $$I_{yy}$$ in [$$kg \cdot m^2$$]
-* The yaw inertia, $$I_{zz}$$ in [$$kg \cdot m^2$$]
-* The roll/yaw product of inertia, $$I_{xz}$$ in [$$kg \cdot m^2$$]
+- The roll inertia, $$I_{xx}$$ in [$$kg \cdot m^2$$]
+- The pitch inertia, $$I_{yy}$$ in [$$kg \cdot m^2$$]
+- The yaw inertia, $$I_{zz}$$ in [$$kg \cdot m^2$$]
+- The roll/yaw product of inertia, $$I_{xz}$$ in [$$kg \cdot m^2$$]
 
 All four inertial parameters are non-trivial to obtain and will be in scope
 of our discussion.
@@ -82,15 +107,15 @@ The database provides a vehicle type code to describe the chassis style.
 Unfortunately, no key is provided for type code in the database. The best
 guess legend key and sample vehicles are shown below.
 
-* **4S** - four door sedan - _1987 Ford Tempo, 1991 Honda Accord LX_
-* **2S** - two door sedan - _1998 Chevrolet Metro, 1986 BMW 325i_
-* **SW** - station wagon - _1979 Datsun 210, 1986 Buick Century Estate_
-* **PU** - pick up truck - _1986 Chevrolet S-10 Pickup, 1998 Toyota Tacoma_
-* **VN** - minivan - _1992 Dodge Caravan, 1991 Toyota Previa LE_
-* **MP** - "multi-purpose" SUV - _1983 Chevrolet S-10 Blazer, 1998 Toyota 4Runner_
-* **3H** - three door hatchback - _1991 Geo Metro, 1986 Mazda 323_
-* **5H** - five door hatchback - _1983 Dodge Omni, 1983 Toyota Camry_
-* **2C** - two door coupe - _1986 Toyota MR2, 1989 Pontiac Grand Am_
+- **4S** - four door sedan - _1987 Ford Tempo, 1991 Honda Accord LX_
+- **2S** - two door sedan - _1998 Chevrolet Metro, 1986 BMW 325i_
+- **SW** - station wagon - _1979 Datsun 210, 1986 Buick Century Estate_
+- **PU** - pick up truck - _1986 Chevrolet S-10 Pickup, 1998 Toyota Tacoma_
+- **VN** - minivan - _1992 Dodge Caravan, 1991 Toyota Previa LE_
+- **MP** - "multi-purpose" SUV - _1983 Chevrolet S-10 Blazer, 1998 Toyota 4Runner_
+- **3H** - three door hatchback - _1991 Geo Metro, 1986 Mazda 323_
+- **5H** - five door hatchback - _1983 Dodge Omni, 1983 Toyota Camry_
+- **2C** - two door coupe - _1986 Toyota MR2, 1989 Pontiac Grand Am_
 
 ## Trends
 
@@ -111,11 +136,11 @@ in cars. The table below summarizes the results of the linear regression.
 
 <div style="overflow-x: auto" markdown="block">
 
-| Dataset      | Transfer Function      | R-Squared | Count |
+| Dataset      |      Transfer Function | R-Squared | Count |
 | ------------ | ---------------------: | --------: | ----: |
-| All Vehicles | y = 0.00018x + 0.34338 | 0.723     | 204   |
-| Cars         | y = 0.00005x + 0.46983 | 0.405     | 73    |
-| Trucks       | y = 0.00014x + 0.40760 | 0.631     | 131   |
+| All Vehicles | y = 0.00018x + 0.34338 |     0.723 |   204 |
+| Cars         | y = 0.00005x + 0.46983 |     0.405 |    73 |
+| Trucks       | y = 0.00014x + 0.40760 |     0.631 |   131 |
 
 </div>
 
@@ -140,20 +165,20 @@ weak. The results are summarized in the table below.
 
 <div style="overflow-x: auto" markdown="block">
 
-| Dataset      | Parameter  | Transfer Function    | R-Squared | Count |
-| ------------ | ---------- | -------------------: | --------: | ----: |
-| All Vehicles | Roll, $$I_{xx}$$ | y = 0.566x - 276.379 | 0.836     | 204   |
-| Cars         | Roll, $$I_{xx}$$ | y = 0.497x - 181.445 | 0.857     | 73    |
-| Trucks       | Roll, $$I_{xx}$$ | y = 0.609x - 355.532 | 0.760     | 131   |
-| All Vehicles | Pitch, $$I_{yy}$$ | y = 2.978x - 1697.108| 0.834     | 204   |
-| Cars         | Pitch, $$I_{yy}$$ | y = 3.079x - 1728.758| 0.913     | 73    |
-| Trucks       | Pitch, $$I_{yy}$$ | y = 3.182x - 2107.468| 0.751     | 131   |
-| All Vehicles | Yaw, $$I_{zz}$$ | y = 2.961x - 1596.431| 0.845     | 204   |
-| Cars         | Yaw, $$I_{zz}$$ | y = 3.176x - 1754.164| 0.920     | 73    |
-| Trucks       | Yaw, $$I_{zz}$$ | y = 3.168x - 2021.319| 0.770     | 131   |
-| All Vehicles | Roll/yaw, $$I_{xz}$$ | y = 0.049x - 13.996  | 0.078     | 41   |
-| Cars         | Roll/yaw, $$I_{xz}$$ | y = 0.060x - 10.578  | 0.627     | 10    |
-| Trucks       | Roll/yaw, $$I_{xz}$$ | y = 0.078x - 75.000  | 0.098     | 31   |
+| Dataset      | Parameter            |     Transfer Function | R-Squared | Count |
+| ------------ | -------------------- | --------------------: | --------: | ----: |
+| All Vehicles | Roll, $$I_{xx}$$     |  y = 0.566x - 276.379 |     0.836 |   204 |
+| Cars         | Roll, $$I_{xx}$$     |  y = 0.497x - 181.445 |     0.857 |    73 |
+| Trucks       | Roll, $$I_{xx}$$     |  y = 0.609x - 355.532 |     0.760 |   131 |
+| All Vehicles | Pitch, $$I_{yy}$$    | y = 2.978x - 1697.108 |     0.834 |   204 |
+| Cars         | Pitch, $$I_{yy}$$    | y = 3.079x - 1728.758 |     0.913 |    73 |
+| Trucks       | Pitch, $$I_{yy}$$    | y = 3.182x - 2107.468 |     0.751 |   131 |
+| All Vehicles | Yaw, $$I_{zz}$$      | y = 2.961x - 1596.431 |     0.845 |   204 |
+| Cars         | Yaw, $$I_{zz}$$      | y = 3.176x - 1754.164 |     0.920 |    73 |
+| Trucks       | Yaw, $$I_{zz}$$      | y = 3.168x - 2021.319 |     0.770 |   131 |
+| All Vehicles | Roll/yaw, $$I_{xz}$$ |   y = 0.049x - 13.996 |     0.078 |    41 |
+| Cars         | Roll/yaw, $$I_{xz}$$ |   y = 0.060x - 10.578 |     0.627 |    10 |
+| Trucks       | Roll/yaw, $$I_{xz}$$ |   y = 0.078x - 75.000 |     0.098 |    31 |
 
 </div>
 
@@ -184,15 +209,15 @@ whereas cars tend to have a higher SSF.
 
 <div style="overflow-x: auto" markdown="block">
 
-| Static Stability Factor (SSF) | All Vehicles | Cars | Trucks |
-| ------ | -----------: | ---: | -----: |
-| **Mean**   | 1.212 | 1.341 | 1.140 |
-| **Min**    | 0.964 | 1.220 | 0.964 |
-| **25th percentile** | 1.110 | 1.310 | 1.079 |
-| **50th percentile** | 1.220 | 1.342 | 1.128 |
-| **75th percentile** | 1.316 | 1.378 | 1.211 |
-| **Max**    | 1.478 | 1.435 | 1.478 |
-| **Count**  | 204   | 73    | 131   |
+| Static Stability Factor (SSF) | All Vehicles |  Cars | Trucks |
+| ----------------------------- | -----------: | ----: | -----: |
+| **Mean**                      |        1.212 | 1.341 |  1.140 |
+| **Min**                       |        0.964 | 1.220 |  0.964 |
+| **25th percentile**           |        1.110 | 1.310 |  1.079 |
+| **50th percentile**           |        1.220 | 1.342 |  1.128 |
+| **75th percentile**           |        1.316 | 1.378 |  1.211 |
+| **Max**                       |        1.478 | 1.435 |  1.478 |
+| **Count**                     |          204 |    73 |    131 |
 
 </div>
 
@@ -207,9 +232,9 @@ $$DI_{yaw} = \frac{k_z^2}{ab}$$
 
 Where:
 
-* $$k_z$$ is the yaw radius of gyration [$$m$$]
-* $$a$$ is the longitudinal distance from the CG to the front axle [$$m$$]
-* $$b$$ is the longitudinal distance from the CG to the rear axle [$$m$$]
+- $$k_z$$ is the yaw radius of gyration [$$m$$]
+- $$a$$ is the longitudinal distance from the CG to the front axle [$$m$$]
+- $$b$$ is the longitudinal distance from the CG to the rear axle [$$m$$]
 
 The following equation shows the relationship between the yaw radius of
 gyration and the yaw inertia. Rearranging this relation for $$I_{zz}$$
@@ -243,48 +268,48 @@ around some value. The results are shown in the tables below.
 
 <div style="overflow-x: auto" markdown="block">
 
-| Roll Dynamic Index   | All Vehicles | Cars | Trucks |
-| ------               | -----------: | ---: | -----: |
-| **Mean**             | 0.413 | 0.409 | 0.415 |
-| **Min**              | 0.367 | 0.378 | 0.367 |
-| **25th percentile**  | 0.399 | 0.399 | 0.399 |
-| **50th percentile**  | 0.409 | 0.408 | 0.412 |
-| **75th percentile**  | 0.423 | 0.415 | 0.427 |
-| **Max**              | 0.512 | 0.471 | 0.512 |
+| Roll Dynamic Index  | All Vehicles |  Cars | Trucks |
+| ------------------- | -----------: | ----: | -----: |
+| **Mean**            |        0.413 | 0.409 |  0.415 |
+| **Min**             |        0.367 | 0.378 |  0.367 |
+| **25th percentile** |        0.399 | 0.399 |  0.399 |
+| **50th percentile** |        0.409 | 0.408 |  0.412 |
+| **75th percentile** |        0.423 | 0.415 |  0.427 |
+| **Max**             |        0.512 | 0.471 |  0.512 |
 
 </div>
 
 <div style="overflow-x: auto" markdown="block">
 
-| Pitch Dynamic Index  | All Vehicles | Cars | Trucks |
-| ------               | -----------: | ---: | -----: |
-| **Mean**             | 1.004 | 1.042 | 0.982 |
-| **Min**              | 0.816 | 0.831 | 0.816 |
-| **25th percentile**  | 0.927 | 0.977 | 0.908 |
-| **50th percentile**  | 0.998 | 1.061 | 0.963 |
-| **75th percentile**  | 1.078 | 1.095 | 1.038 |
-| **Max**              | 1.298 | 1.225 | 1.298 |
+| Pitch Dynamic Index | All Vehicles |  Cars | Trucks |
+| ------------------- | -----------: | ----: | -----: |
+| **Mean**            |        1.004 | 1.042 |  0.982 |
+| **Min**             |        0.816 | 0.831 |  0.816 |
+| **25th percentile** |        0.927 | 0.977 |  0.908 |
+| **50th percentile** |        0.998 | 1.061 |  0.963 |
+| **75th percentile** |        1.078 | 1.095 |  1.038 |
+| **Max**             |        1.298 | 1.225 |  1.298 |
 
 </div>
 
 <div style="overflow-x: auto" markdown="block">
 
-| Yaw Dynamic Index   | All Vehicles | Cars | Trucks |
-| ------              | -----------: | ---: | -----: |
-| **Mean**            | 1.034 | 1.091 | 1.002 |
-| **Min**             | 0.837 | 0.914 | 0.837 |
-| **25th percentile** | 0.962 | 1.037 | 0.932 |
-| **50th percentile** | 1.033 | 1.105 | 1.000 |
-| **75th percentile** | 1.111 | 1.148 | 1.055 |
-| **Max**             | 1.242 | 1.242 | 1.190 |
+| Yaw Dynamic Index   | All Vehicles |  Cars | Trucks |
+| ------------------- | -----------: | ----: | -----: |
+| **Mean**            |        1.034 | 1.091 |  1.002 |
+| **Min**             |        0.837 | 0.914 |  0.837 |
+| **25th percentile** |        0.962 | 1.037 |  0.932 |
+| **50th percentile** |        1.033 | 1.105 |  1.000 |
+| **75th percentile** |        1.111 | 1.148 |  1.055 |
+| **Max**             |        1.242 | 1.242 |  1.190 |
 
 </div>
 
 <div style="overflow-x: auto" markdown="block">
 
-| Metric   | All Vehicles | Cars | Trucks |
-| ------              | -----------: | ---: | -----: |
-| **Count**            | 204   | 73    | 131   |
+| Metric    | All Vehicles | Cars | Trucks |
+| --------- | -----------: | ---: | -----: |
+| **Count** |          204 |   73 |    131 |
 
 </div>
 
@@ -296,10 +321,10 @@ factors. The average values can be used to estimate the vehicle's centre of
 gravity height and inertial properties with data that is easily obtainable.
 For cars, the average values are:
 
-* **Static stability factor**: 1.341
-* **Roll dynamic index**: 0.409
-* **Pitch dynamic index**: 1.042
-* **Yaw dynamic index**: 1.091
+- **Static stability factor**: 1.341
+- **Roll dynamic index**: 0.409
+- **Pitch dynamic index**: 1.042
+- **Yaw dynamic index**: 1.091
 
 The roll/yaw product can be estimated using the transfer function with
 respect to vehicle mass. Note that this is subject to greater uncertainty

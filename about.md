@@ -20,6 +20,7 @@ project.
 
 Interested in working together?
 
-- For professional inquires, please share details of the opportunity on [LinkedIn](https://www.linkedin.com/in/ktse/)
-- For vehicle dynamics questions and feedback, please reach out through the
+- For professional inquires, please message me on
+  [LinkedIn](https://www.linkedin.com/in/ktse/) with details of the opportunity
+- For vehicle dynamics questions and inquires, please contact me through the
   Formula Delta [contact page](https://formuladelta.ca/contact-us/)
