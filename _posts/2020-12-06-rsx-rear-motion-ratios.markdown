@@ -12,20 +12,20 @@ categories: [suspension, kinematics, acura rsx]
 >
 > Front Suspension
 >
-> * [Analysis of the Acura RSX front suspension geometry](/jekyll/update/2020/01/30/static-suspension-geometry-analysis-acura-rsx.html)
-> * [Kinematic curves of the Acura RSX front suspension](/jekyll/update/2020/06/21/rsx-kinematic-curves.html)
-> * [Motion ratio curves of the Acura RSX front suspension](/jekyll/update/2020/07/25/rsx-front-motion-ratios.html)
-> * [Kinematic roll centre analysis of the Acura RSX front suspension](/jekyll/update/2020/09/07/rsx-front-kinematic-roll-centre.html)
+> - [Analysis of the Acura RSX front suspension geometry](/jekyll/update/2020/01/30/static-suspension-geometry-analysis-acura-rsx.html)
+> - [Kinematic curves of the Acura RSX front suspension](/jekyll/update/2020/06/21/rsx-kinematic-curves.html)
+> - [Motion ratio curves of the Acura RSX front suspension](/jekyll/update/2020/07/25/rsx-front-motion-ratios.html)
+> - [Kinematic roll centre analysis of the Acura RSX front suspension](/jekyll/update/2020/09/07/rsx-front-kinematic-roll-centre.html)
 >
 > Rear Suspension
 >
-> * [Kinematic curves of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rear-kinematic-curves.html)
-> * [**You are here!** - Motion ratio curves of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rear-motion-ratios.html)
-> * [Kinematic roll centre analysis of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rsx-rear-kinematic-roll-centre.html)
+> - [Kinematic curves of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rear-kinematic-curves.html)
+> - [**You are here!** - Motion ratio curves of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rear-motion-ratios.html)
+> - [Kinematic roll centre analysis of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rsx-rear-kinematic-roll-centre.html)
 >
 > Full Vehicle
 >
-> * [Anti-lift, anti-dive and kinematic pitch centre analysis of the Acura RSX suspension](/jekyll/update/2021/02/19/rsx-suspension-longitudinal-antis.html)
+> - [Anti-lift, anti-dive and kinematic pitch centre analysis of the Acura RSX suspension](/jekyll/update/2021/02/19/rsx-suspension-longitudinal-antis.html)
 
 ![rsx cover](/assets/images/2020-12-06/rsx-cover-2.jpg)
 
@@ -111,6 +111,15 @@ factory ride height. You can expect the motion ratio to decrease in bump.
 
 ### Anti-roll Bar Motion Ratio
 
+<div class="info">
+    <span class="material-icons" style="margin-right:0.25em">info</span>
+    <div>
+    <b>August 26, 2022</b> - the rear anti-roll bar motion ratio have been
+    updated to correct an error in the analysis calculation. The charts and
+    values listed below have since been corrected.
+    </div>
+</div>
+
 The rear anti-roll bar is actuated by an end link attached to the lower
 control arm. This design packages nicely, but is suspectable to motion ratio
 variation due to change in angle of the end link. The anti-roll bar twist
@@ -119,10 +128,8 @@ horizontal plane.
 
 ![anti-roll bar motion ratio](/assets/images/2020-12-06/rsx-rear-left-mrarb.svg)
 
-The motion ratio is 0.193 deg of twist per mm of wheel centre travel at
-factory ride height. The motion ratio reaches a maximum of 0.194 deg/mm at
-around 15mm of bump travel. On either side of this point, you can expect the
-motion ratio to decrease.
+The motion ratio is 0.201 deg of twist per mm of wheel centre travel at
+factory ride height. You can expect the motion ratio to decrease in bump.
 
 ## Final Comments
 

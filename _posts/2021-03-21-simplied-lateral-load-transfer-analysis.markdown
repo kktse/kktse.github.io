@@ -258,7 +258,7 @@ each configuration are shown below.
 | **Sway bar wall thickness, rear** [mm]    | N/A   | N/A      |
 | **Sway bar, shear modulus** [GPa]         | 80    | 80       |
 | **Sway bar motion ratio, front** [deg/mm] | 0.096 | 0.096    |
-| **Sway bar motion ratio, rear** [deg/mm]  | 0.193 | 0.185    |
+| **Sway bar motion ratio, rear** [deg/mm]  | 0.201 | 0.184    |
 | **Height, centre of gravity** [mm]        | 533   | 480      |
 | **Height, roll centre, front** [mm]       | 96    | -64      |
 | **Height, roll centre, rear** [mm]        | 168   | 120      |
