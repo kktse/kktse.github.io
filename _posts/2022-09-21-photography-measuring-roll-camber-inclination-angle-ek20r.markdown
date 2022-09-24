@@ -164,11 +164,11 @@ alignment when the vehicle is subjected to the forces of a maneuver that needs
 to be considered for vehicle setup.
 
 This photo raised good questions about vehicle performance for the EK20R. We
-see an opportunity to experiment with rear alignment to ensure that the tire
-upright with respect to the ground during cornering. While the ride height is
-unconventionally high for a prepared Honda Civic, we are generally happy to
-keep the car _softly sprung_ and focus on improving the overall mechanical grip
-of the vehicle.
+see an opportunity to experiment with the rear alignment to ensure that the
+tire is upright with respect to the ground during cornering. While the ride
+height is unconventionally high for a prepared Honda Civic, we are generally
+happy to keep the car _softly sprung_ and focus on improving the overall
+mechanical grip of the vehicle.
 
 The source image is used with permission from its author.
 
