@@ -2,7 +2,7 @@
 layout: post
 title: Simplified steady-state lateral load transfer analysis for spring rate and anti-roll bar selection
 date: 2021-05-11 20:50:00 -0400
-modified_date: 2021-07-07
+modified_date: 2022-10-22
 categories: [suspension, vehicle dynamics, acura rsx]
 ---
 
@@ -231,6 +231,15 @@ generated from our [analysis of the Acura RSX suspension][4], we can compute the
 lateral load transfer distribution before and after a setup change to ascertain
 its effect.
 
+<div class="info">
+    <span class="material-icons" style="margin-right:0.25em">info</span>
+    <div>
+    <b>October 22, 2022</b> - the rear anti-roll bar motion ratio was updated
+    to correct an error. The charts and values below reflect the corrected
+    analysis.
+    </div>
+</div>
+
 ### Target vehicle
 
 We will analyze the Acura RSX in two configurations: stock and modified. The
@@ -258,7 +267,7 @@ each configuration are shown below.
 | **Sway bar wall thickness, rear** [mm]    | N/A   | N/A      |
 | **Sway bar, shear modulus** [GPa]         | 80    | 80       |
 | **Sway bar motion ratio, front** [deg/mm] | 0.096 | 0.096    |
-| **Sway bar motion ratio, rear** [deg/mm]  | 0.193 | 0.185    |
+| **Sway bar motion ratio, rear** [deg/mm]  | 0.201 | 0.184    |
 | **Height, centre of gravity** [mm]        | 533   | 480      |
 | **Height, roll centre, front** [mm]       | 96    | -64      |
 | **Height, roll centre, rear** [mm]        | 168   | 120      |
@@ -322,8 +331,8 @@ study.
 | Parameter                          | Stock | Modified |
 | ---------------------------------- | ----- | -------- |
 | **Roll stiffness, front** [Nm/deg] | 1027  | 1395     |
-| **Roll stiffness, rear** [Nm/deg]  | 968   | 1697     |
-| **Roll stiffness** [Nm/deg]        | 1995  | 3092     |
+| **Roll stiffness, rear** [Nm/deg]  | 1004  | 1686     |
+| **Roll stiffness** [Nm/deg]        | 2031  | 3081     |
 
 ### Results
 
@@ -332,16 +341,16 @@ equations. The lateral load transfer distribution and other metrics are
 summarized in the table below. Additional metrics have been included to
 highlight how the fidelity of the model will affect the results.
 
-| Metric                                           | Stock | Modified | Delta (±/%)  |
-| ------------------------------------------------ | ----- | -------- | ------------ |
-| **Weight distribution** [%]                      | 61    | 61       | -            |
-| **Spring rate distribution, rear** [%]           | 62.1  | 63.4     | +1.3/+2.1%   |
-| **Wheel rate distribution, rear** [%]            | 40.3  | 37.1     | -3.2/-7.9%   |
-| **Roll stiffness distribution, rear** [%]        | 48.5  | 54.9     | +6.4/+13.2%  |
-| **Lateral load transfer distribution, rear** [%] | 49.5  | 63.8     | +14.3/+28.9% |
+| Metric                                           | Stock | Modified | Delta (±/%)    |
+| ------------------------------------------------ | ----- | -------- | -------------- |
+| **Weight distribution** [%]                      | 61    | 61       | -              |
+| **Spring rate distribution, rear** [%]           | 62.1  | 63.4     | +1.3 (+2.1%)   |
+| **Wheel rate distribution, rear** [%]            | 40.3  | 37.1     | -3.2 (-7.9%)   |
+| **Roll stiffness distribution, rear** [%]        | 49.4  | 54.7     | +5.3 (+10.7%)  |
+| **Lateral load transfer distribution, rear** [%] | 50.2  | 63.6     | +13.4 (+26.7%) |
 
 In the modified configuration, the lateral load transfer distribution moves
-rearward +14.3%. This is a 28.9% relative increase compared to the stock
+rearward +13.4%. This is a 26.7% relative increase compared to the stock
 configuration. Our subjective on-track evaluation suggests the modified
 configuration has a very aggressive handling balance. This observation is
 correlated with change in the lateral load transfer distribution.
