@@ -2,6 +2,7 @@
 layout: post
 title: Motion ratio curves of the Acura RSX rear suspension
 date: 2020-12-10 17:30:00 -0500
+modified_date: 2022-10-22
 categories: [suspension, kinematics, acura rsx]
 ---
 
@@ -114,9 +115,9 @@ factory ride height. You can expect the motion ratio to decrease in bump.
 <div class="info">
     <span class="material-icons" style="margin-right:0.25em">info</span>
     <div>
-    <b>August 26, 2022</b> - the rear anti-roll bar motion ratio have been
-    updated to correct an error in the analysis calculation. The charts and
-    values listed below have since been corrected.
+    <b>October 22, 2022</b> - the rear anti-roll bar motion ratio was updated
+    to correct an error. The charts and values listed below have since been
+    corrected.
     </div>
 </div>
 
