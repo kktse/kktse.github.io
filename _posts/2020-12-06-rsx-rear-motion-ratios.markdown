@@ -118,6 +118,7 @@ factory ride height. You can expect the motion ratio to decrease in bump.
     <b>October 22, 2022</b> - the rear anti-roll bar motion ratio was updated
     to correct an error. The charts and values below reflect the corrected
     analysis.
+    </div>
 </div>
 
 The rear anti-roll bar is actuated by an end link attached to the lower
