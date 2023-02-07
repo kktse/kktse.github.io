@@ -77,7 +77,8 @@ vehicle by maximizing the available grip for the driver. This grip is generated
 by operating the tire within a specific window where it performs best. The
 suspension and chassis play a crucial role in controlling the tire.
 Understanding the kinematics of the suspension helps us to evaluate a vehicle's
-ability to control the tire and therefore understand its performance potential.
+ability to control the tire and therefore understand the vehicle's performance
+potential.
 
 ![EK PITL 2019](/assets/images/2023-02-05/ek-pitl-2019.webp)
 
@@ -206,9 +207,8 @@ the effort to develop the car.
 At the professional level, having access to kinematic data is a necessity. We
 believe this analysis highlights the potential for kinematics analysis to be
 applied to all levels of motorsports. We are confident in our systematic
-approach to vehicle development and hope to inspire others to do the same.
-Thank you for following our journey into this project. We look forward to
-sharing our findings and updates in coming weeks.
+approach to vehicle development and hope to inspire others to do the same. We
+look forward to sharing our findings and updates in the weeks to come.
 
 [race3-website]: https://www.race3.ca/
 [race3-instagram]: https://www.instagram.com/race3_motorsport/
