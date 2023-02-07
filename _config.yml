@@ -42,6 +42,11 @@ whitelist:
   - jekyll-redirect-from
   - jemoji
 
+header_pages:
+  - home.md
+  - categories.html
+  - about.md
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
