@@ -185,7 +185,7 @@ motion on the suspension.
 In the coming weeks, we will delve deeper into the kinematics of the front
 suspension and present our findings from the analysis. Given the recent surge
 in popularity of caster adjustable upper control arms and roll center adjustors
-in the aftermarket, we will be especially interested studying the need for
+in the aftermarket, we will be especially interested in studying the need for
 these modifications.
 
 This is just the start of our suspension kinematics program. The rear
@@ -201,15 +201,15 @@ Our suspension kinematics analysis of the Formula Delta EK20R front suspension
 has provided valuable insights into the performance characteristics of the
 vehicle. By reverse engineering the suspension and developing our own
 kinematics workflow, we were able to obtain an understanding of the suspension
-geometry and kinematic performance. This approach, while demanding, is the
-prudent approach to developing the car.
+geometry and kinematic performance. This methodology, while demanding, is worth
+the effort to develop the car.
 
 At the professional level, having access to kinematic data is a necessity. We
 believe this analysis highlights the potential for kinematics analysis to be
 applied to all levels of motorsports. We are confident in our systematic
 approach to vehicle development and hope to inspire others to do the same.
 Thank you for following our journey into kinematics analysis. We look forward
-to sharing more updates in coming weeks.
+to sharing our updates in coming weeks.
 
 [race3-website]: https://www.race3.ca/
 [race3-instagram]: https://www.instagram.com/race3_motorsport/
