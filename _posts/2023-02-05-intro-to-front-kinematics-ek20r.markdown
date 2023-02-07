@@ -7,13 +7,12 @@ date: 2023-02-07 17:15:00 -0500
 
 ![EK front suspension cover photo](/assets/images/2023-02-05/ek-ctmp-2021.webp)
 
-Our aim at Formula Delta is to build the most efficient time attack vehicle in
-Southern Ontario through the application of our engineering expertise in
-vehicle dynamics. We believe that the key to success is to gain a deep
-understanding of the underlying performance characteristics of the vehicle and
-to adjust to both car and driver to take full advantage of these. Suspension
-geometry and kinematic analysis is an important tool we use to achieve these
-goals.
+Our aim at Formula Delta is to build an efficient time attack vehicle through
+the application of our engineering expertise in vehicle dynamics. We believe
+that the key to success is to gain a deep understanding of the underlying
+performance characteristics of the vehicle and to adjust to both car and driver
+to take full advantage of these. Suspension geometry and kinematic analysis is
+an important tool we use to achieve these goals.
 
 Kinematics refers to the study of motion without considering the forces
 involved. In the context of vehicle dynamics, the study of suspension
@@ -76,9 +75,9 @@ I would like to thank the following contributors for making this project possibl
 One aspect of vehicle dynamics engineering is to improve the performance of a
 vehicle by maximizing the available grip for the driver. This grip is generated
 by operating the tire within a specific window where it performs best. The
-suspension and chassis play a crucial role in controlling the tire behavior.
+suspension and chassis play a crucial role in controlling the tire.
 Understanding the kinematics of the suspension helps us to evaluate a vehicle's
-ability to control the tire.
+ability to control the tire and therefore understand its performance potential.
 
 ![EK PITL 2019](/assets/images/2023-02-05/ek-pitl-2019.webp)
 
@@ -145,7 +144,7 @@ analysis functions and simplify computational and implementation complexities.
 This workflow offers several key features that enhance its flexibility and
 performance:
 
-- **Grid Inputs**: The solver service can seamlessly handle combined steering
+- **Input Grids**: The solver service can seamlessly handle combined steering
   and bump motions.
 - **Multi-threaded Processing**: The analysis service utilizes multiple CPU threads
   to improve computation speed.
@@ -164,8 +163,8 @@ The output of our analysis workflow delivers the solved kinematics and post-proc
 
 - Camber angle
 - Toe angle
-- Motion ratio of the coilover to wheel center vertical displacement
-- Motion ratio of the anti-roll bar to wheel center vertical displacement
+- Motion ratio of the coilover
+- Motion ratio of the anti-roll bar
 - Caster angle
 - Kingpin inclination angle
 - Scrub radius
@@ -191,8 +190,8 @@ these modifications.
 This is just the start of our suspension kinematics program. The rear
 suspension is still a work in progress for reverse engineering and analysis. We
 are always looking for ways to improve our workflow, and our goal is to
-streamline our kinematics analysis workflow and incorporate greater levels of
-automation in the initial stages of the analysis, enabling us to study
+streamline our kinematics analysis workflow and to incorporate greater levels
+of automation in the initial stages of the analysis, enabling us to study
 different geometry scenarios with ease.
 
 ## Conclusion
@@ -208,8 +207,8 @@ At the professional level, having access to kinematic data is a necessity. We
 believe this analysis highlights the potential for kinematics analysis to be
 applied to all levels of motorsports. We are confident in our systematic
 approach to vehicle development and hope to inspire others to do the same.
-Thank you for following our journey into kinematics analysis. We look forward
-to sharing our updates in coming weeks.
+Thank you for following our journey into this project. We look forward to
+sharing our findings and updates in coming weeks.
 
 [race3-website]: https://www.race3.ca/
 [race3-instagram]: https://www.instagram.com/race3_motorsport/
