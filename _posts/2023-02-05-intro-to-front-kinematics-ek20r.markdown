@@ -177,7 +177,7 @@ visualize the data in any way we see fit. For example we are able to generate
 animations of the solved kinematics to visualize the results of the imposed
 motion on the suspension.
 
-<video autoplay loop mute controls>
+<video autoplay loop mute controls poster="/assets/images/2023-02-05/ek-heave-animation.jpg">
   <source src="/assets/images/2023-02-05/ek-heave-animation.webm" type="video/webm">
   <source src="/assets/images/2023-02-05/ek-heave-animation.mp4" type="video/mp4">
 </video>{:style="display: block; margin: 0 auto; max-width: 100%;"}

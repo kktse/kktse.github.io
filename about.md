@@ -13,7 +13,7 @@ level where access to data is constrained. My mission is to apply vehicle
 dynamics concepts in the simplest way possible to help drivers be safe, realize
 their potential and to improve their enjoyment of the sport. My vision is to
 make a more accessible, competitive and inclusive sport by raising the
-knowledge floor of the community. I am collaborator with the [Formula
+knowledge floor of the community. I collaborate with the [Formula
 Delta](https://formuladelta.ca) time attack project.
 
 I am open to short-term opportunities in vehicle dynamics. Interested in
