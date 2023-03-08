@@ -6,17 +6,16 @@ categories: [suspension, kinematics, ek20r]
 
 ![EK Hatchback at CTMP 2021](/assets/images/2023-02-09/ek-ota-ctmp-2021.jpg)
 
-The late 80s and 90s were a golden era for Honda vehicles, thanks in part to
+The late 80s and 90s were a golden era for Honda road cars, thanks in part to
 their double wishbone front suspension design. These cars offered exceptional
 handling at an affordable price, making them popular choices for enthusiasts
 even today. But to fully unlock the potential of its double wishbone
 suspension, it is important to understand its kinematic performance.
 
 Kinematics is the study of motion without considering the forces involved. In a
-suspension system, the ability to control wheel motion is a key factor in the
-vehicle's handling performance. Kinematic wheel plane control focuses on
-metrics like toe and camber variation in heave, which are foundational in
-suspension performance analysis.
+suspension system, the ability to control the wheel motion influences vehicle
+handling. Kinematic wheel plane control focuses on metrics like toe and camber
+variation in heave, which are foundational in suspension performance analysis.
 
 In this study, we analyze the kinematic wheel plane control for the front axle
 of a modified 2000 Honda Civic EK Hatchback. By using computer simulation, we
@@ -28,7 +27,7 @@ limitations.
     <div>
     This is a multipart series on the kinematic performance of Formula Delta
     2000 Honda Civic EK Hatchback. To learn more about suspension kinematics
-    for this chassis, feel free to browse the other posts from the series.
+    for this chassis, feel free to browse the other posts from this series.
     <div style="margin-left:1em">
       <li><a href="/jekyll/update/2023/02/07/intro-to-front-kinematics-ek20r.html">Introduction to front suspension kinematics of a Honda Civic EK Hatchback</a></li>
       <li style="list-style-type: '↳'"><a href="/jekyll/update/2023/02/09/front-kinematic-wheel-plane-control-ek20r.html"><i>Kinematic wheel plane control of a Honda Civic EK Hatchback front suspension</i></a></li>
@@ -76,18 +75,19 @@ I would like to thank the following contributors for making this project possibl
 
 ## Kinematic simulation
 
-Suspension kinematics is the study of the movement and geometry of a vehicle's
+Suspension kinematics is the study of the geometry and motion of a vehicle's
 suspension system, without consideration of forces. The motion of the
 suspension system can be modified to change how the tire is presented to the
 road. Consequently, this presents an opportunity for designers to adjust the
-design the of the suspension system to tune the ride comfort and handling
-performance of the vehicle.
+design the of the suspension to tune the ride and handling characteristics of
+the vehicle.
 
-Computer simulation is frequently used to analyze the suspension system as the
-analysis of spatial mechanisms can be unintuitive. To perform this analysis, a
-virtual model of the suspension system is created using a list of suspension
+Computer simulation is frequently used to analyze suspension kinematics since
+spatial mechanisms can be unintuitive to understand. To perform this analysis,
+a virtual model of the suspension system is created using a list of suspension
 coordinates. This model can then be articulated through its range of motion and
-analyzed. A visualization of the kinematic model is shown in the figure below.
+analyzed. A visualization of the kinematic model is shown in the animation
+below.
 
 <video autoplay loop mute controls poster="/assets/images/2023-02-05/ek-heave-animation.jpg">
   <source src="/assets/images/2023-02-05/ek-heave-animation.webm" type="video/webm">
@@ -111,8 +111,8 @@ upper control arm is assumed to be camber adjustable. Wheel fitment is
 static toe and zero static camber at nominal ride height, a virtual alignment
 is performed by adjusting the upper control arm and tie rod.
 
-The purpose of this study is to evaluate the suspension performance of the
-suspension system from the factory. This provides a baseline assessment of the
+The purpose of this study is to evaluate the performance of the suspension
+system as designed from the factory. This provides a baseline assessment of the
 suspension system without aftermarket modification. Identifying the system's
 strengths and limitations can offer insights into the original design intent
 and its modification potential. This is crucial for achieving efficient
@@ -140,8 +140,8 @@ suspension system to orient the tire in a desirable way.
 In this study, the front suspension is articulated in heave from -50mm to 100mm
 at successive displacements of the steering rack. When the steering rack
 displacement is positive, it moves the left. The animation below shows the
-front quarter view of the front left wheel as it moves through the imposed
-motion boundaries.
+front quarter view of the front left wheel as it moves through the boundaries
+of the imposed motion.
 
 <video autoplay loop mute controls poster="/assets/images/2023-02-09/ek-front-quarter-car-animation.png">
   <source src="/assets/images/2023-02-09/ek-front-quarter-car-animation.webm" type="video/webm">
@@ -166,7 +166,8 @@ that the half track is increased from its nominal position.
 ![EK half track variation in heave](/assets/images/2023-02-09/ek-front-heave-halftrack.png)
 
 The half track variation in bump consistently increases, indicating that the
-kinematic roll center remains above the ground as the axle articulates in bump.
+kinematic roll center remains above the ground as the axle is articulated in
+heave.
 
 The effect of the steering axis is also apparent, as the half track tends to
 decrease with large displacements of the steering rack, particularly for the
@@ -188,16 +189,16 @@ position.
 ![EK half track variation in heave](/assets/images/2023-02-09/ek-front-heave-wheelrecession.png)
 
 When the steering is on centre, there is minimal wheel centre recession in
-bump, indicating that kinematic wheel recession was not a design priority. The
-L-shaped lower control arm suggests that ride harshness was primarily managed
+bump, indicating that kinematic wheel recession is not a design priority. The
+L-shaped lower control arm suggests that ride harshness is primarily managed
 using compliant wheel plane control techniques. This control arm design
 isolates the lateral force load path, allowing for decoupling of the
 longitudinal concerns from the lateral concerns. This allows independent tuning
-of the harshness and handling characteristics with the bushings.
+of the harshness and handling characteristics through the bushings.
 
 The steering-induced wheel recession is not as intuitive to comprehend. This
 effect is probably due to the toe variation that occurs in bump, as the wheel
-rotates slightly around the steering axis.
+slightly rotates around the steering axis.
 
 ### Toe variation
 
@@ -207,9 +208,9 @@ intersects with the ground and the vehicle center plane.
 
 Toe variation in bump is commonly known as _bump steer_, which creates a _roll
 steer_ effect during cornering. Controlling the dynamic alignment of the
-vehicle is possible by controlling toe variation characteristics. Roll steer,
-and by association, the bump steer, is often considered in an understeer budget
-calculation per the cornering compliance concept.
+vehicle is possible by controlling the toe variation characteristics. Roll
+steer, and by association, the bump steer, is often considered in an understeer
+budget calculation per the cornering compliance concept.
 
 The toe variation in bump during parallel wheel travel is shown in the figure
 below. A positive toe angle indicates toe out and a negative toe angle
