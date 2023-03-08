@@ -13,9 +13,10 @@ even today. But to fully unlock the potential of its double wishbone
 suspension, it is important to understand its kinematic performance.
 
 Kinematics is the study of motion without considering the forces involved. In a
-suspension system, the ability to control the wheel motion influences vehicle
-handling. Kinematic wheel plane control focuses on metrics like toe and camber
-variation in heave, which are foundational in suspension performance analysis.
+suspension system, the ability to control the wheel motion influences the
+vehicle's handling. Kinematic wheel plane control focuses on metrics like toe
+and camber variation in heave, which are foundational in suspension performance
+analysis.
 
 In this study, we analyze the kinematic wheel plane control for the front axle
 of a modified 2000 Honda Civic EK Hatchback. By using computer simulation, we
@@ -30,7 +31,7 @@ limitations.
     for this chassis, feel free to browse the other posts from this series.
     <div style="margin-left:1em">
       <li><a href="/jekyll/update/2023/02/07/intro-to-front-kinematics-ek20r.html">Introduction to front suspension kinematics of a Honda Civic EK Hatchback</a></li>
-      <li style="list-style-type: '↳'"><a href="/jekyll/update/2023/02/09/front-kinematic-wheel-plane-control-ek20r.html"><i>Kinematic wheel plane control of a Honda Civic EK Hatchback front suspension</i></a></li>
+      <li><a href="/jekyll/update/2023/02/09/front-kinematic-wheel-plane-control-ek20r.html"><i>You are here! - Kinematic wheel plane control of a Honda Civic EK Hatchback front suspension</i></a></li>
     </div>
     </div>
 </div>
@@ -78,7 +79,7 @@ I would like to thank the following contributors for making this project possibl
 Suspension kinematics is the study of the geometry and motion of a vehicle's
 suspension system, without consideration of forces. The motion of the
 suspension system can be modified to change how the tire is presented to the
-road. Consequently, this presents an opportunity for designers to adjust the
+road. Consequently, this presents an opportunity for designers to change the
 design the of the suspension to tune the ride and handling characteristics of
 the vehicle.
 
@@ -113,9 +114,9 @@ is performed by adjusting the upper control arm and tie rod.
 
 The purpose of this study is to evaluate the performance of the suspension
 system as designed from the factory. This provides a baseline assessment of the
-suspension system without aftermarket modification. Identifying the system's
-strengths and limitations can offer insights into the original design intent
-and its modification potential. This is crucial for achieving efficient
+suspension system without aftermarket modification. Identifying the suspension
+system's strengths and limitations can offer insights into the original design
+intent and its modification potential. This is crucial for achieving efficient
 performance outcomes from the vehicle development process.
 
 It is important to note that every vehicle presents a unique scenario, and as
@@ -138,10 +139,10 @@ a significant impact on vehicle performance. It is a primary concern of the
 suspension system to orient the tire in a desirable way.
 
 In this study, the front suspension is articulated in heave from -50mm to 100mm
-at successive displacements of the steering rack. When the steering rack
-displacement is positive, it moves the left. The animation below shows the
-front quarter view of the front left wheel as it moves through the boundaries
-of the imposed motion.
+at successive displacements of the steering rack. When the steering rack is
+displaced in the positive direction, it moves to the left. The animation below
+shows the front quarter view of the front left wheel as it moves through the
+boundaries of the imposed motion.
 
 <video autoplay loop mute controls poster="/assets/images/2023-02-09/ek-front-quarter-car-animation.png">
   <source src="/assets/images/2023-02-09/ek-front-quarter-car-animation.webm" type="video/webm">
@@ -235,7 +236,7 @@ with respect to the bump displacement.
 
 The figure below shows the bump steer characteristics for the vehicle under
 study. A positive value refers to a tendency to toe out with bump and a
-negative value refers to a tendency to toe in with in bump.
+negative value refers to a tendency to toe in with bump.
 
 ![EK half bump steer in heave](/assets/images/2023-02-09/ek-front-heave-toe-gradient.png)
 
@@ -272,15 +273,15 @@ trend accelerates as the suspension travels further. Steering effects are
 observed when comparing the camber curves of the left and right wheels. While
 the left wheel is relatively insensitive to steering rack displacement, the
 camber curve of the right wheel is shifted with each increment of the steering
-rack. This effect is due to the kingpin inclination, caster angle, and the
-direction of steer applied to each wheel.
+rack. This effect is due to the kingpin inclination angle, caster angle, and
+the direction of steer applied to each wheel.
 
 ## Final comments
 
-In this study, we analyzed the kinematic wheel plane control of of a modified
-2000 Honda Civic EK Hatchback front suspension. The double wishbone
-configuration of the front suspension common to golden-era Hondas show
-promising kinematic performance.
+In this study, we analyzed the kinematic wheel plane control of a modified 2000
+Honda Civic EK Hatchback front suspension. The double wishbone configuration of
+the front suspension common to golden-era Hondas show promising kinematic
+performance.
 
 The analysis revealed several key findings, including the rising half track
 variation, minimal wheel center recession, and dynamic toe-out during combined
