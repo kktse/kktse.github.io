@@ -10,7 +10,7 @@ The late 80s and 90s were a golden era for Honda vehicles, thanks in part to
 their double wishbone front suspension design. These cars offered exceptional
 handling at an affordable price, making them popular choices for enthusiasts
 even today. But to fully unlock the potential of a double wishbone suspension,
-it's important to understand its kinematic performance.
+it is important to understand its kinematic performance.
 
 Kinematics is the study of motion without considering the forces involved, and
 a suspension system's ability to control wheel motion is a key factor in its
@@ -25,12 +25,12 @@ limitations.
 <div class="info">
     <span class="material-icons" style="margin-right:0.25em">info</span>
     <div>
-    This is a multipart series on the kinematic analysis of Formula Delta 2000
-    Honda Civic EK Hatchback. To learn more about suspension kinematics for
-    this chassis, feel free to check out other posts from the series.
+    This is a multipart series on the kinematic performance of Formula Delta
+    2000 Honda Civic EK Hatchback. To learn more about suspension kinematics
+    for this chassis, feel free to browse other posts from the series.
     <div style="margin-left:1em">
       <li><a href="/jekyll/update/2023/02/07/intro-to-front-kinematics-ek20r.html">Introduction to front suspension kinematics of a Honda Civic EK Hatchback</a></li>
-      <li style="list-style-type: '✓'"><a href="/jekyll/update/2023/02/09/front-kinematic-wheel-plane-control-ek20r.html"><i>Kinematic wheel plane control of a Honda Civic EK Hatchback front suspension</i></a></li>
+      <li style="list-style-type: '↳'"><a href="/jekyll/update/2023/02/09/front-kinematic-wheel-plane-control-ek20r.html"><i>Kinematic wheel plane control of a Honda Civic EK Hatchback front suspension</i></a></li>
     </div>
     </div>
 </div>
@@ -92,7 +92,7 @@ model is shown in the figure below.
 <video autoplay loop mute controls poster="/assets/images/2023-02-05/ek-heave-animation.jpg">
   <source src="/assets/images/2023-02-05/ek-heave-animation.webm" type="video/webm">
   <source src="/assets/images/2023-02-05/ek-heave-animation.mp4" type="video/mp4">
-</video>{:style="display: block; margin: 0 auto; max-width: 100%;"}
+</video>{:style="display: block; margin: 0 auto; margin-bottom: 1em; max-width: 100%;"}
 
 This study uses the [SolveSpace][solvespace-website] geometric constraint
 engine as a kinematic solver, and makes use of
@@ -113,10 +113,10 @@ adjusting the upper control arm and tie rod.
 
 The purpose of this study is to evaluate the suspension performance of the
 suspension system from the factory. This provides a baseline assessment of the
-suspension system without modification. Identifying the system's strengths and
-limitations can offer insights into the original design intent and its
-modification potential. This is crucial for achieving efficient performance
-outcomes from the vehicle development process.
+suspension system without aftermarket modification. Identifying the system's
+strengths and limitations can offer insights into the original design intent
+and its modification potential. This is crucial for achieving efficient
+performance outcomes from the vehicle development process.
 
 It is important to note that each vehicle presents a unique scenario, and as
 such, we recommend using this analysis as a reference for relative changes
@@ -132,10 +132,10 @@ arrangement of the suspension linkages. Kinematic wheel plane control has
 strong physical meaning and can be observed simply by lifting the wheel up an
 down in real life.
 
-The understanding of kinematic wheel plane control is a crucial aspect of
-suspension analysis since the orientation of the tire with respect to the road
-has a significant impact on the vehicle's performance. It is a primary concern
-of the suspension system to manage the tire orientation in a desirable manner.
+The understanding of kinematic wheel plane control is a key aspect of
+suspension analysis since the orientation of the tire relative to the road has
+a significant impact on vehicle performance. It is a primary concern of the
+suspension system to orient the tire in a desirable way.
 
 In this study, the front suspension is articulated in heave from -50mm to 100mm
 at successive displacements of the steering rack. When the steering rack
@@ -146,71 +146,69 @@ motion boundaries.
 <video autoplay loop mute controls poster="/assets/images/2023-02-09/ek-front-quarter-car-animation.png">
   <source src="/assets/images/2023-02-09/ek-front-quarter-car-animation.webm" type="video/webm">
   <source src="/assets/images/2023-02-09/ek-front-quarter-car-animation.mp4" type="video/mp4">
-</video>{:style="display: block; margin: 0 auto; max-width: 100%;"}
+</video>{:style="display: block; margin: 0 auto; margin-bottom: 1em; max-width: 100%;"}
 
 ### Half track variation
 
-Half track variation refers to the lateral movement of the tire contact patch
-as the suspension system moves in bump. This is a direct output from the
-results of the kinematic simulation.
+Half track variation refers to the lateral displacement of the tire contact
+patch as the suspension system moves in bump. This output is obtained directly
+from the kinematic simulation.
 
-A change in the track width will cause a lateral velocity to be developed at
-the contact patch. This is significant because this will create a corresponding
-side force due to the half track induced slip angle. The behaviour of the
-lateral swing axle instant centre and the kinematic roll centre can be inferred
-by observing the half track variation in bump.
+A change in the track width can result in a lateral velocity being generated at
+the contact patch, which, in turn, leads to the development of a side force due
+to the induced tire slip angle. The behaviour of the front view instant centre
+and the kinematic roll centre can be inferred from this metric.
 
 The figure below shows the half track variation of the suspension as it is
-articulated in bump in parallel wheel travel. A positive half track variation
-means that the half track is increased from nominal.
+articulated in parallel wheel travel. A positive half track variation means
+that the half track is increased from its nominal position.
 
 ![EK half track variation in heave](/assets/images/2023-02-09/ek-front-heave-halftrack.png)
 
-The half track variation always increases in bump; the derivative with respect
-to heave displacement is always positive. This indicates that the kinematic
-roll centre remains above the ground as the axle is articulated in bump.
+The half track variation in bump consistently increases, indicating that the
+kinematic roll center remains above the ground as the axle articulates in bump.
 
-The effect of the steering axis is also observed, with the half track tending
-to decrease with large displacements of the steering rack, especially the right
-wheel. The left wheel initially increases its half track with steer, but this
-trend is reversed when the steering rack is displaced 30 mm.
+The effect of the steering axis is also apparent, as the half track tends to
+decrease with large displacements of the steering rack, particularly for the
+right wheel. The left wheel initially experiences an increase in half track
+with steer, but this trend is reversed when the steering rack is displaced by
+30mm.
 
 ### Wheel centre recession
 
 Wheel recession refers to the longitudinal movement of the wheel centre as the
 suspension moves in bump. This is measured directly from the kinematic
-simulation results. Wheel recession is desirable for ride comfort and impact
-harshness.
+simulation results. Wheel recession is desirable for ride and impact harshness.
 
 The following figure shows the wheel centre recession of the suspension as it
-is articulated bump during parallel wheel travel. A positive wheel recession
+is articulated in bump during parallel wheel travel. A positive wheel recession
 value means that the wheel centre moved backwards from its nominal position.
 
 ![EK half track variation in heave](/assets/images/2023-02-09/ek-front-heave-wheelrecession.png)
 
-There is very little wheel centre recession in bump when the steering is on
-centre. This suggests kinematic wheel recession in bump was not a design goal.
-The L-shaped lower control arm suggests that ride harshness is primarily
-managed primarily with compliant wheel plane control techniques. The L-shaped
-lower control arm allows some decoupling of the lateral and longitudinal load
-paths through the control arm. This allows harshness and handling concerns to
-be controlled and tuned separately.
+When the steering is on centre, there is minimal wheel centre recession in
+bump, indicating that kinematic wheel recession was not a design priority. The
+L-shaped lower control arm suggests that ride harshness was primarily managed
+using compliant wheel plane control techniques. This control arm design
+isolates the lateral load path, allowing for decoupling of the longitudinal
+concerns from the lateral concerns and independent tuning of harshness and
+handling characteristics.
 
-The steering induced wheel recession is not as intuitive to understand. This is
-likely an artifact of the toe variation in bump as the wheel slightly rotates
-about the steering axis.
+The steering-induced wheel recession is not as intuitive to comprehend. This
+effect is probably due to the toe variation that occurs in bump, as the wheel
+rotates slightly around the steering axis.
 
 ### Toe variation
 
-Toe variation refers to the change toe angle as it is articulated in bump. This
-is measured by taking the angle between the wheel plane as it crosses through
-the ground and the vehicle centre plane.
+Toe variation refers to the change in toe angle as the wheel is articulated in
+bump. It is calculated by measuring the angle between the wheel plane as it
+intersects with the ground and the vehicle center plane.
 
-Toe variation in bump is commonly referred to as _bump steer_. This has an
-creates a _roll steer_ effect to occur while cornering. Toe variation in bump
-can be used to control the dynamic alignment of the vehicle. Roll steer is
-often a consideration in an understeer budget calculation per the cornering
-compliance concept.
+Toe variation in bump is commonly known as _bump steer_, which creates a _roll
+steer_ effect during cornering. Controlling the dynamic alignment of the
+vehicle is possible by controlling toe variation characteristics. Roll steer,
+and by association, the bump steer, is often considered in an understeer budget
+calculation per the cornering compliance concept.
 
 The toe variation in bump for the vehicle under study is shown in the figure
 below. A positive toe angle indicates toe out and a negative toe angle
@@ -218,23 +216,23 @@ indicates toe in.
 
 ![EK half toe variation in heave](/assets/images/2023-02-09/ek-front-heave-toe.png)
 
-The on-centre toe variation is nearly constant and changes very little, varying
-less than ±0.2 deg within the range of motion. Steering as an input controls
-the toe angle of the tire, so the toe offset with steer is expected. However,
-unlike the on-centre behaviour, an amount of _bump steer_ is apparent as the
-wheels are steered. This is an important consideration as it is ultimately the
-dynamic alignment that needs to be considered for vehicle setup.
+The on-centre toe variation remains nearly constant with little variation,
+changing less than ±0.2 degrees within the range of motion. Since steering is a
+control input, it is expected to have a toe offset with steer. Unlike on-centre
+behavior, there is an observable amount of bump steer when the wheels are
+steered. This is an important aspect to consider as the dynamic alignment is
+ultimately what needs to be evaluated for vehicle setup.
 
 ### Bump steer
 
 To gain a deeper understanding into toe variation behaviour of the front axle,
-we will study the _bump steer_ characteristics more directly. Bump steer is the
+we will study the _bump steer_ characteristics more detail. Bump steer is the
 rate of toe variation in bump. This is measured by taking the derivative of the
 toe angle with respect to the bump displacement.
 
-The figure below shows the bump steer for the vehicle under study. A positive
-value refers to a tendency to toe-out in bump and a negative value refers to a
-tendency to toe-in during in bump.
+The figure below shows the bump steer characteristics for the vehicle under
+study. A positive value refers to a tendency to toe-out in bump and a negative
+value refers to a tendency to toe-in during in bump.
 
 ![EK half bump steer in heave](/assets/images/2023-02-09/ek-front-heave-toe-gradient.png)
 
@@ -255,43 +253,44 @@ plane and the vehicle centre plane.
 
 Camber variation modifies how the tire is presented to the road as the
 suspension articulates. It is an important consideration because the tire is
-sensitive to its inclination relative to the road. Camber compensation through
-kinematics or static alignment allows this to be modified.
+sensitive to its inclination relative to the road. Camber compensation can be
+achieved through kinematics or static alignment.
 
 The following figure shows the camber variation in bump during parallel wheel
-travel. A positive value indicates the top of the wheel leans outwards with
-respect to the vehicle centre plane. A negative value indicates the top of thew
-heel leans inwards with respect to the vehicle centre plane.
+travel. A positive value indicates the top of the wheel leans outwards from the
+vehicle body. A negative value indicates the top of the wheel leans inwards
+towards the vehicle body.
 
 ![EK half track variation in heave](/assets/images/2023-02-09/ek-front-heave-camber.png)
 
-Camber tends to decrease with bump. This trend accelerates as the suspension is
-further articulated in bump. Steering effects are apparent when comparing the
-left and right wheels. Unlike the left wheel which is insensitive to the
-steering rack displacement, the right wheel camber curve is offset with each
-increment of the steering rack. This effect can be attributed to the kingpin
-inclination, caster angle and the direction of steer imposed on each wheel.
+The camber tends to decrease as the suspension is articulated in bump. This
+trend accelerates as the suspension travels further. Significant steering
+effects are observed when comparing the camber curves of the left and right
+wheels. While the left wheel is relatively insensitive to steering rack
+displacement, the camber curve of the right wheel is shifted with each
+increment of the steering rack. This effect is due to the kingpin inclination,
+caster angle, and the direction of steer applied to each wheel.
 
 ## Final comments
 
-In this study, we analyzed the kinematic wheel plane control for the front axle
-of a modified 2000 Honda Civic EK Hatchback. The performance of the front
-suspension is promising, and highlights the advantages of the double wishbone
-configuration used in this generation of Honda vehicles.
+In this study, we analyzed the kinematic wheel plane control of the front axle
+of a modified 2000 Honda Civic EK Hatchback. The double wishbone configuration
+of the front suspension common to the golden-era Honda vehicles show promising
+kinematic performance.
 
-The interesting findings to highlight from the analysis include the rising half
-track variation, the minimal wheel centre recession and the dynamic toe-out in
-combined bump and steer. The design of the lower control arm implies that ride
-harshness is an elastokinematic concern.
+The analysis revealed several key findings, including the rising half track
+variation, minimal wheel center recession, and dynamic toe-out during combined
+bump and steer. The design of the lower control arm suggests that ride
+harshness is managed through elastokinematic techniques.
 
-Kinematic wheel plane control covers some of the most foundational suspension
-metrics you could look at. While we used computer simulation in this study,
-these metrics can be measured empirically. Understanding the working range of
-the suspension system is important for vehicle setup. Getting the chassis to
-work within its performance window is key to getting the efficiency from your
-vehicle development process. Kinematic wheel plane control can be a powerful
-tool in understanding your vehicle, giving you the information you need to get
-the most performance out of your car.
+Kinematic wheel plane control is a fundamental aspect of suspension analysis,
+and while we utilized computer simulations in this study, these metrics can
+also be measured experimentally. Understanding the suspension system's working
+range is crucial in achieving your desired performance goals. Simple kinematic
+analysis, such as understanding the kinematic wheel plane control, can be a
+powerful tool in getting the performance out for your car. Such analysis
+provides the performance insights and development efficiencies that could be
+the competitive advantage that you need.
 
 ## References
 
