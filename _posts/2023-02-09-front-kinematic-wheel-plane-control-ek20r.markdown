@@ -2,6 +2,7 @@
 layout: post
 title: "Kinematic wheel plane control of a Honda Civic EK Hatchback front suspension"
 categories: [suspension, kinematics, ek20r]
+date: 2023-03-08 9:35:00 -0500
 ---
 
 ![EK Hatchback at CTMP 2021](/assets/images/2023-02-09/ek-ota-ctmp-2021.jpg)
@@ -31,7 +32,7 @@ limitations.
     for this chassis, feel free to browse the other posts from this series.
     <div style="margin-left:1em">
       <li><a href="/jekyll/update/2023/02/07/intro-to-front-kinematics-ek20r.html">Introduction to front suspension kinematics of a Honda Civic EK Hatchback</a></li>
-      <li><a href="/jekyll/update/2023/02/09/front-kinematic-wheel-plane-control-ek20r.html"><i>You are here! - Kinematic wheel plane control of a Honda Civic EK Hatchback front suspension</i></a></li>
+      <li><a href="/jekyll/update/2023/03/08/front-kinematic-wheel-plane-control-ek20r.html"><i>You are here! - Kinematic wheel plane control of a Honda Civic EK Hatchback front suspension</i></a></li>
     </div>
     </div>
 </div>
