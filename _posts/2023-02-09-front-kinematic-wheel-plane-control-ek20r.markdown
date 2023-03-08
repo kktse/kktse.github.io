@@ -184,8 +184,7 @@ simulation results. Wheel recession is desirable for ride and impact harshness.
 
 The following figure shows the wheel centre recession as the system is
 articulated in bump during parallel wheel travel. A positive wheel recession
-value means that the wheel centre has moved backwards from its nominal
-position.
+value means that the wheel centre moved backwards from its nominal position.
 
 ![EK half track variation in heave](/assets/images/2023-02-09/ek-front-heave-wheelrecession.png)
 
@@ -194,8 +193,8 @@ bump, indicating that kinematic wheel recession is not a design priority. The
 L-shaped lower control arm suggests that ride harshness is primarily managed
 using compliant wheel plane control techniques. This control arm design
 isolates the lateral force load path, allowing for decoupling of the
-longitudinal concerns from the lateral concerns. This allows independent tuning
-of the harshness and handling characteristics through the bushings.
+longitudinal concerns from the lateral concerns. This allows for independent
+tuning of the handling and harshness characteristics through the bushings.
 
 The steering-induced wheel recession is not as intuitive to comprehend. This
 effect is probably due to the toe variation that occurs in bump, as the wheel
@@ -219,12 +218,12 @@ indicates toe in.
 
 ![EK half toe variation in heave](/assets/images/2023-02-09/ek-front-heave-toe.png)
 
-The on-centre toe variation remains nearly constant with little variation,
-changing less than ±0.2 degrees within the range of motion. Since steering is a
-control input, it is expected to have a toe offset with steer. Unlike the
-on-centre behavior, there is an observable amount of bump steer when the wheels
-are steered. This is an important aspect to consider as the dynamic alignment
-is ultimately what needs to be evaluated for vehicle setup.
+The on-centre toe variation remains nearly constant, changing less than ±0.2
+degrees within the range of motion. Since steering is a control input, it is
+expected to have a toe offset with steer. Unlike the on-centre behavior, there
+is an observable amount of bump steer when the wheels are steered. This is an
+important aspect to consider as the dynamic alignment is ultimately what needs
+to be evaluated for vehicle setup.
 
 ### Bump steer
 
