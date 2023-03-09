@@ -211,8 +211,8 @@ intersects with the ground and the vehicle center plane.
 Toe variation in bump is commonly known as _bump steer_, which creates a _roll
 steer_ effect during cornering. Controlling the dynamic alignment of the
 vehicle is possible by controlling the toe variation characteristics. Roll
-steer, and by association, the bump steer, is often considered in an understeer
-budget calculation per the cornering compliance concept.
+steer, and by association, the bump steer, is often a consideration in an
+understeer budget calculation per the cornering compliance concept.
 
 The toe variation in bump during parallel wheel travel is shown in the figure
 below. A positive toe angle indicates toe out and a negative toe angle
