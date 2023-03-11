@@ -82,8 +82,8 @@ Suspension kinematics is the study of the geometry and motion of a vehicle's
 suspension system, without consideration of forces. The motion of the
 suspension system can be modified to change how the tire is presented to the
 road. Consequently, this presents an opportunity for designers to change the
-design the of the suspension to tune the ride and handling characteristics of
-the vehicle.
+design of the suspension to tune the ride and handling characteristics of the
+vehicle.
 
 Computer simulation is frequently used to analyze suspension kinematics since
 spatial mechanisms can be unintuitive to understand. To perform this analysis,
