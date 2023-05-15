@@ -6,8 +6,6 @@ modified_date: 2022-10-22
 categories: [suspension, kinematics, acura rsx]
 ---
 
-{% include mathjax.html %}
-
 > This article is part of a series on the kinematic simulation and analysis of
 > the Acura RSX suspension. To learn more, feel free to check my other posts:
 >
@@ -83,12 +81,12 @@ element's displacement relative to the wheel centre vertical position. The
 quantities are numerically differentiated using a second-order central
 difference. Mathematically:
 
-$$ {MR} = \frac{dx_{elem}}{dx_{wc,z}} $$
+$$ {MR} = \frac{dx*{elem}}{dx*{wc,z}} $$
 
 Where:
 
-* $$ dx_{elem} $$ is the change in the element length
-* $$ dx_{wc,z} $$ is the change in the wheel centre vertical position
+- $$ dx\_{elem} $$ is the change in the element length
+- $$ dx\_{wc,z} $$ is the change in the wheel centre vertical position
 
 The Acura RSX rear suspension has two motion ratios of interest: the coilover
 assembly and the anti-roll bar. Both the coilover assembly and the anti-roll

@@ -1,12 +1,10 @@
 ---
 layout: post
-title:  "Lateral Dynamics of a Linear Single-Track Vehicle"
-date:   2018-09-18 19:15:00 -0400
+title: "Lateral Dynamics of a Linear Single-Track Vehicle"
+date: 2018-09-18 19:15:00 -0400
 modified_date: 2020-10-15
 categories: [vehicle dynamics, simulation]
 ---
-
-{% include mathjax.html %}
 
 ## Introduction
 
@@ -33,6 +31,7 @@ As a tribute to this historic work, we present the equations-of-motion
 describing the lateral dynamics of a linear single-track vehicle.
 
 ### Approach
+
 The derivation is based on a force and moment balance with inertial reactions
 of a single-track vehicle. The formulae is derived symbolically using the
 Python package _Sympy_ v1.1.1.
@@ -43,51 +42,58 @@ Vehicle Dynamics_ by W.F. Milliken & D.L. Milliken.
 For a derivation using work-energy methods, please refer to Chapter 1.3, _Tyre
 & Vehicle Dynamics_ by H.B. Pacejka.
 
-
 ## List of Symbols
 
 #### Constants
-* $$g$$ represents the earth gravitation constant [$$m/s^2$$]
+
+- $$g$$ represents the earth gravitation constant [$$m/s^2$$]
 
 #### Variables
-* $$t$$ represents time [$$s$$]
-* $$s$$ represents complex frequency [-]
+
+- $$t$$ represents time [$$s$$]
+- $$s$$ represents complex frequency [-]
 
 #### Vehicle States
-* $$u$$ represents the longitudinal velocity of the chassis centre-of-gravity [$$m/s$$]
-* $$v$$ represents the lateral velocity of the chassis centre-of-gravity [$$m/s$$]
-* $$r$$ represents the yaw velocity of the chassis centre-of-gravity [$$rad/s$$]
-* $$\beta$$ represents chassis slip angle at the centre-of-gravity [$$rad$$]
-* $$\delta$$ represents steered wheel angle of the front axle [$$rad$$]
+
+- $$u$$ represents the longitudinal velocity of the chassis centre-of-gravity [$$m/s$$]
+- $$v$$ represents the lateral velocity of the chassis centre-of-gravity [$$m/s$$]
+- $$r$$ represents the yaw velocity of the chassis centre-of-gravity [$$rad/s$$]
+- $$\beta$$ represents chassis slip angle at the centre-of-gravity [$$rad$$]
+- $$\delta$$ represents steered wheel angle of the front axle [$$rad$$]
 
 #### Vehicle Properties
-* $$m$$ represents the vehicle mass [$$kg$$]
-* $$I$$ represents the vehicle yaw inertia [$$kg \cdot m^2$$]
-* $$l_a$$ represents the length from the chassis centre-of-gravity to the front axle [$$m$$]
-* $$l_b$$ represents the length from the chassis centre-of-gravity to the rear axle [$$m$$]
-* $$W_f$$ represents the vertical load on the front axle [$$N$$]
-* $$W_r$$ represents the vertical load on the rear axle [$$N$$]
+
+- $$m$$ represents the vehicle mass [$$kg$$]
+- $$I$$ represents the vehicle yaw inertia [$$kg \cdot m^2$$]
+- $$l_a$$ represents the length from the chassis centre-of-gravity to the front axle [$$m$$]
+- $$l_b$$ represents the length from the chassis centre-of-gravity to the rear axle [$$m$$]
+- $$W_f$$ represents the vertical load on the front axle [$$N$$]
+- $$W_r$$ represents the vertical load on the rear axle [$$N$$]
 
 #### Tire States
-* $$\alpha_f$$ represents the front axle effective slip angle [$$rad$$]
-* $$\alpha_r$$ represents the rear axle effective slip angle [$$rad$$]
+
+- $$\alpha_f$$ represents the front axle effective slip angle [$$rad$$]
+- $$\alpha_r$$ represents the rear axle effective slip angle [$$rad$$]
 
 #### Tire Properties
-* $$C_f$$ represents the front axle effective cornering stiffness [$$N/rad$$]
-* $$C_r$$ represents the axle axle effective cornering stiffness [$$N/rad$$]
+
+- $$C_f$$ represents the front axle effective cornering stiffness [$$N/rad$$]
+- $$C_r$$ represents the axle axle effective cornering stiffness [$$N/rad$$]
 
 #### Cornering Compliances
-* $$D_f$$ represents the front axle cornering compliance [$$\frac{rad}{g}$$]
-* $$D_r$$ represents the rear axle cornering compliance [$$\frac{rad}{g}$$]
+
+- $$D_f$$ represents the front axle cornering compliance [$$\frac{rad}{g}$$]
+- $$D_r$$ represents the rear axle cornering compliance [$$\frac{rad}{g}$$]
 
 #### Forces
-* $$F_{y,f}$$ represents the lateral force developed at the front axle [$$N$$]
-* $$F_{y,r}$$ represents the lateral force developed at the rear axle [$$N$$]
 
-
+- $$F_{y,f}$$ represents the lateral force developed at the front axle [$$N$$]
+- $$F_{y,r}$$ represents the lateral force developed at the rear axle [$$N$$]
 
 ## Base Assumptions
+
 ### Force and Moment Balance
+
 The force and moment balance of a single-track bicycle is described by the
 following free-body diagram:
 
@@ -95,30 +101,30 @@ following free-body diagram:
 
 &nbsp;
 
-
 Based on the free-body diagram, the equations describing the force and moment
 balance are governed by the following equations:
 
-$$ m(\dot{v} + u \cdot r) = F_{y,f} \cos{\left(\delta\right)} + F_{y,r} $$
+$$ m(\dot{v} + u \cdot r) = F*{y,f} \cos{\left(\delta\right)} + F*{y,r} $$
 
-$$ I \dot{r} = a F_{y,f} \cos{\left(\delta\right)} - b F_{y,r} $$
+$$ I \dot{r} = a F*{y,f} \cos{\left(\delta\right)} - b F*{y,r} $$
 
 To simplify the derivation, we assume small angle variations in the steered
 angle, $$\delta$$. By this assumption, we linearize the $$\cos{\left(\delta\right)}$$ about
 an operating region around $$\delta = 0$$ such that $$\cos{\left(\delta\right)} \simeq 1$$.
 Therefore, the force and moment balance equations become:
 
-$$ m(\dot{v} + u \cdot r) = F_{y,f} + F_{y,r} $$
+$$ m(\dot{v} + u \cdot r) = F*{y,f} + F*{y,r} $$
 
-$$ I \dot{r} = a F_{y,f} - b F_{y,r} $$
+$$ I \dot{r} = a F*{y,f} - b F*{y,r} $$
 
 ### Tire Model
+
 The lateral force generated by the tires is assumed to be a linear function of
 the slip angle.
 
-$$ F_{y,f} = -C_f \alpha_f $$
+$$ F\_{y,f} = -C_f \alpha_f $$
 
-$$ F_{y,r} = -C_r \alpha_r $$
+$$ F\_{y,r} = -C_r \alpha_r $$
 
 The linear stiffness assumption is only valid for small slip angles. Generally
 speaking, the validity of this assumption restricts analysis to maneuvers low
@@ -128,6 +134,7 @@ Note: the cornering stiffness $$C_f$$ and $$C_r$$ represents the effective
 cornering stiffness of the axle.
 
 ### Slip Angles
+
 The axle slip angle is defined as the angle between the direction of heading
 and the direction of the tire centreline. This angle is modelled as the
 arctangent of velocity components of each axle.
@@ -150,6 +157,7 @@ Note: the singularity at $$u = 0$$ causes this model to only be valid for
 non-zero longitudinal velocities.
 
 ## Base Derivation
+
 Given the base assumptions, we can develop a set of linear differential
 equations with lateral velocity and yaw velocity as state variables.
 
@@ -196,8 +204,8 @@ $$
 \frac{R(s)}{\delta(s)} = \frac{\frac{C_f l_a}{I} s + \frac{C_f C_r (l_a + l_b)}{Imu}}{s^2 + \left(\frac{C_f + C_r}{mu} + \frac{C_f l_a^2 + C_r l_b^2}{Iu}\right) s + \frac{C_f C_r (l_a + l_b)^2}{Imu^2} + \frac{-C_f l_a + C_r l_b}{I}}
 $$
 
-
 ## Derivation using Chassis Slip Angle as a State Variable
+
 Depending on application, it may be useful to describe the vehicle using the
 chassis slip angle.
 
@@ -227,7 +235,6 @@ $$\dot{v} = u \cdot \dot{\beta}$$
 $$\dot{\beta} = \frac{u (-C_f - C_r) \beta + (-C_f l_a + C_r l_b - mu^2) r}{mu^2} + \frac{C_f \delta}{mu}$$
 
 $$\dot{r} = \frac{u (-C_f l_a + C_r l_b) \beta - (C_f l_a^2 + C_r l_b^2) r}{Iu} + \frac{u C_f l_a \delta}{I}$$
-
 
 #### State-Space Form
 
@@ -264,6 +271,7 @@ $$
 $$
 
 ## Derivation using Cornering Compliances
+
 Depending on application, it may be useful to describe the vehicle using the
 axle cornering compliance instead of effective axle cornering stiffness.
 
@@ -299,7 +307,6 @@ $$\dot{\beta} = \frac{g u (-D_f l_a - D_r l_b) \beta + \left(-D_f D_r u^2 (l_a +
 
 $$\dot{r} = \frac{m g u (D_f - D_r) (l_a l_b) \beta - (D_f l_b  - D_r l_a) (g l_a l_b m) r}{D_f D_r I u (l_a + l_b)} + \frac{g l_a l_b m \delta}{D_f I (l_a + l_b)}$$
 
-
 #### State-Space Form
 
 $$
@@ -324,8 +331,6 @@ $$
 \delta
 $$
 
-
-
 #### Transfer Function Form
 
 $$
@@ -337,6 +342,7 @@ $$
 $$
 
 ## Conclusion
+
 The amateur driver of today has more data available than ever before. Modern
 data acquisition systems make it easier than ever to observe the vehicle state,
 especially with the increased capabilities of modern safety systems. However,
@@ -353,9 +359,9 @@ and see how there is still much to learn from the founders of the science.
 
 Interested in the derivation code? Browse the code
 [here](https://gist.github.com/kktse/7e27c9669c971112cc3e1eca49a3ddf7)!
+
 ## References
 
 1. Milliken, William F., and Douglas L. Milliken. _Race car vehicle dynamics_. Vol. 400. Warrendale: Society of Automotive Engineers, 1995.
 2. Pacejka, Hans. _Tire and vehicle dynamics_. Elsevier, 2005.
 3. Yih, Paul, Jihan Ryu, and J. Christian Gerdes. "Modification of vehicle handling characteristics via steer-by-wire." _American Control Conference, 2003. Proceedings of the 2003._ Vol. 3. IEEE, 2003.
-

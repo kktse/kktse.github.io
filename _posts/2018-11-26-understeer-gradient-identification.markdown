@@ -1,17 +1,14 @@
 ---
 layout: post
-title:  "OTA 2018 Debrief: Understeer Gradient Test"
-date:   2018-12-01 17:05:00 -0400
+title: "OTA 2018 Debrief: Understeer Gradient Test"
+date: 2018-12-01 17:05:00 -0400
 categories: [vehicle dynamics, simulation, ontario time attack]
 ---
-
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
 
 > 2019/08/22 update: this article is part of a series on on-centre vehicle
 > handling using linear system analysis. For further reading, please feel free
 > to check out my other posts:
+>
 > 1. [Lateral Dynamics of a Linear Single-Track Vehicle](/jekyll/update/2018/09/18/single-track-bicycle.html)
 > 1. **[OTA 2018 Debrief: Understeer Gradient Test](/jekyll/update/2018/12/01/understeer-gradient-identification.html)**
 > 1. [OTA 2018 Debrief: Cornering Compliances and Transients](/jekyll/update/2019/01/06/cornering-compliance-identification.html)
@@ -19,8 +16,8 @@ categories: [vehicle dynamics, simulation, ontario time attack]
 > 1. [OTA 2018 Debrief: Parameter Analysis](/jekyll/update/2019/03/17/parameter-sensitivity-analysis.html)
 > 1. [Cornering Compliances of a Typical Road Vehicle](/jekyll/update/2019/06/01/typical-cornering-compliances.html)
 
+---
 
-***
 &nbsp;
 
 ![ddt_civicsi](/assets/images/2018-12-01/ddt_c551_civic_si_banner.jpg)
@@ -31,6 +28,7 @@ chance to tackle during the season. In this instalment, we perform an
 understeer gradient test to get an objective measure of vehicle handling.
 
 # Understeer, Defined
+
 The tendency for a vehicle to require more (or less) steering input relative to
 the Ackermann steer angle is a measure of understeer. The gain due to lateral
 acceleration is the understeer gradient.
@@ -38,11 +36,12 @@ acceleration is the understeer gradient.
 $$\delta = \frac{L}{R} + K a_y$$
 
 Where:
-* $$\delta$$ is the steering angle [rad]
-* $$L$$ is the wheelbase of the car [m]
-* $$R$$ is the radius of the turn [m]
-* $$a_y$$ is the lateral acceleration [m/s<sup>2</sup>]
-* $$K$$ is the understeer gradient [rad/m/s<sup>2</sup>]
+
+- $$\delta$$ is the steering angle [rad]
+- $$L$$ is the wheelbase of the car [m]
+- $$R$$ is the radius of the turn [m]
+- $$a_y$$ is the lateral acceleration [m/s<sup>2</sup>]
+- $$K$$ is the understeer gradient [rad/m/s<sup>2</sup>]
 
 Understeer can be measured by means of an understeer gradient test. For our
 purposes, we perform a constant speed test whereby the vehicle is kept at a
@@ -55,13 +54,15 @@ acceleration yields the on-centre understeer gradient.
 $$K = \frac{d\delta}{da_y}\biggr\rvert_{a_y=0} - \frac{L}{V^2}$$
 
 Where:
-* $$V$$ is the forward speed of the vehicle [m/s]
+
+- $$V$$ is the forward speed of the vehicle [m/s]
 
 We assume that the forward speed of the vehicle is constant. The understeer
 gradient can be computed if the lateral acceleration, forward speed and
 steering angle can be measured.
 
 # Experimental Setup
+
 ![tmp_civicsi](/assets/images/2018-12-01/tmp_c551_civic_si.jpg)
 
 The target vehicle is a 2012 Honda Civic Si Coupe equipped with adjustable
@@ -86,10 +87,11 @@ tire temperatures and tire pressures are similar to those seen in racing
 conditions.
 
 # Analysis
+
 We begin the vehicle analysis by declaring all known constants:
 
-* $$L = 2.62$$ [m]
-* $$V = 30.0$$ [km/h]
+- $$L = 2.62$$ [m]
+- $$V = 30.0$$ [km/h]
 
 With the wheelbase and forward speed known, the Ackermann steer angle can be
 computed.
@@ -103,7 +105,7 @@ performing a first-order polynomial fit about ±0.5 g.
 The slope of the first-order polynomial fit yields the necessary value to
 evaluate the understeer gradient.
 
-* $$\frac{d\delta}{da_y}\biggr\rvert_{a_y=0} = 27.7$$ [deg/g]
+- $$\frac{d\delta}{da_y}\biggr\rvert_{a_y=0} = 27.7$$ [deg/g]
 
 Substituting these values into the understeer gradient equation yields the
 following:
@@ -111,6 +113,7 @@ following:
 $$K = 5.5$$ [deg/g]
 
 # Summary
+
 The purpose of performing the understeer gradient test is to obtain an
 objective measure of the vehicle's handling characteristics. The understeer
 gradient test is easy to conduct, and with modern on-board diagnostics systems
@@ -123,5 +126,6 @@ analysis. This article would not be possible without the support of Joseph Yang
 and his sponsors._
 
 # References
+
 1. Milliken, William F., and Douglas L. Milliken. _Race car vehicle dynamics_. Vol. 400. Warrendale: Society of Automotive Engineers, 1995.
-2. Dixit, Neha R. _Evaluation of Vehicle Understeer Gradient Definitions_. Diss. The Ohio State University, 2009. 
+2. Dixit, Neha R. _Evaluation of Vehicle Understeer Gradient Definitions_. Diss. The Ohio State University, 2009.

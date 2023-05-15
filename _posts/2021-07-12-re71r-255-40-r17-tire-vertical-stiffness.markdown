@@ -5,7 +5,6 @@ date: 2021-07-18 4:30:00 -0400
 categories: [tires]
 ---
 
-{% include mathjax.html %}
 {% include material_icons.html %}
 
 ![re71r](/assets/images/2021-07-12/bridgestone-re71r-cover-photo.jpg)
@@ -42,7 +41,7 @@ of vertical loads. The tire is compressed into a flat plate where the tire
 vertical load and radial deflection are measured. The tangent of the
 load-deflection curve at a specific point is the tire vertical stiffness.
 
-$$ K_{Z} = \frac{dF_Z(R_l)}{dR_l} \Bigg|_{F_{Z}=x} $$
+$$ K*{Z} = \frac{dF_Z(R_l)}{dR_l} \Bigg|*{F\_{Z}=x} $$
 
 Where:
 

@@ -45,3 +45,11 @@
   color: $lm-link-base-color;
   line-height: 0;
 }
+
+.info {
+  display: flex;
+  background: $lm-code-background-color;
+  border-radius: 0.25em;
+  margin: 0 0 1em 0;
+  padding: 0.5em 0.75em;
+}

@@ -1,17 +1,14 @@
 ---
 layout: post
-title:  "OTA 2018 Debrief: Parameter Analysis"
-date:   2019-03-17 09:15:00 -0400
+title: "OTA 2018 Debrief: Parameter Analysis"
+date: 2019-03-17 09:15:00 -0400
 categories: [vehicle dynamics, simulation, ontario time attack]
 ---
-
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
 
 > 2019/08/22 update: this article is part of a series on on-centre vehicle
 > handling using linear system analysis. For further reading, please feel free
 > to check out my other posts:
+>
 > 1. [Lateral Dynamics of a Linear Single-Track Vehicle](/jekyll/update/2018/09/18/single-track-bicycle.html)
 > 1. [OTA 2018 Debrief: Understeer Gradient Test](/jekyll/update/2018/12/01/understeer-gradient-identification.html)
 > 1. [OTA 2018 Debrief: Cornering Compliances and Transients](/jekyll/update/2019/01/06/cornering-compliance-identification.html)
@@ -19,8 +16,8 @@ categories: [vehicle dynamics, simulation, ontario time attack]
 > 1. **[OTA 2018 Debrief: Parameter Analysis](/jekyll/update/2019/03/17/parameter-sensitivity-analysis.html)**
 > 1. [Cornering Compliances of a Typical Road Vehicle](/jekyll/update/2019/06/01/typical-cornering-compliances.html)
 
+---
 
-***
 &nbsp;
 
 ![civicsi_ddt_t1](/assets/images/2019-03-17/civicsi_ddt_t1.jpg)
@@ -32,6 +29,7 @@ investigate how to improve handling performance by understanding its
 sensitivities to vehicle properties.
 
 # Asking _What-if?_
+
 Our goal is to use vehicle simulation to better understand vehicle handling.
 This particular vehicle simulation will help us identify the axle of interest
 in order to achieve some transient handling specification. Being equipped with
@@ -44,6 +42,7 @@ handling and determine which changes have the biggest impact on primary
 handling metrics.
 
 # Baseline Vehicle
+
 We are evaluating the #551 2012 Honda Civic Si for its on-centre handling
 sensitivities. The analysis will focus on two parameters: rear cornering
 compliance and understeer gradient. This is to evaluate the impact of a
@@ -51,17 +50,18 @@ suspension modification or setup change.
 
 The following parameters are used to represent the baseline vehicle:
 
-| Symbol | Value | Unit | Description |
-| ------ | ----- | ---- | ----------- |
-| $$a$$  | 0.996 | m    | Distance from CG to front axle |
-| $$b$$  | 1.624 | m    | Distance from CG to rear axle |
-| $$m$$  | 1450  | kg   | Vehicle mass |
-| $$I$$  | 2345  | kg m<sup>2</sup> | Vehicle yaw inertia |
-| $$K$$  | 5.5   | deg/g | Understeer Gradient |
-| $$D_r$$  | 4.1   | deg/g | Cornering compliance, rear |
-| $$N$$  | 16.08 | - | Steering ratio |
+| Symbol  | Value | Unit             | Description                    |
+| ------- | ----- | ---------------- | ------------------------------ |
+| $$a$$   | 0.996 | m                | Distance from CG to front axle |
+| $$b$$   | 1.624 | m                | Distance from CG to rear axle  |
+| $$m$$   | 1450  | kg               | Vehicle mass                   |
+| $$I$$   | 2345  | kg m<sup>2</sup> | Vehicle yaw inertia            |
+| $$K$$   | 5.5   | deg/g            | Understeer Gradient            |
+| $$D_r$$ | 4.1   | deg/g            | Cornering compliance, rear     |
+| $$N$$   | 16.08 | -                | Steering ratio                 |
 
 # Steering Sensitivity
+
 The analysis begins with steady-state steering sensitivities. The [linear
 single-track vehicle model](jekyll/update/2018/09/18/single-track-bicycle.html)
 contains parameters with real-world meaning; for example, vehicle mass and yaw
@@ -130,6 +130,7 @@ autocross setting, but encountered difficulties on a road course. This
 observation is likely attributable to this effect.
 
 # Transient Trade-offs
+
 Good vehicle handling is ultimately an amalgamation of transient and
 steady-state handling factors. Previously, we discussed the [use of handling
 metrics to quantify the handling
@@ -165,12 +166,12 @@ understeer gradient. For example, lets say we want to achieve the response
 achieved with a rear cornering compliance of 4 deg/g and understeer
 gradient of 5 deg/g.
 
-| Parameter                                 | Baseline | Modification | % Change |
-|-------------------------------------------|----------|--------------|----------|
+| Parameter                                  | Baseline | Modification | % Change |
+| ------------------------------------------ | -------- | ------------ | -------- |
 | Understeer Gradient, $$K$$ [deg/g]         | 5.5      | 5.0          | -10.0%   |
 | Rear Cornering Compliance, $$D_r$$ [deg/g] | 4.1      | 4.0          | -2.4%    |
-| Lateral Accel. Rise Time [sec]            | 0.376    | 0.368        | -2.1%    |
-| Yaw Rate Overshoot [%]                    | 33.3%    | 30.3%        | -9.0%    |
+| Lateral Accel. Rise Time [sec]             | 0.376    | 0.368        | -2.1%    |
+| Yaw Rate Overshoot [%]                     | 33.3%    | 30.3%        | -9.0%    |
 
 By reducing the understeer gradient by 10% and reducing the rear cornering
 compliance by 2.4%, we are able to reduce the yaw overshoot by 9% and the
@@ -179,6 +180,7 @@ real life is not outside the realm of possibility; this change is small on a
 percentage basis and may be achievable with a setup change!
 
 # Setup Selection
+
 The relationship between response and stability is complicated. To determine
 which axle to place our efforts on, we emphasize the relationship between the
 rear cornering compliance, understeer gradient and front cornering compliance.
@@ -208,17 +210,18 @@ a $$K$$ of 4 deg/g and a $$D_r$$ of 3 deg/g. The baseline lateral acceleration
 rise time performance can be met even if the understeer gradient is increased.
 
 # Asking _Now-what?_
+
 Reflecting back on the 2018 OTA season, the driver of the #551 2012 Honda Civic
 Si Coupe struggled with the following:
 
-* Difficulty inducing vehicle rotation at turn-in
-* Sluggish directional response at corner-entry
-* Conservative mid-corner vehicle placement
+- Difficulty inducing vehicle rotation at turn-in
+- Sluggish directional response at corner-entry
+- Conservative mid-corner vehicle placement
 
 Some of these experiences can be explained via the open-loop on-centre vehicle
 response. The steering sensitivity drops off at the speeds of most road courses
 in the area. This explains the general difficulty with initiating turn-in and
-corner-entry.  The lack of stability at corner-entry may consequently affect
+corner-entry. The lack of stability at corner-entry may consequently affect
 mid-corner. It is likely the driver is approaching the mid-corner with caution
 due to the lack of stability at corner-entry.
 
@@ -231,12 +234,13 @@ compliance to reduce the overall understeer gradient of the vehicle.
 
 From a practical vehicle modification standpoint, the following recommendations
 were made for the #551 2012 Honda Civic Si:
-* Reconsider the choice of corner spring rates for the front and rear axles
-  * The findings from the analysis directly prompted an investigation into the
-  spring rates
-* Consider different tire constructions or compounds for the front/rear axles
+
+- Reconsider the choice of corner spring rates for the front and rear axles
+  - The findings from the analysis directly prompted an investigation into the
+    spring rates
+- Consider different tire constructions or compounds for the front/rear axles
   to achieve the desired understeer gradient
-* Use tuning parameters (ex. tire pressure, damper settings) to make slight
+- Use tuning parameters (ex. tire pressure, damper settings) to make slight
   adjustments and to provide additional stability for driver confidence
 
 Further simulations can be run to assess more specific areas of concern. It may
@@ -244,6 +248,7 @@ be valuable for the driver to see a simulated response such that they can
 better anticipate and control the vehicle.
 
 # Some Caveats
+
 As we conclude our analysis for the season debrief, it is important to reflect
 on the questions we answered - but also the questions we did not answer.
 
@@ -275,7 +280,8 @@ that the results shown here may not be accurate, but we value the insight it
 can bring more than the absolute numerical output of our work.
 
 # Concluding Remarks
-Our study of the #551 2012 Honda Civic Si Couple covered many topics.  The
+
+Our study of the #551 2012 Honda Civic Si Couple covered many topics. The
 [understeer gradient
 test](jekyll/update/2018/12/01/understeer-gradient-identification.html) and
 [pulse steer
@@ -302,14 +308,17 @@ It is through this work we recognize the similarities and demonstrate the
 immense knowledge and value to be had studying these foundational works.
 
 # Acknowledgements
+
 The following individuals and organizations have helped contribute to the OTA
 Debrief series:
-* Joseph Yang and his #551 2012 Honda Civic Si. This analysis would not be
+
+- Joseph Yang and his #551 2012 Honda Civic Si. This analysis would not be
   possible without his collaboration;
-* Ping Zhang at [Apex Performance Engineering](https://formuladelta.ca/) - follow us on Facebook!;
-* CASC-OR, Ontario Time Attack and the community for their support
+- Ping Zhang at [Apex Performance Engineering](https://formuladelta.ca/) - follow us on Facebook!;
+- CASC-OR, Ontario Time Attack and the community for their support
 
 # References
+
 1. Milliken, William F., and Douglas L. Milliken. _Race car vehicle dynamics_. Vol. 400. Warrendale: Society of Automotive Engineers, 1995.
 2. Bundorf, R. Thomas, and Ronald L. Leffert. The cornering compliance concept for description of vehicle directional control properties. No. 760713. SAE Technical Paper, 1976.
 3. Testing, Testing 1,2 ...” FSAE.com, 2015, www.fsae.com/forums/showthread.php?12204-Testing-Testing-1-2-...

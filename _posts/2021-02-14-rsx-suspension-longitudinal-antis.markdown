@@ -1,31 +1,29 @@
 ---
 layout: post
-title: Anti-lift, anti-dive and kinematic pitch centre analysis of the Acura RSX suspension 
+title: Anti-lift, anti-dive and kinematic pitch centre analysis of the Acura RSX suspension
 date: 2021-02-18 21:30:00 -0500
 categories: [suspension, kinematics, acura rsx]
 ---
-
-{% include mathjax.html %}
 
 > This article is part of a series on the kinematic simulation and analysis of
 > the Acura RSX suspension. To learn more, feel free to check my other posts:
 >
 > Front Suspension
 >
-> * [Analysis of the Acura RSX front suspension geometry](/jekyll/update/2020/01/30/static-suspension-geometry-analysis-acura-rsx.html)
-> * [Kinematic curves of the Acura RSX front suspension](/jekyll/update/2020/06/21/rsx-kinematic-curves.html)
-> * [Motion ratio curves of the Acura RSX front suspension](/jekyll/update/2020/07/25/rsx-front-motion-ratios.html)
-> * [Kinematic roll centre analysis of the Acura RSX front suspension](/jekyll/update/2020/09/07/rsx-front-kinematic-roll-centre.html)
+> - [Analysis of the Acura RSX front suspension geometry](/jekyll/update/2020/01/30/static-suspension-geometry-analysis-acura-rsx.html)
+> - [Kinematic curves of the Acura RSX front suspension](/jekyll/update/2020/06/21/rsx-kinematic-curves.html)
+> - [Motion ratio curves of the Acura RSX front suspension](/jekyll/update/2020/07/25/rsx-front-motion-ratios.html)
+> - [Kinematic roll centre analysis of the Acura RSX front suspension](/jekyll/update/2020/09/07/rsx-front-kinematic-roll-centre.html)
 >
 > Rear Suspension
 >
-> * [Kinematic curves of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rear-kinematic-curves.html)
-> * [Motion ratio curves of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rear-motion-ratios.html)
-> * [Kinematic roll centre analysis of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rsx-rear-kinematic-roll-centre.html)
+> - [Kinematic curves of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rear-kinematic-curves.html)
+> - [Motion ratio curves of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rear-motion-ratios.html)
+> - [Kinematic roll centre analysis of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rsx-rear-kinematic-roll-centre.html)
 >
 > Full Vehicle
 >
-> * [**You are here!** - Anti-lift, anti-dive and kinematic pitch centre analysis of the Acura RSX suspension](/jekyll/update/2021/02/19/rsx-suspension-longitudinal-antis.html)
+> - [**You are here!** - Anti-lift, anti-dive and kinematic pitch centre analysis of the Acura RSX suspension](/jekyll/update/2021/02/19/rsx-suspension-longitudinal-antis.html)
 
 ![rsx cover](/assets/images/2021-02-14/rsx-gp-cover.jpg)
 
@@ -81,15 +79,15 @@ front and rear wheels because they have different suspension architectures.
 The side-view kinematic instant centre for the MacPherson strut front
 suspension is found at the intersection of:
 
-* the lower control arm plane defined by the two inboard attachment points and the outer ball joint
-* the upper strut plane defined by the upper strut attachment point and a normal vector defined by the strut
-* the side-view plane defined by the front and rear tire contact patches
+- the lower control arm plane defined by the two inboard attachment points and the outer ball joint
+- the upper strut plane defined by the upper strut attachment point and a normal vector defined by the strut
+- the side-view plane defined by the front and rear tire contact patches
 
 The side-view kinematic instant centre for the H-arm with camber link rear
 suspension is found at the intersection of:
 
-* the line defined by the two inboard attachment points of the lower control arm
-* the side-view plane defined by the front and rear tire contact patches
+- the line defined by the two inboard attachment points of the lower control arm
+- the side-view plane defined by the front and rear tire contact patches
 
 Under braking, the **side-view virtual swing axle** is formed by drawing a
 line from the **tire contact patch** to its respective **side-view kinematic
@@ -111,8 +109,8 @@ Based on published data for the Acura RSX by the National Highway Traffic
 Safety Administration, the following values are used for the weight
 distribution and the centre of gravity height:
 
-* Vehicle fore/aft weight distribution $$ \text{WD} = 61/39\;[\%]$$
-* Centre of gravity height above the ground $$ h = 533\;\text{[mm]} $$
+- Vehicle fore/aft weight distribution $$ \text{WD} = 61/39\;[\%]$$
+- Centre of gravity height above the ground $$ h = 533\;\text{[mm]} $$
 
 ### Front anti-lift
 
@@ -126,13 +124,13 @@ front wheel drive layout, the drive force acts at the wheel centre and
 through the side-view kinematic instant centre. The percentage of front
 anti-lift is given by the following equation:
 
-$$ \%\:\text{anti-lift}_{front} = \frac{l}{h} \tan{\theta} \times 100 $$
+$$ \%\:\text{anti-lift}\_{front} = \frac{l}{h} \tan{\theta} \times 100 $$
 
 Where:
 
-* $$ l $$ is the vehicle wheelbase [mm]
-* $$ h $$ is the height of the centre of gravity above the ground [mm]
-* $$ \theta $$ is the angle of a line originating at the wheel centre going through the side view kinematic instant centre relative to the road plane [rad]
+- $$ l $$ is the vehicle wheelbase [mm]
+- $$ h $$ is the height of the centre of gravity above the ground [mm]
+- $$ \theta $$ is the angle of a line originating at the wheel centre going through the side view kinematic instant centre relative to the road plane [rad]
 
 Depending on the angle of the side-view line of action, the front geometry
 can have either _anti-lift_ or _pro-lift_. For the Acura RSX, the side-view
@@ -159,12 +157,12 @@ vehicle with outboard brakes, the braking force acts at the tire contact
 patch and through the side-view kinematic instant centre. The percentage of
 front anti-dive is given by the following equation:
 
-$$ \%\:\text{anti-dive}_{front} = \%\:\text{braking}_{front} \frac{l}{h} \tan{\theta_{front}} $$
+$$ \%\:\text{anti-dive}_{front} = \%\:\text{braking}_{front} \frac{l}{h} \tan{\theta\_{front}} $$
 
 Where:
 
-* $$ \%\:\text{braking}_{front} $$ is the brake force contribution of the front axle [%]
-* $$ \theta_{front} $$ is the angle of a line originating at the tire contact patch going through the side view kinematic instant centre relative to the road plane [rad]
+- $$ \%\:\text{braking}\_{front} $$ is the brake force contribution of the front axle [%]
+- $$ \theta\_{front} $$ is the angle of a line originating at the tire contact patch going through the side view kinematic instant centre relative to the road plane [rad]
 
 The percentage of front braking force is in consideration of the anti effect
 for the forces generated by front axle exclusively. As an aside, you will
@@ -202,12 +200,12 @@ with outboard brakes, the braking force acts at the tire contact patch and
 through the side-view kinematic instant centre. The percentage of rear
 anti-lift is given by the following equation:
 
-$$ \%\:\text{anti-lift}_{rear} = \%\:\text{braking}_{rear} \frac{l}{h} \tan{\theta_{rear}} $$
+$$ \%\:\text{anti-lift}_{rear} = \%\:\text{braking}_{rear} \frac{l}{h} \tan{\theta\_{rear}} $$
 
 Where:
 
-* $$ \%\:\text{braking}_{rear} $$ is the brake force contribution of the rear axle [%]
-* $$ \theta_{rear} $$ is the angle of a line originating at the tire contact patch going through the side view kinematic instant centre relative to the road plane [rad]
+- $$ \%\:\text{braking}\_{rear} $$ is the brake force contribution of the rear axle [%]
+- $$ \theta\_{rear} $$ is the angle of a line originating at the tire contact patch going through the side view kinematic instant centre relative to the road plane [rad]
 
 Just like in the front anti-dive case, we do not know the percentage of rear
 braking force for the Acura RSX. Therefore, we calculate an _anti-lift ratio_

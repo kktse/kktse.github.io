@@ -6,8 +6,6 @@ modified_date: 2022-08-07
 categories: [data visualization]
 ---
 
-{% include mathjax.html %}
-
 Locating the vehicle centre of gravity is fundamental to vehicle dynamics. It
 is a point that can be used to describe the motion of a rigid body when it
 subjected to a resultant force. Its intrinsic effect on vehicle dynamic
