@@ -258,9 +258,10 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll (= 3.9.2)
   jekyll-feed
   minima (~> 2.5.1)
   tzinfo-data
 
 BUNDLED WITH
-   2.3.6
+   2.3.14
