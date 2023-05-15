@@ -81,7 +81,7 @@ element's displacement relative to the wheel centre vertical position. The
 quantities are numerically differentiated using a second-order central
 difference. Mathematically:
 
-$$ {MR} = \frac{dx*{elem}}{dx*{wc,z}} $$
+$$ {MR} = \frac{dx_{elem}}{dx_{wc,z}} $$
 
 Where:
 

@@ -54,7 +54,7 @@ article, we are defining the motion ratio as the **ratio between the
 displacement of a mechanical element relative to the vertical displacement of
 the wheel centre**; or:
 
-$$ {MR} = \frac{dx*{elem}}{dx*{wc,z}} $$
+$$ {MR} = \frac{dx_{elem}}{dx_{wc,z}} $$
 
 Where:
 
