@@ -5,27 +5,25 @@ modified_date: 2019-08-25
 categories: [suspension, kinematics, acura rsx]
 ---
 
-{% include mathjax.html %}
-
 > This article is part of a series on the kinematic simulation and analysis of
 > the Acura RSX suspension. To learn more, feel free to check my other posts:
 >
 > Front Suspension
 >
-> * [Analysis of the Acura RSX front suspension geometry](/jekyll/update/2020/01/30/static-suspension-geometry-analysis-acura-rsx.html)
-> * [Kinematic curves of the Acura RSX front suspension](/jekyll/update/2020/06/21/rsx-kinematic-curves.html)
-> * [**You are here!** - Motion ratio curves of the Acura RSX front suspension](/jekyll/update/2020/07/25/rsx-front-motion-ratios.html)
-> * [Kinematic roll centre analysis of the Acura RSX front suspension](/jekyll/update/2020/09/07/rsx-front-kinematic-roll-centre.html)
+> - [Analysis of the Acura RSX front suspension geometry](/jekyll/update/2020/01/30/static-suspension-geometry-analysis-acura-rsx.html)
+> - [Kinematic curves of the Acura RSX front suspension](/jekyll/update/2020/06/21/rsx-kinematic-curves.html)
+> - [**You are here!** - Motion ratio curves of the Acura RSX front suspension](/jekyll/update/2020/07/25/rsx-front-motion-ratios.html)
+> - [Kinematic roll centre analysis of the Acura RSX front suspension](/jekyll/update/2020/09/07/rsx-front-kinematic-roll-centre.html)
 >
 > Rear Suspension
 >
-> * [Kinematic curves of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rear-kinematic-curves.html)
-> * [Motion ratio curves of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rear-motion-ratios.html)
-> * [Kinematic roll centre analysis of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rsx-rear-kinematic-roll-centre.html)
+> - [Kinematic curves of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rear-kinematic-curves.html)
+> - [Motion ratio curves of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rear-motion-ratios.html)
+> - [Kinematic roll centre analysis of the Acura RSX rear suspension](/jekyll/update/2020/12/10/rsx-rsx-rear-kinematic-roll-centre.html)
 >
 > Full Vehicle
 >
-> * [Anti-lift, anti-dive and kinematic pitch centre analysis of the Acura RSX suspension](/jekyll/update/2021/02/19/rsx-suspension-longitudinal-antis.html)
+> - [Anti-lift, anti-dive and kinematic pitch centre analysis of the Acura RSX suspension](/jekyll/update/2021/02/19/rsx-suspension-longitudinal-antis.html)
 
 {:refdef: style="text-align: center;"}
 ![rsx quarter car](/assets/images/2020-07-25/rsx-quarter-cover.jpg)
@@ -60,22 +58,22 @@ $$ {MR} = \frac{dx_{elem}}{dx_{wc,z}} $$
 
 Where:
 
-* $$ dx_{elem} $$ is the change in the element length
-* $$ dx_{wc,z} $$ is the change in the wheel centre vertical position
+- $$ dx\_{elem} $$ is the change in the element length
+- $$ dx\_{wc,z} $$ is the change in the wheel centre vertical position
 
 The change in the element length is computed from a kinematic simulation
 using a second-order central difference.
 
 On the Acura RSX front suspension, there are three motion ratios of interest:
 
-* the spring displacement
-* the damper displacement
-* the anti-roll bar twist angle
+- the spring displacement
+- the damper displacement
+- the anti-roll bar twist angle
 
 In addition to the spring and damper elements, the steering degree of freedom
 can be articulated to add another ratio to our list:
 
-* the rack displacement to road wheel angle ratio
+- the rack displacement to road wheel angle ratio
 
 This brings the list to four motion ratios. We will use the ISO vehicle
 coordinate system to describe the vehicle frame of reference.

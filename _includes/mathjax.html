@@ -1,19 +1,42 @@
-<!-- https://11011110.github.io/blog/2019/10/17/mathjax-3-jekyll.html -->
-<script type="text/javascript">
-document.addEventListener('DOMContentLoaded', function(){
-  function stripcdata(x) {
-    if (x.startsWith('% <![CDATA[') && x.endsWith('%]]>'))
-      return x.substring(11,x.length-4);
-    return x;
-  }
-  document.querySelectorAll("script[type='math/tex']").forEach(function(el){
-    el.outerHTML = "\\(" + stripcdata(el.textContent) + "\\)";
+{%- if site.use_mathjax -%}
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+
+<script
+  type="text/javascript"
+  async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"
+></script>
+
+<!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+
+<!-- To automatically render math in text elements, include the auto-render extension: -->
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "[%", right: "%]", display: true },
+        { left: "$", right: "$", display: false },
+      ],
+    });
   });
-  document.querySelectorAll("script[type='math/tex; mode=display']").forEach(function(el){
-    el.outerHTML = "\\[" + stripcdata(el.textContent) + "\\]";
-  });
-  var script = document.createElement('script');
-  script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js";
-  document.head.appendChild(script);
-}, false);
 </script>
+{%- endif -%}

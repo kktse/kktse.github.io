@@ -1,18 +1,15 @@
 ---
 layout: post
-title:  "OTA 2018 Debrief: Cornering Compliances and Transients"
-date:   2019-01-06 18:45:00 -0400
+title: "OTA 2018 Debrief: Cornering Compliances and Transients"
+date: 2019-01-06 18:45:00 -0400
 modified_date: 2021-04-28
 categories: [vehicle dynamics, simulation, ontario time attack]
 ---
 
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
 > 2019/08/22 update: this article is part of a series on on-centre vehicle
 > handling using linear system analysis. For further reading, please feel free
 > to check out my other posts:
+>
 > 1. [Lateral Dynamics of a Linear Single-Track Vehicle](/jekyll/update/2018/09/18/single-track-bicycle.html)
 > 1. [OTA 2018 Debrief: Understeer Gradient Test](/jekyll/update/2018/12/01/understeer-gradient-identification.html)
 > 1. **[OTA 2018 Debrief: Cornering Compliances and Transients](/jekyll/update/2019/01/06/cornering-compliance-identification.html)**
@@ -20,11 +17,12 @@ categories: [vehicle dynamics, simulation, ontario time attack]
 > 1. [OTA 2018 Debrief: Parameter Analysis](/jekyll/update/2019/03/17/parameter-sensitivity-analysis.html)
 > 1. [Cornering Compliances of a Typical Road Vehicle](/jekyll/update/2019/06/01/typical-cornering-compliances.html)
 
+---
 
-***
 &nbsp;
 
 ![autox_civicsi](/assets/images/2019-01-06/JYANG_CIVIC_by_MLIN.jpg)
+
 > Photo Credit: Michael Lim
 
 Welcome to the Ontario Time Attack debrief files, a series of articles where we
@@ -47,18 +45,18 @@ transient maneuvers.
 
 In our [last article](/jekyll/update/2018/12/01/understeer-gradient-identification.html),
 we defined understeer as the tendency for a vehicle to require more (or less)
-steering input relative to the Ackermann steer angle.  The gain due to lateral
+steering input relative to the Ackermann steer angle. The gain due to lateral
 acceleration is the understeer gradient.
 
 $$\delta = \frac{L}{R} + K a_y$$
 
 Where:
 
-* $$\delta$$ is the steering angle [$$rad$$]
-* $$L$$ is the wheelbase of the car [$$m$$]
-* $$R$$ is the radius of the turn [$$m$$]
-* $$a_y$$ is the lateral acceleration [$$m/s^2$$]
-* $$K$$ is the understeer gradient [$$\frac{rad}{m/s^2}$$]
+- $$\delta$$ is the steering angle [$$rad$$]
+- $$L$$ is the wheelbase of the car [$$m$$]
+- $$R$$ is the radius of the turn [$$m$$]
+- $$a_y$$ is the lateral acceleration [$$m/s^2$$]
+- $$K$$ is the understeer gradient [$$\frac{rad}{m/s^2}$$]
 
 Equivalently, the understeering tendency can be described as the difference in
 the front and rear slip angles.
@@ -67,8 +65,8 @@ $$\delta = \frac{L}{R} + (\alpha_f - \alpha_r)$$
 
 Where:
 
-* $$\alpha_f$$ represents the front axle effective slip angle [$$rad$$]
-* $$\alpha_r$$ represents the rear axle effective slip angle [$$rad$$]
+- $$\alpha_f$$ represents the front axle effective slip angle [$$rad$$]
+- $$\alpha_r$$ represents the rear axle effective slip angle [$$rad$$]
 
 Combining both definitions of understeer yields the following relationship:
 
@@ -84,10 +82,10 @@ $$m_r a_y = \alpha_r C_r$$
 
 Where:
 
-* $$m_f$$ represents the equivalent mass of the front axle [$$kg$$]
-* $$m_r$$ represents the equivalent mass of the rear axle [$$kg$$]
-* $$C_f$$ represents the front axle effective cornering stiffness [$$N/rad$$]
-* $$C_r$$ represents the axle axle effective cornering stiffness [$$N/rad$$]
+- $$m_f$$ represents the equivalent mass of the front axle [$$kg$$]
+- $$m_r$$ represents the equivalent mass of the rear axle [$$kg$$]
+- $$C_f$$ represents the front axle effective cornering stiffness [$$N/rad$$]
+- $$C_r$$ represents the axle axle effective cornering stiffness [$$N/rad$$]
 
 Rearranging and solving for the front and rear slip angles:
 
@@ -102,14 +100,14 @@ $$K = \frac{m_f}{C_f} - \frac{m_r}{C_r} = D_f - D_r$$
 
 Where:
 
-* $$D_f$$ represents the front axle cornering compliance [$$\frac{rad}{m/s^2}$$]
-* $$D_r$$ represents the rear axle cornering compliance [$$\frac{rad}{m/s^2}$$]
+- $$D_f$$ represents the front axle cornering compliance [$$\frac{rad}{m/s^2}$$]
+- $$D_r$$ represents the rear axle cornering compliance [$$\frac{rad}{m/s^2}$$]
 
 The understeer gradient can therefore be understood as the difference between
 the front and rear cornering compliances. This definition is mathematically
 consistent with the earlier definition of the understeer gradient. Noteworthy
 of mention is the exclusion of the steer angle term in the cornering compliance
-definition of the  understeer gradient.
+definition of the understeer gradient.
 
 # Experimental Setup
 
@@ -136,7 +134,7 @@ tire temperatures and tire pressures are similar to those seen in racing
 conditions.
 
 _Safety is of utmost concern. At no time did the vehicle operate outside the
-scope of driver control, and at no time  did the driver operate the vehicle in
+scope of driver control, and at no time did the driver operate the vehicle in
 an unsafe manner. Do not perform this test in an uncontrolled area._
 
 # Vehicle Parameters
@@ -155,8 +153,8 @@ The following vehicle parameters are assumed for the vehicle-under-test:
 
 The system identification yields the following cornering compliances:
 
-* $$D_f = 9.6$$ [deg/g]
-* $$D_r = 4.1$$ [deg/g]
+- $$D_f = 9.6$$ [deg/g]
+- $$D_r = 4.1$$ [deg/g]
 
 The difference between the front and rear cornering compliances yields the
 understeer gradient:
@@ -191,7 +189,7 @@ rear cornering compliances of the vehicle. Combined with the understeer
 gradient test, a simple transient vehicle model is developed.
 
 Simulation and modelling enables analytical insight into vehicle handling. The
-simulation is not without caveats; the simulation does not perfectly capture 
+simulation is not without caveats; the simulation does not perfectly capture
 the transient response of the vehicle observed the experimental data. Despite
 these pitfalls in the accuracy of the simulation, the model has enough fidelity
 to provide useful information about the vehicle. The ability to generalize the

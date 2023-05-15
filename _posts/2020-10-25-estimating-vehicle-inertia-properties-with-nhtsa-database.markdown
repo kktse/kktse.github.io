@@ -5,8 +5,6 @@ categories: [data visualization]
 modified_date: 2022-08-07
 ---
 
-{% include mathjax.html %}
-
 _PREFACE: this page is best experienced on desktop_
 
 Vehicle dynamic simulation relies on having known information about the

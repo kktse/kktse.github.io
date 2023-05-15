@@ -16,13 +16,11 @@
 title: Kelvin Tse
 email:
 description: > # this means to ignore newlines until "baseurl:"
-  vehicle dynamics from scratch
+  Vehicle dynamics from scratch. Real life applications in vehicle dynamics
+  from an engineering and technology perspective.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kktse.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /jekyll/update/:year/:month/:day/:title:output_ext
-repository: kktse/kktse.github.io
-github_username: kktse
-linkedin_username: ktse
 
 # Build settings
 markdown: kramdown
@@ -42,6 +40,19 @@ whitelist:
   - jekyll-redirect-from
   - jemoji
 
+# Theme settings
+minima:
+  skin: classic
+  social_links:
+    - { platform: github, user_url: "https://github.com/kktse" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/ktse/" }
+
+use_mathjax: true
+
+author:
+  name: Kelvin Tse
+  email: ""
+
 header_pages:
   - home.md
   - categories.html
@@ -60,4 +71,4 @@ header_pages:
 #   - vendor/ruby/
 
 # Google Analytics
-google_analytics: "UA-103417873-1"
+google_analytics: "G-89YWRPGRL7"

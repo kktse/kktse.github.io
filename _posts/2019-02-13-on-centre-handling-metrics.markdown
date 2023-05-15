@@ -1,17 +1,14 @@
 ---
 layout: post
-title:  "OTA 2018 Debrief: On-Centre Vehicle Handling"
-date:   2019-02-13 07:15:00 -0400
+title: "OTA 2018 Debrief: On-Centre Vehicle Handling"
+date: 2019-02-13 07:15:00 -0400
 categories: [vehicle dynamics, simulation, ontario time attack]
 ---
-
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
 
 > 2019/08/22 update: this article is part of a series on on-centre vehicle
 > handling using linear system analysis. For further reading, please feel free
 > to check out my other posts:
+>
 > 1. [Lateral Dynamics of a Linear Single-Track Vehicle](/jekyll/update/2018/09/18/single-track-bicycle.html)
 > 1. [OTA 2018 Debrief: Understeer Gradient Test](/jekyll/update/2018/12/01/understeer-gradient-identification.html)
 > 1. [OTA 2018 Debrief: Cornering Compliances and Transients](/jekyll/update/2019/01/06/cornering-compliance-identification.html)
@@ -19,8 +16,8 @@ categories: [vehicle dynamics, simulation, ontario time attack]
 > 1. [OTA 2018 Debrief: Parameter Analysis](/jekyll/update/2019/03/17/parameter-sensitivity-analysis.html)
 > 1. [Cornering Compliances of a Typical Road Vehicle](/jekyll/update/2019/06/01/typical-cornering-compliances.html)
 
+---
 
-***
 &nbsp;
 
 ![autox_civicsi](/assets/images/2019-02-13/IMG_20180609_155605_002_resize.jpg)
@@ -31,6 +28,7 @@ during the racing season. In this instalment, we quantify vehicle handling by
 computing handling metrics using the linear single-track vehicle model.
 
 # Foreword
+
 _We have dedicated a lot of time into identifying the [understeer
 gradient](jekyll/update/2018/12/01/understeer-gradient-identification.html) and
 [cornering
@@ -55,6 +53,7 @@ for practical reasons we opt to focus on driver development at the race track,
 and use vehicle dynamic simulation back home in the pits.
 
 # Handling Metrics
+
 Driving is inherently a subjective experience relying on human input and
 feedback to control the vehicle. Handling metrics provide an objective measure
 of this experience.
@@ -72,24 +71,25 @@ We present a variety of on-centre handling metrics from a computer simulation
 of a linear single-track vehicle model.
 
 # Experimental Setup
+
 We will be evaluating the #551 2012 Honda Civic Si for its on-centre handling
 characteristics. All evaluation is performed in computer simulation using the
 vehicle model developed in our previous articles.
 
 The following parameters are used to represent the vehicle:
 
-| Symbol | Value | Unit | Description |
-| ------ | ----- | ---- | ----------- |
-| $$a$$  | 0.996 | m    | Distance from CG to front axle |
-| $$b$$  | 1.624 | m    | Distance from CG to rear axle |
-| $$m$$  | 1450  | kg   | Vehicle mass |
-| $$I$$  | 2345  | kg m<sup>2</sup> | Vehicle yaw inertia |
-| $$D_f$$  | 9.6   | deg/g | Cornering compliance, front |
-| $$D_r$$  | 4.1   | deg/g | Cornering compliance, rear |
-| $$N$$  | 16.08 | - | Steering ratio |
-
+| Symbol  | Value | Unit             | Description                    |
+| ------- | ----- | ---------------- | ------------------------------ |
+| $$a$$   | 0.996 | m                | Distance from CG to front axle |
+| $$b$$   | 1.624 | m                | Distance from CG to rear axle  |
+| $$m$$   | 1450  | kg               | Vehicle mass                   |
+| $$I$$   | 2345  | kg m<sup>2</sup> | Vehicle yaw inertia            |
+| $$D_f$$ | 9.6   | deg/g            | Cornering compliance, front    |
+| $$D_r$$ | 4.1   | deg/g            | Cornering compliance, rear     |
+| $$N$$   | 16.08 | -                | Steering ratio                 |
 
 # Step Response
+
 We begin by evaluating the system response to a step input in the time domain.
 This is the time response of the system when the input is instantaneously
 changed from zero to a non-zero value. This is a good response to study as it
@@ -114,10 +114,11 @@ the opposite direction to its steady-state value!
 
 We can quantify some of these characteristics by parameterizing the response.
 Borrowing terminology from control theory lets us describe our observations more precisely.
-* **Rise Time** - time to achieve 90% of steady-state
-* **Overshoot** - maximum percentage over the steady-state value
-* **Settling Time** - time taken for the signal to stay within a ±2% band of steady-state
-* **Steady-State Gain** - the magnitude of the output over input when the signal is no longer changing
+
+- **Rise Time** - time to achieve 90% of steady-state
+- **Overshoot** - maximum percentage over the steady-state value
+- **Settling Time** - time taken for the signal to stay within a ±2% band of steady-state
+- **Steady-State Gain** - the magnitude of the output over input when the signal is no longer changing
 
 These metrics are visualized in the figure below:
 ![step_metrics](/assets/images/2019-02-13/step_metrics.png)
@@ -128,21 +129,23 @@ show the evolution of the step response in terms of these metrics.
 ![civicsi_stepmetrics](/assets/images/2019-02-13/civicsi_stepmetrics.png)
 
 There are a few key observations that can be made:
-* The yaw rate gain is fairly insensitive to speed. In other words, the
+
+- The yaw rate gain is fairly insensitive to speed. In other words, the
   steady-state yaw rate gain will remain similar across the working speed of
   the vehicle.
-* The yaw rate response becomes less controlled as speed increases. Observe the
+- The yaw rate response becomes less controlled as speed increases. Observe the
   increase in the overshoot and the settling time as speed increases.
-* The steady-state chassis slip angle gain crosses zero at around 50 km/h. This
+- The steady-state chassis slip angle gain crosses zero at around 50 km/h. This
   is the _tangent speed_. The chassis slip angle response differs above and
   below this speed. The metrics misbehave near the tangent speed partly because
   of the mathematical singularity at this point.
-* The yaw rate and chassis slip angle rise and settle out at varying points in
+- The yaw rate and chassis slip angle rise and settle out at varying points in
   time depending on speed. Below the tangent speed, the chassis slip angle is
   first to rise. However, above the tangent speed, the yaw rate is the first to
   rise.
 
 # Frequency Response
+
 Frequency domain analysis provides an alternative - if a bit abstract - view
 into the vehicle response. Studying the vehicle response in the frequency
 domain allows application of literature in control theory to analyze the car.
@@ -180,6 +183,7 @@ zeros become complex conjugate pairs. These zeros become highly oscillatory at
 high speeds.
 
 # Summary
+
 The purpose of developing handling metrics is to describe specific aspects of
 vehicle handling in a quantifiable way. These metrics are highly correlated to
 subjective evaluation, therefore understanding these objective measures can
@@ -202,6 +206,7 @@ for collaborating with us on this article. It would not be possible without the
 support of Joseph Yang and his sponsors._
 
 # References
+
 1. Milliken, William F., and Douglas L. Milliken. _Race car vehicle dynamics_. Vol. 400. Warrendale: Society of Automotive Engineers, 1995.
 2. Bundorf, R. Thomas, and Ronald L. Leffert. The cornering compliance concept for description of vehicle directional control properties. No. 760713. SAE Technical Paper, 1976.
 3. Chen, David. _Subjective and objective vehicle handling behaviour_. Diss. University of Leeds, 1997.
