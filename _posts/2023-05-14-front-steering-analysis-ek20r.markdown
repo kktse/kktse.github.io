@@ -32,10 +32,10 @@ the steering axis which is a primary consideration in suspension design.
 
 <div class="info">
     <span class="material-icons" style="margin-right:0.25em">info</span>
-    <div> This is a multipart series on the kinematic performance of the Formula
+    <div>
+    This is a multipart series on the kinematic performance of the Formula
     Delta 2000 Honda Civic EK Hatchback. To learn more about suspension
-    kinematics for this chassis, feel free to browse the other posts from this
-    series.
+    kinematics for this chassis, click on another post from this series.
     <div style="margin-left:1em">
       <li><a href="/jekyll/update/2023/02/07/intro-to-front-kinematics-ek20r.html">Introduction to front suspension kinematics of a Honda Civic EK Hatchback</a></li>
       <li><a href="/jekyll/update/2023/03/08/front-kinematic-wheel-plane-control-ek20r.html">Kinematic wheel plane control of a Honda Civic EK Hatchback front suspension</a></li>
@@ -366,6 +366,19 @@ difference, but it seems unlikely it would have significant performance benefit
 considering the range of adjustment on most aftermarket kits. We may have to
 just settle for grocery-getter steering kinematics and deal with the scrub
 radius induced torque steer on low offset wheels.
+
+<div class="info">
+    <span class="material-icons" style="margin-right:0.25em">info</span>
+    <div> This is a multipart series on the kinematic performance of the Formula
+    Delta 2000 Honda Civic EK Hatchback. To learn more about suspension
+    kinematics for this chassis, click on another post from this series.
+    <div style="margin-left:1em">
+      <li><a href="/jekyll/update/2023/02/07/intro-to-front-kinematics-ek20r.html">Introduction to front suspension kinematics of a Honda Civic EK Hatchback</a></li>
+      <li><a href="/jekyll/update/2023/03/08/front-kinematic-wheel-plane-control-ek20r.html">Kinematic wheel plane control of a Honda Civic EK Hatchback front suspension</a></li>
+      <li><a href="/jekyll/update/2024/01/05/front-steering-analysis-ek20r.html"><i>You are here! - Steering kinematics of a Honda Civic EK Hatchback front suspension</i></a></li>
+    </div>
+    </div>
+</div>
 
 ## References
 
