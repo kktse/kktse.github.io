@@ -34,6 +34,7 @@ limitations.
     <div style="margin-left:1em">
       <li><a href="/jekyll/update/2023/02/07/intro-to-front-kinematics-ek20r.html">Introduction to front suspension kinematics of a Honda Civic EK Hatchback</a></li>
       <li><a href="/jekyll/update/2023/03/08/front-kinematic-wheel-plane-control-ek20r.html"><i>You are here! - Kinematic wheel plane control of a Honda Civic EK Hatchback front suspension</i></a></li>
+      <li><a href="/jekyll/update/2024/01/05/front-steering-analysis-ek20r.html">Steering kinematics of a Honda Civic EK Hatchback front suspension</a></li>
     </div>
     </div>
 </div>
@@ -66,10 +67,11 @@ I would like to thank the following contributors for making this project possibl
     <span class="material-icons" style="margin-right:0.25em">volunteer_activism</span>
     <div>
     This project is driven by our passion for vehicle dynamics and our desire
-    to share our knowledge with the community. We appreciate the support that
-    allows us to undertake these ambitious projects. We are always looking for
-    partners to make these projects possible. If you would like to learn more
-    about our work, reach out to us through our <a
+    to share our knowledge with the community. We appreciate the support from
+    our partners that allows us to undertake these types of projects, and are
+    open to working with new collaborators to make these projects possible. If
+    you would like to help us produce more technical analysis, or if you would
+    like to learn more about our work, reach out to us through our <a
     href='https://formuladelta.ca/contact-us/'>website</a>, <a
     href='https://www.facebook.com/FormulaDeltaConsult'>Facebook</a> or <a
     href='https://www.instagram.com/formula.delta/'>Instagram</a>.
