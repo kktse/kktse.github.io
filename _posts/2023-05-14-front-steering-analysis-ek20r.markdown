@@ -16,14 +16,14 @@ vehicle, it is a source of feedback for the driver through the steering forces
 sent up the steering column.
 
 While competition vehicle steering systems are designed to maximize the grip
-potential of the tires while relaying as much useful information to the driver
-as possible, the Honda Civic EK and Honda Integra DC2 platforms are
-fundamentally economy car designs.
+potential of the tires while relaying as much useful information to the driver,
+the Honda Civic EK and Honda Integra DC2 platforms are fundamentally economy
+car designs.
 
 For those of us who want to use these platforms for competition purposes, we
-need to understand what this means. Our method of choice to study the
-suspension design is with simulation. Simulation provides us with repeatable,
-objective measures that we can use to evaluate the performance of the design.
+need to understand what this means. Our method of choice is to use simulation.
+Simulation provides us with repeatable, objective measures that we can use to
+evaluate the performance of the design.
 
 Our discussion today focuses on the steering kinematics of a modified 2000
 Honda Civic EK hatchback. We will look at the kinematic influences of steering
@@ -257,7 +257,7 @@ lower control arm.
 
 Our last two metrics investigate how the steering axis interacts with the road
 plane. The location of this intersection has a strong influence on the steering
-feedback produced. This is because acts as a moment arm between the tire
+feedback produced. This is because it acts as a moment arm between the tire
 contact patch and steering axis.
 
 Mechanical trail is the longitudinal distance from the steer axis intersection
