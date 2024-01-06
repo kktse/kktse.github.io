@@ -16,8 +16,7 @@
 title: Kelvin Tse
 email:
 description: > # this means to ignore newlines until "baseurl:"
-  Vehicle dynamics from scratch. Real life applications in vehicle dynamics
-  from an engineering and technology perspective.
+  Vehicle dynamics from scratch.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kktse.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /jekyll/update/:year/:month/:day/:title:output_ext
