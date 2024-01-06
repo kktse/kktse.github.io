@@ -5,8 +5,3 @@
 layout: home
 list_title: Posts
 ---
-
-## Vehicle dynamics from scratch.
-
-Real life applications in vehicle dynamics from an engineering and technology
-perspective.

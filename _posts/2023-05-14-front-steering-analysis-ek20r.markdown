@@ -170,9 +170,9 @@ pinion diameter is known, an overall steering ratio can be approximated.
 
 ![EK rack to steer ratio](/assets/images/2023-05-14/ek-front-steer-steering-ratio.png)
 
-The negative ratio simply means that wheels move to the right as the steering
-rack is displaced to the left. Given our choice of ISO coordinates and the
-rear-steer design of the car, this is expected.
+The negative ratio simply means that the wheels move to the right as the
+steering rack is displaced to the left. Given our choice of ISO coordinates and
+the rear-steer design of the car, this is expected.
 
 At nominal ride height, the on-centre ratio is approximately -0.454 deg / mm.
 Ride height does not influence the trend. However, it does introduce an offset
