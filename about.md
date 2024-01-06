@@ -25,5 +25,5 @@ attack project.
 [contact page](https://formuladelta.ca/contact-us/)
 
 **For recruiters and job opportunities**, please message me on
-[LinkedIn](https://www.linkedin.com/in/ktse/). I do not accept unsolicited
-requests to connect.
+[LinkedIn](https://www.linkedin.com/in/ktse/) with your inquiry. I do not
+accept unsolicited requests to connect.
