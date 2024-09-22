@@ -2,7 +2,7 @@
 layout: post
 title: "Measuring the tire vertical stiffness of a 255/40R17 ultra-high performance 200TW tire - Bridgestone Potenza RE-71R"
 date: 2021-07-18 4:30:00 -0400
-categories: [tires]
+categories: [tires, interactive]
 ---
 
 {% include mathjax.html %}
