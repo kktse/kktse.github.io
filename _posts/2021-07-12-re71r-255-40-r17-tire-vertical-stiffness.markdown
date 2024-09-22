@@ -2,7 +2,7 @@
 layout: post
 title: "Measuring the tire vertical stiffness of a 255/40R17 ultra-high performance 200TW tire - Bridgestone Potenza RE-71R"
 date: 2021-07-18 4:30:00 -0400
-categories: [tires]
+categories: [tires, interactive]
 ---
 
 {% include mathjax.html %}
@@ -42,7 +42,7 @@ of vertical loads. The tire is compressed into a flat plate where the tire
 vertical load and radial deflection are measured. The tangent of the
 load-deflection curve at a specific point is the tire vertical stiffness.
 
-$$ K_{Z} = \frac{dF_Z(R_l)}{dR_l} \Bigg|_{F_{Z}=x} $$
+$$ K*{Z} = \frac{dF_Z(R_l)}{dR_l} \Bigg|*{F\_{Z}=x} $$
 
 Where:
 

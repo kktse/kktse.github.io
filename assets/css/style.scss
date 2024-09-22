@@ -4,6 +4,10 @@
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
+
+table {
+  display: table;
+}
   
 .post-meta {
   display: flex;

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Estimating vehicle inertia and centre-of-gravity height using the NHTSA light vehicle inertial parameter database
-categories: [data visualization]
+categories: [data visualization, interactive]
 modified_date: 2022-08-07
 ---
 

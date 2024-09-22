@@ -3,7 +3,7 @@ layout: post
 title: Trends in vehicle centre of gravity height and static stability factor from 1971 to 2020 using the NHTSA LVIPD and NCAP rollover stability measurements
 date: 2022-07-28 10:00:00 -0400
 modified_date: 2022-08-07
-categories: [data visualization]
+categories: [data visualization, interactive]
 ---
 
 Locating the vehicle centre of gravity is fundamental to vehicle dynamics. It
