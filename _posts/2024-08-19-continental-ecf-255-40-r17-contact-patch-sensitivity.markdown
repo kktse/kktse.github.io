@@ -3,6 +3,7 @@ layout: post
 title: "Static contact patch shape evolution of a 255/40R17 ultra-high performance 200TW tire - Continental ExtremeContact Force"
 categories: [tires, interactive]
 author: Kelvin Tse
+date: 2024-09-21 20:55:00 -0400
 ---
 
 <script type="module" src="/assets/dist/2024-09-18-continental-ecf-cp-widget/assets/index.js"></script>
