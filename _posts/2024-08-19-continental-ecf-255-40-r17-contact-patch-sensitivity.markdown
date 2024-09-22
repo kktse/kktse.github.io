@@ -293,7 +293,7 @@ noteworthy findings related to the Continental ExtremeContact Force.
   likely that each tire will require different static alignment strategies to
   maximize their performance potential.
 
-Although we were able to evaluate the Continental ExtremeContact Force the
+Although we were able to evaluate the Continental ExtremeContact Force in the
 laboratory, we have not had the chance to assess their on-track performance.
 
 ## Acknowledgements
