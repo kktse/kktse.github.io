@@ -253,7 +253,7 @@ As we conclude our analysis for the season debrief, it is important to reflect
 on the questions we answered - but also the questions we did not answer.
 
 The [linear single-track vehicle
-model](jekyll/update/2018/09/18/single-track-bicycle.html), as the name
+model](/jekyll/update/2018/09/18/single-track-bicycle.html), as the name
 implies, has two major defining characteristics: linear and single-track. These
 simplifying assumptions puts limits on the type of conclusions we can draw from
 simulation.
@@ -283,13 +283,13 @@ can bring more than the absolute numerical output of our work.
 
 Our study of the #551 2012 Honda Civic Si Couple covered many topics. The
 [understeer gradient
-test](jekyll/update/2018/12/01/understeer-gradient-identification.html) and
+test](/jekyll/update/2018/12/01/understeer-gradient-identification.html) and
 [pulse steer
-test](jekyll/update/2019/01/06/cornering-compliance-identification.html)
+test](/jekyll/update/2019/01/06/cornering-compliance-identification.html)
 represents our foray into experimental vehicle dynamics. Vehicle modelling and
 simulation represented our efforts into analytical vehicle dynamics and
 computational techniques, and we used this to [evaluate vehicle
-handling](jekyll/update/2019/02/13/on-centre-handling-metrics.html) and study
+handling](/jekyll/update/2019/02/13/on-centre-handling-metrics.html) and study
 [vehicle sensitivities](#).
 
 This analysis is in direct inspiration of the historic works in vehicle
