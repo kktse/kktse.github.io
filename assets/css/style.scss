@@ -1,14 +1,13 @@
 ---
 ---
 
-@import
-  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+@import "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
 
 table {
   display: table;
 }
-  
+
 .post-meta {
   display: flex;
   align-items: center;
@@ -19,7 +18,7 @@ table {
 .post-date {
   margin-right: 0.5em;
 }
-  
+
 .post-tag-container {
   display: flex;
   align-items: center;
@@ -38,10 +37,10 @@ table {
 }
 
 .post-tag-content {
-  font-size: $small-font-size; 
+  font-size: $small-font-size;
   display: flex;
   align-items: center;
-  padding: 0em 0.0em 0.0em 0.5em;
+  padding: 0em 0em 0em 0.5em;
 }
 
 .post-tag-icon {
