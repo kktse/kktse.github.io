@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Driver development - a discussion on contemporary theories of motor learning and their application in motorsport"
+title: "Driver development - a discussion on contemporary theories of motor learning and its application in motorsport"
 categories: [driver development, driver science]
 author: Kelvin Tse
 date: 2026-04-19 21:50:00 -0400
