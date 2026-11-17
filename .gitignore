@@ -1,3 +1,21 @@
-_site
-.sass-cache
-.jekyll-metadata
+# Jekyll baseline, retained until the Astro cutover
+/_site/
+/.sass-cache/
+/.jekyll-cache/
+/.jekyll-metadata
+/.bundle/
+/vendor/
+
+# Astro
+/node_modules/
+/dist/
+/.astro/
+.env
+.env.*
+!.env.example
+
+# npm
+npm-debug.log*
+
+# Editor and OS noise
+.DS_Store

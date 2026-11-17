@@ -1,0 +1,89 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { categorySlug, formatDate } from '../lib/presentation';
+
+const posts = (await getCollection('posts')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
+const postsByYear = new Map<number, typeof posts>();
+for (const post of posts) {
+  const year = post.data.date.getUTCFullYear();
+  const group = postsByYear.get(year) ?? [];
+  group.push(post);
+  postsByYear.set(year, group);
+}
+
+const years = [...postsByYear.keys()].sort((a, b) => b - a);
+---
+
+<Base
+  title="Archive"
+  description="A chronological archive of articles on vehicle dynamics, simulation, tires, suspension and motorsport engineering."
+  canonical="/archive/"
+>
+  <section class="page-header shell">
+    <h1>Archive</h1>
+    <p class="page-lede">
+      {posts.length} articles, newest first. Long-form notes on vehicle
+      dynamics, simulation and motorsport.
+    </p>
+
+    {years.length > 1 && (
+      <nav class="year-nav" aria-label="Jump to year">
+        {years.map((year) => (
+          <a href={`#${year}`}>{year}</a>
+        ))}
+      </nav>
+    )}
+  </section>
+
+  <div class="archive shell">
+    {years.map((year) => (
+      <section
+        class="archive-year"
+        id={String(year)}
+        tabindex="-1"
+        aria-labelledby={`year-${year}`}
+      >
+        <h2 id={`year-${year}`} class="year-heading">
+          {year}
+          <span class="year-count">
+            {postsByYear.get(year)?.length ?? 0}
+            <span class="visually-hidden"> articles</span>
+          </span>
+        </h2>
+
+        <ol class="archive-list">
+          {(postsByYear.get(year) ?? []).map((post) => (
+            <li class="archive-item">
+              <time datetime={post.data.date.toISOString()}>
+                {formatDate(post.data.date, 'short')}
+              </time>
+              <div class="archive-item-body">
+                <h3>
+                  <a href={`/posts/${post.data.slug}/`}>{post.data.title}</a>
+                </h3>
+                {post.data.categories.length > 0 && (
+                  <ul class="tag-list" aria-label="Categories">
+                    {post.data.categories.map((category) => (
+                      <li>
+                        <a
+                          class="tag"
+                          href={`/categories/#${categorySlug(category)}`}
+                        >
+                          {category}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </li>
+          ))}
+        </ol>
+      </section>
+    ))}
+  </div>
+</Base>

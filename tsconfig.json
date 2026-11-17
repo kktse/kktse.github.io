@@ -1,0 +1,21 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": [
+    "dist",
+    "_site",
+    ".jekyll-cache",
+    ".sass-cache",
+    ".bundle",
+    "vendor",
+    "_posts",
+    "_includes",
+    "_layouts",
+    "assets",
+    "public"
+  ],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  }
+}

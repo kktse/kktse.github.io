@@ -27,6 +27,19 @@ kramdown:
   input: GFM
   hard_wrap: false
 theme: minima
+exclude:
+  - src
+  - node_modules
+  - dist
+  - openspec
+  - package.json
+  - package-lock.json
+  - astro.config.mjs
+  - tsconfig.json
+  - mise.toml
+  - Gemfile
+  - Gemfile.lock
+  - vendor
 plugins:
   - jekyll-feed
   - jekyll-sitemap

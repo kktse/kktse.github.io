@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="Page not found"
+  description="The requested page could not be found."
+  canonical="/404.html"
+  noindex={true}
+>
+  <div class="not-found shell">
+    <p class="not-found-code" aria-hidden="true">404</p>
+    <h1>Page not found</h1>
+    <p class="not-found-lede">
+      The address may be mistyped, or the article may have moved to a new
+      canonical URL. The archive lists everything that is still published.
+    </p>
+
+    <div class="not-found-actions">
+      <a class="button" href="/">Go to the home page</a>
+      <a class="button button-quiet" href="/archive/">Browse the archive</a>
+    </div>
+  </div>
+</Base>

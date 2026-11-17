@@ -1,0 +1,122 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { categorySlug, formatDate } from '../lib/presentation';
+
+const posts = (await getCollection('posts')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
+interface CategoryGroup {
+  slug: string;
+  names: string[];
+  items: (typeof posts)[number][];
+}
+
+/*
+ * Group by the anchor slug rather than the display name. Two spellings that
+ * slugify identically would otherwise produce duplicate element IDs; merging
+ * them keeps every legacy `#anchor` link valid and the document well-formed.
+ */
+const groupsBySlug = new Map<string, CategoryGroup>();
+for (const post of posts) {
+  for (const name of post.data.categories) {
+    const slug = categorySlug(name);
+    if (slug === '') continue;
+
+    let group = groupsBySlug.get(slug);
+    if (!group) {
+      group = { slug, names: [], items: [] };
+      groupsBySlug.set(slug, group);
+    }
+
+    if (!group.names.includes(name)) group.names.push(name);
+    if (!group.items.includes(post)) group.items.push(post);
+  }
+}
+
+const collator = new Intl.Collator('en', { sensitivity: 'base' });
+const categories = [...groupsBySlug.values()]
+  .map((group) => ({
+    ...group,
+    names: group.names.sort(collator.compare),
+    items: group.items.sort(
+      (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+    ),
+  }))
+  .sort((a, b) => collator.compare(a.names[0], b.names[0]));
+---
+
+<Base
+  title="Categories"
+  description="Browse every article by topic: suspension, tires, vehicle dynamics, simulation, driver science and more."
+  canonical="/categories/"
+>
+  <section class="page-header shell" aria-labelledby="categories-heading">
+    <p class="eyebrow">Categories</p>
+    <h1 id="categories-heading">Browse by topic</h1>
+    <p class="page-lede">
+      {posts.length} articles across {categories.length} topics, from suspension
+      kinematics and tire modelling to simulation and driver development.
+    </p>
+
+    {categories.length > 0 && (
+      <ul class="tag-cloud" aria-label="Category anchors">
+        {categories.map((category) => (
+          <li>
+            <a href={`#${category.slug}`}>
+              {category.names.join(' / ')}
+              <span class="category-count" aria-hidden="true">
+                {category.items.length}
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
+  </section>
+
+  {categories.length === 0 ? (
+    <p class="category-empty shell">
+      No categories have been published yet.
+      <a href="/archive/">Browse the archive</a> instead.
+    </p>
+  ) : (
+    <div class="archive shell" id="archives">
+      {categories.map((category) => (
+        <section
+          class="category-group"
+          id={category.slug}
+          tabindex="-1"
+          aria-labelledby={`category-${category.slug}`}
+        >
+          <h2
+            class="category-heading"
+            id={`category-${category.slug}`}
+          >
+            {category.names.join(' / ')}
+            <span class="category-count">
+              {category.items.length}
+              <span class="visually-hidden"> articles</span>
+            </span>
+          </h2>
+
+          <ol class="archive-list">
+            {category.items.map((post) => (
+              <li class="archive-item">
+                <time datetime={post.data.date.toISOString()}>
+                  {formatDate(post.data.date, 'short')}
+                </time>
+                <div class="archive-item-body">
+                  <h3>
+                    <a href={`/posts/${post.data.slug}/`}>{post.data.title}</a>
+                  </h3>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </section>
+      ))}
+    </div>
+  )}
+</Base>

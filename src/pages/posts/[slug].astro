@@ -1,0 +1,36 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import Post from '../../layouts/Post.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  const seen = new Map<string, string>();
+
+  for (const post of posts) {
+    const slug = post.data.slug;
+    const previous = seen.get(slug);
+    if (previous) {
+      throw new Error(
+        `Duplicate post slug "${slug}" in ${previous} and ${post.id}`
+      );
+    }
+    seen.set(slug, post.id);
+  }
+
+  return posts.map((post) => ({
+    params: { slug: post.data.slug },
+    props: { post },
+  }));
+}
+
+interface Props {
+  post: CollectionEntry<'posts'>;
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<Post post={post}>
+  <Content />
+</Post>

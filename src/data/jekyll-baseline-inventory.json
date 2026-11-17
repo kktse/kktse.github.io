@@ -1,0 +1,2330 @@
+{
+  "revision": {
+    "commit": "ced0512d171cfd86f5d9eb05033848fd541bdc45",
+    "committed": "2026-04-19T23:54:32-04:00"
+  },
+  "baseline": {
+    "path": "/tmp/kktse-jekyll-baseline",
+    "build": "JEKYLL_ENV=production",
+    "ruby": "mise-managed",
+    "feed": "/feed.xml",
+    "sitemap": "/sitemap.xml"
+  },
+  "summary": {
+    "posts": 34,
+    "assets": 196,
+    "legacyPostRoutes": 34,
+    "siteRedirects": 1,
+    "feedEntries": 10,
+    "sitemapUrls": 37,
+    "categoryAnchors": 20,
+    "sitePages": 9,
+    "routeMapping": 34,
+    "aliases": 2
+  },
+  "posts": [
+    {
+      "url": "/jekyll/update/2017/07/25/open-lapping-smartphone-cayuga.html",
+      "file": "jekyll/update/2017/07/25/open-lapping-smartphone-cayuga.html",
+      "sha256_16": "95750a5b54b814b5",
+      "title": "Open Lapping with a Smartphone at Cayuga | Kelvin Tse",
+      "published": "2017-07-25T03:15:00+00:00",
+      "modified": null,
+      "headings": [
+        "background",
+        "software",
+        "lap-time",
+        "speed",
+        "lateral-acceleration",
+        "longitudinal-acceleration",
+        "combined-acceleration",
+        "gg-diagram",
+        "conclusion"
+      ],
+      "slug": "open-lapping-smartphone-cayuga",
+      "canonical_new": "/posts/open-lapping-smartphone-cayuga/"
+    },
+    {
+      "url": "/jekyll/update/2018/02/08/champcar-2018-road-atlanta.html",
+      "file": "jekyll/update/2018/02/08/champcar-2018-road-atlanta.html",
+      "sha256_16": "07df11c0e7da0828",
+      "title": "Analyzing the Live Timing - ChampCar Road Atlanta Edition | Kelvin Tse",
+      "published": "2018-02-08T19:15:00+00:00",
+      "modified": null,
+      "headings": [
+        "overall",
+        "best-and-average-lap-times",
+        "box-plot",
+        "rising-lap-time",
+        "top-five-teams",
+        "race-position",
+        "rising-lap-time-1",
+        "box-plot-1",
+        "outing-accumulating-average",
+        "top-two-teams",
+        "box-plot-2",
+        "pit-times",
+        "conclusion"
+      ],
+      "slug": "champcar-2018-road-atlanta",
+      "canonical_new": "/posts/champcar-2018-road-atlanta/"
+    },
+    {
+      "url": "/jekyll/update/2018/09/18/single-track-bicycle.html",
+      "file": "jekyll/update/2018/09/18/single-track-bicycle.html",
+      "sha256_16": "a61b5897203da3fc",
+      "title": "Lateral Dynamics of a Linear Single-Track Vehicle | Kelvin Tse",
+      "published": "2018-09-18T23:15:00+00:00",
+      "modified": "2020-10-15T00:00:00+00:00",
+      "headings": [
+        "introduction",
+        "approach",
+        "list-of-symbols",
+        "constants",
+        "variables",
+        "vehicle-states",
+        "vehicle-properties",
+        "tire-states",
+        "tire-properties",
+        "cornering-compliances",
+        "forces",
+        "base-assumptions",
+        "force-and-moment-balance",
+        "tire-model",
+        "slip-angles",
+        "base-derivation",
+        "differential-form",
+        "state-space-form",
+        "transfer-function-form",
+        "derivation-using-chassis-slip-angle-as-a-state-variable",
+        "differential-form-1",
+        "state-space-form-1",
+        "transfer-function-form-1",
+        "derivation-using-cornering-compliances",
+        "differential-form-2",
+        "state-space-form-2",
+        "transfer-function-form-2",
+        "conclusion",
+        "references"
+      ],
+      "slug": "single-track-bicycle",
+      "canonical_new": "/posts/single-track-bicycle/"
+    },
+    {
+      "url": "/jekyll/update/2018/10/26/driver-heart-rate-karting.html",
+      "file": "jekyll/update/2018/10/26/driver-heart-rate-karting.html",
+      "sha256_16": "5c74420a1e1bc5cd",
+      "title": "Driver Heart Rate Monitoring with a Smartwatch | Kelvin Tse",
+      "published": "2018-10-26T02:00:00+00:00",
+      "modified": null,
+      "headings": [
+        "methodology",
+        "discussion",
+        "conclusion",
+        "references"
+      ],
+      "slug": "driver-heart-rate-karting",
+      "canonical_new": "/posts/driver-heart-rate-karting/"
+    },
+    {
+      "url": "/jekyll/update/2018/12/01/understeer-gradient-identification.html",
+      "file": "jekyll/update/2018/12/01/understeer-gradient-identification.html",
+      "sha256_16": "1473df0367e743d6",
+      "title": "OTA 2018 Debrief: Understeer Gradient Test | Kelvin Tse",
+      "published": "2018-12-01T21:05:00+00:00",
+      "modified": null,
+      "headings": [
+        "understeer-defined",
+        "experimental-setup",
+        "analysis",
+        "summary",
+        "references"
+      ],
+      "slug": "understeer-gradient-identification",
+      "canonical_new": "/posts/understeer-gradient-identification/"
+    },
+    {
+      "url": "/jekyll/update/2019/01/06/cornering-compliance-identification.html",
+      "file": "jekyll/update/2019/01/06/cornering-compliance-identification.html",
+      "sha256_16": "08e2adb75419510e",
+      "title": "OTA 2018 Debrief: Cornering Compliances and Transients | Kelvin Tse",
+      "published": "2019-01-06T22:45:00+00:00",
+      "modified": "2021-04-28T00:00:00+00:00",
+      "headings": [
+        "transient-handling",
+        "understeer-defined",
+        "experimental-setup",
+        "vehicle-parameters",
+        "results",
+        "summary",
+        "references"
+      ],
+      "slug": "cornering-compliance-identification",
+      "canonical_new": "/posts/cornering-compliance-identification/"
+    },
+    {
+      "url": "/jekyll/update/2019/02/13/on-centre-handling-metrics.html",
+      "file": "jekyll/update/2019/02/13/on-centre-handling-metrics.html",
+      "sha256_16": "df0cbf83bd5e0c0e",
+      "title": "OTA 2018 Debrief: On-Centre Vehicle Handling | Kelvin Tse",
+      "published": "2019-02-13T11:15:00+00:00",
+      "modified": null,
+      "headings": [
+        "foreword",
+        "handling-metrics",
+        "experimental-setup",
+        "step-response",
+        "frequency-response",
+        "summary",
+        "references"
+      ],
+      "slug": "on-centre-handling-metrics",
+      "canonical_new": "/posts/on-centre-handling-metrics/"
+    },
+    {
+      "url": "/jekyll/update/2019/02/16/super-lap-battle.html",
+      "file": "jekyll/update/2019/02/16/super-lap-battle.html",
+      "sha256_16": "79c914f3fd6ecf7c",
+      "title": "Super Lap Battle USA 2019 Timing Results | Kelvin Tse",
+      "published": "2019-02-16T20:15:00+00:00",
+      "modified": null,
+      "headings": [],
+      "slug": "super-lap-battle",
+      "canonical_new": "/posts/super-lap-battle/"
+    },
+    {
+      "url": "/jekyll/update/2019/03/17/parameter-sensitivity-analysis.html",
+      "file": "jekyll/update/2019/03/17/parameter-sensitivity-analysis.html",
+      "sha256_16": "f202ba97118775a0",
+      "title": "OTA 2018 Debrief: Parameter Analysis | Kelvin Tse",
+      "published": "2019-03-17T13:15:00+00:00",
+      "modified": null,
+      "headings": [
+        "asking-what-if",
+        "baseline-vehicle",
+        "steering-sensitivity",
+        "transient-trade-offs",
+        "setup-selection",
+        "asking-now-what",
+        "some-caveats",
+        "concluding-remarks",
+        "acknowledgements",
+        "references"
+      ],
+      "slug": "parameter-sensitivity-analysis",
+      "canonical_new": "/posts/parameter-sensitivity-analysis/"
+    },
+    {
+      "url": "/jekyll/update/2019/06/01/typical-cornering-compliances.html",
+      "file": "jekyll/update/2019/06/01/typical-cornering-compliances.html",
+      "sha256_16": "e08bc36689a42dcf",
+      "title": "Cornering Compliances of a Typical Road Vehicle | Kelvin Tse",
+      "published": "2019-06-01T19:00:00+00:00",
+      "modified": null,
+      "headings": [
+        "the-vehicle",
+        "the-results",
+        "analysis"
+      ],
+      "slug": "typical-cornering-compliances",
+      "canonical_new": "/posts/typical-cornering-compliances/"
+    },
+    {
+      "url": "/jekyll/update/2019/07/15/driver-science-in-amateur-motorsports.html",
+      "file": "jekyll/update/2019/07/15/driver-science-in-amateur-motorsports.html",
+      "sha256_16": "565ab363241d2c3f",
+      "title": "\u2018Driver Science\u2019 and its role in amateur motorsports | Kelvin Tse",
+      "published": "2019-07-15T17:15:00+00:00",
+      "modified": null,
+      "headings": [
+        "driver-science",
+        "perceptual-cognitive-hierarchy",
+        "gaze-control",
+        "looking-ahead---a-use-case",
+        "closing-remarks",
+        "references"
+      ],
+      "slug": "driver-science-in-amateur-motorsports",
+      "canonical_new": "/posts/driver-science-in-amateur-motorsports/"
+    },
+    {
+      "url": "/jekyll/update/2019/08/01/re71r-influence-of-pressure-on-tire-footprint.html",
+      "file": "jekyll/update/2019/08/01/re71r-influence-of-pressure-on-tire-footprint.html",
+      "sha256_16": "8529b67ef8e064c6",
+      "title": "Choosing Tire Pressure using Static Contact Patch Measurements | Kelvin Tse",
+      "published": "2019-08-01T19:15:00+00:00",
+      "modified": "2021-11-01T00:00:00+00:00",
+      "headings": [
+        "under-pressure",
+        "tire-footprints",
+        "analysis",
+        "findings",
+        "final-comments",
+        "acknowledgements",
+        "references"
+      ],
+      "slug": "re71r-influence-of-pressure-on-tire-footprint",
+      "canonical_new": "/posts/re71r-influence-of-pressure-on-tire-footprint/"
+    },
+    {
+      "url": "/jekyll/update/2019/09/14/driver-workload-nasa-tlx-ota-smp.html",
+      "file": "jekyll/update/2019/09/14/driver-workload-nasa-tlx-ota-smp.html",
+      "sha256_16": "42b5027e0c088059",
+      "title": "Measuring Driving Workload using NASA TLX | Kelvin Tse",
+      "published": "2019-09-14T21:15:00+00:00",
+      "modified": null,
+      "headings": [
+        "shannonville-motorsports-park---a-new-challenge",
+        "nasa-task-load-index---measuring-workload",
+        "workload-results",
+        "driver-feedback",
+        "driver-development-plan---a-personalized-approach",
+        "closing-remarks",
+        "acknowledgements",
+        "references"
+      ],
+      "slug": "driver-workload-nasa-tlx-ota-smp",
+      "canonical_new": "/posts/driver-workload-nasa-tlx-ota-smp/"
+    },
+    {
+      "url": "/jekyll/update/2019/11/27/science-of-motorsport-review.html",
+      "file": "jekyll/update/2019/11/27/science-of-motorsport-review.html",
+      "sha256_16": "54a584d45f85b221",
+      "title": "Book Retrospective - The Science of Motorsport | Kelvin Tse",
+      "published": "2019-11-27T21:15:00+00:00",
+      "modified": null,
+      "headings": [
+        "motivation",
+        "the-book",
+        "what-we-learned",
+        "driver-athlete",
+        "measuring-driver-demand",
+        "mental-skills",
+        "future-research",
+        "driver-specific-training",
+        "perceptual-training",
+        "optimal-control",
+        "conclusion",
+        "references"
+      ],
+      "slug": "science-of-motorsport-review",
+      "canonical_new": "/posts/science-of-motorsport-review/"
+    },
+    {
+      "url": "/jekyll/update/2020/01/30/static-suspension-geometry-analysis-acura-rsx.html",
+      "file": "jekyll/update/2020/01/30/static-suspension-geometry-analysis-acura-rsx.html",
+      "sha256_16": "11bb52a126ad1086",
+      "title": "Analysis of the Acura RSX front suspension geometry | Kelvin Tse",
+      "published": "2020-01-30T00:00:00+00:00",
+      "modified": "2019-08-07T00:00:00+00:00",
+      "headings": [
+        "introduction",
+        "suspension-pickup-points",
+        "kinematic-instant-axis",
+        "front-view",
+        "side-view",
+        "steer-axis",
+        "motion-ratios",
+        "conclusion",
+        "references",
+        "appendix-table-of-suspension-properties"
+      ],
+      "slug": "static-suspension-geometry-analysis-acura-rsx",
+      "canonical_new": "/posts/static-suspension-geometry-analysis-acura-rsx/"
+    },
+    {
+      "url": "/jekyll/update/2020/05/20/slvstopy-python-library.html",
+      "file": "jekyll/update/2020/05/20/slvstopy-python-library.html",
+      "sha256_16": "5cf82a6d4681fbb4",
+      "title": "slvstopy - a Python library to read SolveSpace drawings | Kelvin Tse",
+      "published": "2020-05-20T02:15:00+00:00",
+      "modified": null,
+      "headings": [
+        "motivation",
+        "use-case---suspension-kinematics",
+        "caveats",
+        "benefits"
+      ],
+      "slug": "slvstopy-python-library",
+      "canonical_new": "/posts/slvstopy-python-library/"
+    },
+    {
+      "url": "/jekyll/update/2020/06/21/rsx-kinematic-curves.html",
+      "file": "jekyll/update/2020/06/21/rsx-kinematic-curves.html",
+      "sha256_16": "f769aa8b8646ede7",
+      "title": "Kinematic curves of the Acura RSX front suspension | Kelvin Tse",
+      "published": "2020-06-21T18:30:00+00:00",
+      "modified": null,
+      "headings": [
+        "kinematic-simulation",
+        "half-track-variation",
+        "camber-variation",
+        "toe-variation",
+        "final-comments",
+        "acknowledgements",
+        "references"
+      ],
+      "slug": "rsx-kinematic-curves",
+      "canonical_new": "/posts/rsx-kinematic-curves/"
+    },
+    {
+      "url": "/jekyll/update/2020/07/25/rsx-front-motion-ratios.html",
+      "file": "jekyll/update/2020/07/25/rsx-front-motion-ratios.html",
+      "sha256_16": "0ba383c80024d0a0",
+      "title": "Motion ratio curves of the Acura RSX front suspension | Kelvin Tse",
+      "published": "2020-07-25T00:00:00+00:00",
+      "modified": "2019-08-25T00:00:00+00:00",
+      "headings": [
+        "introduction",
+        "motion-ratios",
+        "springs",
+        "dampers",
+        "anti-roll-bar",
+        "steering",
+        "analysis",
+        "final-comments",
+        "acknowledgements",
+        "references"
+      ],
+      "slug": "rsx-front-motion-ratios",
+      "canonical_new": "/posts/rsx-front-motion-ratios/"
+    },
+    {
+      "url": "/jekyll/update/2020/09/07/rsx-front-kinematic-roll-centre.html",
+      "file": "jekyll/update/2020/09/07/rsx-front-kinematic-roll-centre.html",
+      "sha256_16": "827a38f8b4916b83",
+      "title": "Kinematic roll centre analysis of the Acura RSX front suspension | Kelvin Tse",
+      "published": "2020-09-07T19:30:00+00:00",
+      "modified": null,
+      "headings": [
+        "introduction",
+        "kinematic-roll-centre",
+        "parallel-wheel-travel",
+        "opposite-wheel-travel",
+        "final-comments",
+        "acknowledgements",
+        "references"
+      ],
+      "slug": "rsx-front-kinematic-roll-centre",
+      "canonical_new": "/posts/rsx-front-kinematic-roll-centre/"
+    },
+    {
+      "url": "/jekyll/update/2020/10/25/estimating-vehicle-inertia-properties-with-nhtsa-database.html",
+      "file": "jekyll/update/2020/10/25/estimating-vehicle-inertia-properties-with-nhtsa-database.html",
+      "sha256_16": "a88888a66b833c81",
+      "title": "Estimating vehicle inertia and centre-of-gravity height using the NHTSA light vehicle inertial parameter database | Kelvin Tse",
+      "published": "2020-10-25T00:00:00+00:00",
+      "modified": "2022-08-07T00:00:00+00:00",
+      "headings": [
+        "vehicle-properties",
+        "data-treatment",
+        "trends",
+        "static-stability-factor-ssf",
+        "dynamic-indices",
+        "discussion",
+        "final-comments",
+        "references"
+      ],
+      "slug": "estimating-vehicle-inertia-properties-with-nhtsa-database",
+      "canonical_new": "/posts/estimating-vehicle-inertia-properties-with-nhtsa-database/"
+    },
+    {
+      "url": "/jekyll/update/2020/12/10/rsx-rear-kinematic-curves.html",
+      "file": "jekyll/update/2020/12/10/rsx-rear-kinematic-curves.html",
+      "sha256_16": "461ad3ae5ae35ff2",
+      "title": "Kinematic curves of the Acura RSX rear suspension | Kelvin Tse",
+      "published": "2020-12-10T22:30:00+00:00",
+      "modified": null,
+      "headings": [
+        "suspension-design",
+        "kinematic-curves",
+        "half-track-variation",
+        "camber-variation",
+        "toe-variation",
+        "final-comments",
+        "acknowledgements",
+        "references"
+      ],
+      "slug": "rsx-rear-kinematic-curves",
+      "canonical_new": "/posts/rsx-rear-kinematic-curves/"
+    },
+    {
+      "url": "/jekyll/update/2020/12/10/rsx-rear-motion-ratios.html",
+      "file": "jekyll/update/2020/12/10/rsx-rear-motion-ratios.html",
+      "sha256_16": "ac49fc9877197052",
+      "title": "Motion ratio curves of the Acura RSX rear suspension | Kelvin Tse",
+      "published": "2020-12-10T22:30:00+00:00",
+      "modified": "2022-10-22T00:00:00+00:00",
+      "headings": [
+        "suspension-design",
+        "motion-ratios",
+        "coilover-motion-ratio",
+        "anti-roll-bar-motion-ratio",
+        "final-comments",
+        "acknowledgements",
+        "references"
+      ],
+      "slug": "rsx-rear-motion-ratios",
+      "canonical_new": "/posts/rsx-rear-motion-ratios/"
+    },
+    {
+      "url": "/jekyll/update/2020/12/10/rsx-rsx-rear-kinematic-roll-centre.html",
+      "file": "jekyll/update/2020/12/10/rsx-rsx-rear-kinematic-roll-centre.html",
+      "sha256_16": "2d2831ebc9d8ce8d",
+      "title": "Kinematic roll centre analysis of the Acura RSX rear suspension | Kelvin Tse",
+      "published": "2020-12-10T22:30:00+00:00",
+      "modified": null,
+      "headings": [
+        "suspension-design",
+        "kinematic-roll-centre",
+        "parallel-wheel-travel",
+        "opposite-wheel-travel",
+        "final-comments",
+        "acknowledgements",
+        "references"
+      ],
+      "slug": "rsx-rsx-rear-kinematic-roll-centre",
+      "canonical_new": "/posts/rsx-rsx-rear-kinematic-roll-centre/"
+    },
+    {
+      "url": "/jekyll/update/2021/02/19/rsx-suspension-longitudinal-antis.html",
+      "file": "jekyll/update/2021/02/19/rsx-suspension-longitudinal-antis.html",
+      "sha256_16": "bb48d19c82568136",
+      "title": "Anti-lift, anti-dive and kinematic pitch centre analysis of the Acura RSX suspension | Kelvin Tse",
+      "published": "2021-02-19T02:30:00+00:00",
+      "modified": null,
+      "headings": [
+        "suspension-design",
+        "kinematic-pitch-centre-and-anti-geometry",
+        "analysis",
+        "front-anti-lift",
+        "front-anti-dive",
+        "rear-anti-lift",
+        "kinematic-pitch-centre",
+        "final-comments",
+        "acknowledgements",
+        "references"
+      ],
+      "slug": "rsx-suspension-longitudinal-antis",
+      "canonical_new": "/posts/rsx-suspension-longitudinal-antis/"
+    },
+    {
+      "url": "/jekyll/update/2021/05/12/simplied-lateral-load-transfer-analysis.html",
+      "file": "jekyll/update/2021/05/12/simplied-lateral-load-transfer-analysis.html",
+      "sha256_16": "44af222cc40af0dc",
+      "title": "Simplified steady-state lateral load transfer analysis for spring rate and anti-roll bar selection | Kelvin Tse",
+      "published": "2021-05-12T00:50:00+00:00",
+      "modified": "2022-10-22T00:00:00+00:00",
+      "headings": [
+        "bringing-balance-to-the-vertical-forces",
+        "lateral-load-transfer",
+        "model-assumptions",
+        "in-a-rigid-body",
+        "roll-centres-and-link-loads",
+        "roll-stiffnesses",
+        "total-load-transfer",
+        "lateral-load-transfer-distribution",
+        "roll-stiffness-distribution",
+        "case-study",
+        "target-vehicle",
+        "compute-the-roll-stiffness",
+        "results",
+        "final-comments",
+        "references"
+      ],
+      "slug": "simplied-lateral-load-transfer-analysis",
+      "canonical_new": "/posts/simplied-lateral-load-transfer-analysis/"
+    },
+    {
+      "url": "/jekyll/update/2021/07/18/re71r-255-40-r17-tire-vertical-stiffness.html",
+      "file": "jekyll/update/2021/07/18/re71r-255-40-r17-tire-vertical-stiffness.html",
+      "sha256_16": "19fb9cdcc4379c1a",
+      "title": "Measuring the tire vertical stiffness of a 255/40R17 ultra-high performance 200TW tire - Bridgestone Potenza RE-71R | Kelvin Tse",
+      "published": "2021-07-18T08:30:00+00:00",
+      "modified": null,
+      "headings": [
+        "tire-load-deflection",
+        "test-schedule",
+        "analysis",
+        "final-comments",
+        "acknowledgements",
+        "references"
+      ],
+      "slug": "re71r-255-40-r17-tire-vertical-stiffness",
+      "canonical_new": "/posts/re71r-255-40-r17-tire-vertical-stiffness/"
+    },
+    {
+      "url": "/jekyll/update/2021/10/06/re71r-255-40-r17-tire-static-footprints.html",
+      "file": "jekyll/update/2021/10/06/re71r-255-40-r17-tire-static-footprints.html",
+      "sha256_16": "990575d6bc09ca23",
+      "title": "Measuring the effect of inflation pressure, inclination angle and vertical load on static contact patch shape of a 255/40R17 ultra-high performance 200TW tire - Bridgestone Potenza RE-71R | Kelvin Tse",
+      "published": "2021-10-06T11:15:00+00:00",
+      "modified": null,
+      "headings": [
+        "tire-footprints",
+        "test-schedule",
+        "analysis",
+        "geometry",
+        "contact-area",
+        "aspect-ratio",
+        "load-sensitivity",
+        "final-comments",
+        "acknowledgements",
+        "references"
+      ],
+      "slug": "re71r-255-40-r17-tire-static-footprints",
+      "canonical_new": "/posts/re71r-255-40-r17-tire-static-footprints/"
+    },
+    {
+      "url": "/jekyll/update/2022/07/28/trends-in-vehicle-cg-height-and-ssf.html",
+      "file": "jekyll/update/2022/07/28/trends-in-vehicle-cg-height-and-ssf.html",
+      "sha256_16": "e15926a32e7ce9b0",
+      "title": "Trends in vehicle centre of gravity height and static stability factor from 1971 to 2020 using the NHTSA LVIPD and NCAP rollover stability measurements | Kelvin Tse",
+      "published": "2022-07-28T14:00:00+00:00",
+      "modified": "2022-08-07T00:00:00+00:00",
+      "headings": [
+        "vehicle-properties",
+        "dataset",
+        "trends",
+        "centre-of-gravity-height-vs-vehicle-mass",
+        "static-stability-factor-vs-vehicle-mass",
+        "static-stability-factor-vs-vehicle-roof-height-to-average-track-width-ratio",
+        "centre-of-gravity-height-vs-model-year",
+        "static-stability-factor-vs-model-year",
+        "average-track-width-vs-model-year",
+        "final-comments",
+        "references"
+      ],
+      "slug": "trends-in-vehicle-cg-height-and-ssf",
+      "canonical_new": "/posts/trends-in-vehicle-cg-height-and-ssf/"
+    },
+    {
+      "url": "/jekyll/update/2022/09/24/photography-measuring-roll-camber-inclination-angle-ek20r.html",
+      "file": "jekyll/update/2022/09/24/photography-measuring-roll-camber-inclination-angle-ek20r.html",
+      "sha256_16": "d25703a3a0183e7e",
+      "title": "Photography as data acquisition - measuring instantaneous chassis roll and tire inclination angles from a photo showing the rear profile of the EK20R | Kelvin Tse",
+      "published": "2022-09-24T13:10:00+00:00",
+      "modified": null,
+      "headings": [
+        "smile-youre-on-camera",
+        "analysis",
+        "left-wheel-angles",
+        "right-wheel-angles",
+        "chassis-roll-angle",
+        "final-comments",
+        "acknowledgements",
+        "reference"
+      ],
+      "slug": "photography-measuring-roll-camber-inclination-angle-ek20r",
+      "canonical_new": "/posts/photography-measuring-roll-camber-inclination-angle-ek20r/"
+    },
+    {
+      "url": "/jekyll/update/2023/02/07/intro-to-front-kinematics-ek20r.html",
+      "file": "jekyll/update/2023/02/07/intro-to-front-kinematics-ek20r.html",
+      "sha256_16": "07cc34e6dfc85094",
+      "title": "Introduction to front suspension kinematics of a Honda Civic EK Hatchback | Kelvin Tse",
+      "published": "2023-02-07T22:15:00+00:00",
+      "modified": null,
+      "headings": [
+        "acknowledgements",
+        "kinematic-analysis-motivation",
+        "obtaining-suspension-points",
+        "kinematic-analysis-workflow",
+        "results-and-future-work",
+        "conclusion"
+      ],
+      "slug": "intro-to-front-kinematics-ek20r",
+      "canonical_new": "/posts/intro-to-front-kinematics-ek20r/"
+    },
+    {
+      "url": "/jekyll/update/2023/03/08/front-kinematic-wheel-plane-control-ek20r.html",
+      "file": "jekyll/update/2023/03/08/front-kinematic-wheel-plane-control-ek20r.html",
+      "sha256_16": "da97b1f35db9c5b6",
+      "title": "Kinematic wheel plane control of a Honda Civic EK Hatchback front suspension | Kelvin Tse",
+      "published": "2023-03-08T14:35:00+00:00",
+      "modified": null,
+      "headings": [
+        "acknowledgements",
+        "kinematic-simulation",
+        "vehicle-under-study",
+        "kinematic-wheel-plane-control",
+        "half-track-variation",
+        "wheel-centre-recession",
+        "toe-variation",
+        "bump-steer",
+        "camber-variation",
+        "final-comments",
+        "references"
+      ],
+      "slug": "front-kinematic-wheel-plane-control-ek20r",
+      "canonical_new": "/posts/front-kinematic-wheel-plane-control-ek20r/"
+    },
+    {
+      "url": "/jekyll/update/2024/01/05/front-steering-analysis-ek20r.html",
+      "file": "jekyll/update/2024/01/05/front-steering-analysis-ek20r.html",
+      "sha256_16": "dc49de4e4db0602f",
+      "title": "Steering kinematics of a Honda Civic EK Hatchback front suspension | Kelvin Tse",
+      "published": "2024-01-05T19:40:00+00:00",
+      "modified": null,
+      "headings": [
+        "acknowledgements",
+        "kinematic-simulation",
+        "vehicle-under-study",
+        "steering-analysis",
+        "rack-to-steer-ratio",
+        "dynamic-toe-offset",
+        "camber-angle",
+        "caster-angle",
+        "kingpin-inclination-angle",
+        "mechanical-trail",
+        "scrub-radius",
+        "highlights",
+        "conclusion",
+        "references"
+      ],
+      "slug": "front-steering-analysis-ek20r",
+      "canonical_new": "/posts/front-steering-analysis-ek20r/"
+    },
+    {
+      "url": "/jekyll/update/2024/09/22/continental-ecf-255-40-r17-contact-patch-sensitivity.html",
+      "file": "jekyll/update/2024/09/22/continental-ecf-255-40-r17-contact-patch-sensitivity.html",
+      "sha256_16": "6bd1df9522490b89",
+      "title": "Static contact patch shape evolution of a 255/40R17 ultra-high performance 200TW tire - Continental ExtremeContact Force | Kelvin Tse",
+      "published": "2024-09-22T00:55:00+00:00",
+      "modified": null,
+      "headings": [
+        "tire-under-test",
+        "continental-extremecontact-force",
+        "application-notes-of-interest",
+        "test-schedule",
+        "data-collection",
+        "try-it-yourself",
+        "analysis",
+        "length",
+        "width",
+        "aspect-ratio",
+        "gross-area",
+        "net-area",
+        "void-ratio",
+        "load-sensitivity",
+        "discussion",
+        "acknowledgements",
+        "conclusions",
+        "references"
+      ],
+      "slug": "continental-ecf-255-40-r17-contact-patch-sensitivity",
+      "canonical_new": "/posts/continental-ecf-255-40-r17-contact-patch-sensitivity/"
+    },
+    {
+      "url": "/jekyll/update/2026/04/20/driver-development-as-skill-acquisition.html",
+      "file": "jekyll/update/2026/04/20/driver-development-as-skill-acquisition.html",
+      "sha256_16": "a77600e8752fb844",
+      "title": "Driver development - a discussion on contemporary theories of motor learning and its application in motorsport | Kelvin Tse",
+      "published": "2026-04-20T01:50:00+00:00",
+      "modified": null,
+      "headings": [
+        "cultural-context",
+        "nature-of-expertise",
+        "traditional-approach-to-coaching",
+        "the-racing-driver-is-not-a-robot",
+        "ecological-dynamics-approach-to-coaching",
+        "constraints-led-approach",
+        "cultural-challenges",
+        "discussion",
+        "in-practice",
+        "conclusion",
+        "references"
+      ],
+      "slug": "driver-development-as-skill-acquisition",
+      "canonical_new": "/posts/driver-development-as-skill-acquisition/"
+    }
+  ],
+  "assets": [
+    {
+      "url": "/assets/dist/2024-09-18-continental-ecf-cp-widget/assets/index.css",
+      "file": "assets/dist/2024-09-18-continental-ecf-cp-widget/assets/index.css",
+      "bytes": 95,
+      "sha256_16": "c6de684991efcf72"
+    },
+    {
+      "url": "/assets/dist/2024-09-18-continental-ecf-cp-widget/assets/index.js",
+      "file": "assets/dist/2024-09-18-continental-ecf-cp-widget/assets/index.js",
+      "bytes": 775301,
+      "sha256_16": "53940f1dd38fb14f"
+    },
+    {
+      "url": "/assets/dist/2024-09-18-continental-ecf-cp-widget/assets/ort-wasm-simd-threaded.wasm",
+      "file": "assets/dist/2024-09-18-continental-ecf-cp-widget/assets/ort-wasm-simd-threaded.wasm",
+      "bytes": 11018731,
+      "sha256_16": "1bf0b9ed7ad025cf"
+    },
+    {
+      "url": "/assets/dist/2024-09-18-continental-ecf-cp-widget/continentalecf-255-40-R17x9_latents.onnx",
+      "file": "assets/dist/2024-09-18-continental-ecf-cp-widget/continentalecf-255-40-R17x9_latents.onnx",
+      "bytes": 1732,
+      "sha256_16": "6197b935d66eb11e"
+    },
+    {
+      "url": "/assets/dist/2024-09-18-continental-ecf-cp-widget/continentalecf-255-40-R17x9_model.onnx",
+      "file": "assets/dist/2024-09-18-continental-ecf-cp-widget/continentalecf-255-40-R17x9_model.onnx",
+      "bytes": 7283039,
+      "sha256_16": "3f431101ce340df7"
+    },
+    {
+      "url": "/assets/dist/2024-09-18-continental-ecf-cp-widget/formula-delta-logo-240px.png",
+      "file": "assets/dist/2024-09-18-continental-ecf-cp-widget/formula-delta-logo-240px.png",
+      "bytes": 14764,
+      "sha256_16": "7d699009f8575781"
+    },
+    {
+      "url": "/assets/images/2017-07-24/abs_lateral_acceleration.svg",
+      "file": "assets/images/2017-07-24/abs_lateral_acceleration.svg",
+      "bytes": 97483,
+      "sha256_16": "c3e32ea13019fd81"
+    },
+    {
+      "url": "/assets/images/2017-07-24/abs_longitudinal_acceleration.svg",
+      "file": "assets/images/2017-07-24/abs_longitudinal_acceleration.svg",
+      "bytes": 124702,
+      "sha256_16": "a25d3fdc2d2ebd3e"
+    },
+    {
+      "url": "/assets/images/2017-07-24/combined_acceleration.svg",
+      "file": "assets/images/2017-07-24/combined_acceleration.svg",
+      "bytes": 95647,
+      "sha256_16": "39de7efb39fa3868"
+    },
+    {
+      "url": "/assets/images/2017-07-24/combined_acceleration_accelerating.svg",
+      "file": "assets/images/2017-07-24/combined_acceleration_accelerating.svg",
+      "bytes": 96641,
+      "sha256_16": "943e15dfe528e6e3"
+    },
+    {
+      "url": "/assets/images/2017-07-24/combined_acceleration_braking.svg",
+      "file": "assets/images/2017-07-24/combined_acceleration_braking.svg",
+      "bytes": 96195,
+      "sha256_16": "6e7f45b957a6586c"
+    },
+    {
+      "url": "/assets/images/2017-07-24/gg-diagram.svg",
+      "file": "assets/images/2017-07-24/gg-diagram.svg",
+      "bytes": 396479,
+      "sha256_16": "4e2b101bb9875387"
+    },
+    {
+      "url": "/assets/images/2017-07-24/gps-cayuga.png",
+      "file": "assets/images/2017-07-24/gps-cayuga.png",
+      "bytes": 1556023,
+      "sha256_16": "ffd0f1993746ac1b"
+    },
+    {
+      "url": "/assets/images/2017-07-24/histogram.svg",
+      "file": "assets/images/2017-07-24/histogram.svg",
+      "bytes": 35527,
+      "sha256_16": "78513a381d992139"
+    },
+    {
+      "url": "/assets/images/2017-07-24/laptime.svg",
+      "file": "assets/images/2017-07-24/laptime.svg",
+      "bytes": 49594,
+      "sha256_16": "a92c3a1b306b27c4"
+    },
+    {
+      "url": "/assets/images/2017-07-24/lateral_acceleration.svg",
+      "file": "assets/images/2017-07-24/lateral_acceleration.svg",
+      "bytes": 105761,
+      "sha256_16": "c809bc0228a98705"
+    },
+    {
+      "url": "/assets/images/2017-07-24/longitudinal_acceleration.svg",
+      "file": "assets/images/2017-07-24/longitudinal_acceleration.svg",
+      "bytes": 114267,
+      "sha256_16": "e9ffce663088bb8d"
+    },
+    {
+      "url": "/assets/images/2017-07-24/speed.svg",
+      "file": "assets/images/2017-07-24/speed.svg",
+      "bytes": 95395,
+      "sha256_16": "002d3612ef6dbdb5"
+    },
+    {
+      "url": "/assets/images/2018-02-08/best_and_average_lap_time_everyone.svg",
+      "file": "assets/images/2018-02-08/best_and_average_lap_time_everyone.svg",
+      "bytes": 64184,
+      "sha256_16": "59479d278d085026"
+    },
+    {
+      "url": "/assets/images/2018-02-08/box_plot_everyone.svg",
+      "file": "assets/images/2018-02-08/box_plot_everyone.svg",
+      "bytes": 276081,
+      "sha256_16": "8322ad609512badd"
+    },
+    {
+      "url": "/assets/images/2018-02-08/laptime_boxplot.svg",
+      "file": "assets/images/2018-02-08/laptime_boxplot.svg",
+      "bytes": 60423,
+      "sha256_16": "c070032e5c87e4ed"
+    },
+    {
+      "url": "/assets/images/2018-02-08/laptime_boxplot_23 Van Winden racing.svg",
+      "file": "assets/images/2018-02-08/laptime_boxplot_23 Van Winden racing.svg",
+      "bytes": 46318,
+      "sha256_16": "faf3221409980c43"
+    },
+    {
+      "url": "/assets/images/2018-02-08/laptime_boxplot_Huggins (Pinkies Out).svg",
+      "file": "assets/images/2018-02-08/laptime_boxplot_Huggins (Pinkies Out).svg",
+      "bytes": 43964,
+      "sha256_16": "1b3565e5319fb369"
+    },
+    {
+      "url": "/assets/images/2018-02-08/outing_growing_average.svg",
+      "file": "assets/images/2018-02-08/outing_growing_average.svg",
+      "bytes": 274279,
+      "sha256_16": "99f2c1c374764a63"
+    },
+    {
+      "url": "/assets/images/2018-02-08/pit_stops.svg",
+      "file": "assets/images/2018-02-08/pit_stops.svg",
+      "bytes": 42144,
+      "sha256_16": "ac24f1852515cd23"
+    },
+    {
+      "url": "/assets/images/2018-02-08/pitstop_duration_23 Van Winden racing.svg",
+      "file": "assets/images/2018-02-08/pitstop_duration_23 Van Winden racing.svg",
+      "bytes": 30388,
+      "sha256_16": "4b6941e7f2f9bcd2"
+    },
+    {
+      "url": "/assets/images/2018-02-08/pitstop_duration_Huggins (Pinkies Out).svg",
+      "file": "assets/images/2018-02-08/pitstop_duration_Huggins (Pinkies Out).svg",
+      "bytes": 31546,
+      "sha256_16": "1e020056428a3186"
+    },
+    {
+      "url": "/assets/images/2018-02-08/race_position_vs_time.svg",
+      "file": "assets/images/2018-02-08/race_position_vs_time.svg",
+      "bytes": 58210,
+      "sha256_16": "949feb8d06dd9228"
+    },
+    {
+      "url": "/assets/images/2018-02-08/rising_time_vs_lap.svg",
+      "file": "assets/images/2018-02-08/rising_time_vs_lap.svg",
+      "bytes": 79910,
+      "sha256_16": "18480c713f73f47c"
+    },
+    {
+      "url": "/assets/images/2018-02-08/rising_time_vs_lap_everyone.svg",
+      "file": "assets/images/2018-02-08/rising_time_vs_lap_everyone.svg",
+      "bytes": 369390,
+      "sha256_16": "10ccb00d366a2fa8"
+    },
+    {
+      "url": "/assets/images/2018-09-18/bicycle_model.png",
+      "file": "assets/images/2018-09-18/bicycle_model.png",
+      "bytes": 26638,
+      "sha256_16": "5f2cbb74a8263e02"
+    },
+    {
+      "url": "/assets/images/2018-10-25/goodwoodlupusgp18.jpg",
+      "file": "assets/images/2018-10-25/goodwoodlupusgp18.jpg",
+      "bytes": 441351,
+      "sha256_16": "becbef9f88bb9d48"
+    },
+    {
+      "url": "/assets/images/2018-10-25/heartrate.svg",
+      "file": "assets/images/2018-10-25/heartrate.svg",
+      "bytes": 48434,
+      "sha256_16": "1e018ebcf944146d"
+    },
+    {
+      "url": "/assets/images/2018-12-01/ddt_c551_civic_si_banner.jpg",
+      "file": "assets/images/2018-12-01/ddt_c551_civic_si_banner.jpg",
+      "bytes": 262031,
+      "sha256_16": "dd396f3ccbc0a9d2"
+    },
+    {
+      "url": "/assets/images/2018-12-01/tmp_c551_civic_si.jpg",
+      "file": "assets/images/2018-12-01/tmp_c551_civic_si.jpg",
+      "bytes": 374319,
+      "sha256_16": "9309ca6ebf989061"
+    },
+    {
+      "url": "/assets/images/2018-12-01/usg_test.png",
+      "file": "assets/images/2018-12-01/usg_test.png",
+      "bytes": 57961,
+      "sha256_16": "805445d4b6f1f730"
+    },
+    {
+      "url": "/assets/images/2019-01-06/JYANG_CIVIC_by_MLIN.jpg",
+      "file": "assets/images/2019-01-06/JYANG_CIVIC_by_MLIN.jpg",
+      "bytes": 220294,
+      "sha256_16": "f49b01b5dcf17131"
+    },
+    {
+      "url": "/assets/images/2019-01-06/civicsi_ddt_pits.jpg",
+      "file": "assets/images/2019-01-06/civicsi_ddt_pits.jpg",
+      "bytes": 372947,
+      "sha256_16": "73e82f0661bdb697"
+    },
+    {
+      "url": "/assets/images/2019-01-06/pulsesteer_test_ddt.png",
+      "file": "assets/images/2019-01-06/pulsesteer_test_ddt.png",
+      "bytes": 148469,
+      "sha256_16": "1606855eac6c372c"
+    },
+    {
+      "url": "/assets/images/2019-01-06/pulsesteer_test_tmp.png",
+      "file": "assets/images/2019-01-06/pulsesteer_test_tmp.png",
+      "bytes": 174500,
+      "sha256_16": "a98959d66771585b"
+    },
+    {
+      "url": "/assets/images/2019-02-13/IMG_20180609_155605_002_resize.jpg",
+      "file": "assets/images/2019-02-13/IMG_20180609_155605_002_resize.jpg",
+      "bytes": 342192,
+      "sha256_16": "0a0527a5489090f4"
+    },
+    {
+      "url": "/assets/images/2019-02-13/civicsi_bode.png",
+      "file": "assets/images/2019-02-13/civicsi_bode.png",
+      "bytes": 249017,
+      "sha256_16": "a46b46d619f66c6d"
+    },
+    {
+      "url": "/assets/images/2019-02-13/civicsi_rootlocus.png",
+      "file": "assets/images/2019-02-13/civicsi_rootlocus.png",
+      "bytes": 148367,
+      "sha256_16": "4b71e92d3cd0ed4c"
+    },
+    {
+      "url": "/assets/images/2019-02-13/civicsi_step.png",
+      "file": "assets/images/2019-02-13/civicsi_step.png",
+      "bytes": 156973,
+      "sha256_16": "a1c564880147016b"
+    },
+    {
+      "url": "/assets/images/2019-02-13/civicsi_stepmetrics.png",
+      "file": "assets/images/2019-02-13/civicsi_stepmetrics.png",
+      "bytes": 184374,
+      "sha256_16": "a1948865d0cbf25c"
+    },
+    {
+      "url": "/assets/images/2019-02-13/step_metrics.png",
+      "file": "assets/images/2019-02-13/step_metrics.png",
+      "bytes": 90488,
+      "sha256_16": "aff554eef4562a8f"
+    },
+    {
+      "url": "/assets/images/2019-03-17/civicsi_ddt_t1.jpg",
+      "file": "assets/images/2019-03-17/civicsi_ddt_t1.jpg",
+      "bytes": 223880,
+      "sha256_16": "2229e93638c4717f"
+    },
+    {
+      "url": "/assets/images/2019-03-17/civicsi_gain.png",
+      "file": "assets/images/2019-03-17/civicsi_gain.png",
+      "bytes": 92020,
+      "sha256_16": "7423184dcf6ef777"
+    },
+    {
+      "url": "/assets/images/2019-03-17/civicsi_handling_map.png",
+      "file": "assets/images/2019-03-17/civicsi_handling_map.png",
+      "bytes": 153452,
+      "sha256_16": "bfd830eb47d27853"
+    },
+    {
+      "url": "/assets/images/2019-03-17/civicsi_lart.png",
+      "file": "assets/images/2019-03-17/civicsi_lart.png",
+      "bytes": 151442,
+      "sha256_16": "bcc835ab88f9e0d3"
+    },
+    {
+      "url": "/assets/images/2019-06-01/acura-tsx-primacy.jpg",
+      "file": "assets/images/2019-06-01/acura-tsx-primacy.jpg",
+      "bytes": 370580,
+      "sha256_16": "4eb5c3aa4a4fc4d4"
+    },
+    {
+      "url": "/assets/images/2019-06-01/acura-tsx.jpg",
+      "file": "assets/images/2019-06-01/acura-tsx.jpg",
+      "bytes": 630093,
+      "sha256_16": "e8b52ffe126d9eb5"
+    },
+    {
+      "url": "/assets/images/2019-06-01/tsx_bode.png",
+      "file": "assets/images/2019-06-01/tsx_bode.png",
+      "bytes": 251484,
+      "sha256_16": "884566983ffa7981"
+    },
+    {
+      "url": "/assets/images/2019-06-01/tsx_step.png",
+      "file": "assets/images/2019-06-01/tsx_step.png",
+      "bytes": 136832,
+      "sha256_16": "26a9c092a169ca0c"
+    },
+    {
+      "url": "/assets/images/2019-06-01/tsx_stepmetrics.png",
+      "file": "assets/images/2019-06-01/tsx_stepmetrics.png",
+      "bytes": 186098,
+      "sha256_16": "867ab4031c762382"
+    },
+    {
+      "url": "/assets/images/2019-08-01/991-honda-civic.jpg",
+      "file": "assets/images/2019-08-01/991-honda-civic.jpg",
+      "bytes": 583655,
+      "sha256_16": "e6499771fb14b809"
+    },
+    {
+      "url": "/assets/images/2019-08-01/re71r-analysis.png",
+      "file": "assets/images/2019-08-01/re71r-analysis.png",
+      "bytes": 450456,
+      "sha256_16": "f9d585cd7d3ab33f"
+    },
+    {
+      "url": "/assets/images/2019-08-01/re71r-area.png",
+      "file": "assets/images/2019-08-01/re71r-area.png",
+      "bytes": 17750,
+      "sha256_16": "5bda752fa90b66b0"
+    },
+    {
+      "url": "/assets/images/2019-08-01/re71r-length.png",
+      "file": "assets/images/2019-08-01/re71r-length.png",
+      "bytes": 17044,
+      "sha256_16": "5c87e24824b86faf"
+    },
+    {
+      "url": "/assets/images/2019-08-01/re71r-raw-vs-filtered.png",
+      "file": "assets/images/2019-08-01/re71r-raw-vs-filtered.png",
+      "bytes": 172451,
+      "sha256_16": "f95fa41bfc88e678"
+    },
+    {
+      "url": "/assets/images/2019-08-01/re71r-width.png",
+      "file": "assets/images/2019-08-01/re71r-width.png",
+      "bytes": 17636,
+      "sha256_16": "98fa3b31a5739ee8"
+    },
+    {
+      "url": "/assets/images/2019-09-14/Adjusted Workload.svg",
+      "file": "assets/images/2019-09-14/Adjusted Workload.svg",
+      "bytes": 172676,
+      "sha256_16": "59c5b5baf4bf641b"
+    },
+    {
+      "url": "/assets/images/2019-09-14/Overall Workload - Session Type.svg",
+      "file": "assets/images/2019-09-14/Overall Workload - Session Type.svg",
+      "bytes": 184085,
+      "sha256_16": "25feb194d210d442"
+    },
+    {
+      "url": "/assets/images/2019-09-14/Raw Workload.svg",
+      "file": "assets/images/2019-09-14/Raw Workload.svg",
+      "bytes": 146239,
+      "sha256_16": "9d77089d31bf160a"
+    },
+    {
+      "url": "/assets/images/2019-09-14/nasa_tlx.png",
+      "file": "assets/images/2019-09-14/nasa_tlx.png",
+      "bytes": 109009,
+      "sha256_16": "fd1350c3c6920e9d"
+    },
+    {
+      "url": "/assets/images/2019-09-14/ping-civic-smp.jpg",
+      "file": "assets/images/2019-09-14/ping-civic-smp.jpg",
+      "bytes": 373163,
+      "sha256_16": "38102dae92c1c0c1"
+    },
+    {
+      "url": "/assets/images/2020-01-30/rsx-front-ic-markup.png",
+      "file": "assets/images/2020-01-30/rsx-front-ic-markup.png",
+      "bytes": 47386,
+      "sha256_16": "ab02da519a3c1024"
+    },
+    {
+      "url": "/assets/images/2020-01-30/rsx-front-owt.gif",
+      "file": "assets/images/2020-01-30/rsx-front-owt.gif",
+      "bytes": 540718,
+      "sha256_16": "070565e64aed86c6"
+    },
+    {
+      "url": "/assets/images/2020-01-30/rsx-front-view-markup.png",
+      "file": "assets/images/2020-01-30/rsx-front-view-markup.png",
+      "bytes": 57418,
+      "sha256_16": "99c1af76aa2cd1c3"
+    },
+    {
+      "url": "/assets/images/2020-01-30/rsx-front-view-steering-markup.png",
+      "file": "assets/images/2020-01-30/rsx-front-view-steering-markup.png",
+      "bytes": 32990,
+      "sha256_16": "f82f6b5c4fe3be47"
+    },
+    {
+      "url": "/assets/images/2020-01-30/rsx-quarter-iso-resize.png",
+      "file": "assets/images/2020-01-30/rsx-quarter-iso-resize.png",
+      "bytes": 97259,
+      "sha256_16": "b578e75931ee1593"
+    },
+    {
+      "url": "/assets/images/2020-01-30/rsx-side-ic-markup.png",
+      "file": "assets/images/2020-01-30/rsx-side-ic-markup.png",
+      "bytes": 32313,
+      "sha256_16": "70668d7e3f6433bc"
+    },
+    {
+      "url": "/assets/images/2020-01-30/rsx-side-view-steering-markup.png",
+      "file": "assets/images/2020-01-30/rsx-side-view-steering-markup.png",
+      "bytes": 49681,
+      "sha256_16": "606dffd0a17fafcd"
+    },
+    {
+      "url": "/assets/images/2020-01-30/rsx_cover.jpg",
+      "file": "assets/images/2020-01-30/rsx_cover.jpg",
+      "bytes": 291724,
+      "sha256_16": "e56ce6adc4012fd5"
+    },
+    {
+      "url": "/assets/images/2020-01-30/rsx_front_suspension.JPG",
+      "file": "assets/images/2020-01-30/rsx_front_suspension.JPG",
+      "bytes": 492311,
+      "sha256_16": "a92e40b7ded9f69f"
+    },
+    {
+      "url": "/assets/images/2020-06-21/heave.mp4",
+      "file": "assets/images/2020-06-21/heave.mp4",
+      "bytes": 106881,
+      "sha256_16": "9944711730d4091a"
+    },
+    {
+      "url": "/assets/images/2020-06-21/heave.webm",
+      "file": "assets/images/2020-06-21/heave.webm",
+      "bytes": 103308,
+      "sha256_16": "d29f6549f015a4a1"
+    },
+    {
+      "url": "/assets/images/2020-06-21/rsx-camber.png",
+      "file": "assets/images/2020-06-21/rsx-camber.png",
+      "bytes": 91160,
+      "sha256_16": "a416805b2caacbf2"
+    },
+    {
+      "url": "/assets/images/2020-06-21/rsx-half-track.png",
+      "file": "assets/images/2020-06-21/rsx-half-track.png",
+      "bytes": 104460,
+      "sha256_16": "3ad552b394cdca09"
+    },
+    {
+      "url": "/assets/images/2020-06-21/rsx-scca-cover.jpg",
+      "file": "assets/images/2020-06-21/rsx-scca-cover.jpg",
+      "bytes": 233849,
+      "sha256_16": "4909c058a49373f8"
+    },
+    {
+      "url": "/assets/images/2020-06-21/rsx-toe.png",
+      "file": "assets/images/2020-06-21/rsx-toe.png",
+      "bytes": 77383,
+      "sha256_16": "d9fe197782a9183e"
+    },
+    {
+      "url": "/assets/images/2020-06-21/steer.mp4",
+      "file": "assets/images/2020-06-21/steer.mp4",
+      "bytes": 74727,
+      "sha256_16": "ed9a3af841126992"
+    },
+    {
+      "url": "/assets/images/2020-06-21/steer.webm",
+      "file": "assets/images/2020-06-21/steer.webm",
+      "bytes": 98730,
+      "sha256_16": "067ccd705d3aa68e"
+    },
+    {
+      "url": "/assets/images/2020-07-25/motion-ratio-arb.mp4",
+      "file": "assets/images/2020-07-25/motion-ratio-arb.mp4",
+      "bytes": 110947,
+      "sha256_16": "899fdad9519f7055"
+    },
+    {
+      "url": "/assets/images/2020-07-25/motion-ratio-arb.webm",
+      "file": "assets/images/2020-07-25/motion-ratio-arb.webm",
+      "bytes": 81224,
+      "sha256_16": "dc7c98b695bd315b"
+    },
+    {
+      "url": "/assets/images/2020-07-25/motion-ratio-damper.mp4",
+      "file": "assets/images/2020-07-25/motion-ratio-damper.mp4",
+      "bytes": 108987,
+      "sha256_16": "e8cb933f2c742d52"
+    },
+    {
+      "url": "/assets/images/2020-07-25/motion-ratio-damper.webm",
+      "file": "assets/images/2020-07-25/motion-ratio-damper.webm",
+      "bytes": 77322,
+      "sha256_16": "7229d5839571b356"
+    },
+    {
+      "url": "/assets/images/2020-07-25/motion-ratio-spring.mp4",
+      "file": "assets/images/2020-07-25/motion-ratio-spring.mp4",
+      "bytes": 207298,
+      "sha256_16": "c6ad747408e20dc2"
+    },
+    {
+      "url": "/assets/images/2020-07-25/motion-ratio-spring.webm",
+      "file": "assets/images/2020-07-25/motion-ratio-spring.webm",
+      "bytes": 188373,
+      "sha256_16": "d4cec84c4bd395e9"
+    },
+    {
+      "url": "/assets/images/2020-07-25/motion-ratio-steering.mp4",
+      "file": "assets/images/2020-07-25/motion-ratio-steering.mp4",
+      "bytes": 145264,
+      "sha256_16": "b227e8a0ab001dbd"
+    },
+    {
+      "url": "/assets/images/2020-07-25/motion-ratio-steering.webm",
+      "file": "assets/images/2020-07-25/motion-ratio-steering.webm",
+      "bytes": 168964,
+      "sha256_16": "998dbc8b6ffbe658"
+    },
+    {
+      "url": "/assets/images/2020-07-25/rsx-mr-arb.svg",
+      "file": "assets/images/2020-07-25/rsx-mr-arb.svg",
+      "bytes": 45776,
+      "sha256_16": "ebbeca3dd9269b45"
+    },
+    {
+      "url": "/assets/images/2020-07-25/rsx-mr-steer.svg",
+      "file": "assets/images/2020-07-25/rsx-mr-steer.svg",
+      "bytes": 42029,
+      "sha256_16": "e3c9d2112b01823f"
+    },
+    {
+      "url": "/assets/images/2020-07-25/rsx-mr-strut.svg",
+      "file": "assets/images/2020-07-25/rsx-mr-strut.svg",
+      "bytes": 43573,
+      "sha256_16": "9e67d578a0306ef6"
+    },
+    {
+      "url": "/assets/images/2020-07-25/rsx-quarter-cover.jpg",
+      "file": "assets/images/2020-07-25/rsx-quarter-cover.jpg",
+      "bytes": 125985,
+      "sha256_16": "a4ed25ec2f35d5fe"
+    },
+    {
+      "url": "/assets/images/2020-09-07/rsx-front-cover.jpeg",
+      "file": "assets/images/2020-09-07/rsx-front-cover.jpeg",
+      "bytes": 149478,
+      "sha256_16": "c6f0cdb452f05e37"
+    },
+    {
+      "url": "/assets/images/2020-09-07/rsx-owt-rc.mp4",
+      "file": "assets/images/2020-09-07/rsx-owt-rc.mp4",
+      "bytes": 195684,
+      "sha256_16": "ec45eefe56a1d776"
+    },
+    {
+      "url": "/assets/images/2020-09-07/rsx-owt-rc.webm",
+      "file": "assets/images/2020-09-07/rsx-owt-rc.webm",
+      "bytes": 187158,
+      "sha256_16": "445be43be8803d87"
+    },
+    {
+      "url": "/assets/images/2020-09-07/rsx-owt-rch.svg",
+      "file": "assets/images/2020-09-07/rsx-owt-rch.svg",
+      "bytes": 47300,
+      "sha256_16": "30d0e235b08efea8"
+    },
+    {
+      "url": "/assets/images/2020-09-07/rsx-owt-rcy.svg",
+      "file": "assets/images/2020-09-07/rsx-owt-rcy.svg",
+      "bytes": 48295,
+      "sha256_16": "1682cafd770aadbb"
+    },
+    {
+      "url": "/assets/images/2020-09-07/rsx-pwt-rc.mp4",
+      "file": "assets/images/2020-09-07/rsx-pwt-rc.mp4",
+      "bytes": 291258,
+      "sha256_16": "becc0d678a0fcad5"
+    },
+    {
+      "url": "/assets/images/2020-09-07/rsx-pwt-rc.webm",
+      "file": "assets/images/2020-09-07/rsx-pwt-rc.webm",
+      "bytes": 276775,
+      "sha256_16": "22d66c1e6f328d44"
+    },
+    {
+      "url": "/assets/images/2020-09-07/rsx-pwt-rch.svg",
+      "file": "assets/images/2020-09-07/rsx-pwt-rch.svg",
+      "bytes": 47994,
+      "sha256_16": "d9a4b8c5d8265a7c"
+    },
+    {
+      "url": "/assets/images/2020-12-06/rsx-cover-1.jpg",
+      "file": "assets/images/2020-12-06/rsx-cover-1.jpg",
+      "bytes": 188016,
+      "sha256_16": "8b068edf7a69f54a"
+    },
+    {
+      "url": "/assets/images/2020-12-06/rsx-cover-2.jpg",
+      "file": "assets/images/2020-12-06/rsx-cover-2.jpg",
+      "bytes": 165437,
+      "sha256_16": "a342d00dd56af142"
+    },
+    {
+      "url": "/assets/images/2020-12-06/rsx-cover-3.jpg",
+      "file": "assets/images/2020-12-06/rsx-cover-3.jpg",
+      "bytes": 125805,
+      "sha256_16": "f642b178e00d1582"
+    },
+    {
+      "url": "/assets/images/2020-12-06/rsx-rear-iso-inner.mp4",
+      "file": "assets/images/2020-12-06/rsx-rear-iso-inner.mp4",
+      "bytes": 112031,
+      "sha256_16": "4ad289d90d33708b"
+    },
+    {
+      "url": "/assets/images/2020-12-06/rsx-rear-iso-outer.mp4",
+      "file": "assets/images/2020-12-06/rsx-rear-iso-outer.mp4",
+      "bytes": 75371,
+      "sha256_16": "a01001f41a595865"
+    },
+    {
+      "url": "/assets/images/2020-12-06/rsx-rear-left-camber.svg",
+      "file": "assets/images/2020-12-06/rsx-rear-left-camber.svg",
+      "bytes": 41009,
+      "sha256_16": "294308b9ced7baaa"
+    },
+    {
+      "url": "/assets/images/2020-12-06/rsx-rear-left-halftrack.svg",
+      "file": "assets/images/2020-12-06/rsx-rear-left-halftrack.svg",
+      "bytes": 41114,
+      "sha256_16": "c8a539ae076eb6e4"
+    },
+    {
+      "url": "/assets/images/2020-12-06/rsx-rear-left-mrarb.svg",
+      "file": "assets/images/2020-12-06/rsx-rear-left-mrarb.svg",
+      "bytes": 36959,
+      "sha256_16": "44e787dd26d54e13"
+    },
+    {
+      "url": "/assets/images/2020-12-06/rsx-rear-left-mrcoil.svg",
+      "file": "assets/images/2020-12-06/rsx-rear-left-mrcoil.svg",
+      "bytes": 43692,
+      "sha256_16": "ba495e7983bde5f3"
+    },
+    {
+      "url": "/assets/images/2020-12-06/rsx-rear-left-toe.svg",
+      "file": "assets/images/2020-12-06/rsx-rear-left-toe.svg",
+      "bytes": 42798,
+      "sha256_16": "e02d246ab91a3348"
+    },
+    {
+      "url": "/assets/images/2020-12-06/rsx-rear-owt-rcheight.svg",
+      "file": "assets/images/2020-12-06/rsx-rear-owt-rcheight.svg",
+      "bytes": 50588,
+      "sha256_16": "c846253d266581c9"
+    },
+    {
+      "url": "/assets/images/2020-12-06/rsx-rear-owt-rcy.svg",
+      "file": "assets/images/2020-12-06/rsx-rear-owt-rcy.svg",
+      "bytes": 53893,
+      "sha256_16": "3895e60ee99865b5"
+    },
+    {
+      "url": "/assets/images/2020-12-06/rsx-rear-owt.mp4",
+      "file": "assets/images/2020-12-06/rsx-rear-owt.mp4",
+      "bytes": 148786,
+      "sha256_16": "1913a3dd58e5ef89"
+    },
+    {
+      "url": "/assets/images/2020-12-06/rsx-rear-pwt-rcheight.svg",
+      "file": "assets/images/2020-12-06/rsx-rear-pwt-rcheight.svg",
+      "bytes": 50100,
+      "sha256_16": "db6e7d643d38acd2"
+    },
+    {
+      "url": "/assets/images/2020-12-06/rsx-rear-pwt.mp4",
+      "file": "assets/images/2020-12-06/rsx-rear-pwt.mp4",
+      "bytes": 120411,
+      "sha256_16": "7a2e6f2972660d04"
+    },
+    {
+      "url": "/assets/images/2020-12-06/rsx-rear-suspension-actual.jpg",
+      "file": "assets/images/2020-12-06/rsx-rear-suspension-actual.jpg",
+      "bytes": 78743,
+      "sha256_16": "3d8e229de009c3a9"
+    },
+    {
+      "url": "/assets/images/2020-12-06/rsx-rear-suspension-model.png",
+      "file": "assets/images/2020-12-06/rsx-rear-suspension-model.png",
+      "bytes": 38492,
+      "sha256_16": "a76e05bdc8a1fda3"
+    },
+    {
+      "url": "/assets/images/2021-02-14/rsx-front-anti-dive-heave.mp4",
+      "file": "assets/images/2021-02-14/rsx-front-anti-dive-heave.mp4",
+      "bytes": 159390,
+      "sha256_16": "160f17b1f0914724"
+    },
+    {
+      "url": "/assets/images/2021-02-14/rsx-front-anti-dive-heave.svg",
+      "file": "assets/images/2021-02-14/rsx-front-anti-dive-heave.svg",
+      "bytes": 48239,
+      "sha256_16": "46a7605928d25184"
+    },
+    {
+      "url": "/assets/images/2021-02-14/rsx-front-anti-lift-heave.mp4",
+      "file": "assets/images/2021-02-14/rsx-front-anti-lift-heave.mp4",
+      "bytes": 155038,
+      "sha256_16": "17f6be3ac5a77968"
+    },
+    {
+      "url": "/assets/images/2021-02-14/rsx-front-anti-lift-heave.svg",
+      "file": "assets/images/2021-02-14/rsx-front-anti-lift-heave.svg",
+      "bytes": 50030,
+      "sha256_16": "0220af1c9a73a1a4"
+    },
+    {
+      "url": "/assets/images/2021-02-14/rsx-front-suspension.jpg",
+      "file": "assets/images/2021-02-14/rsx-front-suspension.jpg",
+      "bytes": 81794,
+      "sha256_16": "fa2b6ac5f76a4085"
+    },
+    {
+      "url": "/assets/images/2021-02-14/rsx-gp-cover.jpg",
+      "file": "assets/images/2021-02-14/rsx-gp-cover.jpg",
+      "bytes": 133581,
+      "sha256_16": "28226481391f9d39"
+    },
+    {
+      "url": "/assets/images/2021-02-14/rsx-pitch-centre-heave.mp4",
+      "file": "assets/images/2021-02-14/rsx-pitch-centre-heave.mp4",
+      "bytes": 164441,
+      "sha256_16": "4f5853494c8fa3f5"
+    },
+    {
+      "url": "/assets/images/2021-02-14/rsx-pitch-centre-heave.svg",
+      "file": "assets/images/2021-02-14/rsx-pitch-centre-heave.svg",
+      "bytes": 53821,
+      "sha256_16": "cf079592f38357c3"
+    },
+    {
+      "url": "/assets/images/2021-02-14/rsx-rear-anti-lift-heave.mp4",
+      "file": "assets/images/2021-02-14/rsx-rear-anti-lift-heave.mp4",
+      "bytes": 133174,
+      "sha256_16": "915a20cce6b1a910"
+    },
+    {
+      "url": "/assets/images/2021-02-14/rsx-rear-anti-lift-heave.svg",
+      "file": "assets/images/2021-02-14/rsx-rear-anti-lift-heave.svg",
+      "bytes": 50009,
+      "sha256_16": "2c71453eba8a3306"
+    },
+    {
+      "url": "/assets/images/2021-02-14/rsx-virtual-quarter.png",
+      "file": "assets/images/2021-02-14/rsx-virtual-quarter.png",
+      "bytes": 49969,
+      "sha256_16": "4bd75ac0e94380d5"
+    },
+    {
+      "url": "/assets/images/2021-03-21/civic-jy-tmp.jpg",
+      "file": "assets/images/2021-03-21/civic-jy-tmp.jpg",
+      "bytes": 96769,
+      "sha256_16": "ecc39ef8d0e81b64"
+    },
+    {
+      "url": "/assets/images/2021-03-21/ek-hatch-tmp.jpg",
+      "file": "assets/images/2021-03-21/ek-hatch-tmp.jpg",
+      "bytes": 125763,
+      "sha256_16": "74b97ef8fe25705c"
+    },
+    {
+      "url": "/assets/images/2021-03-21/load-transfer-link-loads.png",
+      "file": "assets/images/2021-03-21/load-transfer-link-loads.png",
+      "bytes": 50598,
+      "sha256_16": "e36d1351037199d0"
+    },
+    {
+      "url": "/assets/images/2021-03-21/load-transfer-rigid-body.png",
+      "file": "assets/images/2021-03-21/load-transfer-rigid-body.png",
+      "bytes": 52669,
+      "sha256_16": "eeb25bd8d9a2104c"
+    },
+    {
+      "url": "/assets/images/2021-03-21/load-transfer-roll-stiffness.png",
+      "file": "assets/images/2021-03-21/load-transfer-roll-stiffness.png",
+      "bytes": 53772,
+      "sha256_16": "8e801611b8630abe"
+    },
+    {
+      "url": "/assets/images/2021-03-21/load-transfer-summation.png",
+      "file": "assets/images/2021-03-21/load-transfer-summation.png",
+      "bytes": 55036,
+      "sha256_16": "fbeb1567e29b8865"
+    },
+    {
+      "url": "/assets/images/2021-03-21/rsx-tmp.jpg",
+      "file": "assets/images/2021-03-21/rsx-tmp.jpg",
+      "bytes": 102606,
+      "sha256_16": "ce5c40ef117763ca"
+    },
+    {
+      "url": "/assets/images/2021-07-12/bridgestone-re71r-cover-photo.jpg",
+      "file": "assets/images/2021-07-12/bridgestone-re71r-cover-photo.jpg",
+      "bytes": 81651,
+      "sha256_16": "f29f4dc3060c7ab2"
+    },
+    {
+      "url": "/assets/images/2021-07-12/bridgestone-re71r-squished-in-testing.jpg",
+      "file": "assets/images/2021-07-12/bridgestone-re71r-squished-in-testing.jpg",
+      "bytes": 64881,
+      "sha256_16": "b6e922539306eca4"
+    },
+    {
+      "url": "/assets/images/2021-09-25/bridgestone-potenza-re71r-rsx-cover.jpg",
+      "file": "assets/images/2021-09-25/bridgestone-potenza-re71r-rsx-cover.jpg",
+      "bytes": 172135,
+      "sha256_16": "6af1450306e0e034"
+    },
+    {
+      "url": "/assets/images/2021-09-25/bridgstone-re71r-255-40-R17-aspect-ratio-analysis.png",
+      "file": "assets/images/2021-09-25/bridgstone-re71r-255-40-R17-aspect-ratio-analysis.png",
+      "bytes": 77253,
+      "sha256_16": "04539a41d47f2895"
+    },
+    {
+      "url": "/assets/images/2021-09-25/bridgstone-re71r-255-40-R17-geometry-analysis.png",
+      "file": "assets/images/2021-09-25/bridgstone-re71r-255-40-R17-geometry-analysis.png",
+      "bytes": 112215,
+      "sha256_16": "8c2149b29070450b"
+    },
+    {
+      "url": "/assets/images/2021-09-25/bridgstone-re71r-255-40-R17-gross-area-analysis.png",
+      "file": "assets/images/2021-09-25/bridgstone-re71r-255-40-R17-gross-area-analysis.png",
+      "bytes": 129034,
+      "sha256_16": "79e5ca3d88071bbb"
+    },
+    {
+      "url": "/assets/images/2021-09-25/bridgstone-re71r-255-40-R17-inclination-angle-sweep.png",
+      "file": "assets/images/2021-09-25/bridgstone-re71r-255-40-R17-inclination-angle-sweep.png",
+      "bytes": 40690,
+      "sha256_16": "b845fed17521757e"
+    },
+    {
+      "url": "/assets/images/2021-09-25/bridgstone-re71r-255-40-R17-ink-block-print.png",
+      "file": "assets/images/2021-09-25/bridgstone-re71r-255-40-R17-ink-block-print.png",
+      "bytes": 134849,
+      "sha256_16": "e187a2487986d05b"
+    },
+    {
+      "url": "/assets/images/2021-09-25/bridgstone-re71r-255-40-R17-load-sensitivity-analysis.png",
+      "file": "assets/images/2021-09-25/bridgstone-re71r-255-40-R17-load-sensitivity-analysis.png",
+      "bytes": 64401,
+      "sha256_16": "968b8d3ecd74d83d"
+    },
+    {
+      "url": "/assets/images/2021-09-25/bridgstone-re71r-255-40-R17-pressure-sweep.png",
+      "file": "assets/images/2021-09-25/bridgstone-re71r-255-40-R17-pressure-sweep.png",
+      "bytes": 56397,
+      "sha256_16": "ff65cbd5ac413b72"
+    },
+    {
+      "url": "/assets/images/2021-09-25/bridgstone-re71r-255-40-R17-vertical-load-sweep.png",
+      "file": "assets/images/2021-09-25/bridgstone-re71r-255-40-R17-vertical-load-sweep.png",
+      "bytes": 58905,
+      "sha256_16": "339d11645f8dd3c1"
+    },
+    {
+      "url": "/assets/images/2022-09-21/sa-tmp-ek20r-rear-annotated-no-dim.webp",
+      "file": "assets/images/2022-09-21/sa-tmp-ek20r-rear-annotated-no-dim.webp",
+      "bytes": 214900,
+      "sha256_16": "6368eff254783396"
+    },
+    {
+      "url": "/assets/images/2022-09-21/sa-tmp-ek20r-rear-annotated.webp",
+      "file": "assets/images/2022-09-21/sa-tmp-ek20r-rear-annotated.webp",
+      "bytes": 114530,
+      "sha256_16": "9eaffab4f8934527"
+    },
+    {
+      "url": "/assets/images/2022-09-21/sa-tmp-ek20r-rear-left-annotated.webp",
+      "file": "assets/images/2022-09-21/sa-tmp-ek20r-rear-left-annotated.webp",
+      "bytes": 74222,
+      "sha256_16": "e8e8408e2a0c53b9"
+    },
+    {
+      "url": "/assets/images/2022-09-21/sa-tmp-ek20r-rear-orig-vs-proc.webp",
+      "file": "assets/images/2022-09-21/sa-tmp-ek20r-rear-orig-vs-proc.webp",
+      "bytes": 133438,
+      "sha256_16": "6a28bb69dcab4bcc"
+    },
+    {
+      "url": "/assets/images/2022-09-21/sa-tmp-ek20r-rear-orig.webp",
+      "file": "assets/images/2022-09-21/sa-tmp-ek20r-rear-orig.webp",
+      "bytes": 165296,
+      "sha256_16": "df3aba857ff29fa5"
+    },
+    {
+      "url": "/assets/images/2022-09-21/sa-tmp-ek20r-rear-right-annotated.webp",
+      "file": "assets/images/2022-09-21/sa-tmp-ek20r-rear-right-annotated.webp",
+      "bytes": 85218,
+      "sha256_16": "d7fabe01cff23879"
+    },
+    {
+      "url": "/assets/images/2023-02-05/analysis-workflow.png",
+      "file": "assets/images/2023-02-05/analysis-workflow.png",
+      "bytes": 208924,
+      "sha256_16": "5a8eb71458329296"
+    },
+    {
+      "url": "/assets/images/2023-02-05/ek-ctmp-2021.webp",
+      "file": "assets/images/2023-02-05/ek-ctmp-2021.webp",
+      "bytes": 48106,
+      "sha256_16": "0a4351f94af6fb13"
+    },
+    {
+      "url": "/assets/images/2023-02-05/ek-heave-animation.jpg",
+      "file": "assets/images/2023-02-05/ek-heave-animation.jpg",
+      "bytes": 25824,
+      "sha256_16": "08e0b73b16c5791f"
+    },
+    {
+      "url": "/assets/images/2023-02-05/ek-heave-animation.mp4",
+      "file": "assets/images/2023-02-05/ek-heave-animation.mp4",
+      "bytes": 285735,
+      "sha256_16": "16dfd17a5dab5fa2"
+    },
+    {
+      "url": "/assets/images/2023-02-05/ek-heave-animation.webm",
+      "file": "assets/images/2023-02-05/ek-heave-animation.webm",
+      "bytes": 188764,
+      "sha256_16": "1e4b1fbb3f0bee44"
+    },
+    {
+      "url": "/assets/images/2023-02-05/ek-pitl-2019.webp",
+      "file": "assets/images/2023-02-05/ek-pitl-2019.webp",
+      "bytes": 70612,
+      "sha256_16": "0125dd4c97f7b0c2"
+    },
+    {
+      "url": "/assets/images/2023-02-05/ekfront-assembly.webp",
+      "file": "assets/images/2023-02-05/ekfront-assembly.webp",
+      "bytes": 32262,
+      "sha256_16": "e37cfa61ba83dd18"
+    },
+    {
+      "url": "/assets/images/2023-02-05/ekfront-real.webp",
+      "file": "assets/images/2023-02-05/ekfront-real.webp",
+      "bytes": 184276,
+      "sha256_16": "281a54a6b155d61d"
+    },
+    {
+      "url": "/assets/images/2023-02-09/ek-formuladelta-tmp-2022.jpg",
+      "file": "assets/images/2023-02-09/ek-formuladelta-tmp-2022.jpg",
+      "bytes": 222089,
+      "sha256_16": "73140810607e6fef"
+    },
+    {
+      "url": "/assets/images/2023-02-09/ek-front-heave-camber.png",
+      "file": "assets/images/2023-02-09/ek-front-heave-camber.png",
+      "bytes": 211802,
+      "sha256_16": "884e49164912627d"
+    },
+    {
+      "url": "/assets/images/2023-02-09/ek-front-heave-halftrack.png",
+      "file": "assets/images/2023-02-09/ek-front-heave-halftrack.png",
+      "bytes": 198252,
+      "sha256_16": "6075dc4d19649023"
+    },
+    {
+      "url": "/assets/images/2023-02-09/ek-front-heave-toe-gradient.png",
+      "file": "assets/images/2023-02-09/ek-front-heave-toe-gradient.png",
+      "bytes": 177278,
+      "sha256_16": "0666f588b9f5a4ee"
+    },
+    {
+      "url": "/assets/images/2023-02-09/ek-front-heave-toe.png",
+      "file": "assets/images/2023-02-09/ek-front-heave-toe.png",
+      "bytes": 122980,
+      "sha256_16": "a2ff29c1304171a7"
+    },
+    {
+      "url": "/assets/images/2023-02-09/ek-front-heave-wheelrecession.png",
+      "file": "assets/images/2023-02-09/ek-front-heave-wheelrecession.png",
+      "bytes": 128299,
+      "sha256_16": "2d690512eeb3c075"
+    },
+    {
+      "url": "/assets/images/2023-02-09/ek-front-quarter-car-animation.mp4",
+      "file": "assets/images/2023-02-09/ek-front-quarter-car-animation.mp4",
+      "bytes": 171006,
+      "sha256_16": "e278c5efe40bbef3"
+    },
+    {
+      "url": "/assets/images/2023-02-09/ek-front-quarter-car-animation.png",
+      "file": "assets/images/2023-02-09/ek-front-quarter-car-animation.png",
+      "bytes": 34970,
+      "sha256_16": "07235ab3bc4da51a"
+    },
+    {
+      "url": "/assets/images/2023-02-09/ek-front-quarter-car-animation.webm",
+      "file": "assets/images/2023-02-09/ek-front-quarter-car-animation.webm",
+      "bytes": 112666,
+      "sha256_16": "7a991e477303c2f8"
+    },
+    {
+      "url": "/assets/images/2023-02-09/ek-ota-ctmp-2021.jpg",
+      "file": "assets/images/2023-02-09/ek-ota-ctmp-2021.jpg",
+      "bytes": 138350,
+      "sha256_16": "d0a5ff89c2986caf"
+    },
+    {
+      "url": "/assets/images/2023-05-14/ek-front-quarter-car-steer-animation.mp4",
+      "file": "assets/images/2023-05-14/ek-front-quarter-car-steer-animation.mp4",
+      "bytes": 158612,
+      "sha256_16": "61ff941cbc486531"
+    },
+    {
+      "url": "/assets/images/2023-05-14/ek-front-quarter-car-steer-animation.png",
+      "file": "assets/images/2023-05-14/ek-front-quarter-car-steer-animation.png",
+      "bytes": 44584,
+      "sha256_16": "92b796b689e70951"
+    },
+    {
+      "url": "/assets/images/2023-05-14/ek-front-quarter-car-steer-animation.webm",
+      "file": "assets/images/2023-05-14/ek-front-quarter-car-steer-animation.webm",
+      "bytes": 139260,
+      "sha256_16": "9b25d1d60c046d1f"
+    },
+    {
+      "url": "/assets/images/2023-05-14/ek-front-steer-average-toe-diff.png",
+      "file": "assets/images/2023-05-14/ek-front-steer-average-toe-diff.png",
+      "bytes": 162510,
+      "sha256_16": "dd424c0c1b09b9d8"
+    },
+    {
+      "url": "/assets/images/2023-05-14/ek-front-steer-camber.png",
+      "file": "assets/images/2023-05-14/ek-front-steer-camber.png",
+      "bytes": 107635,
+      "sha256_16": "339e0c364429ff20"
+    },
+    {
+      "url": "/assets/images/2023-05-14/ek-front-steer-caster.png",
+      "file": "assets/images/2023-05-14/ek-front-steer-caster.png",
+      "bytes": 77650,
+      "sha256_16": "9b22eb121710e18c"
+    },
+    {
+      "url": "/assets/images/2023-05-14/ek-front-steer-kpi.png",
+      "file": "assets/images/2023-05-14/ek-front-steer-kpi.png",
+      "bytes": 79963,
+      "sha256_16": "a226b64ddad20d1a"
+    },
+    {
+      "url": "/assets/images/2023-05-14/ek-front-steer-mech-trail.png",
+      "file": "assets/images/2023-05-14/ek-front-steer-mech-trail.png",
+      "bytes": 91875,
+      "sha256_16": "ee827f877d34fbba"
+    },
+    {
+      "url": "/assets/images/2023-05-14/ek-front-steer-scrub-radius.png",
+      "file": "assets/images/2023-05-14/ek-front-steer-scrub-radius.png",
+      "bytes": 135903,
+      "sha256_16": "deefb1540071b55f"
+    },
+    {
+      "url": "/assets/images/2023-05-14/ek-front-steer-steering-ratio.png",
+      "file": "assets/images/2023-05-14/ek-front-steer-steering-ratio.png",
+      "bytes": 130639,
+      "sha256_16": "3c02ea5358e39994"
+    },
+    {
+      "url": "/assets/images/2023-05-14/ek-tmp-jul2021.jpg",
+      "file": "assets/images/2023-05-14/ek-tmp-jul2021.jpg",
+      "bytes": 155858,
+      "sha256_16": "9c3ae4f2182c972b"
+    },
+    {
+      "url": "/assets/images/2024-08-19/FDPS - Continental ExtremeContact Force 255-40ZR17 98W XL 9 rim - aspect.png",
+      "file": "assets/images/2024-08-19/FDPS - Continental ExtremeContact Force 255-40ZR17 98W XL 9 rim - aspect.png",
+      "bytes": 107974,
+      "sha256_16": "dd073394d6350c15"
+    },
+    {
+      "url": "/assets/images/2024-08-19/FDPS - Continental ExtremeContact Force 255-40ZR17 98W XL 9 rim - gross area.png",
+      "file": "assets/images/2024-08-19/FDPS - Continental ExtremeContact Force 255-40ZR17 98W XL 9 rim - gross area.png",
+      "bytes": 106932,
+      "sha256_16": "938099ee6bb68c94"
+    },
+    {
+      "url": "/assets/images/2024-08-19/FDPS - Continental ExtremeContact Force 255-40ZR17 98W XL 9 rim - length.png",
+      "file": "assets/images/2024-08-19/FDPS - Continental ExtremeContact Force 255-40ZR17 98W XL 9 rim - length.png",
+      "bytes": 106193,
+      "sha256_16": "5a632313cce043cf"
+    },
+    {
+      "url": "/assets/images/2024-08-19/FDPS - Continental ExtremeContact Force 255-40ZR17 98W XL 9 rim - load sensitivity.png",
+      "file": "assets/images/2024-08-19/FDPS - Continental ExtremeContact Force 255-40ZR17 98W XL 9 rim - load sensitivity.png",
+      "bytes": 67111,
+      "sha256_16": "a722110cc0f62898"
+    },
+    {
+      "url": "/assets/images/2024-08-19/FDPS - Continental ExtremeContact Force 255-40ZR17 98W XL 9 rim - net area.png",
+      "file": "assets/images/2024-08-19/FDPS - Continental ExtremeContact Force 255-40ZR17 98W XL 9 rim - net area.png",
+      "bytes": 102474,
+      "sha256_16": "ba8bd0cc7fc82610"
+    },
+    {
+      "url": "/assets/images/2024-08-19/FDPS - Continental ExtremeContact Force 255-40ZR17 98W XL 9 rim - void ratio.png",
+      "file": "assets/images/2024-08-19/FDPS - Continental ExtremeContact Force 255-40ZR17 98W XL 9 rim - void ratio.png",
+      "bytes": 118296,
+      "sha256_16": "193da31e98ca5e76"
+    },
+    {
+      "url": "/assets/images/2024-08-19/FDPS - Continental ExtremeContact Force 255-40ZR17 98W XL 9 rim - width.png",
+      "file": "assets/images/2024-08-19/FDPS - Continental ExtremeContact Force 255-40ZR17 98W XL 9 rim - width.png",
+      "bytes": 95163,
+      "sha256_16": "00f1b3bd15782fb1"
+    },
+    {
+      "url": "/assets/images/2024-08-19/fdps-continental-ecf-sidewall-hero.jpg",
+      "file": "assets/images/2024-08-19/fdps-continental-ecf-sidewall-hero.jpg",
+      "bytes": 150624,
+      "sha256_16": "c7d007a2fe74cd55"
+    },
+    {
+      "url": "/assets/images/2024-08-19/fdps-continental-ecf-testjig.jpg",
+      "file": "assets/images/2024-08-19/fdps-continental-ecf-testjig.jpg",
+      "bytes": 72419,
+      "sha256_16": "eb5cdaaa3bc7d44f"
+    },
+    {
+      "url": "/assets/images/2024-08-19/fdps-continental-extremecontact-force-tire-255-40r17-all-samples.png",
+      "file": "assets/images/2024-08-19/fdps-continental-extremecontact-force-tire-255-40r17-all-samples.png",
+      "bytes": 87820,
+      "sha256_16": "50dd4fb5e944c38f"
+    },
+    {
+      "url": "/assets/images/2026-01-18/ek20r-ctmp-cover.jpg",
+      "file": "assets/images/2026-01-18/ek20r-ctmp-cover.jpg",
+      "bytes": 393329,
+      "sha256_16": "63ef4ff20ab2adcb"
+    },
+    {
+      "url": "/assets/minima-social-icons.svg",
+      "file": "assets/minima-social-icons.svg",
+      "bytes": 1950,
+      "sha256_16": "946f5ea932693261"
+    }
+  ],
+  "excludedAssets": [
+    {
+      "url": "/assets/css/style.css",
+      "reason": "Jekyll theme stylesheet; Astro owns its own CSS"
+    },
+    {
+      "url": "/assets/css/style.css.map",
+      "reason": "source map for the excluded Jekyll stylesheet"
+    }
+  ],
+  "redirects": [
+    {
+      "from": "/home.html",
+      "to": "https://kktse.github.io/"
+    }
+  ],
+  "siteRedirects": [
+    {
+      "from": "/home.html",
+      "to": "/"
+    }
+  ],
+  "feed": {
+    "url": "/feed.xml",
+    "bytes": 883340,
+    "sha256_16": "88057a29ffc5c4d1",
+    "entries": [
+      {
+        "title": "Driver development - a discussion on contemporary theories of motor learning and its application in motorsport",
+        "link": "https://kktse.github.io/jekyll/update/2026/04/20/driver-development-as-skill-acquisition.html"
+      },
+      {
+        "title": "Static contact patch shape evolution of a 255/40R17 ultra-high performance 200TW tire - Continental ExtremeContact Force",
+        "link": "https://kktse.github.io/jekyll/update/2024/09/22/continental-ecf-255-40-r17-contact-patch-sensitivity.html"
+      },
+      {
+        "title": "Steering kinematics of a Honda Civic EK Hatchback front suspension",
+        "link": "https://kktse.github.io/jekyll/update/2024/01/05/front-steering-analysis-ek20r.html"
+      },
+      {
+        "title": "Kinematic wheel plane control of a Honda Civic EK Hatchback front suspension",
+        "link": "https://kktse.github.io/jekyll/update/2023/03/08/front-kinematic-wheel-plane-control-ek20r.html"
+      },
+      {
+        "title": "Introduction to front suspension kinematics of a Honda Civic EK Hatchback",
+        "link": "https://kktse.github.io/jekyll/update/2023/02/07/intro-to-front-kinematics-ek20r.html"
+      },
+      {
+        "title": "Photography as data acquisition - measuring instantaneous chassis roll and tire inclination angles from a photo showing the rear profile of the EK20R",
+        "link": "https://kktse.github.io/jekyll/update/2022/09/24/photography-measuring-roll-camber-inclination-angle-ek20r.html"
+      },
+      {
+        "title": "Trends in vehicle centre of gravity height and static stability factor from 1971 to 2020 using the NHTSA LVIPD and NCAP rollover stability measurements",
+        "link": "https://kktse.github.io/jekyll/update/2022/07/28/trends-in-vehicle-cg-height-and-ssf.html"
+      },
+      {
+        "title": "Measuring the effect of inflation pressure, inclination angle and vertical load on static contact patch shape of a 255/40R17 ultra-high performance 200TW tire - Bridgestone Potenza RE-71R",
+        "link": "https://kktse.github.io/jekyll/update/2021/10/06/re71r-255-40-r17-tire-static-footprints.html"
+      },
+      {
+        "title": "Measuring the tire vertical stiffness of a 255/40R17 ultra-high performance 200TW tire - Bridgestone Potenza RE-71R",
+        "link": "https://kktse.github.io/jekyll/update/2021/07/18/re71r-255-40-r17-tire-vertical-stiffness.html"
+      },
+      {
+        "title": "Simplified steady-state lateral load transfer analysis for spring rate and anti-roll bar selection",
+        "link": "https://kktse.github.io/jekyll/update/2021/05/12/simplied-lateral-load-transfer-analysis.html"
+      }
+    ]
+  },
+  "sitemap": {
+    "url": "/sitemap.xml",
+    "bytes": 5793,
+    "urls": [
+      "https://kktse.github.io/jekyll/update/2017/07/25/open-lapping-smartphone-cayuga.html",
+      "https://kktse.github.io/jekyll/update/2018/02/08/champcar-2018-road-atlanta.html",
+      "https://kktse.github.io/jekyll/update/2018/09/18/single-track-bicycle.html",
+      "https://kktse.github.io/jekyll/update/2018/10/26/driver-heart-rate-karting.html",
+      "https://kktse.github.io/jekyll/update/2018/12/01/understeer-gradient-identification.html",
+      "https://kktse.github.io/jekyll/update/2019/01/06/cornering-compliance-identification.html",
+      "https://kktse.github.io/jekyll/update/2019/02/13/on-centre-handling-metrics.html",
+      "https://kktse.github.io/jekyll/update/2019/02/16/super-lap-battle.html",
+      "https://kktse.github.io/jekyll/update/2019/03/17/parameter-sensitivity-analysis.html",
+      "https://kktse.github.io/jekyll/update/2019/06/01/typical-cornering-compliances.html",
+      "https://kktse.github.io/jekyll/update/2019/07/15/driver-science-in-amateur-motorsports.html",
+      "https://kktse.github.io/jekyll/update/2019/08/01/re71r-influence-of-pressure-on-tire-footprint.html",
+      "https://kktse.github.io/jekyll/update/2019/09/14/driver-workload-nasa-tlx-ota-smp.html",
+      "https://kktse.github.io/jekyll/update/2019/11/27/science-of-motorsport-review.html",
+      "https://kktse.github.io/jekyll/update/2020/01/30/static-suspension-geometry-analysis-acura-rsx.html",
+      "https://kktse.github.io/jekyll/update/2020/05/20/slvstopy-python-library.html",
+      "https://kktse.github.io/jekyll/update/2020/06/21/rsx-kinematic-curves.html",
+      "https://kktse.github.io/jekyll/update/2020/07/25/rsx-front-motion-ratios.html",
+      "https://kktse.github.io/jekyll/update/2020/09/07/rsx-front-kinematic-roll-centre.html",
+      "https://kktse.github.io/jekyll/update/2020/10/25/estimating-vehicle-inertia-properties-with-nhtsa-database.html",
+      "https://kktse.github.io/jekyll/update/2020/12/10/rsx-rear-kinematic-curves.html",
+      "https://kktse.github.io/jekyll/update/2020/12/10/rsx-rear-motion-ratios.html",
+      "https://kktse.github.io/jekyll/update/2020/12/10/rsx-rsx-rear-kinematic-roll-centre.html",
+      "https://kktse.github.io/jekyll/update/2021/02/19/rsx-suspension-longitudinal-antis.html",
+      "https://kktse.github.io/jekyll/update/2021/05/12/simplied-lateral-load-transfer-analysis.html",
+      "https://kktse.github.io/jekyll/update/2021/07/18/re71r-255-40-r17-tire-vertical-stiffness.html",
+      "https://kktse.github.io/jekyll/update/2021/10/06/re71r-255-40-r17-tire-static-footprints.html",
+      "https://kktse.github.io/jekyll/update/2022/07/28/trends-in-vehicle-cg-height-and-ssf.html",
+      "https://kktse.github.io/jekyll/update/2022/09/24/photography-measuring-roll-camber-inclination-angle-ek20r.html",
+      "https://kktse.github.io/jekyll/update/2023/02/07/intro-to-front-kinematics-ek20r.html",
+      "https://kktse.github.io/jekyll/update/2023/03/08/front-kinematic-wheel-plane-control-ek20r.html",
+      "https://kktse.github.io/jekyll/update/2024/01/05/front-steering-analysis-ek20r.html",
+      "https://kktse.github.io/jekyll/update/2024/09/22/continental-ecf-255-40-r17-contact-patch-sensitivity.html",
+      "https://kktse.github.io/jekyll/update/2026/04/20/driver-development-as-skill-acquisition.html",
+      "https://kktse.github.io/about/",
+      "https://kktse.github.io/categories/",
+      "https://kktse.github.io/"
+    ]
+  },
+  "categoryAnchors": [
+    "acura-rsx",
+    "books",
+    "champcar",
+    "data-visualization",
+    "driver-development",
+    "driver-science",
+    "ek20r",
+    "heart-rate",
+    "interactive",
+    "kinematics",
+    "lapping",
+    "ontario-time-attack",
+    "python",
+    "simulation",
+    "solvespace",
+    "super-lap-battle",
+    "suspension",
+    "tires",
+    "vehicle-dynamics",
+    "wearables"
+  ],
+  "sitePages": [
+    {
+      "url": "/",
+      "file": "index.html",
+      "bytes": 29551,
+      "sha256_16": "a44cb14d2f81b7d1"
+    },
+    {
+      "url": "/about/",
+      "file": "about/index.html",
+      "bytes": 5938,
+      "sha256_16": "a66ed1304be8958d"
+    },
+    {
+      "url": "/categories/",
+      "file": "categories/index.html",
+      "bytes": 27266,
+      "sha256_16": "0d047fad88faa1b1"
+    },
+    {
+      "url": "/home.html",
+      "file": "home.html",
+      "bytes": 441,
+      "sha256_16": "6d4c5403d2e74bcc"
+    },
+    {
+      "url": "/404.html",
+      "file": "404.html",
+      "bytes": 4769,
+      "sha256_16": "e05ea455e53f75ca"
+    },
+    {
+      "url": "/feed.xml",
+      "file": "feed.xml",
+      "bytes": 883340,
+      "sha256_16": "88057a29ffc5c4d1"
+    },
+    {
+      "url": "/sitemap.xml",
+      "file": "sitemap.xml",
+      "bytes": 5793,
+      "sha256_16": "57e37cd6f2a1f558"
+    },
+    {
+      "url": "/robots.txt",
+      "file": "robots.txt",
+      "bytes": 1051,
+      "sha256_16": "9426713f601c361d"
+    },
+    {
+      "url": "/favicon.ico",
+      "file": "favicon.ico",
+      "bytes": 15406,
+      "sha256_16": "12d7cc0e269bf681"
+    }
+  ],
+  "routeMapping": [
+    {
+      "legacyUrl": "/jekyll/update/2017/07/25/open-lapping-smartphone-cayuga.html",
+      "canonicalUrl": "/posts/open-lapping-smartphone-cayuga/",
+      "slug": "open-lapping-smartphone-cayuga"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2018/02/08/champcar-2018-road-atlanta.html",
+      "canonicalUrl": "/posts/champcar-2018-road-atlanta/",
+      "slug": "champcar-2018-road-atlanta"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2018/09/18/single-track-bicycle.html",
+      "canonicalUrl": "/posts/single-track-bicycle/",
+      "slug": "single-track-bicycle"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2018/10/26/driver-heart-rate-karting.html",
+      "canonicalUrl": "/posts/driver-heart-rate-karting/",
+      "slug": "driver-heart-rate-karting"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2018/12/01/understeer-gradient-identification.html",
+      "canonicalUrl": "/posts/understeer-gradient-identification/",
+      "slug": "understeer-gradient-identification"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2019/01/06/cornering-compliance-identification.html",
+      "canonicalUrl": "/posts/cornering-compliance-identification/",
+      "slug": "cornering-compliance-identification"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2019/02/13/on-centre-handling-metrics.html",
+      "canonicalUrl": "/posts/on-centre-handling-metrics/",
+      "slug": "on-centre-handling-metrics"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2019/02/16/super-lap-battle.html",
+      "canonicalUrl": "/posts/super-lap-battle/",
+      "slug": "super-lap-battle"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2019/03/17/parameter-sensitivity-analysis.html",
+      "canonicalUrl": "/posts/parameter-sensitivity-analysis/",
+      "slug": "parameter-sensitivity-analysis"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2019/06/01/typical-cornering-compliances.html",
+      "canonicalUrl": "/posts/typical-cornering-compliances/",
+      "slug": "typical-cornering-compliances"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2019/07/15/driver-science-in-amateur-motorsports.html",
+      "canonicalUrl": "/posts/driver-science-in-amateur-motorsports/",
+      "slug": "driver-science-in-amateur-motorsports"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2019/08/01/re71r-influence-of-pressure-on-tire-footprint.html",
+      "canonicalUrl": "/posts/re71r-influence-of-pressure-on-tire-footprint/",
+      "slug": "re71r-influence-of-pressure-on-tire-footprint"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2019/09/14/driver-workload-nasa-tlx-ota-smp.html",
+      "canonicalUrl": "/posts/driver-workload-nasa-tlx-ota-smp/",
+      "slug": "driver-workload-nasa-tlx-ota-smp"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2019/11/27/science-of-motorsport-review.html",
+      "canonicalUrl": "/posts/science-of-motorsport-review/",
+      "slug": "science-of-motorsport-review"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2020/01/30/static-suspension-geometry-analysis-acura-rsx.html",
+      "canonicalUrl": "/posts/static-suspension-geometry-analysis-acura-rsx/",
+      "slug": "static-suspension-geometry-analysis-acura-rsx"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2020/05/20/slvstopy-python-library.html",
+      "canonicalUrl": "/posts/slvstopy-python-library/",
+      "slug": "slvstopy-python-library"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2020/06/21/rsx-kinematic-curves.html",
+      "canonicalUrl": "/posts/rsx-kinematic-curves/",
+      "slug": "rsx-kinematic-curves"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2020/07/25/rsx-front-motion-ratios.html",
+      "canonicalUrl": "/posts/rsx-front-motion-ratios/",
+      "slug": "rsx-front-motion-ratios"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2020/09/07/rsx-front-kinematic-roll-centre.html",
+      "canonicalUrl": "/posts/rsx-front-kinematic-roll-centre/",
+      "slug": "rsx-front-kinematic-roll-centre"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2020/10/25/estimating-vehicle-inertia-properties-with-nhtsa-database.html",
+      "canonicalUrl": "/posts/estimating-vehicle-inertia-properties-with-nhtsa-database/",
+      "slug": "estimating-vehicle-inertia-properties-with-nhtsa-database"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2020/12/10/rsx-rear-kinematic-curves.html",
+      "canonicalUrl": "/posts/rsx-rear-kinematic-curves/",
+      "slug": "rsx-rear-kinematic-curves"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2020/12/10/rsx-rear-motion-ratios.html",
+      "canonicalUrl": "/posts/rsx-rear-motion-ratios/",
+      "slug": "rsx-rear-motion-ratios"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2020/12/10/rsx-rsx-rear-kinematic-roll-centre.html",
+      "canonicalUrl": "/posts/rsx-rsx-rear-kinematic-roll-centre/",
+      "slug": "rsx-rsx-rear-kinematic-roll-centre"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2021/02/19/rsx-suspension-longitudinal-antis.html",
+      "canonicalUrl": "/posts/rsx-suspension-longitudinal-antis/",
+      "slug": "rsx-suspension-longitudinal-antis"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2021/05/12/simplied-lateral-load-transfer-analysis.html",
+      "canonicalUrl": "/posts/simplied-lateral-load-transfer-analysis/",
+      "slug": "simplied-lateral-load-transfer-analysis"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2021/07/18/re71r-255-40-r17-tire-vertical-stiffness.html",
+      "canonicalUrl": "/posts/re71r-255-40-r17-tire-vertical-stiffness/",
+      "slug": "re71r-255-40-r17-tire-vertical-stiffness"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2021/10/06/re71r-255-40-r17-tire-static-footprints.html",
+      "canonicalUrl": "/posts/re71r-255-40-r17-tire-static-footprints/",
+      "slug": "re71r-255-40-r17-tire-static-footprints"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2022/07/28/trends-in-vehicle-cg-height-and-ssf.html",
+      "canonicalUrl": "/posts/trends-in-vehicle-cg-height-and-ssf/",
+      "slug": "trends-in-vehicle-cg-height-and-ssf"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2022/09/24/photography-measuring-roll-camber-inclination-angle-ek20r.html",
+      "canonicalUrl": "/posts/photography-measuring-roll-camber-inclination-angle-ek20r/",
+      "slug": "photography-measuring-roll-camber-inclination-angle-ek20r"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2023/02/07/intro-to-front-kinematics-ek20r.html",
+      "canonicalUrl": "/posts/intro-to-front-kinematics-ek20r/",
+      "slug": "intro-to-front-kinematics-ek20r"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2023/03/08/front-kinematic-wheel-plane-control-ek20r.html",
+      "canonicalUrl": "/posts/front-kinematic-wheel-plane-control-ek20r/",
+      "slug": "front-kinematic-wheel-plane-control-ek20r"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2024/01/05/front-steering-analysis-ek20r.html",
+      "canonicalUrl": "/posts/front-steering-analysis-ek20r/",
+      "slug": "front-steering-analysis-ek20r"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2024/09/22/continental-ecf-255-40-r17-contact-patch-sensitivity.html",
+      "canonicalUrl": "/posts/continental-ecf-255-40-r17-contact-patch-sensitivity/",
+      "slug": "continental-ecf-255-40-r17-contact-patch-sensitivity"
+    },
+    {
+      "legacyUrl": "/jekyll/update/2026/04/20/driver-development-as-skill-acquisition.html",
+      "canonicalUrl": "/posts/driver-development-as-skill-acquisition/",
+      "slug": "driver-development-as-skill-acquisition"
+    }
+  ],
+  "newCanonicalRoutes": [
+    "/posts/open-lapping-smartphone-cayuga/",
+    "/posts/champcar-2018-road-atlanta/",
+    "/posts/single-track-bicycle/",
+    "/posts/driver-heart-rate-karting/",
+    "/posts/understeer-gradient-identification/",
+    "/posts/cornering-compliance-identification/",
+    "/posts/on-centre-handling-metrics/",
+    "/posts/super-lap-battle/",
+    "/posts/parameter-sensitivity-analysis/",
+    "/posts/typical-cornering-compliances/",
+    "/posts/driver-science-in-amateur-motorsports/",
+    "/posts/re71r-influence-of-pressure-on-tire-footprint/",
+    "/posts/driver-workload-nasa-tlx-ota-smp/",
+    "/posts/science-of-motorsport-review/",
+    "/posts/static-suspension-geometry-analysis-acura-rsx/",
+    "/posts/slvstopy-python-library/",
+    "/posts/rsx-kinematic-curves/",
+    "/posts/rsx-front-motion-ratios/",
+    "/posts/rsx-front-kinematic-roll-centre/",
+    "/posts/estimating-vehicle-inertia-properties-with-nhtsa-database/",
+    "/posts/rsx-rear-kinematic-curves/",
+    "/posts/rsx-rear-motion-ratios/",
+    "/posts/rsx-rsx-rear-kinematic-roll-centre/",
+    "/posts/rsx-suspension-longitudinal-antis/",
+    "/posts/simplied-lateral-load-transfer-analysis/",
+    "/posts/re71r-255-40-r17-tire-vertical-stiffness/",
+    "/posts/re71r-255-40-r17-tire-static-footprints/",
+    "/posts/trends-in-vehicle-cg-height-and-ssf/",
+    "/posts/photography-measuring-roll-camber-inclination-angle-ek20r/",
+    "/posts/intro-to-front-kinematics-ek20r/",
+    "/posts/front-kinematic-wheel-plane-control-ek20r/",
+    "/posts/front-steering-analysis-ek20r/",
+    "/posts/continental-ecf-255-40-r17-contact-patch-sensitivity/",
+    "/posts/driver-development-as-skill-acquisition/"
+  ],
+  "aliases": [
+    {
+      "from": "/home.html",
+      "to": "/",
+      "kind": "html-meta-refresh"
+    },
+    {
+      "from": "/feed.xml",
+      "to": "/rss.xml",
+      "kind": "rss-alias"
+    }
+  ]
+}
