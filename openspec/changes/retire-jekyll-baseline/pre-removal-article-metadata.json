@@ -1,0 +1,140 @@
+{
+  "articles": [
+    {
+      "file": "src/content/posts/2017-07-24-open-lapping-smartphone-cayuga.md",
+      "frontmatter": "title: \"Open Lapping with a Smartphone at Cayuga\"\ndate: 2017-07-25T03:15:00+00:00\ncategories: [\"lapping\", \"data visualization\"]\nslug: open-lapping-smartphone-cayuga"
+    },
+    {
+      "file": "src/content/posts/2018-02-08-champcar-2018-road-atlanta.md",
+      "frontmatter": "title: \"Analyzing the Live Timing - ChampCar Road Atlanta Edition\"\ndate: 2018-02-08T19:15:00+00:00\ncategories: [\"champcar\", \"data visualization\"]\nslug: champcar-2018-road-atlanta"
+    },
+    {
+      "file": "src/content/posts/2018-09-18-single-track-bicycle.md",
+      "frontmatter": "title: \"Lateral Dynamics of a Linear Single-Track Vehicle\"\ndate: 2018-09-18T23:15:00+00:00\nmodifiedDate: 2020-10-15T00:00:00+00:00\ncategories: [\"vehicle dynamics\", \"simulation\"]\nslug: single-track-bicycle"
+    },
+    {
+      "file": "src/content/posts/2018-10-22-driver-heart-rate-karting.md",
+      "frontmatter": "title: \"Driver Heart Rate Monitoring with a Smartwatch\"\ndate: 2018-10-26T02:00:00+00:00\ncategories: [\"driver science\", \"heart rate\", \"wearables\"]\nslug: driver-heart-rate-karting"
+    },
+    {
+      "file": "src/content/posts/2018-11-26-understeer-gradient-identification.md",
+      "frontmatter": "title: \"OTA 2018 Debrief: Understeer Gradient Test\"\ndate: 2018-12-01T21:05:00+00:00\ncategories: [\"vehicle dynamics\", \"simulation\", \"ontario time attack\"]\nslug: understeer-gradient-identification"
+    },
+    {
+      "file": "src/content/posts/2019-01-06-cornering-compliance-identification.md",
+      "frontmatter": "title: \"OTA 2018 Debrief: Cornering Compliances and Transients\"\ndate: 2019-01-06T22:45:00+00:00\nmodifiedDate: 2021-04-28T00:00:00+00:00\ncategories: [\"vehicle dynamics\", \"simulation\", \"ontario time attack\"]\nslug: cornering-compliance-identification"
+    },
+    {
+      "file": "src/content/posts/2019-02-13-on-centre-handling-metrics.md",
+      "frontmatter": "title: \"OTA 2018 Debrief: On-Centre Vehicle Handling\"\ndate: 2019-02-13T11:15:00+00:00\ncategories: [\"vehicle dynamics\", \"simulation\", \"ontario time attack\"]\nslug: on-centre-handling-metrics"
+    },
+    {
+      "file": "src/content/posts/2019-02-16-super-lap-battle.md",
+      "frontmatter": "title: \"Super Lap Battle USA 2019 Timing Results\"\ndate: 2019-02-16T20:15:00+00:00\ncategories: [\"super lap battle\", \"data visualization\"]\nslug: super-lap-battle"
+    },
+    {
+      "file": "src/content/posts/2019-03-17-parameter-sensitivity-analysis.md",
+      "frontmatter": "title: \"OTA 2018 Debrief: Parameter Analysis\"\ndate: 2019-03-17T13:15:00+00:00\ncategories: [\"vehicle dynamics\", \"simulation\", \"ontario time attack\"]\nslug: parameter-sensitivity-analysis"
+    },
+    {
+      "file": "src/content/posts/2019-06-01-typical-cornering-compliances.md",
+      "frontmatter": "title: \"Cornering Compliances of a Typical Road Vehicle\"\ndate: 2019-06-01T19:00:00+00:00\ncategories: [\"vehicle dynamics\", \"simulation\"]\nslug: typical-cornering-compliances"
+    },
+    {
+      "file": "src/content/posts/2019-07-15-driver-science-in-amateur-motorsports.md",
+      "frontmatter": "title: \"'Driver Science' and its role in amateur motorsports\"\ndate: 2019-07-15T17:15:00+00:00\ncategories: [\"driver science\"]\nslug: driver-science-in-amateur-motorsports"
+    },
+    {
+      "file": "src/content/posts/2019-08-01-re71r-influence-of-pressure-on-tire-footprint.md",
+      "frontmatter": "title: \"Choosing Tire Pressure using Static Contact Patch Measurements\"\ndate: 2019-08-01T19:15:00+00:00\nmodifiedDate: 2021-11-01T00:00:00+00:00\ncategories: [\"tires\"]\nslug: re71r-influence-of-pressure-on-tire-footprint"
+    },
+    {
+      "file": "src/content/posts/2019-09-14-driver-workload-nasa-tlx-ota-smp.md",
+      "frontmatter": "title: \"Measuring Driving Workload using NASA TLX\"\ndate: 2019-09-14T21:15:00+00:00\ncategories: [\"driver science\"]\nslug: driver-workload-nasa-tlx-ota-smp"
+    },
+    {
+      "file": "src/content/posts/2019-11-27-science-of-motorsport-review.md",
+      "frontmatter": "title: \"Book Retrospective - The Science of Motorsport\"\ndate: 2019-11-27T21:15:00+00:00\ncategories: [\"driver science\", \"books\"]\nslug: science-of-motorsport-review"
+    },
+    {
+      "file": "src/content/posts/2020-01-30-static-suspension-geometry-analysis-acura-rsx.md",
+      "frontmatter": "title: \"Analysis of the Acura RSX front suspension geometry\"\ndate: 2020-01-30T00:00:00+00:00\nmodifiedDate: 2019-08-07T00:00:00+00:00\ncategories: [\"suspension\", \"acura rsx\"]\nslug: static-suspension-geometry-analysis-acura-rsx"
+    },
+    {
+      "file": "src/content/posts/2020-05-19-slvstopy-python-library.mdx",
+      "frontmatter": "title: \"slvstopy - a Python library to read SolveSpace drawings\"\ndate: 2020-05-20T02:15:00+00:00\ncategories: [\"solvespace\", \"python\"]\nslug: slvstopy-python-library"
+    },
+    {
+      "file": "src/content/posts/2020-06-21-rsx-kinematic-curves.md",
+      "frontmatter": "title: \"Kinematic curves of the Acura RSX front suspension\"\ndate: 2020-06-21T18:30:00+00:00\ncategories: [\"suspension\", \"kinematics\", \"acura rsx\"]\nslug: rsx-kinematic-curves"
+    },
+    {
+      "file": "src/content/posts/2020-07-25-rsx-front-motion-ratios.md",
+      "frontmatter": "title: \"Motion ratio curves of the Acura RSX front suspension\"\ndate: 2020-07-25T00:00:00+00:00\nmodifiedDate: 2019-08-25T00:00:00+00:00\ncategories: [\"suspension\", \"kinematics\", \"acura rsx\"]\nslug: rsx-front-motion-ratios"
+    },
+    {
+      "file": "src/content/posts/2020-09-17-rsx-front-kinematic-roll-centre.md",
+      "frontmatter": "title: \"Kinematic roll centre analysis of the Acura RSX front suspension\"\ndate: 2020-09-07T19:30:00+00:00\ncategories: [\"suspension\", \"kinematics\", \"acura rsx\"]\nslug: rsx-front-kinematic-roll-centre"
+    },
+    {
+      "file": "src/content/posts/2020-10-25-estimating-vehicle-inertia-properties-with-nhtsa-database.md",
+      "frontmatter": "title: \"Estimating vehicle inertia and centre-of-gravity height using the NHTSA light vehicle inertial parameter database\"\ndate: 2020-10-25T00:00:00+00:00\nmodifiedDate: 2022-08-07T00:00:00+00:00\ncategories: [\"data visualization\", \"interactive\"]\nslug: estimating-vehicle-inertia-properties-with-nhtsa-database"
+    },
+    {
+      "file": "src/content/posts/2020-12-06-rsx-rear-kinematic-curves.md",
+      "frontmatter": "title: \"Kinematic curves of the Acura RSX rear suspension\"\ndate: 2020-12-10T22:30:00+00:00\ncategories: [\"suspension\", \"kinematics\", \"acura rsx\"]\nslug: rsx-rear-kinematic-curves"
+    },
+    {
+      "file": "src/content/posts/2020-12-06-rsx-rear-motion-ratios.md",
+      "frontmatter": "title: \"Motion ratio curves of the Acura RSX rear suspension\"\ndate: 2020-12-10T22:30:00+00:00\nmodifiedDate: 2022-10-22T00:00:00+00:00\ncategories: [\"suspension\", \"kinematics\", \"acura rsx\"]\nslug: rsx-rear-motion-ratios"
+    },
+    {
+      "file": "src/content/posts/2020-12-06-rsx-rsx-rear-kinematic-roll-centre.md",
+      "frontmatter": "title: \"Kinematic roll centre analysis of the Acura RSX rear suspension\"\ndate: 2020-12-10T22:30:00+00:00\ncategories: [\"suspension\", \"kinematics\", \"acura rsx\"]\nslug: rsx-rsx-rear-kinematic-roll-centre"
+    },
+    {
+      "file": "src/content/posts/2021-02-14-rsx-suspension-longitudinal-antis.md",
+      "frontmatter": "title: \"Anti-lift, anti-dive and kinematic pitch centre analysis of the Acura RSX suspension\"\ndate: 2021-02-19T02:30:00+00:00\ncategories: [\"suspension\", \"kinematics\", \"acura rsx\"]\nslug: rsx-suspension-longitudinal-antis"
+    },
+    {
+      "file": "src/content/posts/2021-03-21-simplied-lateral-load-transfer-analysis.md",
+      "frontmatter": "title: \"Simplified steady-state lateral load transfer analysis for spring rate and anti-roll bar selection\"\ndate: 2021-05-12T00:50:00+00:00\nmodifiedDate: 2022-10-22T00:00:00+00:00\ncategories: [\"suspension\", \"vehicle dynamics\", \"acura rsx\"]\nslug: simplied-lateral-load-transfer-analysis"
+    },
+    {
+      "file": "src/content/posts/2021-07-12-re71r-255-40-r17-tire-vertical-stiffness.md",
+      "frontmatter": "title: \"Measuring the tire vertical stiffness of a 255/40R17 ultra-high performance 200TW tire - Bridgestone Potenza RE-71R\"\ndate: 2021-07-18T08:30:00+00:00\ncategories: [\"tires\", \"interactive\"]\nslug: re71r-255-40-r17-tire-vertical-stiffness"
+    },
+    {
+      "file": "src/content/posts/2021-09-25-re71r-255-40-r17-tire-static-footprints.md",
+      "frontmatter": "title: \"Measuring the effect of inflation pressure, inclination angle and vertical load on static contact patch shape of a 255/40R17 ultra-high performance 200TW tire - Bridgestone Potenza RE-71R\"\ndate: 2021-10-06T11:15:00+00:00\ncategories: [\"tires\"]\nslug: re71r-255-40-r17-tire-static-footprints"
+    },
+    {
+      "file": "src/content/posts/2022-07-12-trends-in-vehicle-cg-height-and-ssf.md",
+      "frontmatter": "title: \"Trends in vehicle centre of gravity height and static stability factor from 1971 to 2020 using the NHTSA LVIPD and NCAP rollover stability measurements\"\ndate: 2022-07-28T14:00:00+00:00\nmodifiedDate: 2022-08-07T00:00:00+00:00\ncategories: [\"data visualization\", \"interactive\"]\nslug: trends-in-vehicle-cg-height-and-ssf"
+    },
+    {
+      "file": "src/content/posts/2022-09-21-photography-measuring-roll-camber-inclination-angle-ek20r.md",
+      "frontmatter": "title: \"Photography as data acquisition - measuring instantaneous chassis roll and tire inclination angles from a photo showing the rear profile of the EK20R\"\ndate: 2022-09-24T13:10:00+00:00\ncategories: [\"suspension\", \"vehicle dynamics\", \"ek20r\"]\nslug: photography-measuring-roll-camber-inclination-angle-ek20r"
+    },
+    {
+      "file": "src/content/posts/2023-02-05-intro-to-front-kinematics-ek20r.md",
+      "frontmatter": "title: \"Introduction to front suspension kinematics of a Honda Civic EK Hatchback\"\ndate: 2023-02-07T22:15:00+00:00\ncategories: [\"suspension\", \"kinematics\", \"ek20r\"]\nslug: intro-to-front-kinematics-ek20r"
+    },
+    {
+      "file": "src/content/posts/2023-02-09-front-kinematic-wheel-plane-control-ek20r.md",
+      "frontmatter": "title: \"Kinematic wheel plane control of a Honda Civic EK Hatchback front suspension\"\ndate: 2023-03-08T14:35:00+00:00\ncategories: [\"suspension\", \"kinematics\", \"ek20r\"]\nslug: front-kinematic-wheel-plane-control-ek20r"
+    },
+    {
+      "file": "src/content/posts/2023-05-14-front-steering-analysis-ek20r.md",
+      "frontmatter": "title: \"Steering kinematics of a Honda Civic EK Hatchback front suspension\"\ndate: 2024-01-05T19:40:00+00:00\nauthor: \"Kelvin Tse\"\ncategories: [\"suspension\", \"kinematics\", \"ek20r\"]\nslug: front-steering-analysis-ek20r"
+    },
+    {
+      "file": "src/content/posts/2024-08-19-continental-ecf-255-40-r17-contact-patch-sensitivity.md",
+      "frontmatter": "title: \"Static contact patch shape evolution of a 255/40R17 ultra-high performance 200TW tire - Continental ExtremeContact Force\"\ndate: 2024-09-22T00:55:00+00:00\nauthor: \"Kelvin Tse\"\ncategories: [\"tires\", \"interactive\"]\nslug: continental-ecf-255-40-r17-contact-patch-sensitivity"
+    },
+    {
+      "file": "src/content/posts/2026-01-18-driver-development-as-skill-acquisition.md",
+      "frontmatter": "title: \"Driver development - a discussion on contemporary theories of motor learning and its application in motorsport\"\ndate: 2026-04-20T01:50:00+00:00\nauthor: \"Kelvin Tse\"\ncategories: [\"driver development\", \"driver science\"]\nslug: driver-development-as-skill-acquisition"
+    }
+  ]
+}

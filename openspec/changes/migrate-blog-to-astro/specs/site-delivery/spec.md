@@ -31,9 +31,13 @@ The migration SHALL verify the legacy URL inventory, canonical destinations, rep
 - **WHEN** verification finds an inventoried old page with no appropriate destination
 - **THEN** the migration is not considered ready for deployment until the mapping is corrected.
 
-#### Scenario: Regression discovered after deployment
-- **WHEN** a production regression requires rollback
-- **THEN** a maintainer can follow the documented procedure to redeploy the known-good Jekyll revision.
+#### Scenario: Cutover regression requires the prior site
+- **WHEN** a regression in the initial Astro cutover requires restoring the pre-cutover production site
+- **THEN** a maintainer can follow the documented procedure to redeploy the known-good Jekyll revision, including its historical toolchain when necessary.
+
+#### Scenario: Later Astro regression requires recovery
+- **WHEN** a production regression occurs after a known-good Astro deployment is established
+- **THEN** a maintainer can follow the documented procedure to restore a known-good Astro revision using the normal Node-based delivery workflow.
 
 ### Requirement: Production analytics
 Existing configured analytics SHALL continue to be loaded on production pages and SHALL NOT be unintentionally triggered by local development or preview.

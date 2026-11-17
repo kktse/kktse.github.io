@@ -1,11 +1,3 @@
-# Jekyll baseline, retained until the Astro cutover
-/_site/
-/.sass-cache/
-/.jekyll-cache/
-/.jekyll-metadata
-/.bundle/
-/vendor/
-
 # Astro
 /node_modules/
 /dist/

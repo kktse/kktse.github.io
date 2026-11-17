@@ -14,8 +14,8 @@
     "preview:stop": "astro preview stop",
     "check": "astro check",
     "sync": "astro sync",
-    "verify:migration": "node scripts/verify-migration.mjs",
     "verify:routes": "node scripts/verify-published-routes.mjs",
+    "test:routes": "node --test scripts/verify-published-routes.test.mjs",
     "verify:math": "node scripts/verify-math.mjs"
   },
   "dependencies": {

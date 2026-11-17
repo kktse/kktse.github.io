@@ -24,14 +24,6 @@ const isCanonicalPage = (page) => {
 export default defineConfig({
   site: 'https://kktse.github.io',
   output: 'static',
-  /*
-   * Jekyll remains the deployable baseline until the rendered comparison is
-   * complete, so its sources stay at the repository root. Astro's public
-   * directory must never be the repository root: doing that would copy
-   * `_posts/`, `_layouts/`, `_includes/` and `_site/` into `dist/` and
-   * publish the Jekyll baseline alongside the Astro build. Static files that
-   * must keep their existing URLs are served from `public/`.
-   */
   publicDir: 'public',
   build: {
     format: 'directory',
@@ -41,6 +33,9 @@ export default defineConfig({
     preact(),
     sitemap({
       filter: isCanonicalPage,
+      // Each sitemap can hold at most 50,000 URLs. The verifier requires the
+      // compatibility index to reference every generated sitemap chunk.
+      entryLimit: 50_000,
     }),
   ],
   /*
@@ -60,23 +55,5 @@ export default defineConfig({
       remarkPlugins: [remarkMath],
       rehypePlugins: [rehypeKatex],
     }),
-  },
-  vite: {
-    server: {
-      watch: {
-        /*
-         * Ignore only Jekyll's generated state. Its authored sources stay
-         * watched: a content loader may read the baseline directly while the
-         * two stacks coexist, and ignoring generated output avoids reloading
-         * the Astro server for files that belong to the Jekyll build.
-         */
-        ignored: [
-          '**/_site/**',
-          '**/.jekyll-cache/**',
-          '**/.sass-cache/**',
-          '**/.bundle/**',
-        ],
-      },
-    },
   },
 });
