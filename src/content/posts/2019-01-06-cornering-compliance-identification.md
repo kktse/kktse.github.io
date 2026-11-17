@@ -3,6 +3,7 @@ title: "OTA 2018 Debrief: Cornering Compliances and Transients"
 date: 2019-01-06T22:45:00+00:00
 modifiedDate: 2021-04-28T00:00:00+00:00
 categories: ["vehicle dynamics", "simulation", "ontario time attack"]
+description: "A pulse steer test identifies front and rear cornering compliances on a track Honda Civic Si, giving a transient vehicle model validated against track data."
 slug: cornering-compliance-identification
 ---
 

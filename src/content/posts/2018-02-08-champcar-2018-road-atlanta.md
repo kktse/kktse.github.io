@@ -2,6 +2,7 @@
 title: "Analyzing the Live Timing - ChampCar Road Atlanta Edition"
 date: 2018-02-08T19:15:00+00:00
 categories: ["champcar", "data visualization"]
+description: "Advanced lap time analysis of the 2018 ChampCar 14-Hours of Road Atlanta, comparing pace, consistency, race position and pit stops across the field."
 slug: champcar-2018-road-atlanta
 ---
 

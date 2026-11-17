@@ -3,6 +3,7 @@ title: "Motion ratio curves of the Acura RSX front suspension"
 date: 2020-07-25T00:00:00+00:00
 modifiedDate: 2019-08-25T00:00:00+00:00
 categories: ["suspension", "kinematics", "acura rsx"]
+description: "Motion ratio curves for the Acura RSX front suspension: spring, damper, anti-roll bar and steering ratios, and what they mean for chassis setup."
 slug: rsx-front-motion-ratios
 ---
 

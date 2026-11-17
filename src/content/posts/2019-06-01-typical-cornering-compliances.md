@@ -2,6 +2,7 @@
 title: "Cornering Compliances of a Typical Road Vehicle"
 date: 2019-06-01T19:00:00+00:00
 categories: ["vehicle dynamics", "simulation"]
+description: "Understeer gradient and pulse steer tests on a stock 2007 Acura TSX give cornering compliances and a handling baseline for a typical, unmodified road car."
 slug: typical-cornering-compliances
 ---
 

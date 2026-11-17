@@ -2,6 +2,7 @@
 title: "OTA 2018 Debrief: Understeer Gradient Test"
 date: 2018-12-01T21:05:00+00:00
 categories: ["vehicle dynamics", "simulation", "ontario time attack"]
+description: "A constant-speed understeer gradient test on a track-prepared Honda Civic Si shows how logged data can quantify on-centre handling objectively."
 slug: understeer-gradient-identification
 ---
 

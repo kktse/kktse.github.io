@@ -2,6 +2,7 @@
 title: "Kinematic roll centre analysis of the Acura RSX front suspension"
 date: 2020-09-07T19:30:00+00:00
 categories: ["suspension", "kinematics", "acura rsx"]
+description: "How the Acura RSX front kinematic roll centre moves in heave and roll, including its rapid drop into the ground and what that means for lowered cars."
 slug: rsx-front-kinematic-roll-centre
 ---
 

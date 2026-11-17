@@ -2,6 +2,7 @@
 title: "OTA 2018 Debrief: Parameter Analysis"
 date: 2019-03-17T13:15:00+00:00
 categories: ["vehicle dynamics", "simulation", "ontario time attack"]
+description: "Simulated sensitivity study of the Civic Si's handling: how rear cornering compliance and understeer gradient shape transient response and setup choices."
 slug: parameter-sensitivity-analysis
 ---
 

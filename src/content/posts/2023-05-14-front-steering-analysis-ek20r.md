@@ -3,6 +3,7 @@ title: "Steering kinematics of a Honda Civic EK Hatchback front suspension"
 date: 2024-01-05T19:40:00+00:00
 author: "Kelvin Tse"
 categories: ["suspension", "kinematics", "ek20r"]
+description: "Steering kinematics of the EK20R front suspension: rack to steer ratio, dynamic toe, camber, caster, kingpin inclination, mechanical trail and scrub radius."
 slug: front-steering-analysis-ek20r
 ---
 

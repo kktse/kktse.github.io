@@ -2,6 +2,7 @@
 title: "'Driver Science' and its role in amateur motorsports"
 date: 2019-07-15T17:15:00+00:00
 categories: ["driver science"]
+description: "A literature review of driver science: the perceptual-cognitive hierarchy, gaze control research and what 'look ahead' really means for driver development."
 slug: driver-science-in-amateur-motorsports
 ---
 

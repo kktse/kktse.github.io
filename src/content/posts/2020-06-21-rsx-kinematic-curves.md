@@ -2,6 +2,7 @@
 title: "Kinematic curves of the Acura RSX front suspension"
 date: 2020-06-21T18:30:00+00:00
 categories: ["suspension", "kinematics", "acura rsx"]
+description: "Simulating the Acura RSX front suspension in bump and steer to examine half track, camber and toe variation, and how the wheel plane controls the tire."
 slug: rsx-kinematic-curves
 ---
 

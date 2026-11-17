@@ -2,6 +2,7 @@
 title: "Photography as data acquisition - measuring instantaneous chassis roll and tire inclination angles from a photo showing the rear profile of the EK20R"
 date: 2022-09-24T13:10:00+00:00
 categories: ["suspension", "vehicle dynamics", "ek20r"]
+description: "Deriving EK20R rear camber, tire inclination and chassis roll from a cornering photograph, then estimating roll gradient from lap timing data."
 slug: photography-measuring-roll-camber-inclination-angle-ek20r
 ---
 

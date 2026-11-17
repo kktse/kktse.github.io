@@ -3,6 +3,7 @@ title: "Trends in vehicle centre of gravity height and static stability factor f
 date: 2022-07-28T14:00:00+00:00
 modifiedDate: 2022-08-07T00:00:00+00:00
 categories: ["data visualization", "interactive"]
+description: "Trends in centre of gravity height, track width and static stability factor for cars and trucks from 1971 to 2020, using NHTSA inertia and NCAP rollover data."
 slug: trends-in-vehicle-cg-height-and-ssf
 ---
 

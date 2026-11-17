@@ -2,6 +2,7 @@
 title: "Driver Heart Rate Monitoring with a Smartwatch"
 date: 2018-10-26T02:00:00+00:00
 categories: ["driver science", "heart rate", "wearables"]
+description: "A smartwatch heart rate study of an amateur karting stint reveals a spike in arousal before driving, and what that means for managing competitive anxiety."
 slug: driver-heart-rate-karting
 ---
 

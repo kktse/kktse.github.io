@@ -3,6 +3,7 @@ title: "Driver development - a discussion on contemporary theories of motor lear
 date: 2026-04-20T01:50:00+00:00
 author: "Kelvin Tse"
 categories: ["driver development", "driver science"]
+description: "Reviewing contemporary motor learning theories, from information processing to ecological dynamics, and how constraints-led coaching applies to driver development."
 slug: driver-development-as-skill-acquisition
 ---
 

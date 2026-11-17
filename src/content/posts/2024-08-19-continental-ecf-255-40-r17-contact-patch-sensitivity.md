@@ -3,6 +3,7 @@ title: "Static contact patch shape evolution of a 255/40R17 ultra-high performan
 date: 2024-09-22T00:55:00+00:00
 author: "Kelvin Tse"
 categories: ["tires", "interactive"]
+description: "Static contact patch measurements of the Continental ExtremeContact Force 255/40R17 across pressure, inclination and load, compared against the RE-71R."
 slug: continental-ecf-255-40-r17-contact-patch-sensitivity
 ---
 

@@ -3,6 +3,7 @@ title: "Motion ratio curves of the Acura RSX rear suspension"
 date: 2020-12-10T22:30:00+00:00
 modifiedDate: 2022-10-22T00:00:00+00:00
 categories: ["suspension", "kinematics", "acura rsx"]
+description: "Kinematic simulation of the Acura RSX rear suspension gives coilover and anti-roll bar motion ratios."
 slug: rsx-rear-motion-ratios
 ---
 

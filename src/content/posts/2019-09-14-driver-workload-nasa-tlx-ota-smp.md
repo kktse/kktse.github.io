@@ -2,6 +2,7 @@
 title: "Measuring Driving Workload using NASA TLX"
 date: 2019-09-14T21:15:00+00:00
 categories: ["driver science"]
+description: "NASA TLX workload ratings across two Ontario Time Attack events at Shannonville show how mental and physical demand shift as a driver learns a new track."
 slug: driver-workload-nasa-tlx-ota-smp
 ---
 

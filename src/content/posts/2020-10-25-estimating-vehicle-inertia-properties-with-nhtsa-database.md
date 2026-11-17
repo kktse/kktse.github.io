@@ -3,6 +3,7 @@ title: "Estimating vehicle inertia and centre-of-gravity height using the NHTSA 
 date: 2020-10-25T00:00:00+00:00
 modifiedDate: 2022-08-07T00:00:00+00:00
 categories: ["data visualization", "interactive"]
+description: "Using the NHTSA light vehicle inertial parameter database to estimate centre-of-gravity height, inertia and static stability factor trends from vehicle mass."
 slug: estimating-vehicle-inertia-properties-with-nhtsa-database
 ---
 

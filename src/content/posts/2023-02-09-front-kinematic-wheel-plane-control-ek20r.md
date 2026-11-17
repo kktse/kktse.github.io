@@ -2,6 +2,7 @@
 title: "Kinematic wheel plane control of a Honda Civic EK Hatchback front suspension"
 date: 2023-03-08T14:35:00+00:00
 categories: ["suspension", "kinematics", "ek20r"]
+description: "Kinematic wheel plane control of the EK20R front suspension in bump and steer: half track, wheel recession, toe variation, bump steer and camber curves."
 slug: front-kinematic-wheel-plane-control-ek20r
 ---
 

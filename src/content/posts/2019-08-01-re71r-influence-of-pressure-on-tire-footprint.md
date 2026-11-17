@@ -3,6 +3,7 @@ title: "Choosing Tire Pressure using Static Contact Patch Measurements"
 date: 2019-08-01T19:15:00+00:00
 modifiedDate: 2021-11-01T00:00:00+00:00
 categories: ["tires"]
+description: "Static ink footprints of a 255/40R17 RE-71R at six pressures show how contact patch length, width and area change, guiding tire pressure choice."
 slug: re71r-influence-of-pressure-on-tire-footprint
 ---
 

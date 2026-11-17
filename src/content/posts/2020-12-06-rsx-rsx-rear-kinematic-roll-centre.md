@@ -2,6 +2,7 @@
 title: "Kinematic roll centre analysis of the Acura RSX rear suspension"
 date: 2020-12-10T22:30:00+00:00
 categories: ["suspension", "kinematics", "acura rsx"]
+description: "How the Acura RSX rear kinematic roll centre behaves in heave and roll: staying above ground with minimal migration, and why lowering needs no correction."
 slug: rsx-rsx-rear-kinematic-roll-centre
 ---
 

@@ -2,6 +2,7 @@
 title: "Measuring the effect of inflation pressure, inclination angle and vertical load on static contact patch shape of a 255/40R17 ultra-high performance 200TW tire - Bridgestone Potenza RE-71R"
 date: 2021-10-06T11:15:00+00:00
 categories: ["tires"]
+description: "Ink block prints of a Bridgestone Potenza RE-71R: how inflation pressure, inclination angle and load change contact patch shape, area and load sensitivity."
 slug: re71r-255-40-r17-tire-static-footprints
 ---
 

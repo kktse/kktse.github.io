@@ -2,6 +2,7 @@
 title: "Book Retrospective - The Science of Motorsport"
 date: 2019-11-27T21:15:00+00:00
 categories: ["driver science", "books"]
+description: "A retrospective on David Ferguson's The Science of Motorsport, covering the driver-athlete, mental skills and training, and future driver science research."
 slug: science-of-motorsport-review
 ---
 

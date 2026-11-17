@@ -33,6 +33,8 @@ Posts in `src/content/posts/` use `YYYY-MM-DD-<slug>.md` (or `.mdx`).
 Migrated posts retain their original filename dates, which can differ
 from the publication date. The frontmatter `date` controls publication and
 ordering, and the explicit `slug` controls the URL.
+Set `description` in the frontmatter to a concise summary; it appears below
+the article title and in search and social-sharing metadata.
 
 If Astro reports a missing content module after renames, rebuild its content
 cache with `mise exec -- npm run sync -- --force`.

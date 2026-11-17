@@ -2,6 +2,7 @@
 title: "OTA 2018 Debrief: On-Centre Vehicle Handling"
 date: 2019-02-13T11:15:00+00:00
 categories: ["vehicle dynamics", "simulation", "ontario time attack"]
+description: "Step and frequency response metrics from a simulated linear single-track Civic Si model quantify on-centre handling, and how it changes with speed."
 slug: on-centre-handling-metrics
 ---
 

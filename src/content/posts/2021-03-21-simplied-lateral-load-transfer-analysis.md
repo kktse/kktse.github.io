@@ -3,6 +3,7 @@ title: "Simplified steady-state lateral load transfer analysis for spring rate a
 date: 2021-05-12T00:50:00+00:00
 modifiedDate: 2022-10-22T00:00:00+00:00
 categories: ["suspension", "vehicle dynamics", "acura rsx"]
+description: "Simplified steady-state lateral load transfer equations for choosing spring rates and anti-roll bar sizes, applied to a stock and modified Acura RSX."
 slug: simplied-lateral-load-transfer-analysis
 ---
 

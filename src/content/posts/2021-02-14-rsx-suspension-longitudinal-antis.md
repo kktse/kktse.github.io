@@ -2,6 +2,7 @@
 title: "Anti-lift, anti-dive and kinematic pitch centre analysis of the Acura RSX suspension"
 date: 2021-02-19T02:30:00+00:00
 categories: ["suspension", "kinematics", "acura rsx"]
+description: "Side-view analysis of the Acura RSX suspension: front anti-lift and anti-dive, rear anti-lift ratios, and the kinematic pitch centre through heave travel."
 slug: rsx-suspension-longitudinal-antis
 ---
 

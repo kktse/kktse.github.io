@@ -2,6 +2,7 @@
 title: "Introduction to front suspension kinematics of a Honda Civic EK Hatchback"
 date: 2023-02-07T22:15:00+00:00
 categories: ["suspension", "kinematics", "ek20r"]
+description: "Reverse engineering the Formula Delta EK20R front suspension and building a SolveSpace based kinematics workflow to compute its geometry metrics."
 slug: intro-to-front-kinematics-ek20r
 ---
 

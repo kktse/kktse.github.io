@@ -2,6 +2,7 @@
 title: "Super Lap Battle USA 2019 Timing Results"
 date: 2019-02-16T20:15:00+00:00
 categories: ["super lap battle", "data visualization"]
+description: "Live timing data from Super Lap Battle USA 2019, aggregated across sessions with Pandas and plotted in Bokeh so spectators can follow each driver's best lap."
 slug: super-lap-battle
 ---
 

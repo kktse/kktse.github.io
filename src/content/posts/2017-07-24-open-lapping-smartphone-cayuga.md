@@ -2,6 +2,7 @@
 title: "Open Lapping with a Smartphone at Cayuga"
 date: 2017-07-25T03:15:00+00:00
 categories: ["lapping", "data visualization"]
+description: "How to pull objective measurements out of a smartphone lapping app: lap time trends, speed, lateral and longitudinal acceleration and a GG diagram."
 slug: open-lapping-smartphone-cayuga
 ---
 

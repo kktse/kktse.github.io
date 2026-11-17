@@ -2,6 +2,7 @@
 title: "Measuring the tire vertical stiffness of a 255/40R17 ultra-high performance 200TW tire - Bridgestone Potenza RE-71R"
 date: 2021-07-18T08:30:00+00:00
 categories: ["tires", "interactive"]
+description: "Laboratory measurement of Bridgestone Potenza RE-71R 255/40R17 vertical stiffness across inflation pressure and inclination angle, from load-deflection curves."
 slug: re71r-255-40-r17-tire-vertical-stiffness
 ---
 

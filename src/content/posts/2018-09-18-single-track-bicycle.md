@@ -3,6 +3,7 @@ title: "Lateral Dynamics of a Linear Single-Track Vehicle"
 date: 2018-09-18T23:15:00+00:00
 modifiedDate: 2020-10-15T00:00:00+00:00
 categories: ["vehicle dynamics", "simulation"]
+description: "Symbolic derivation of the linear single-track (bicycle) model, from force and moment balance to differential, state-space and transfer function forms."
 slug: single-track-bicycle
 ---
 

@@ -2,6 +2,7 @@
 title: "Kinematic curves of the Acura RSX rear suspension"
 date: 2020-12-10T22:30:00+00:00
 categories: ["suspension", "kinematics", "acura rsx"]
+description: "Kinematic simulation of the Acura RSX rear H-arm suspension in bump, examining half track, camber and toe variation and wheel plane control."
 slug: rsx-rear-kinematic-curves
 ---
 

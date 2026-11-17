@@ -3,6 +3,7 @@ title: "Analysis of the Acura RSX front suspension geometry"
 date: 2020-01-30T00:00:00+00:00
 modifiedDate: 2019-08-07T00:00:00+00:00
 categories: ["suspension", "acura rsx"]
+description: "A kinematic study of the Acura RSX front MacPherson strut: instant centres, steer axis, motion ratios and static geometry from measured pickup points."
 slug: static-suspension-geometry-analysis-acura-rsx
 ---
 
