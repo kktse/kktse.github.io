@@ -27,6 +27,16 @@ Run `mise exec -- npm run verify:routes` after a build to check legacy routes an
 
 For presentation changes, use the production preview to check the home page, a regular article, and the contact-patch article at desktop and mobile widths under both system color preferences. On the contact-patch article, check that the embedded widget resizes without nested scrolling, its sliders work by keyboard, and its model and WASM requests succeed; also check a Bokeh article and an old article URL.
 
+## Post filenames
+
+Posts in `src/content/posts/` use `YYYY-MM-DD-<slug>.md` (or `.mdx`).
+Migrated posts retain their original Jekyll filename dates, which can differ
+from the publication date. The frontmatter `date` controls publication and
+ordering, and the explicit `slug` controls the URL.
+
+If Astro reports a missing content module after renames, rebuild its content
+cache with `mise exec -- npm run sync -- --force`.
+
 ## Math authoring
 
 Post math is typeset at build time by `remark-math` and `rehype-katex` through the unified processor configured in `astro.config.mjs`. The build emits KaTeX HTML with a MathML fallback, so articles need no client-side KaTeX script, CDN stylesheet or auto-render pass. KaTeX's stylesheet and font files are bundled from the `katex` package and load with the site CSS.
