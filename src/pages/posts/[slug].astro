@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import { renderLegacyRedirect } from '../../data/legacy-redirect-html';
+import { postUrlMap } from '../../lib/post-url';
+
+export const prerender = true;
+
+/*
+ * `/posts/<slug>/` used to be the canonical article URL. Keep the exact path
+ * as a static compatibility redirect so old links and search results land on
+ * the dated canonical URL without an intermediate hop.
+ */
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  const canonicalUrlsBySlug = postUrlMap(posts);
+
+  return posts.map((post) => {
+    const target = canonicalUrlsBySlug.get(post.data.slug);
+    if (target === undefined) {
+      throw new Error(
+        `Missing canonical URL for post slug "${post.data.slug}"`
+      );
+    }
+
+    return {
+      params: { slug: post.data.slug },
+      props: { target },
+    };
+  });
+}
+
+interface Props {
+  target: string;
+}
+
+const { target } = Astro.props;
+const origin = (Astro.site ?? new URL('https://kktse.github.io')).origin;
+
+return new Response(renderLegacyRedirect(target, origin), {
+  headers: { 'Content-Type': 'text/html; charset=utf-8' },
+});
+---

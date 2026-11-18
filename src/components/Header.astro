@@ -1,0 +1,42 @@
+---
+const pathname = Astro.url.pathname.replace(/\/+$/, '') || '/';
+
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/archive/', label: 'Archive' },
+  { href: '/categories/', label: 'Categories' },
+  { href: '/about/', label: 'About' },
+];
+
+function isCurrent(href: string): boolean {
+  const normalized = href.replace(/\/+$/, '') || '/';
+  return normalized === pathname;
+}
+---
+
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="/" aria-label="Kelvin Tse, home">
+      <span class="brand-mark" aria-hidden="true">KT</span>
+      <span class="brand-text">
+        <span class="brand-name">Kelvin Tse</span>
+        <span class="brand-tagline">Vehicle dynamics from scratch</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        {links.map((link) => (
+          <li>
+            <a
+              href={link.href}
+              aria-current={isCurrent(link.href) ? 'page' : undefined}
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>

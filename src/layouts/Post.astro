@@ -1,0 +1,103 @@
+---
+import Base from './Base.astro';
+import { postUrl } from '../lib/post-url';
+import { categorySlug, formatDate } from '../lib/presentation';
+
+interface PostData {
+  title: string;
+  date: Date;
+  modifiedDate?: Date;
+  author?: string;
+  categories: string[];
+  slug: string;
+  description?: string;
+}
+
+interface Props {
+  post: { data: PostData };
+}
+
+const { post } = Astro.props;
+const { title, date, modifiedDate, author, categories, slug, description } =
+  post.data;
+---
+
+<Base
+  title={title}
+  description={description}
+  canonical={postUrl(date, slug)}
+  article={{
+    publishedTime: date,
+    modifiedTime: modifiedDate,
+    author,
+    categories,
+  }}
+>
+  <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+    <header class="post-header">
+      <p class="eyebrow">Article</p>
+      <h1 class="post-title" itemprop="headline">{title}</h1>
+
+      {description && <p class="post-lede">{description}</p>}
+
+      <div class="post-meta">
+        <span class="post-meta-item">
+          <span class="meta-label">Published</span>
+          <time datetime={date.toISOString()} itemprop="datePublished">
+            {formatDate(date)}
+          </time>
+        </span>
+
+        {modifiedDate && (
+          <span class="post-meta-item">
+            <span class="meta-label">Updated</span>
+            <time
+              datetime={modifiedDate.toISOString()}
+              itemprop="dateModified"
+            >
+              {formatDate(modifiedDate)}
+            </time>
+          </span>
+        )}
+
+        {author && (
+          <span
+            class="post-meta-item"
+            itemprop="author"
+            itemscope
+            itemtype="https://schema.org/Person"
+          >
+            <span class="meta-label">By</span>
+            <span itemprop="name">{author}</span>
+          </span>
+        )}
+      </div>
+
+      {categories.length > 0 && (
+        <ul class="tag-list post-categories" aria-label="Categories">
+          {categories.map((category) => (
+            <li>
+              <a class="tag" href={`/categories/#${categorySlug(category)}`}>
+                {category}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+      <slot />
+    </div>
+
+    <footer class="post-footer">
+      <p>
+        <a href="/archive/">Browse the full archive</a>
+        <span aria-hidden="true">·</span>
+        <a href="/categories/">Explore by category</a>
+        <span aria-hidden="true">·</span>
+        <a href="/">Back to the home page</a>
+      </p>
+    </footer>
+  </article>
+</Base>

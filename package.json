@@ -1,0 +1,38 @@
+{
+  "name": "kktse.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "dev:stop": "astro dev stop",
+    "build": "astro build",
+    "preview": "astro preview",
+    "preview:stop": "astro preview stop",
+    "check": "astro check",
+    "sync": "astro sync",
+    "verify:routes": "node scripts/verify-published-routes.mjs",
+    "test:routes": "node --test scripts/verify-published-routes.test.mjs",
+    "verify:math": "node scripts/verify-math.mjs"
+  },
+  "dependencies": {
+    "@astrojs/markdown-remark": "^7.3.8",
+    "@astrojs/mdx": "^8.1.5",
+    "@astrojs/preact": "^6.1.6",
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.4.11",
+    "katex": "^0.16.47",
+    "preact": "^11.2.0",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "parse5": "^8.1.1",
+    "typescript": "^6.0.3"
+  }
+}

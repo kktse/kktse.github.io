@@ -1,0 +1,50 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { postUrl } from '../lib/post-url';
+import { formatDate } from '../lib/presentation';
+
+const posts = (await getCollection('posts')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
+const recent = posts.slice(0, 8);
+---
+
+<Base
+  title="Vehicle dynamics from scratch"
+  description="Kelvin Tse writes about vehicle dynamics, simulation and motorsport engineering — making technical analysis accessible from first principles."
+>
+  <div class="home">
+    <header class="page-header">
+      <p class="eyebrow">Vehicle dynamics from scratch</p>
+      <h1>Kelvin Tse</h1>
+      <p class="page-lede">
+        I write about vehicle dynamics, simulation and automotive engineering.
+      </p>
+    </header>
+
+    <section class="home-posts" aria-labelledby="recent-heading">
+      <h2 id="recent-heading">Recent writing</h2>
+
+      <ol class="archive-list">
+        {recent.map((post) => (
+          <li class="archive-item">
+            <time datetime={post.data.date.toISOString()}>
+              {formatDate(post.data.date, 'short')}
+            </time>
+            <h3>
+              <a href={postUrl(post.data.date, post.data.slug)}>
+                {post.data.title}
+              </a>
+            </h3>
+          </li>
+        ))}
+      </ol>
+
+      <p class="home-archive">
+        <a href="/archive/">Read the archive</a>
+      </p>
+    </section>
+  </div>
+</Base>
