@@ -2,21 +2,23 @@ import type { APIRoute, GetStaticPaths } from 'astro';
 import { getCollection } from 'astro:content';
 import { renderLegacyRedirect } from '../../data/legacy-redirect-html';
 import {
-  assertLegacyRoutes,
   legacyPostRoutes,
+  resolveLegacyPostRoutes,
 } from '../../data/legacy-routes';
+import { postUrlMap } from '../../lib/post-url';
 
 export const prerender = true;
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const posts = await getCollection('posts');
-  const slugs = new Set(posts.map((post) => post.data.slug));
-  assertLegacyRoutes(legacyPostRoutes, slugs);
+  const canonicalUrlsBySlug = postUrlMap(posts);
 
-  return legacyPostRoutes.map((route) => ({
-    params: { path: route.from.replace(/^\/jekyll\//, '') },
-    props: { target: route.to },
-  }));
+  return resolveLegacyPostRoutes(legacyPostRoutes, canonicalUrlsBySlug).map(
+    (route) => ({
+      params: { path: route.from.replace(/^\/jekyll\//, '') },
+      props: { target: route.to },
+    })
+  );
 };
 
 export const GET: APIRoute = ({ props, site }) => {

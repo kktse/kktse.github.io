@@ -34,9 +34,9 @@ limitations.
     Delta 2000 Honda Civic EK Hatchback. To learn more about suspension
     kinematics for this chassis, click on another post from this series.
     <div style="margin-left:1em">
-      <li><a href="/posts/intro-to-front-kinematics-ek20r/">Introduction to front suspension kinematics of a Honda Civic EK Hatchback</a></li>
-      <li><a href="/posts/front-kinematic-wheel-plane-control-ek20r/"><i>You are here! - Kinematic wheel plane control of a Honda Civic EK Hatchback front suspension</i></a></li>
-      <li><a href="/posts/front-steering-analysis-ek20r/">Steering kinematics of a Honda Civic EK Hatchback front suspension</a></li>
+      <li><a href="/post/2023/02/07/intro-to-front-kinematics-ek20r/">Introduction to front suspension kinematics of a Honda Civic EK Hatchback</a></li>
+      <li><a href="/post/2023/03/08/front-kinematic-wheel-plane-control-ek20r/"><i>You are here! - Kinematic wheel plane control of a Honda Civic EK Hatchback front suspension</i></a></li>
+      <li><a href="/post/2024/01/05/front-steering-analysis-ek20r/">Steering kinematics of a Honda Civic EK Hatchback front suspension</a></li>
     </div>
     </div>
 </div>
@@ -309,9 +309,9 @@ the competitive advantage that you need.
     Delta 2000 Honda Civic EK Hatchback. To learn more about suspension
     kinematics for this chassis, click on another post from this series.
     <div style="margin-left:1em">
-      <li><a href="/posts/intro-to-front-kinematics-ek20r/">Introduction to front suspension kinematics of a Honda Civic EK Hatchback</a></li>
-      <li><a href="/posts/front-kinematic-wheel-plane-control-ek20r/"><i>You are here! - Kinematic wheel plane control of a Honda Civic EK Hatchback front suspension</i></a></li>
-      <li><a href="/posts/front-steering-analysis-ek20r/">Steering kinematics of a Honda Civic EK Hatchback front suspension</a></li>
+      <li><a href="/post/2023/02/07/intro-to-front-kinematics-ek20r/">Introduction to front suspension kinematics of a Honda Civic EK Hatchback</a></li>
+      <li><a href="/post/2023/03/08/front-kinematic-wheel-plane-control-ek20r/"><i>You are here! - Kinematic wheel plane control of a Honda Civic EK Hatchback front suspension</i></a></li>
+      <li><a href="/post/2024/01/05/front-steering-analysis-ek20r/">Steering kinematics of a Honda Civic EK Hatchback front suspension</a></li>
     </div>
     </div>
 </div>

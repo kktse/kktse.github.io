@@ -67,7 +67,7 @@ The identification process resulted in the following values:
 
 The following plots show the step response, step response metrics and frequency
 response of the simulation model. You can compare these response to our
-[previous article on on-centre vehicle handling](/posts/on-centre-handling-metrics/).
+[previous article on on-centre vehicle handling](/post/2019/02/13/on-centre-handling-metrics/).
 
 ![tsx_step](/assets/images/2019-06-01/tsx_step.png)
 

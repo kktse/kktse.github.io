@@ -1,0 +1,37 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import Post from '../../../../../layouts/Post.astro';
+import { postUrlMap } from '../../../../../lib/post-url';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  // Rejects duplicate slugs and duplicate canonical URLs before Astro emits
+  // two pages for the same path.
+  postUrlMap(posts);
+
+  return posts.map((post) => {
+    const { date, slug } = post.data;
+
+    return {
+      params: {
+        year: String(date.getUTCFullYear()).padStart(4, '0'),
+        month: String(date.getUTCMonth() + 1).padStart(2, '0'),
+        day: String(date.getUTCDate()).padStart(2, '0'),
+        slug,
+      },
+      props: { post },
+    };
+  });
+}
+
+interface Props {
+  post: CollectionEntry<'posts'>;
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<Post post={post}>
+  <Content />
+</Post>

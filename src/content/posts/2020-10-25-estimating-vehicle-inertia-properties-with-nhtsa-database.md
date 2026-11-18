@@ -36,7 +36,7 @@ estimation of mass and inertial properties of a given vehicle.
     </p>
     <p>
         <a
-        href="/posts/trends-in-vehicle-cg-height-and-ssf/"><b>Trends
+        href="/post/2022/07/28/trends-in-vehicle-cg-height-and-ssf/"><b>Trends
         in vehicle centre of gravity height and static stability factor from
         1971 to 2020 using the NHTSA LVIPD and NCAP rollover stability
         measurements</b></a>

@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import { postUrl } from '../lib/post-url';
 import { formatDate } from '../lib/presentation';
 
 const posts = (await getCollection('posts')).sort(
@@ -33,7 +34,9 @@ const recent = posts.slice(0, 8);
               {formatDate(post.data.date, 'short')}
             </time>
             <h3>
-              <a href={`/posts/${post.data.slug}/`}>{post.data.title}</a>
+              <a href={postUrl(post.data.date, post.data.slug)}>
+                {post.data.title}
+              </a>
             </h3>
           </li>
         ))}

@@ -8,16 +8,18 @@ import rehypeKatex from 'rehype-katex';
 import remarkMath from 'remark-math';
 
 /*
- * Canonical pages are directory-style clean URLs (`/posts/<slug>/`).
- * Legacy Jekyll documents keep their `.html` paths and are emitted as
- * immediate meta-refresh pages; neither those nor XML endpoints belong in
- * the sitemap. RSS is served at /rss.xml by a static endpoint. The 404 page
- * is a response document, not a publishable page, so it is excluded too.
+ * Canonical pages are directory-style dated URLs (`/post/YYYY/MM/DD/<slug>/`).
+ * The older `/posts/<slug>/` paths and the Jekyll `.html` documents are
+ * immediate meta-refresh compatibility redirects, so they must stay out of the
+ * sitemap along with XML endpoints. RSS is served at /rss.xml by a static
+ * endpoint. The 404 page is a response document, not a publishable page, so it
+ * is excluded too.
  */
 /** @param {string} page */
 const isCanonicalPage = (page) => {
   const { pathname } = new URL(page);
   if (pathname === '/404' || pathname === '/404/') return false;
+  if (pathname.startsWith('/posts/')) return false;
   return !pathname.endsWith('.html') && !pathname.endsWith('.xml');
 };
 

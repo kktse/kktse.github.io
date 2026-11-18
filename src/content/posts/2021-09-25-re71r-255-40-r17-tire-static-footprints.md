@@ -210,6 +210,6 @@ can learn more about [_Formula Delta_][2] on [Facebook][4] and [Instagram][5].
 
 [1]: https://www.astm.org/Standards/F870.htm
 [2]: https://formuladelta.ca/
-[3]: /posts/re71r-influence-of-pressure-on-tire-footprint/
+[3]: /post/2019/08/01/re71r-influence-of-pressure-on-tire-footprint/
 [4]: https://www.facebook.com/FormulaDeltaConsult
 [5]: https://www.instagram.com/formula.delta/

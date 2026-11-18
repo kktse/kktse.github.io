@@ -1,36 +1,42 @@
 ---
-import { getCollection, render, type CollectionEntry } from 'astro:content';
-import Post from '../../layouts/Post.astro';
+import { getCollection } from 'astro:content';
+import { renderLegacyRedirect } from '../../data/legacy-redirect-html';
+import { postUrlMap } from '../../lib/post-url';
 
+export const prerender = true;
+
+/*
+ * `/posts/<slug>/` used to be the canonical article URL. Keep the exact path
+ * as a static compatibility redirect so old links and search results land on
+ * the dated canonical URL without an intermediate hop.
+ */
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
-  const seen = new Map<string, string>();
+  const canonicalUrlsBySlug = postUrlMap(posts);
 
-  for (const post of posts) {
-    const slug = post.data.slug;
-    const previous = seen.get(slug);
-    if (previous) {
+  return posts.map((post) => {
+    const target = canonicalUrlsBySlug.get(post.data.slug);
+    if (target === undefined) {
       throw new Error(
-        `Duplicate post slug "${slug}" in ${previous} and ${post.id}`
+        `Missing canonical URL for post slug "${post.data.slug}"`
       );
     }
-    seen.set(slug, post.id);
-  }
 
-  return posts.map((post) => ({
-    params: { slug: post.data.slug },
-    props: { post },
-  }));
+    return {
+      params: { slug: post.data.slug },
+      props: { target },
+    };
+  });
 }
 
 interface Props {
-  post: CollectionEntry<'posts'>;
+  target: string;
 }
 
-const { post } = Astro.props;
-const { Content } = await render(post);
----
+const { target } = Astro.props;
+const origin = (Astro.site ?? new URL('https://kktse.github.io')).origin;
 
-<Post post={post}>
-  <Content />
-</Post>
+return new Response(renderLegacyRedirect(target, origin), {
+  headers: { 'Content-Type': 'text/html; charset=utf-8' },
+});
+---

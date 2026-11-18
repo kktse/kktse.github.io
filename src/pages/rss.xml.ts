@@ -1,6 +1,7 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 import type { APIRoute } from 'astro';
+import { postUrl } from '../lib/post-url';
 
 export const prerender = true;
 
@@ -15,7 +16,7 @@ export const GET: APIRoute = async (context) => {
     site: context.site ?? 'https://kktse.github.io',
     items: posts.map((post) => ({
       title: post.data.title,
-      link: `/posts/${post.data.slug}/`,
+      link: postUrl(post.data.date, post.data.slug),
       pubDate: post.data.date,
       description:
         post.data.description ??

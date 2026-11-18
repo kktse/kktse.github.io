@@ -17,7 +17,10 @@ import { verifyPublishedSite } from './verify-published-routes.mjs';
 
 const SITE = 'https://example.test';
 const LEGACY = '/jekyll/update/2020/01/01/hello.html';
-const CANONICAL = '/posts/hello/';
+const SLUG_ALIAS = '/posts/hello/';
+const CANONICAL = '/post/2020/01/01/hello/';
+const CANONICAL_REL = 'post/2020/01/01/hello/index.html';
+const SLUG_ALIAS_REL = 'posts/hello/index.html';
 const ASSET = '/assets/hello.txt';
 
 const sha256_16 = (content) =>
@@ -92,6 +95,7 @@ function makeInventory() {
     routes: [
       {
         legacyUrl: LEGACY,
+        slugUrl: SLUG_ALIAS,
         canonicalUrl: CANONICAL,
         slug: 'hello',
         title: 'Hello',
@@ -142,6 +146,7 @@ function makeInventory() {
       ],
       excludedUrls: [
         `${SITE}${LEGACY}`,
+        `${SITE}${SLUG_ALIAS}`,
         `${SITE}/home.html`,
         `${SITE}/feed.xml`,
         `${SITE}/rss.xml`,
@@ -177,8 +182,7 @@ function baseFiles() {
       'categories/index.html',
       canonicalPage({
         canonical: '/categories/',
-        body:
-          '<h2 id="tires">Tires</h2><p><a href="/posts/hello/#intro">Hello</a></p>',
+        body: `<h2 id="tires">Tires</h2><p><a href="${CANONICAL}#intro">Hello</a></p>`,
       }),
     ],
     [
@@ -190,7 +194,7 @@ function baseFiles() {
       }),
     ],
     [
-      'posts/hello/index.html',
+      CANONICAL_REL,
       canonicalPage({
         canonical: CANONICAL,
         body:
@@ -198,6 +202,7 @@ function baseFiles() {
       }),
     ],
     [LEGACY.slice(1), redirectPage(CANONICAL)],
+    [SLUG_ALIAS_REL, redirectPage(CANONICAL)],
     ['home.html', redirectPage('/')],
     ['feed.xml', feed],
     ['rss.xml', feed],
@@ -253,6 +258,7 @@ test('a valid publication passes the complete contract', async () => {
   assert.deepEqual(result.warnings, []);
   assert.equal(result.ok, true);
   assert.equal(result.stats.routes, 1);
+  assert.equal(result.stats.slugRedirects, 1);
   assert.equal(result.stats.assetsMatched, 1);
   assert.equal(result.stats.sitemap, 'sitemap-index.xml');
   assert.equal(result.stats.sitemapUrls, 4);
@@ -261,7 +267,7 @@ test('a valid publication passes the complete contract', async () => {
 
 test('a missing redirect destination reports source and target', async () => {
   const result = await runCase(({ files }) => {
-    files.delete('posts/hello/index.html');
+    files.delete(CANONICAL_REL);
   });
   assertError(result, 'route-destination-missing');
   assert.ok(
@@ -281,7 +287,7 @@ test('a missing required asset fails', async () => {
 test('a missing required article heading fails', async () => {
   const result = await runCase(({ files }) => {
     files.set(
-      'posts/hello/index.html',
+      CANONICAL_REL,
       canonicalPage({ canonical: CANONICAL, body: '<h1>Hello</h1>' })
     );
   });
@@ -291,9 +297,9 @@ test('a missing required article heading fails', async () => {
 test('a wrong canonical target fails', async () => {
   const result = await runCase(({ files }) => {
     files.set(
-      'posts/hello/index.html',
+      CANONICAL_REL,
       canonicalPage({
-        canonical: '/posts/not-hello/',
+        canonical: '/post/2020/01/01/not-hello/',
         body: '<h1>Hello</h1><h2 id="intro">Intro</h2>',
       })
     );
@@ -306,6 +312,21 @@ test('a redirect chain fails', async () => {
     files.set(LEGACY.slice(1), redirectPage('/home.html'));
   });
   assertError(result, 'redirect-chain');
+});
+
+test('a legacy redirect that chains through the slug alias fails', async () => {
+  const result = await runCase(({ files }) => {
+    files.set(LEGACY.slice(1), redirectPage(SLUG_ALIAS));
+  });
+  assertError(result, 'redirect-chain');
+  assert.ok(
+    messages(result).some(
+      (message) =>
+        message.includes(LEGACY) &&
+        message.includes(SLUG_ALIAS) &&
+        message.includes(CANONICAL)
+    )
+  );
 });
 
 test('an omitted sitemap URL fails coverage', async () => {
@@ -352,7 +373,7 @@ test('a redirect with the wrong canonical link fails', async () => {
   const result = await runCase(({ files }) => {
     files.set(
       LEGACY.slice(1),
-      redirectPage(CANONICAL, { canonical: '/posts/not-hello/' })
+      redirectPage(CANONICAL, { canonical: '/post/2020/01/01/not-hello/' })
     );
   });
   assertError(result, 'redirect-canonical-mismatch');
@@ -371,7 +392,7 @@ test('a broken local fragment fails', async () => {
       'categories/index.html',
       canonicalPage({
         canonical: '/categories/',
-        body: '<h2 id="tires">Tires</h2><a href="/posts/hello/#missing">Hello</a>',
+        body: `<h2 id="tires">Tires</h2><a href="${CANONICAL}#missing">Hello</a>`,
       })
     );
   });
@@ -496,4 +517,185 @@ test('an inventory without legacy sitemap targets fails', async () => {
     delete inventory.sitemap.legacyChildUrls;
   });
   assertError(result, 'inventory-invalid');
+});
+
+/* Canonical URLs: /post/YYYY/MM/DD/<slug>/ derived from the UTC date. */
+
+test('a canonical URL that still uses the slug-only path fails', async () => {
+  const result = await runCase(({ inventory }) => {
+    inventory.routes[0].canonicalUrl = SLUG_ALIAS;
+  });
+  assertError(result, 'inventory-invalid');
+});
+
+test('a canonical URL with a non-publication date fails', async () => {
+  const result = await runCase(({ inventory }) => {
+    inventory.routes[0].canonicalUrl = '/post/2020/01/02/hello/';
+  });
+  assertError(result, 'inventory-invalid');
+});
+
+test('a missing slug-only alias declaration fails', async () => {
+  const result = await runCase(({ inventory }) => {
+    delete inventory.routes[0].slugUrl;
+  });
+  assertError(result, 'inventory-invalid');
+});
+
+test('a slug-only alias that does not match the slug fails', async () => {
+  const result = await runCase(({ inventory }) => {
+    inventory.routes[0].slugUrl = '/posts/not-hello/';
+  });
+  assertError(result, 'inventory-invalid');
+});
+
+test('a missing slug-only redirect fails', async () => {
+  const result = await runCase(({ files }) => {
+    files.delete(SLUG_ALIAS_REL);
+  });
+  assertError(result, 'slug-source-missing');
+  assert.ok(
+    messages(result).some(
+      (message) => message.includes(SLUG_ALIAS) && message.includes(CANONICAL)
+    )
+  );
+});
+
+test('a slug-only path that is a page instead of a redirect fails', async () => {
+  const result = await runCase(({ files }) => {
+    files.set(
+      SLUG_ALIAS_REL,
+      canonicalPage({ canonical: SLUG_ALIAS, body: '<h1>Hello</h1>' })
+    );
+  });
+  assertError(result, 'slug-source-not-redirect');
+});
+
+test('a slug-only redirect to the wrong article fails', async () => {
+  const result = await runCase(({ files }) => {
+    files.set(SLUG_ALIAS_REL, redirectPage('/about/'));
+  });
+  assertError(result, 'slug-target-mismatch');
+});
+
+test('a slug-only redirect that chains through the legacy URL fails', async () => {
+  const result = await runCase(({ files }) => {
+    files.set(SLUG_ALIAS_REL, redirectPage(LEGACY));
+  });
+  assertError(result, 'redirect-chain');
+});
+
+test('a slug-only redirect to a non-dated canonical path fails', async () => {
+  const result = await runCase(({ files }) => {
+    files.set(SLUG_ALIAS_REL, redirectPage('/post/2020/01/01/hello'));
+  });
+  assertError(result, 'slug-target-mismatch');
+  assertError(result, 'redirect-canonical-format');
+});
+
+/* UTC calendar boundaries: the offset decides the date, not the wall clock. */
+
+test('a UTC boundary instant is accepted', async () => {
+  const result = await runCase(({ inventory }) => {
+    // 2019-12-31T19:00:00-05:00 is exactly 2020-01-01T00:00:00Z.
+    inventory.routes[0].published = '2019-12-31T19:00:00-05:00';
+  });
+  assert.deepEqual(result.errors, []);
+});
+
+test('one second before a UTC boundary changes the canonical date', async () => {
+  const result = await runCase(({ inventory }) => {
+    // 2019-12-31T18:59:59-05:00 is 2019-12-31T23:59:59Z.
+    inventory.routes[0].published = '2019-12-31T18:59:59-05:00';
+  });
+  assertError(result, 'inventory-invalid');
+  assert.ok(
+    messages(result).some((message) =>
+      message.includes('/post/2019/12/31/hello/')
+    )
+  );
+});
+
+test('a forward offset that crosses back a day changes the date', async () => {
+  const result = await runCase(({ inventory }) => {
+    // 2020-01-01T10:00:00+14:00 is 2019-12-31T20:00:00Z.
+    inventory.routes[0].published = '2020-01-01T10:00:00+14:00';
+  });
+  assertError(result, 'inventory-invalid');
+});
+
+test('a publication date without a time or offset is rejected', async () => {
+  const result = await runCase(({ inventory }) => {
+    inventory.routes[0].published = '2020-01-01';
+  });
+  assertError(result, 'inventory-invalid');
+});
+
+test('a missing publication date is rejected', async () => {
+  const result = await runCase(({ inventory }) => {
+    delete inventory.routes[0].published;
+  });
+  assertError(result, 'inventory-invalid');
+});
+
+/* Sitemap and feed discovery only name dated canonical URLs. */
+
+test('a sitemap that lists the slug-only alias fails', async () => {
+  const result = await runCase(({ files }) => {
+    files.set(
+      'sitemap-0.xml',
+      sitemapUrlset([
+        `${SITE}/`,
+        `${SITE}/about/`,
+        `${SITE}/categories/`,
+        `${SITE}${CANONICAL}`,
+        `${SITE}${SLUG_ALIAS}`,
+      ])
+    );
+  });
+  assertError(result, 'sitemap-retired-url');
+});
+
+test('an inventory that omits the slug-only sitemap exclusion fails', async () => {
+  const result = await runCase(({ inventory }) => {
+    inventory.sitemap.excludedUrls = inventory.sitemap.excludedUrls.filter(
+      (url) => url !== `${SITE}${SLUG_ALIAS}`
+    );
+  });
+  assertError(result, 'inventory-sitemap-exclusion');
+});
+
+test('an inventory that omits the dated canonical sitemap URL fails', async () => {
+  const result = await runCase(({ inventory }) => {
+    inventory.sitemap.requiredUrls = inventory.sitemap.requiredUrls.filter(
+      (url) => url !== `${SITE}${CANONICAL}`
+    );
+  });
+  assertError(result, 'inventory-sitemap-coverage');
+});
+
+test('an inventory that requires a slug-only sitemap URL fails', async () => {
+  const result = await runCase(({ inventory }) => {
+    inventory.sitemap.requiredUrls.push(`${SITE}${SLUG_ALIAS}`);
+  });
+  assertError(result, 'inventory-invalid');
+});
+
+test('a feed that links the slug-only alias fails', async () => {
+  const result = await runCase(({ files }) => {
+    const retired = feedXml([SLUG_ALIAS, `${SITE}/about/`]);
+    files.set('feed.xml', retired);
+    files.set('rss.xml', retired);
+  });
+  assertError(result, 'feed-retired-url');
+});
+
+test('duplicate slug declarations fail', async () => {
+  const result = await runCase(({ inventory }) => {
+    inventory.routes.push({
+      ...inventory.routes[0],
+      legacyUrl: '/jekyll/update/2020/01/02/hello.html',
+    });
+  });
+  assertError(result, 'route-collision');
 });

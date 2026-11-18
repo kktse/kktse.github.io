@@ -276,6 +276,37 @@ function collectReferences(document) {
 const isHtmlFile = (rel) => /\.html?$/i.test(rel);
 const isCssFile = (rel) => /\.css$/i.test(rel);
 
+/*
+ * Canonical post URLs are `/post/YYYY/MM/DD/<slug>/`, where the date is the
+ * UTC calendar date of the authoritative frontmatter timestamp, never a
+ * filename date. The verifier derives the expected path from `published`, so
+ * a stale or timezone-shifted canonical URL fails instead of silently
+ * becoming a second contract.
+ */
+const ISO_TIMESTAMP_PATTERN =
+  /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2}(?:\.\d+)?)?(?:Z|[+-]\d{2}:\d{2})$/;
+const DATED_POST_PATTERN =
+  /^\/post\/\d{4}\/\d{2}\/\d{2}\/[a-z0-9]+(?:-[a-z0-9]+)*\/$/;
+const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+const DATED_POST_PREFIX = '/post/';
+const RETIRED_POST_PREFIX = '/posts/';
+const padDatePart = (value, width = 2) => String(value).padStart(width, '0');
+
+const isIsoTimestamp = (value) =>
+  typeof value === 'string' && ISO_TIMESTAMP_PATTERN.test(value);
+
+function formatDatedPostUrl(published, slug) {
+  if (!isIsoTimestamp(published) || typeof slug !== 'string') return null;
+  const time = Date.parse(published);
+  if (!Number.isFinite(time)) return null;
+  const date = new Date(time);
+  const year = date.getUTCFullYear();
+  if (!Number.isInteger(year) || year < 1) return null;
+  return `${DATED_POST_PREFIX}${padDatePart(year, 4)}/${padDatePart(
+    date.getUTCMonth() + 1
+  )}/${padDatePart(date.getUTCDate())}/${slug}/`;
+}
+
 function safeDecodeURIComponent(value) {
   try {
     return decodeURIComponent(value);
@@ -721,38 +752,84 @@ export async function verifyPublishedSite({
   };
 
   const routeRecords = [];
+  const routeSlugs = new Map();
   for (const [index, route] of routes.entries()) {
     const label = `route ${route?.legacyUrl ?? index}`;
     if (!route || typeof route !== 'object') {
       addError('inventory-invalid', `${label} is not an object`);
       continue;
     }
-    const source = addSource(route.legacyUrl, label);
-    const destination = addCanonical(route.canonicalUrl, label);
-    if (!source || !destination) continue;
 
-    if (source === destination) {
-      addError(
-        'route-collision',
-        `${route.legacyUrl} cannot be both a legacy URL and its own destination`
-      );
-    }
-    if (route.canonicalUrl !== `/posts/${route.slug}/`) {
+    const source = addSource(route.legacyUrl, label);
+    const slugSource = addSource(route.slugUrl, `${label} slug URL`);
+    const destination = addCanonical(route.canonicalUrl, label);
+
+    if (typeof route.slug === 'string' && SLUG_PATTERN.test(route.slug)) {
+      const previous = routeSlugs.get(route.slug);
+      if (previous) {
+        addError(
+          'route-collision',
+          `slug "${route.slug}" is declared by both ${previous} and ${label}`
+        );
+      } else {
+        routeSlugs.set(route.slug, label);
+      }
+    } else {
       addError(
         'inventory-invalid',
-        `${label} canonical URL ${route.canonicalUrl} does not match slug ${route.slug}`
+        `${label} slug must be lowercase words separated by single hyphens: ${route.slug}`
+      );
+    }
+
+    if (!isIsoTimestamp(route.published)) {
+      addError(
+        'inventory-invalid',
+        `${label} published must be an ISO 8601 timestamp with an explicit UTC offset: ${route.published}`
+      );
+    } else {
+      const derived = formatDatedPostUrl(route.published, route.slug);
+      if (derived == null) {
+        addError(
+          'inventory-invalid',
+          `${label} published is not a representable date: ${route.published}`
+        );
+      } else if (route.canonicalUrl !== derived) {
+        addError(
+          'inventory-invalid',
+          `${label} canonical URL ${route.canonicalUrl} does not match its UTC publication date; expected ${derived}`
+        );
+      }
+    }
+
+    if (route.slugUrl !== `/posts/${route.slug}/`) {
+      addError(
+        'inventory-invalid',
+        `${label} slug URL ${route.slugUrl} does not match slug ${route.slug}`
+      );
+    }
+
+    if (!source || !slugSource || !destination) continue;
+
+    if (source === destination || slugSource === destination) {
+      addError(
+        'route-collision',
+        `${route.legacyUrl} cannot also be its own destination`
+      );
+    }
+    if (source === slugSource) {
+      addError(
+        'route-collision',
+        `${route.legacyUrl} and ${route.slugUrl} name the same compatibility path`
       );
     }
     if (!Array.isArray(route.requiredHeadings)) {
-      addError(
-        'inventory-invalid',
-        `${label} requiredHeadings must be an array`
-      );
+      addError('inventory-invalid', `${label} requiredHeadings must be an array`);
     }
 
     routeRecords.push({
       ...route,
       sourcePath: source,
+      slugSourcePath: slugSource,
       destinationPath: destination,
       requiredHeadings: Array.isArray(route.requiredHeadings)
         ? route.requiredHeadings
@@ -1012,7 +1089,67 @@ export async function verifyPublishedSite({
     }
   }
 
-  /* Legacy article routes: source, redirect target, destination and anchors. */
+  /*
+   * Every retained compatibility path must be an immediate redirect to the
+   * dated canonical article. Legacy Jekyll URLs and the retired slug-only
+   * `/posts/<slug>/` paths are checked identically so neither may chain
+   * through the other.
+   */
+  function verifyArticleRedirect({
+    prefix,
+    sourceUrl,
+    sourcePath,
+    canonicalUrl,
+    destinationPath,
+    description,
+  }) {
+    const sourceRel = resolveDist(sourcePath);
+    if (!sourceRel) {
+      addError(
+        `${prefix}-source-missing`,
+        `${sourceUrl} -> ${canonicalUrl}: ${description} has no generated output`
+      );
+      return;
+    }
+    const sourcePage = distPages.get(sourceRel);
+    if (!sourcePage) {
+      addError(
+        `${prefix}-source-not-page`,
+        `${sourceUrl} -> ${canonicalUrl}: ${description} is a non-HTML asset`
+      );
+      return;
+    }
+    if (sourcePage.kind !== 'redirect') {
+      addError(
+        `${prefix}-source-not-redirect`,
+        `${sourceUrl} -> ${canonicalUrl}: ${description} is a ${sourcePage.kind}, not an immediate redirect`
+      );
+      return;
+    }
+
+    const target = resolveTarget(sourcePage.rel, sourcePage.refresh.target);
+    if (target.error) {
+      addError(
+        `${prefix}-target-invalid`,
+        `${sourceUrl} -> ${canonicalUrl}: ${target.error}`
+      );
+    } else if (target.external) {
+      addError(
+        `${prefix}-target-external`,
+        `${sourceUrl} -> ${canonicalUrl}: redirects off-site to ${target.url.href}`
+      );
+    } else if (
+      canonicalUrl.startsWith(DATED_POST_PREFIX)
+        ? target.path !== canonicalUrl
+        : comparablePath(target.path) !== destinationPath
+    ) {
+      addError(
+        `${prefix}-target-mismatch`,
+        `${sourceUrl} -> ${canonicalUrl}: redirects to ${target.path}`
+      );
+    }
+  }
+
   for (const route of routeRecords) {
     const destinationRel = resolveDist(route.destinationPath);
     if (!destinationRel) {
@@ -1060,47 +1197,22 @@ export async function verifyPublishedSite({
       }
     }
 
-    const sourceRel = resolveDist(route.legacyUrl);
-    if (!sourceRel) {
-      addError(
-        'route-source-missing',
-        `${route.legacyUrl} -> ${route.canonicalUrl}: legacy URL has no generated output`
-      );
-      continue;
-    }
-    const sourcePage = distPages.get(sourceRel);
-    if (!sourcePage) {
-      addError(
-        'route-source-not-page',
-        `${route.legacyUrl} -> ${route.canonicalUrl}: legacy URL is a non-HTML asset`
-      );
-      continue;
-    }
-    if (sourcePage.kind !== 'redirect') {
-      addError(
-        'route-source-not-redirect',
-        `${route.legacyUrl} -> ${route.canonicalUrl}: legacy URL is a ${sourcePage.kind}, not an immediate redirect`
-      );
-      continue;
-    }
-
-    const target = resolveTarget(sourcePage.rel, sourcePage.refresh.target);
-    if (target.error) {
-      addError(
-        'route-target-invalid',
-        `${route.legacyUrl} -> ${route.canonicalUrl}: ${target.error}`
-      );
-    } else if (target.external) {
-      addError(
-        'route-target-external',
-        `${route.legacyUrl} -> ${route.canonicalUrl}: redirects off-site to ${target.url.href}`
-      );
-    } else if (comparablePath(target.path) !== route.destinationPath) {
-      addError(
-        'route-target-mismatch',
-        `${route.legacyUrl} -> ${route.canonicalUrl}: redirects to ${target.path}`
-      );
-    }
+    verifyArticleRedirect({
+      prefix: 'route',
+      sourceUrl: route.legacyUrl,
+      sourcePath: route.sourcePath,
+      canonicalUrl: route.canonicalUrl,
+      destinationPath: route.destinationPath,
+      description: 'legacy URL',
+    });
+    verifyArticleRedirect({
+      prefix: 'slug',
+      sourceUrl: route.slugUrl,
+      sourcePath: route.slugSourcePath,
+      canonicalUrl: route.canonicalUrl,
+      destinationPath: route.destinationPath,
+      description: 'slug-only URL',
+    });
   }
 
   /* Every redirect document, including aliases not named in the inventory. */
@@ -1144,6 +1256,30 @@ export async function verifyPublishedSite({
     if (comparablePath(target.path) === comparablePath(sourcePath)) {
       addError('redirect-self', `${sourcePath} redirects to itself`);
       continue;
+    }
+    if (target.path.startsWith(RETIRED_POST_PREFIX)) {
+      addError(
+        'redirect-retired-target',
+        `${sourcePath} redirects to retired slug-only path ${target.path}; redirects must target the dated canonical URL`
+      );
+    }
+    if (
+      target.path.startsWith(DATED_POST_PREFIX) &&
+      !DATED_POST_PATTERN.test(target.path)
+    ) {
+      addError(
+        'redirect-canonical-format',
+        `${sourcePath} redirects to ${target.path}, which is not a dated canonical post URL`
+      );
+    }
+    if (
+      sourcePath.startsWith(RETIRED_POST_PREFIX) &&
+      !DATED_POST_PATTERN.test(target.path)
+    ) {
+      addError(
+        'redirect-retired-source',
+        `${sourcePath} must redirect directly to a dated canonical post URL, not ${target.path}`
+      );
     }
     if (info.refresh.delay > 0) {
       addError(
@@ -1539,6 +1675,36 @@ export async function verifyPublishedSite({
     excludedSitemapPaths.add(comparablePath(target));
   }
 
+  /*
+   * The sitemap contract names canonical URLs only: dated `/post/.../` paths
+   * belong in requiredUrls and both compatibility spaces (Jekyll `.html` and
+   * slug-only `/posts/.../`) belong in excludedUrls.
+   */
+  for (const required of requiredSitemapPaths) {
+    if (required.startsWith(RETIRED_POST_PREFIX)) {
+      addError(
+        'inventory-invalid',
+        `sitemap.requiredUrls lists the retired slug-only URL ${required}`
+      );
+    } else if (
+      required.startsWith(DATED_POST_PREFIX) &&
+      !DATED_POST_PATTERN.test(`${required}/`)
+    ) {
+      addError(
+        'inventory-invalid',
+        `sitemap.requiredUrls lists a non-dated canonical post URL ${required}`
+      );
+    }
+  }
+  for (const excluded of excludedSitemapPaths) {
+    if (excluded.startsWith(DATED_POST_PREFIX)) {
+      addError(
+        'inventory-invalid',
+        `sitemap.excludedUrls excludes canonical post URL ${excluded}`
+      );
+    }
+  }
+
   let sitemapRoot = null;
   if (fileSet.has('sitemap-index.xml')) {
     sitemapRoot = 'sitemap-index.xml';
@@ -1561,6 +1727,12 @@ export async function verifyPublishedSite({
       addError(
         'inventory-sitemap-exclusion',
         `sitemap.excludedUrls omits legacy URL ${route.legacyUrl}`
+      );
+    }
+    if (!excludedSitemapPaths.has(route.slugSourcePath)) {
+      addError(
+        'inventory-sitemap-exclusion',
+        `sitemap.excludedUrls omits slug-only alias ${route.slugUrl}`
       );
     }
   }
@@ -1673,6 +1845,13 @@ export async function verifyPublishedSite({
         }
 
         const pagePath = target.path;
+        if (pagePath.startsWith(RETIRED_POST_PREFIX)) {
+          addError(
+            'sitemap-retired-url',
+            `${rel} lists the retired slug-only URL ${pagePath}; the canonical URL is the dated /post/.../ path`
+          );
+          continue;
+        }
         if (/\.html?$/i.test(pagePath)) {
           addError(
             'sitemap-legacy-url',
@@ -1686,6 +1865,17 @@ export async function verifyPublishedSite({
           addError(
             'sitemap-missing-page',
             `${rel} lists missing output: ${pagePath}`
+          );
+          continue;
+        }
+
+        if (
+          pagePath.startsWith(DATED_POST_PREFIX) &&
+          !DATED_POST_PATTERN.test(pagePath)
+        ) {
+          addError(
+            'sitemap-canonical-format',
+            `${rel} lists ${pagePath}, which is not a dated canonical post URL`
           );
           continue;
         }
@@ -1768,7 +1958,7 @@ export async function verifyPublishedSite({
       }
     }
     for (const target of redirectTargets) {
-      if (target.startsWith('/posts') && !sitemapCanonicalPaths.has(target)) {
+      if (target.startsWith(DATED_POST_PREFIX) && !sitemapCanonicalPaths.has(target)) {
         addError(
           'sitemap-coverage',
           `Redirect target ${target} is missing from ${sitemapRoot}`
@@ -1776,7 +1966,7 @@ export async function verifyPublishedSite({
       }
     }
     for (const info of distPages.values()) {
-      if (info.kind !== 'page' || !info.url.startsWith('/posts/')) continue;
+      if (info.kind !== 'page' || !info.url.startsWith(DATED_POST_PREFIX)) continue;
       if (!sitemapCanonicalPaths.has(comparablePath(info.url))) {
         addError(
           'sitemap-coverage',
@@ -2035,6 +2225,13 @@ export async function verifyPublishedSite({
       }
 
       const pagePath = target.path;
+      if (pagePath.startsWith(RETIRED_POST_PREFIX)) {
+        addError(
+          'feed-retired-url',
+          `${feedPath} links the retired slug-only URL ${pagePath}; feeds must link the dated canonical URL`
+        );
+        continue;
+      }
       if (/\.html?$/i.test(pagePath)) {
         addError(
           'feed-legacy-url',
@@ -2048,6 +2245,17 @@ export async function verifyPublishedSite({
         addError(
           'feed-missing-page',
           `${feedPath} links missing output: ${pagePath}`
+        );
+        continue;
+      }
+
+      if (
+        pagePath.startsWith(DATED_POST_PREFIX) &&
+        !DATED_POST_PATTERN.test(pagePath)
+      ) {
+        addError(
+          'feed-canonical-format',
+          `${feedPath} links ${pagePath}, which is not a dated canonical post URL`
         );
         continue;
       }
@@ -2175,6 +2383,7 @@ export async function verifyPublishedSite({
 
   const stats = {
     routes: routeRecords.length,
+    slugRedirects: routeRecords.length,
     aliases: aliasRecords.length,
     pages: pageRecords.length,
     assets: assets.length,
@@ -2311,6 +2520,7 @@ export async function main(argv = process.argv.slice(2)) {
   console.log('');
   console.log('Contract');
   console.log(`  routes:     ${result.stats.routes ?? 0}`);
+  console.log(`  slug URLs:  ${result.stats.slugRedirects ?? 0}`);
   console.log(`  aliases:    ${result.stats.aliases ?? 0}`);
   console.log(`  pages:      ${result.stats.pages ?? 0}`);
   console.log(

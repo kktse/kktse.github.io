@@ -1,5 +1,6 @@
 ---
 import Base from './Base.astro';
+import { postUrl } from '../lib/post-url';
 import { categorySlug, formatDate } from '../lib/presentation';
 
 interface PostData {
@@ -24,7 +25,7 @@ const { title, date, modifiedDate, author, categories, slug, description } =
 <Base
   title={title}
   description={description}
-  canonical={`/posts/${slug}/`}
+  canonical={postUrl(date, slug)}
   article={{
     publishedTime: date,
     modifiedTime: modifiedDate,

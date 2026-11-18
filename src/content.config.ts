@@ -3,9 +3,11 @@ import { glob } from 'astro/loaders';
 
 /*
  * Posts live in one collection so `.md` and `.mdx` share frontmatter, routing
- * and metadata. `slug` is explicit on every entry: canonical URLs never depend
- * on the source filename or a title-derived algorithm, so files can be renamed
- * without breaking `/posts/<slug>/`. The route generator rejects duplicates.
+ * and metadata. `slug` is explicit on every entry: canonical URLs are built
+ * from the UTC date and this slug, never from the source filename or a
+ * title-derived algorithm, so files can be renamed without breaking
+ * `/post/YYYY/MM/DD/<slug>/`. The route generator rejects duplicate slugs and
+ * canonical URLs.
  */
 const posts = defineCollection({
   loader: glob({

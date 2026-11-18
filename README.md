@@ -30,9 +30,10 @@ For presentation changes, use the production preview to check the home page, a r
 ## Post filenames
 
 Posts in `src/content/posts/` use `YYYY-MM-DD-<slug>.md` (or `.mdx`).
-Migrated posts retain their original filename dates, which can differ
-from the publication date. The frontmatter `date` controls publication and
-ordering, and the explicit `slug` controls the URL.
+Migrated posts retain their original filename dates, which can differ from
+the publication date. The frontmatter `date` controls publication and
+ordering; its UTC date and the explicit `slug` form the canonical URL
+`/post/YYYY/MM/DD/<slug>/`. Keep published dates and slugs stable.
 Set `description` in the frontmatter to a concise summary; it appears below
 the article title and in search and social-sharing metadata.
 

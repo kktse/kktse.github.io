@@ -66,7 +66,7 @@ Checks:
 
 Limitations:
   - Run a production build first; this script never builds.
-  - Only canonical /posts/**/index.html pages are checked. Legacy redirect
+  - Only canonical /post/**/index.html pages are checked. Legacy redirect
     documents and the MDX/currency/code authoring fixtures are outside this
     check. They need their own build-level coverage.
   - This is a static structure check, not a visual/layout or browser test.
@@ -201,7 +201,7 @@ function relativeToDist(distDir, file) {
 }
 
 async function collectPostPages(distDir) {
-  const postsDir = path.join(distDir, 'posts');
+  const postsDir = path.join(distDir, 'post');
   const files = [];
 
   async function visit(directory) {
@@ -837,8 +837,8 @@ function pageNameForEntry(entry) {
 
 async function main() {
   try {
-    if (!(await stat(path.join(options.dist, 'posts'))).isDirectory()) {
-      fatal(`missing posts directory in ${options.dist}`);
+    if (!(await stat(path.join(options.dist, 'post'))).isDirectory()) {
+      fatal(`missing post directory in ${options.dist}`);
       return;
     }
   } catch {
@@ -850,7 +850,7 @@ async function main() {
 
   const files = await collectPostPages(options.dist);
   if (files.length === 0) {
-    fatal(`no canonical post pages found under ${path.join(options.dist, 'posts')}`);
+    fatal(`no canonical post pages found under ${path.join(options.dist, 'post')}`);
     return;
   }
 

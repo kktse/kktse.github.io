@@ -10,12 +10,12 @@ slug: understeer-gradient-identification
 > handling using linear system analysis. For further reading, please feel free
 > to check out my other posts:
 >
-> 1. [Lateral Dynamics of a Linear Single-Track Vehicle](/posts/single-track-bicycle/)
-> 1. **[OTA 2018 Debrief: Understeer Gradient Test](/posts/understeer-gradient-identification/)**
-> 1. [OTA 2018 Debrief: Cornering Compliances and Transients](/posts/cornering-compliance-identification/)
-> 1. [OTA 2018 Debrief: On-Centre Vehicle Handling](/posts/on-centre-handling-metrics/)
-> 1. [OTA 2018 Debrief: Parameter Analysis](/posts/parameter-sensitivity-analysis/)
-> 1. [Cornering Compliances of a Typical Road Vehicle](/posts/typical-cornering-compliances/)
+> 1. [Lateral Dynamics of a Linear Single-Track Vehicle](/post/2018/09/18/single-track-bicycle/)
+> 1. **[OTA 2018 Debrief: Understeer Gradient Test](/post/2018/12/01/understeer-gradient-identification/)**
+> 1. [OTA 2018 Debrief: Cornering Compliances and Transients](/post/2019/01/06/cornering-compliance-identification/)
+> 1. [OTA 2018 Debrief: On-Centre Vehicle Handling](/post/2019/02/13/on-centre-handling-metrics/)
+> 1. [OTA 2018 Debrief: Parameter Analysis](/post/2019/03/17/parameter-sensitivity-analysis/)
+> 1. [Cornering Compliances of a Typical Road Vehicle](/post/2019/06/01/typical-cornering-compliances/)
 
 ---
 

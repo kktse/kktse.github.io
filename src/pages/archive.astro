@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import { postUrl } from '../lib/post-url';
 import { categorySlug, formatDate } from '../lib/presentation';
 
 const posts = (await getCollection('posts')).sort(
@@ -63,7 +64,9 @@ const years = [...postsByYear.keys()].sort((a, b) => b - a);
               </time>
               <div class="archive-item-body">
                 <h3>
-                  <a href={`/posts/${post.data.slug}/`}>{post.data.title}</a>
+                  <a href={postUrl(post.data.date, post.data.slug)}>
+                    {post.data.title}
+                  </a>
                 </h3>
                 {post.data.categories.length > 0 && (
                   <ul class="tag-list" aria-label="Categories">

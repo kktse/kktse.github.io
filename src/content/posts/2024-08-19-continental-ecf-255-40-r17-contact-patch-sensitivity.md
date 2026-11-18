@@ -346,7 +346,7 @@ improve our understanding of tire performance.
 1. Gent, A. N., & Walter, J. D. (2006). Pneumatic tire. National highway traffic safety administration.
 1. Rodgers, Brendan. 2021. Tire Engineering: An Introduction. First edition. Boca Raton: CRC Press/Taylor & Francis Group.
 
-[1]: /posts/re71r-255-40-r17-tire-static-footprints/
+[1]: /post/2021/10/06/re71r-255-40-r17-tire-static-footprints/
 [2]: https://www.instagram.com/nummi_racing/
 [3]: https://www.youtube.com/watch?v=CEfXz6pAVTk
 [4]: https://www.instagram.com/formula.delta/

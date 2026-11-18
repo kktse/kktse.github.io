@@ -10,12 +10,12 @@ slug: parameter-sensitivity-analysis
 > handling using linear system analysis. For further reading, please feel free
 > to check out my other posts:
 >
-> 1. [Lateral Dynamics of a Linear Single-Track Vehicle](/posts/single-track-bicycle/)
-> 1. [OTA 2018 Debrief: Understeer Gradient Test](/posts/understeer-gradient-identification/)
-> 1. [OTA 2018 Debrief: Cornering Compliances and Transients](/posts/cornering-compliance-identification/)
-> 1. [OTA 2018 Debrief: On-Centre Vehicle Handling](/posts/on-centre-handling-metrics/)
-> 1. **[OTA 2018 Debrief: Parameter Analysis](/posts/parameter-sensitivity-analysis/)**
-> 1. [Cornering Compliances of a Typical Road Vehicle](/posts/typical-cornering-compliances/)
+> 1. [Lateral Dynamics of a Linear Single-Track Vehicle](/post/2018/09/18/single-track-bicycle/)
+> 1. [OTA 2018 Debrief: Understeer Gradient Test](/post/2018/12/01/understeer-gradient-identification/)
+> 1. [OTA 2018 Debrief: Cornering Compliances and Transients](/post/2019/01/06/cornering-compliance-identification/)
+> 1. [OTA 2018 Debrief: On-Centre Vehicle Handling](/post/2019/02/13/on-centre-handling-metrics/)
+> 1. **[OTA 2018 Debrief: Parameter Analysis](/post/2019/03/17/parameter-sensitivity-analysis/)**
+> 1. [Cornering Compliances of a Typical Road Vehicle](/post/2019/06/01/typical-cornering-compliances/)
 
 ---
 
@@ -64,7 +64,7 @@ The following parameters are used to represent the baseline vehicle:
 # Steering Sensitivity
 
 The analysis begins with steady-state steering sensitivities. The [linear
-single-track vehicle model](/posts/single-track-bicycle/)
+single-track vehicle model](/post/2018/09/18/single-track-bicycle/)
 contains parameters with real-world meaning; for example, vehicle mass and yaw
 inertia. Analytical evaluation lets us understand underlying relationships from
 the equations-of-motion in terms of vehicle parameters.
@@ -118,7 +118,7 @@ chassis slip angle steering sensitivity.
 
 This is not new to our analysis; we have discussed this in our [on-centre
 vehicle handling
-assessment](/posts/on-centre-handling-metrics/). In case
+assessment](/post/2019/02/13/on-centre-handling-metrics/). In case
 you forgot, here are the results showing the effect of speed on the steering
 sensitivity.
 
@@ -145,7 +145,7 @@ observation is likely attributable to this effect.
 Good vehicle handling is ultimately an amalgamation of transient and
 steady-state handling factors. Previously, we discussed the [use of handling
 metrics to quantify the handling
-response](/posts/on-centre-handling-metrics/). By running
+response](/post/2019/02/13/on-centre-handling-metrics/). By running
 a successive set of simulations with a parameter sweep of rear cornering
 compliance and understeer gradient, we can observe the handling landscape for a
 set of different vehicle configurations.
@@ -264,7 +264,7 @@ As we conclude our analysis for the season debrief, it is important to reflect
 on the questions we answered - but also the questions we did not answer.
 
 The [linear single-track vehicle
-model](/posts/single-track-bicycle/), as the name
+model](/post/2018/09/18/single-track-bicycle/), as the name
 implies, has two major defining characteristics: linear and single-track. These
 simplifying assumptions puts limits on the type of conclusions we can draw from
 simulation.
@@ -294,13 +294,13 @@ can bring more than the absolute numerical output of our work.
 
 Our study of the #551 2012 Honda Civic Si Couple covered many topics. The
 [understeer gradient
-test](/posts/understeer-gradient-identification/) and
+test](/post/2018/12/01/understeer-gradient-identification/) and
 [pulse steer
-test](/posts/cornering-compliance-identification/)
+test](/post/2019/01/06/cornering-compliance-identification/)
 represents our foray into experimental vehicle dynamics. Vehicle modelling and
 simulation represented our efforts into analytical vehicle dynamics and
 computational techniques, and we used this to [evaluate vehicle
-handling](/posts/on-centre-handling-metrics/) and study
+handling](/post/2019/02/13/on-centre-handling-metrics/) and study
 [vehicle sensitivities](#).
 
 This analysis is in direct inspiration of the historic works in vehicle

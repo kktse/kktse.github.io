@@ -11,20 +11,20 @@ slug: rsx-suspension-longitudinal-antis
 >
 > Front Suspension
 >
-> * [Analysis of the Acura RSX front suspension geometry](/posts/static-suspension-geometry-analysis-acura-rsx/)
-> * [Kinematic curves of the Acura RSX front suspension](/posts/rsx-kinematic-curves/)
-> * [Motion ratio curves of the Acura RSX front suspension](/posts/rsx-front-motion-ratios/)
-> * [Kinematic roll centre analysis of the Acura RSX front suspension](/posts/rsx-front-kinematic-roll-centre/)
+> * [Analysis of the Acura RSX front suspension geometry](/post/2020/01/30/static-suspension-geometry-analysis-acura-rsx/)
+> * [Kinematic curves of the Acura RSX front suspension](/post/2020/06/21/rsx-kinematic-curves/)
+> * [Motion ratio curves of the Acura RSX front suspension](/post/2020/07/25/rsx-front-motion-ratios/)
+> * [Kinematic roll centre analysis of the Acura RSX front suspension](/post/2020/09/07/rsx-front-kinematic-roll-centre/)
 >
 > Rear Suspension
 >
-> * [Kinematic curves of the Acura RSX rear suspension](/posts/rsx-rear-kinematic-curves/)
-> * [Motion ratio curves of the Acura RSX rear suspension](/posts/rsx-rear-motion-ratios/)
-> * [Kinematic roll centre analysis of the Acura RSX rear suspension](/posts/rsx-rsx-rear-kinematic-roll-centre/)
+> * [Kinematic curves of the Acura RSX rear suspension](/post/2020/12/10/rsx-rear-kinematic-curves/)
+> * [Motion ratio curves of the Acura RSX rear suspension](/post/2020/12/10/rsx-rear-motion-ratios/)
+> * [Kinematic roll centre analysis of the Acura RSX rear suspension](/post/2020/12/10/rsx-rsx-rear-kinematic-roll-centre/)
 >
 > Full Vehicle
 >
-> * [**You are here!** - Anti-lift, anti-dive and kinematic pitch centre analysis of the Acura RSX suspension](/posts/rsx-suspension-longitudinal-antis/)
+> * [**You are here!** - Anti-lift, anti-dive and kinematic pitch centre analysis of the Acura RSX suspension](/post/2021/02/19/rsx-suspension-longitudinal-antis/)
 
 ![rsx cover](/assets/images/2021-02-14/rsx-gp-cover.jpg)
 
@@ -67,9 +67,9 @@ open source software frameworks.
 ## Kinematic pitch centre and _anti_ geometry
 
 Similar to how we discussed the [front kinematic roll
-centre](/posts/rsx-front-kinematic-roll-centre/) and
+centre](/post/2020/09/07/rsx-front-kinematic-roll-centre/) and
 [rear kinematic roll
-centre](/posts/rsx-rsx-rear-kinematic-roll-centre/),
+centre](/post/2020/12/10/rsx-rsx-rear-kinematic-roll-centre/),
 the same concepts can be applied for the longitudinal dynamics. The
 **kinematic pitch centre** is a virtual point on the side plane where
 longitudinal forces can be resolved into the suspended mass.

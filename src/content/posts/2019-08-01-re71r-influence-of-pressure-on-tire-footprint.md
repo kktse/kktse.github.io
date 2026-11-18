@@ -15,7 +15,7 @@ slug: re71r-influence-of-pressure-on-tire-footprint
     <span class="material-icons" style="margin-right:0.25em">new_releases</span>
     <div>
         This topic has been revisited in the follow up post
-        <a href="/posts/re71r-255-40-r17-tire-static-footprints/">
+        <a href="/post/2021/10/06/re71r-255-40-r17-tire-static-footprints/">
             Measuring the effect of inflation pressure, inclination angle and vertical load on static contact patch shape of a 255/40R17 ultra-high performance 200TW tire - Bridgestone Potenza RE-71R
         </a>.
     </div>
@@ -178,7 +178,7 @@ I would like to acknowledge the following individuals for their contribution to 
     <span class="material-icons" style="margin-right:0.25em">new_releases</span>
     <div>
         Still interested in static tire contact patch phenomena? See our <a
-        href="/posts/re71r-255-40-r17-tire-static-footprints/">
+        href="/post/2021/10/06/re71r-255-40-r17-tire-static-footprints/">
         follow-up article </a>
         where the effect of inflation pressure, inclination angle and vertical
         load on static tire contact patch shape are investigated.

@@ -438,6 +438,6 @@ tools we use at [Formula Delta][3] to achieve this.
 1. Shigley, Joseph E. _Mechanical Engineering Design_. McGraw-Hill Book Company, 1963.
 1. Walz, Marie C. _Trends in the static stability factor of passenger cars, light trucks, and vans_. No. HS-809 868. 2005.
 
-[1]: /posts/on-centre-handling-metrics/
+[1]: /post/2019/02/13/on-centre-handling-metrics/
 [3]: https://formuladelta.ca/
-[4]: /posts/static-suspension-geometry-analysis-acura-rsx/
+[4]: /post/2020/01/30/static-suspension-geometry-analysis-acura-rsx/
